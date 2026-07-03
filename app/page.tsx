@@ -335,6 +335,22 @@ export default function HomePage() {
                 Het werk eerst,<br />
                 <span className="italic font-light text-primary-300">de mond als laatste.</span>
               </h2>
+              {testimonials.length > 0 && (
+                <a
+                  href={business.social.google}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-3 rounded-full border border-primary-700 bg-primary-800/60 px-5 py-2.5 text-sm text-paper transition-all hover:border-accent-400 hover:bg-primary-800"
+                >
+                  <span className="flex items-center gap-1">
+                    {Array.from({ length: 5 }).map((_, j) => (
+                      <Star key={j} className="h-4 w-4 fill-accent-400 text-accent-400" />
+                    ))}
+                  </span>
+                  <span className="font-semibold tabular-nums">5,0</span>
+                  <span className="text-primary-300">uit {testimonials.length} Google reviews</span>
+                </a>
+              )}
             </div>
             {/* Google review CTA — altijd zichtbaar */}
             <a
@@ -355,24 +371,24 @@ export default function HomePage() {
           </div>
 
           {testimonials.length > 0 ? (
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="columns-1 md:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
               {testimonials.map((t, i) => (
                 <figure
                   key={t.author}
-                  className="rounded-3xl bg-primary-800/50 backdrop-blur border border-primary-700 p-8 reveal"
-                  style={{ animationDelay: `${i * 0.1}s` }}
+                  className="mb-6 break-inside-avoid rounded-3xl bg-primary-800/50 backdrop-blur border border-primary-700 p-8 reveal"
+                  style={{ animationDelay: `${i * 0.08}s` }}
                 >
-                  <div className="flex gap-0.5 mb-6">
+                  <div className="flex gap-0.5 mb-5">
                     {Array.from({ length: t.rating }).map((_, j) => (
                       <Star key={j} className="h-4 w-4 fill-accent-400 text-accent-400" />
                     ))}
                   </div>
-                  <blockquote className="font-display text-lg leading-relaxed text-paper">
+                  <blockquote className="font-display text-[17px] leading-relaxed text-paper">
                     &ldquo;{t.text}&rdquo;
                   </blockquote>
-                  <figcaption className="mt-6 text-sm">
+                  <figcaption className="mt-6 pt-5 border-t border-primary-700/60 text-sm">
                     <div className="font-semibold text-paper">{t.author}</div>
-                    <div className="text-primary-400">{t.location} · {t.project}</div>
+                    <div className="text-primary-400 mt-0.5">{t.location} · {t.project}</div>
                   </figcaption>
                 </figure>
               ))}

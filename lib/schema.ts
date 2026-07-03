@@ -7,6 +7,7 @@
 
 import { business } from '@/content/business'
 import { services } from '@/content/services'
+import { testimonials } from '@/content/testimonials'
 
 export function localBusinessSchema() {
   return {
@@ -69,6 +70,25 @@ export function localBusinessSchema() {
         },
       })),
     },
+    ...(testimonials.length > 0 && {
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5.0',
+        reviewCount: testimonials.length,
+        bestRating: '5',
+        worstRating: '1',
+      },
+      review: testimonials.map((t) => ({
+        '@type': 'Review',
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: t.rating.toString(),
+          bestRating: '5',
+        },
+        author: { '@type': 'Person', name: t.author },
+        reviewBody: t.text,
+      })),
+    }),
   }
 }
 

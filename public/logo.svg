@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="Van Wonderen Tegelwerken">
+  <defs>
+    <style>
+      .name { font: 700 22px/1 'Fraunces Variable', Georgia, serif; fill: #1F2937; letter-spacing: 0.02em; }
+      .sub  { font: 500 11px/1 'Inter Variable', system-ui, sans-serif; fill: #C2632F; letter-spacing: 0.32em; text-transform: uppercase; }
+      .tile { fill: #C2632F; }
+      .tileLine { stroke: #FAFAF7; stroke-width: 2; }
+    </style>
+  </defs>
+  <!-- Icoon: tegel met diagonaal voegpatroon -->
+  <g transform="translate(8 12)">
+    <rect class="tile" x="0" y="0" width="56" height="56" rx="6"/>
+    <line class="tileLine" x1="0" y1="28" x2="56" y2="28"/>
+    <line class="tileLine" x1="28" y1="0" x2="28" y2="56"/>
+  </g>
+  <!-- Woordmerk -->
+  <text class="name" x="84" y="36">VAN WONDEREN</text>
+  <text class="sub"  x="84" y="58">TEGELWERKEN</text>
+</svg>

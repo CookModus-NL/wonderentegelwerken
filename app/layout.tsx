@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import Beacon from '@/components/Beacon'
 import { WhatsAppFloating } from '@/components/whatsapp-floating'
 import { localBusinessSchema } from '@/lib/schema'
 import { business } from '@/content/business'
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }}
         />
         <Analytics />
+        <Beacon />
         <SpeedInsights />
       </body>
     </html>

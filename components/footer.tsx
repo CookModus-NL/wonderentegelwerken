@@ -95,7 +95,16 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <span>Vakwerk uit Breda</span>
             <span className="h-1 w-1 rounded-full bg-accent-500" />
-            <span>Gebouwd in 2026</span>
+            {/* Bouwerscredit. Merknaam als ankertekst, niet een zoekterm — een
+                credit hoort te zeggen wie het bouwde, niet waar l3art op wil ranken. */}
+            <a
+              href="https://l3art.nl"
+              target="_blank"
+              rel="noopener"
+              className="normal-case transition-colors hover:text-accent-400"
+            >
+              Powered by l3art.nl
+            </a>
           </div>
         </div>
       </div>

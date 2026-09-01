@@ -36,7 +36,10 @@ export const business = {
   email: 'wonderentegelwerken@gmail.com',
   // info@wonderentegelwerken.nl wordt naar gmail doorgestuurd zodra Resend/MX is opgezet
 
-  url: 'https://wonderentegelwerken.nl',
+  // Canonieke host = www: productie redirect non-www met 308 naar www
+  // (gemeten 01-09-2026) en het klantregister voert www als domein. Canonicals,
+  // sitemap, robots en schema-@id's leiden hiervan af — één regel, één waarheid.
+  url: 'https://www.wonderentegelwerken.nl',
 
   // Werkdagen — op afspraak zaterdag mogelijk
   openingHours: [

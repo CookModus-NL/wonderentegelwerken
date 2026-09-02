@@ -3,30 +3,45 @@ import { business } from '@/content/business'
 import { services } from '@/content/services'
 import { projects } from '@/content/projects'
 import { cities } from '@/content/cities'
+import lastmod from '@/content/lastmod.json'
+
+/**
+ * lastmod komt uit content/lastmod.json (gegenereerd door scripts/lastmod.mjs
+ * uit de git-historie), NIET uit new Date(). Met het buildmoment beweerde elke
+ * deploy dat alle 24 pagina's waren gewijzigd — gemeten 2 sep 2026: 24/24
+ * identieke lastmod. Dan negeert Google het signaal (platform-regel A8).
+ *
+ * Ontbreekt een pad in de kaart, dan laten we lastmod WEG. Een ontbrekende
+ * lastmod is eerlijk; een verzonnen datum is dat niet.
+ */
+const paden = lastmod.paden as Record<string, string | null>
+
+function entry(
+  pad: string,
+  priority: number,
+  changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']
+) {
+  const datum = paden[pad]
+  return {
+    url: pad === '/' ? business.url : `${business.url}${pad}`,
+    ...(datum ? { lastModified: new Date(datum) } : {}),
+    priority,
+    changeFrequency,
+  }
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = business.url
-  const now = new Date()
   return [
-    { url: base, lastModified: now, priority: 1, changeFrequency: 'monthly' },
-    { url: `${base}/diensten`, lastModified: now, priority: 0.9, changeFrequency: 'monthly' },
-    { url: `${base}/projecten`, lastModified: now, priority: 0.8, changeFrequency: 'weekly' },
-    { url: `${base}/tegelzetter`, lastModified: now, priority: 0.9, changeFrequency: 'monthly' },
-    { url: `${base}/over-ons`, lastModified: now, priority: 0.6, changeFrequency: 'yearly' },
-    { url: `${base}/werkgebied`, lastModified: now, priority: 0.6, changeFrequency: 'yearly' },
-    { url: `${base}/contact`, lastModified: now, priority: 0.7, changeFrequency: 'yearly' },
-    ...services.map((s) => ({
-      url: `${base}/diensten/${s.slug}`,
-      lastModified: now, priority: 0.8, changeFrequency: 'monthly' as const,
-    })),
-    ...projects.map((p) => ({
-      url: `${base}/projecten/${p.slug}`,
-      lastModified: now, priority: 0.7, changeFrequency: 'yearly' as const,
-    })),
+    entry('/', 1, 'monthly'),
+    entry('/diensten', 0.9, 'monthly'),
+    entry('/projecten', 0.8, 'weekly'),
+    entry('/tegelzetter', 0.9, 'monthly'),
+    entry('/over-ons', 0.6, 'yearly'),
+    entry('/werkgebied', 0.6, 'yearly'),
+    entry('/contact', 0.7, 'yearly'),
+    ...services.map((s) => entry(`/diensten/${s.slug}`, 0.8, 'monthly')),
+    ...projects.map((p) => entry(`/projecten/${p.slug}`, 0.7, 'yearly')),
     // Lokale SEO landingspagina's per plaats
-    ...cities.map((c) => ({
-      url: `${base}/tegelzetter/${c.slug}`,
-      lastModified: now, priority: 0.85, changeFrequency: 'monthly' as const,
-    })),
+    ...cities.map((c) => entry(`/tegelzetter/${c.slug}`, 0.85, 'monthly')),
   ]
 }

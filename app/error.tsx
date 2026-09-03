@@ -22,11 +22,11 @@ export default function GlobalError({
       <div className="mx-auto max-w-xl">
         <p className="font-display text-7xl font-bold text-accent-500">!</p>
         <h1 className="mt-6 text-3xl font-bold sm:text-4xl">Er ging iets mis</h1>
-        <p className="mt-4 text-lg text-primary-700">
+        <p className="mt-4 text-lg text-primary-600">
           Excuses. De pagina kon niet worden geladen. Probeer het opnieuw of WhatsApp me direct.
         </p>
         {error.digest && (
-          <p className="mt-2 text-xs text-primary-400">Foutcode: {error.digest}</p>
+          <p className="mt-2 text-xs text-primary-500">Foutcode: {error.digest}</p>
         )}
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <button onClick={reset} className="btn-primary"><RefreshCw className="h-4 w-4" /> Probeer opnieuw</button>

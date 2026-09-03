@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         </h1>
         <p className="mt-4 text-primary-500 text-sm">Laatst bijgewerkt: 29 mei 2026</p>
 
-        <div className="mt-12 space-y-8 text-primary-700 leading-relaxed">
+        <div className="mt-12 space-y-8 text-primary-600 leading-relaxed">
           <p>
             Ik, Jaap van Wonderen ({business.legalName}, KvK {business.kvk}), respecteer je privacy en verwerk persoonsgegevens alleen volgens de AVG. Op deze pagina lees je welke gegevens ik verzamel, waarom en hoe lang.
           </p>

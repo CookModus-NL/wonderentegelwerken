@@ -45,13 +45,18 @@
   }
   body {
     background: var(--color-paper);
-    color: var(--color-primary-700);
+    /* ink uit DESIGN.md. Was primary-700 (#2f2d29): een vierde grijstint die niet in het
+       contract staat en geen betekenisverschil draagt met #14130f. */
+    color: var(--color-primary-900);
     font-family: var(--font-sans);
     font-feature-settings: 'cv11', 'ss01';
   }
   h1, h2, h3, h4, h5 {
     font-family: var(--font-display);
-    color: var(--color-primary-900);
+    /* Bewust `inherit` en geen vaste kleur: een kop in een donker of gekleurd blok hoort
+       de tekstkleur van dat blok te volgen. Een vaste kleur hier won van de overerving en
+       zette koppen op #14130f midden op een oranje vlak (gemeten 2,4:1, 3 sep 2026). */
+    color: inherit;
     letter-spacing: -0.02em;
     font-feature-settings: 'ss01';
   }
@@ -61,7 +66,7 @@
   *:focus-visible {
     outline: 2px solid var(--color-accent-500);
     outline-offset: 3px;
-    border-radius: 4px;
+    border-radius: 2px;
   }
   ::selection {
     background: var(--color-accent-200);
@@ -88,10 +93,10 @@
     @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-primary-200 bg-transparent px-7 py-3 text-base font-semibold text-primary-900 transition-all duration-300 hover:border-primary-900 hover:bg-primary-900 hover:text-paper active:scale-[0.98];
   }
   .btn-accent {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent-500 px-7 py-3.5 text-base font-semibold text-white shadow-sm transition-all duration-300 hover:bg-accent-600 hover:shadow-lg active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent-600 px-7 py-3.5 text-base font-semibold text-white shadow-sm transition-all duration-300 hover:bg-accent-700 hover:shadow-lg active:scale-[0.98];
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-primary-700 transition-all hover:bg-primary-100;
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-primary-600 transition-all hover:bg-primary-100;
   }
 
   /* Eyebrow label boven headings */
@@ -142,6 +147,31 @@
 
 @keyframes reveal {
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Gedempte beweging ──────────────────────────────────────────────────────
+   DESIGN.md: `reduced_motion: volwaardige site zonder beweging`. Let op de volgorde:
+   .reveal staat op opacity:0 en wordt pas zichtbaar DOOR zijn animatie. Alleen de
+   animatie uitzetten maakt de site dus niet rustiger maar leeg. Daarom hier expliciet
+   de eindstand forceren. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal,
+  .reveal-delay-1, .reveal-delay-2, .reveal-delay-3, .reveal-delay-4 {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    animation-delay: 0s !important;
+  }
+  .animate-float, .animate-pulse-soft { animation: none !important; }
+  .img-zoom:hover img { transform: none; }
+  /* `none`, niet `0.001ms`: een duur van bijna nul telt nog steeds als een lopende
+     overgang — de poort zag daardoor 771 bewegende elementen in plaats van 0. */
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @keyframes float {

@@ -58,7 +58,7 @@ export default function DienstenPage() {
                       {s.short}
                     </p>
                     <div className="mt-8 flex items-center justify-between">
-                      <span className="text-sm font-medium text-primary-700 transition-colors group-hover:text-paper">
+                      <span className="text-sm font-medium text-primary-600 transition-colors group-hover:text-paper">
                         Lees meer
                       </span>
                       <span className="grid h-10 w-10 place-items-center rounded-full bg-primary-900 text-paper transition-all duration-300 group-hover:bg-accent-500 group-hover:rotate-45">

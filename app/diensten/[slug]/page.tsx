@@ -58,7 +58,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <ChevronRight className="h-3 w-3" />
             <Link href="/diensten" className="hover:text-accent-600">Diensten</Link>
             <ChevronRight className="h-3 w-3" />
-            <span className="text-primary-700">{service.title}</span>
+            <span className="text-primary-600">{service.title}</span>
           </nav>
 
           <div className="mt-12 grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
@@ -72,7 +72,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               {service.bullets && (
                 <ul className="mt-10 grid gap-2 sm:grid-cols-2 max-w-xl">
                   {service.bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-2.5 text-sm text-primary-700">
+                    <li key={b} className="flex items-start gap-2.5 text-sm text-primary-600">
                       <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-500" strokeWidth={3} />
                       <span>{b}</span>
                     </li>
@@ -85,7 +85,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                   href={`https://wa.me/${business.whatsapp.replace('+', '')}?text=${encodeURIComponent('Hoi Jaap, ik heb een vraag over ' + service.title.toLowerCase() + '.')}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-[#1ebe57] hover:shadow-lg active:scale-[0.98]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 text-base font-semibold text-primary-900 shadow-sm transition-all hover:bg-[#1ebe57] hover:shadow-lg active:scale-[0.98]"
                 >
                   <MessageCircle className="h-4 w-4" /> WhatsApp Jaap
                 </a>
@@ -123,7 +123,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               { title: 'Garantie', body: '5 jaar op tegelwerk en voegwerk. 1 jaar op kitwerk.' },
             ].map((item) => (
               <div key={item.title} className="flex gap-4">
-                <Check className="h-6 w-6 text-accent-400 shrink-0 mt-1" strokeWidth={2.5} />
+                <Check className="h-6 w-6 text-accent-300 shrink-0 mt-1" strokeWidth={2.5} />
                 <div>
                   <div className="font-display text-lg font-semibold text-paper">{item.title}</div>
                   <p className="mt-2 text-sm leading-relaxed text-primary-300">{item.body}</p>
@@ -150,7 +150,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                   <dt className="font-display text-lg font-semibold text-primary-900 group-hover:text-accent-600">
                     {f.q}
                   </dt>
-                  <span className="grid h-8 w-8 place-items-center rounded-full bg-clay text-primary-700 transition-all duration-300 group-open:rotate-45 group-open:bg-accent-500 group-open:text-paper shrink-0">
+                  <span className="grid h-8 w-8 place-items-center rounded-full bg-clay text-primary-600 transition-all duration-300 group-open:rotate-45 group-open:bg-accent-500 group-open:text-paper shrink-0">
                     <span className="h-px w-3 bg-current" />
                     <span className="absolute h-3 w-px bg-current" />
                   </span>

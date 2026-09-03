@@ -44,22 +44,22 @@ export default function ContactPage() {
           >
             <div aria-hidden className="absolute top-0 right-0 grid grid-cols-5 gap-2 opacity-10 p-12">
               {Array.from({ length: 20 }).map((_, i) => (
-                <div key={i} className="h-12 w-12 rounded bg-white" />
+                <div key={i} className="h-12 w-12 rounded bg-paper" />
               ))}
             </div>
             <div className="relative grid gap-8 lg:grid-cols-12 lg:items-center">
-              <div className="lg:col-span-8 text-white">
-                <div className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.22em] text-white/90">
-                  <span className="inline-flex h-2 w-2 rounded-full bg-white animate-pulse" />
+              <div className="lg:col-span-8 text-primary-900">
+                <div className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.22em] text-primary-900">
+                  <span className="inline-flex h-2 w-2 rounded-full bg-primary-900 animate-pulse" />
                   Voorkeurskanaal · snelste reactie
                 </div>
                 <h2 className="mt-4 font-display text-4xl font-bold leading-[1.1] sm:text-5xl lg:text-6xl">
                   WhatsApp Jaap
                 </h2>
-                <p className="mt-5 text-xl text-white/90 font-medium">
+                <p className="mt-5 text-xl text-primary-900 font-medium">
                   {business.phone}
                 </p>
-                <ul className="mt-8 grid gap-3 text-base text-white/95 sm:grid-cols-2">
+                <ul className="mt-8 grid gap-3 text-base text-primary-900 sm:grid-cols-2">
                   <li className="flex items-start gap-2"><Camera className="h-5 w-5 mt-0.5 shrink-0" /> Stuur direct foto’s</li>
                   <li className="flex items-start gap-2"><Zap className="h-5 w-5 mt-0.5 shrink-0" /> Reactie binnen 1 werkdag</li>
                   <li className="flex items-start gap-2"><Shield className="h-5 w-5 mt-0.5 shrink-0" /> Vrijblijvend en gratis</li>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                 </ul>
               </div>
               <div className="lg:col-span-4 flex lg:justify-end">
-                <div className="inline-flex items-center justify-center gap-3 rounded-full bg-white px-10 py-5 text-xl font-bold text-[#25D366] shadow-2xl transition-transform group-hover:scale-105">
+                <div className="inline-flex items-center justify-center gap-3 rounded-full bg-primary-900 px-10 py-5 text-xl font-bold text-paper shadow-2xl transition-transform group-hover:scale-105">
                   <MessageCircle className="h-7 w-7" />
                   Start chat
                 </div>
@@ -79,12 +79,12 @@ export default function ContactPage() {
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             <a
               href={`tel:${business.phoneE164}`}
-              className="group flex items-center gap-4 rounded-3xl border border-mist bg-paper p-6 transition-all hover:border-accent-300 hover:bg-white hover:shadow-md"
+              className="group flex min-w-0 items-center gap-4 rounded-3xl border border-mist bg-paper p-6 transition-all hover:border-accent-300 hover:bg-white hover:shadow-md"
             >
-              <div className="grid h-12 w-12 place-items-center rounded-2xl bg-primary-900 text-paper transition-all group-hover:bg-accent-500">
+              <div className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-primary-900 text-paper transition-all group-hover:bg-accent-500">
                 <Phone className="h-5 w-5" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <div className="text-xs font-semibold uppercase tracking-wider text-primary-500">Bel direct</div>
                 <div className="font-display text-lg font-semibold">{business.phone}</div>
               </div>
@@ -92,9 +92,9 @@ export default function ContactPage() {
 
             <a
               href={`mailto:${business.email}`}
-              className="group flex items-center gap-4 rounded-3xl border border-mist bg-paper p-6 transition-all hover:border-accent-300 hover:bg-white hover:shadow-md"
+              className="group flex min-w-0 items-center gap-4 rounded-3xl border border-mist bg-paper p-6 transition-all hover:border-accent-300 hover:bg-white hover:shadow-md"
             >
-              <div className="grid h-12 w-12 place-items-center rounded-2xl bg-primary-900 text-paper transition-all group-hover:bg-accent-500">
+              <div className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-primary-900 text-paper transition-all group-hover:bg-accent-500">
                 <Mail className="h-5 w-5" />
               </div>
               <div className="min-w-0">
@@ -103,13 +103,13 @@ export default function ContactPage() {
               </div>
             </a>
 
-            <div className="group flex items-start gap-4 rounded-3xl border border-mist bg-paper p-6">
+            <div className="group flex min-w-0 items-start gap-4 rounded-3xl border border-mist bg-paper p-6">
               <div className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-primary-900 text-paper">
                 <Clock className="h-5 w-5" />
               </div>
               <div>
                 <div className="text-xs font-semibold uppercase tracking-wider text-primary-500">Bereikbaar</div>
-                <div className="text-sm text-primary-700 leading-relaxed">
+                <div className="text-sm text-primary-600 leading-relaxed">
                   Ma–vr 07:00 – 19:00<br/>
                   Za op afspraak
                 </div>

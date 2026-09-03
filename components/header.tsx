@@ -55,7 +55,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="relative px-4 py-2 text-sm font-medium text-primary-700 transition-colors hover:text-primary-900 group"
+              className="relative px-4 py-2 text-sm font-medium text-primary-600 transition-colors hover:text-primary-900 group"
             >
               {item.label}
               <span className="absolute inset-x-4 -bottom-0.5 h-px scale-x-0 bg-accent-500 transition-transform duration-300 group-hover:scale-x-100" />
@@ -68,7 +68,7 @@ export function Header() {
             href={`https://wa.me/${business.whatsapp.replace('+', '')}?text=${encodeURIComponent(business.whatsappPrefills.general)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#1ebe57] hover:shadow-lg"
+            className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-primary-900 shadow-sm transition-all hover:bg-[#1ebe57] hover:shadow-lg"
           >
             <MessageCircle className="h-4 w-4" />
             <span className="tabular-nums">{business.phone}</span>

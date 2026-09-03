@@ -95,19 +95,19 @@ export default function OverOnsPage() {
         <div className="container-x">
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <div className="font-display text-6xl font-bold text-accent-400">2022</div>
+              <div className="font-display text-6xl font-bold text-accent-300">2022</div>
               <div className="mt-2 text-sm text-primary-300">Opgericht</div>
             </div>
             <div>
-              <div className="font-display text-6xl font-bold text-accent-400">{business.serviceArea.length}</div>
+              <div className="font-display text-6xl font-bold text-accent-300">{business.serviceArea.length}</div>
               <div className="mt-2 text-sm text-primary-300">Plaatsen waar ik werk</div>
             </div>
             <div>
-              <div className="font-display text-6xl font-bold text-accent-400">5 jr</div>
+              <div className="font-display text-6xl font-bold text-accent-300">5 jr</div>
               <div className="mt-2 text-sm text-primary-300">Garantie standaard</div>
             </div>
             <div>
-              <div className="font-display text-6xl font-bold text-accent-400">100%</div>
+              <div className="font-display text-6xl font-bold text-accent-300">100%</div>
               <div className="mt-2 text-sm text-primary-300">Eigen werk, geen onderaannemers</div>
             </div>
           </div>

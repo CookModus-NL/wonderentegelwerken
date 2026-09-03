@@ -29,7 +29,7 @@ export default function HomePage() {
               <p className="mt-6 font-display text-2xl font-medium leading-snug text-primary-900 sm:text-3xl">
                 Ik ben Jaap, jouw vaste tegelzetter uit Breda.
               </p>
-              <h1 className="mt-5 font-display text-[clamp(2.5rem,6vw,4.75rem)] font-bold leading-[1.02] tracking-tight text-primary-900">
+              <h1 className="mt-5 font-display text-[clamp(3.75rem,6vw,4.75rem)] font-bold leading-[1.02] tracking-tight text-primary-900">
                 Tegelwerk dat{' '}
                 <span className="relative inline-block">
                   <span className="relative z-10 text-accent-600">jaren</span>
@@ -46,7 +46,7 @@ export default function HomePage() {
                   href={`https://wa.me/${business.whatsapp.replace('+', '')}?text=${encodeURIComponent(business.whatsappPrefills.offerte)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-[#1ebe57] hover:shadow-lg active:scale-[0.98]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 text-base font-semibold text-primary-900 shadow-sm transition-all hover:bg-[#1ebe57] hover:shadow-lg active:scale-[0.98]"
                 >
                   <MessageCircle className="h-4 w-4" /> WhatsApp Jaap
                 </a>
@@ -215,7 +215,7 @@ export default function HomePage() {
                     </p>
 
                     <div className="mt-8 flex items-center justify-between">
-                      <span className="text-sm font-medium text-primary-700 transition-colors group-hover:text-paper">
+                      <span className="text-sm font-medium text-primary-600 transition-colors group-hover:text-paper">
                         Bekijk dienst
                       </span>
                       <span className="grid h-10 w-10 place-items-center rounded-full bg-primary-900 text-paper transition-all duration-300 group-hover:bg-accent-500 group-hover:rotate-45">
@@ -330,7 +330,7 @@ export default function HomePage() {
         <div className="container-x relative">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
             <div className="max-w-2xl">
-              <div className="eyebrow !text-accent-400 before:!bg-accent-400">Reviews</div>
+              <div className="eyebrow !text-accent-300 before:!bg-accent-400">Reviews</div>
               <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-paper sm:text-5xl">
                 Het werk eerst,<br />
                 <span className="italic font-light text-primary-300">de mond als laatste.</span>
@@ -344,7 +344,7 @@ export default function HomePage() {
                 >
                   <span className="flex items-center gap-1">
                     {Array.from({ length: 5 }).map((_, j) => (
-                      <Star key={j} className="h-4 w-4 fill-accent-400 text-accent-400" />
+                      <Star key={j} className="h-4 w-4 fill-accent-300 text-accent-300" />
                     ))}
                   </span>
                   <span className="font-semibold tabular-nums">5,0</span>
@@ -380,15 +380,15 @@ export default function HomePage() {
                 >
                   <div className="flex gap-0.5 mb-5">
                     {Array.from({ length: t.rating }).map((_, j) => (
-                      <Star key={j} className="h-4 w-4 fill-accent-400 text-accent-400" />
+                      <Star key={j} className="h-4 w-4 fill-accent-300 text-accent-300" />
                     ))}
                   </div>
-                  <blockquote className="font-display text-[17px] leading-relaxed text-paper">
+                  <blockquote className="font-display text-lg leading-relaxed text-paper">
                     &ldquo;{t.text}&rdquo;
                   </blockquote>
                   <figcaption className="mt-6 pt-5 border-t border-primary-700/60 text-sm">
                     <div className="font-semibold text-paper">{t.author}</div>
-                    <div className="text-primary-400 mt-0.5">{t.location} · {t.project}</div>
+                    <div className="text-primary-300 mt-0.5">{t.location} · {t.project}</div>
                   </figcaption>
                 </figure>
               ))}
@@ -397,11 +397,11 @@ export default function HomePage() {
             <div className="rounded-3xl border-2 border-dashed border-primary-700 bg-primary-800/30 p-12 text-center">
               <div className="flex justify-center gap-1 mb-6">
                 {Array.from({ length: 5 }).map((_, j) => (
-                  <Star key={j} className="h-5 w-5 fill-accent-400 text-accent-400" />
+                  <Star key={j} className="h-5 w-5 fill-accent-300 text-accent-300" />
                 ))}
               </div>
               <p className="font-display text-2xl font-semibold text-paper max-w-xl mx-auto leading-snug">
-                Nog geen reviews binnen — <span className="italic text-accent-400">wees de eerste.</span>
+                Nog geen reviews binnen — <span className="italic text-accent-300">wees de eerste.</span>
               </p>
               <p className="mt-4 text-sm text-primary-300 max-w-md mx-auto">
                 Werkte ik onlangs voor je? Ik zou het enorm waarderen als je een korte Google review achterlaat.

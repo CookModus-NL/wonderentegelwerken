@@ -18,7 +18,7 @@ export default function AVPage() {
           {business.legalName} · KvK {business.kvk} · Vestigingsadres: {business.address.street}, {business.address.postalCode} {business.address.city}
         </p>
 
-        <div className="mt-12 space-y-10 text-primary-700 leading-relaxed">
+        <div className="mt-12 space-y-10 text-primary-600 leading-relaxed">
           <section>
             <h2 className="font-display text-2xl font-bold text-primary-900">Artikel 1 – Definities</h2>
             <ol className="mt-4 space-y-2 list-decimal pl-5">

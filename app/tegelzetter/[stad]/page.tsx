@@ -71,7 +71,7 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
           <nav className="text-sm text-primary-500">
             <Link href="/" className="hover:text-accent-600">Home</Link> ·{' '}
             <Link href="/tegelzetter" className="hover:text-accent-600">Werkgebied</Link> ·{' '}
-            <span className="text-primary-700">Tegelzetter {city.name}</span>
+            <span className="text-primary-600">Tegelzetter {city.name}</span>
           </nav>
 
           <div className="mt-8 grid gap-12 lg:grid-cols-12 lg:gap-12 items-center">
@@ -79,7 +79,7 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
               <div className="eyebrow">
                 <MapPin className="h-3 w-3" /> {city.distance} van mijn werkplaats
               </div>
-              <h1 className="mt-6 font-display text-[clamp(2.5rem,6vw,4.75rem)] font-bold leading-[1.02] tracking-tight text-primary-900">
+              <h1 className="mt-6 font-display text-[clamp(3.75rem,6vw,4.75rem)] font-bold leading-[1.02] tracking-tight text-primary-900">
                 Tegelzetter <span className="text-accent-600">{city.name}</span>
               </h1>
               <p className="mt-8 max-w-xl text-lg leading-relaxed text-primary-600 sm:text-xl">
@@ -90,7 +90,7 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
                   href={`https://wa.me/${waNumber}?text=${waText}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-[#1ebe57] hover:shadow-lg"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 text-base font-semibold text-primary-900 shadow-sm transition-all hover:bg-[#1ebe57] hover:shadow-lg"
                 >
                   <MessageCircle className="h-4 w-4" /> WhatsApp Jaap
                 </a>
@@ -116,7 +116,7 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
             Lokale aanpak,<br/>
             <span className="italic font-light text-primary-600">geen standaard pakket.</span>
           </h2>
-          <p className="mt-8 text-lg leading-relaxed text-primary-700">{city.localContext}</p>
+          <p className="mt-8 text-lg leading-relaxed text-primary-600">{city.localContext}</p>
         </div>
       </section>
 
@@ -211,7 +211,7 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
             <div className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-primary-500 mb-6">Ook tegelzetter in</div>
             <div className="flex flex-wrap gap-2">
               {cities.filter(c => c.slug !== city.slug).map(c => (
-                <Link key={c.slug} href={`/tegelzetter/${c.slug}`} className="rounded-full bg-clay px-4 py-2 text-sm text-primary-700 transition-all hover:bg-primary-900 hover:text-paper">
+                <Link key={c.slug} href={`/tegelzetter/${c.slug}`} className="rounded-full bg-clay px-4 py-2 text-sm text-primary-600 transition-all hover:bg-primary-900 hover:text-paper">
                   {c.name} <ArrowUpRight className="inline h-3 w-3" />
                 </Link>
               ))}

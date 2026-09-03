@@ -2,6 +2,12 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  // Twee sessies die tegelijk in deze map bouwen delen anders dezelfde .next en
+  // corrumperen elkaars build (voorval 3 sep 2026 op een andere repo). Vercel en de
+  // gewone `npm run build` zetten VW_DISTDIR niet en houden dus '.next'.
+  // LET OP: Next herschrijft tsconfig.json wanneer distDir afwijkt en zet die map in
+  // `include`. Zet die wijziging terug voor je commit — anders reist een sessie-map mee.
+  distDir: process.env.VW_DISTDIR || '.next',
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [

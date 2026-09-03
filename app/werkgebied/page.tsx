@@ -70,12 +70,12 @@ export default function WerkgebiedPage() {
           {/* Tier 3 */}
           <div>
             <div className="flex items-baseline gap-4 mb-6">
-              <div className="font-display text-2xl font-semibold text-primary-700">Op aanvraag</div>
+              <div className="font-display text-2xl font-semibold text-primary-600">Op aanvraag</div>
               <div className="text-sm text-primary-500">voor grotere projecten</div>
             </div>
             <div className="flex flex-wrap gap-2">
               {tiers.verder.map((city) => (
-                <div key={city} className="rounded-full bg-primary-100 px-4 py-2 text-sm text-primary-700">
+                <div key={city} className="rounded-full bg-primary-100 px-4 py-2 text-sm text-primary-600">
                   {city}
                 </div>
               ))}

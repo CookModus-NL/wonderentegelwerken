@@ -20,24 +20,24 @@ export function Footer() {
                 <span className="block h-3 w-3 rounded-[2px] bg-paper" />
               </div>
               <span className="font-display text-xl font-bold text-paper">
-                Van Wonderen <span className="font-normal text-primary-400">Tegelwerken</span>
+                Van Wonderen <span className="font-normal text-primary-300">Tegelwerken</span>
               </span>
             </Link>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-primary-400">
+            <p className="mt-6 max-w-md text-base leading-relaxed text-primary-300">
               Jaap van Wonderen. Jouw vaste tegelzetter in Breda en West-Brabant. Persoonlijk vakwerk voor badkamer, vloer, wand, terras en kitwerk. Sinds 2022.
             </p>
             <div className="mt-8 flex flex-col gap-3 text-sm">
-              <a href={`tel:${business.phoneE164}`} className="group inline-flex items-center gap-2 text-paper hover:text-accent-400 transition-colors">
+              <a href={`tel:${business.phoneE164}`} className="group inline-flex items-center gap-2 text-paper hover:text-accent-300 transition-colors">
                 <Phone className="h-4 w-4" />
                 <span className="tabular-nums font-semibold">{business.phone}</span>
                 <ArrowUpRight className="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5" />
               </a>
-              <a href={`mailto:${business.email}`} className="group inline-flex items-center gap-2 hover:text-accent-400 transition-colors">
+              <a href={`mailto:${business.email}`} className="group inline-flex items-center gap-2 hover:text-accent-300 transition-colors">
                 <Mail className="h-4 w-4" />
                 {business.email}
                 <ArrowUpRight className="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5" />
               </a>
-              <div className="inline-flex items-start gap-2 text-primary-400">
+              <div className="inline-flex items-start gap-2 text-primary-300">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
                 <span>{business.address.street}<br/>{business.address.postalCode} {business.address.city}</span>
               </div>
@@ -80,7 +80,7 @@ export function Footer() {
               <li><Link href="/privacy" className="text-primary-300 hover:text-paper transition-colors">Privacy</Link></li>
               <li><Link href="/algemene-voorwaarden" className="text-primary-300 hover:text-paper transition-colors">Algemene voorwaarden</Link></li>
             </ul>
-            <div className="mt-6 space-y-1 text-xs text-primary-500">
+            <div className="mt-6 space-y-1 text-xs text-primary-300">
               <div>KvK {business.kvk}</div>
               <div>SBI 4333</div>
             </div>
@@ -90,7 +90,7 @@ export function Footer() {
 
       {/* Sub-footer */}
       <div className="border-t border-primary-800">
-        <div className="container-x py-6 flex flex-col gap-3 text-xs text-primary-500 md:flex-row md:justify-between md:items-center">
+        <div className="container-x py-6 flex flex-col gap-3 text-xs text-primary-300 md:flex-row md:justify-between md:items-center">
           <div>© {new Date().getFullYear()} {business.legalName} · alle rechten voorbehouden</div>
           <div className="flex items-center gap-2">
             <span>Vakwerk uit Breda</span>
@@ -101,7 +101,7 @@ export function Footer() {
               href="https://l3art.nl"
               target="_blank"
               rel="noopener"
-              className="normal-case transition-colors hover:text-accent-400"
+              className="normal-case transition-colors hover:text-accent-300"
             >
               Powered by l3art.nl
             </a>

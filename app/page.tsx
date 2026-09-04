@@ -296,14 +296,19 @@ export default function HomePage() {
                     : 'md:col-span-2'
                 }`}
               >
-                <Image
-                  src={p.hero}
-                  alt={p.title}
-                  fill
-                  sizes={i === 0 ? '(max-width: 768px) 100vw, 60vw' : '(max-width: 768px) 100vw, 33vw'}
-                  className="object-cover"
-                />
-                <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-primary-900 via-primary-900/40 to-transparent" />
+                {/* Het beeld staat met `fill` absoluut; zonder een vak met eigen hoogte
+                    krijgt de kaart onder md hoogte 0 en verdwijnt de hele sectie.
+                    Zelfde idioom als /projecten: aspect op mobiel, volle hoogte in het raster. */}
+                <div className="relative aspect-[4/3] md:h-full">
+                  <Image
+                    src={p.hero}
+                    alt={p.title}
+                    fill
+                    sizes={i === 0 ? '(max-width: 768px) 100vw, 60vw' : '(max-width: 768px) 100vw, 33vw'}
+                    className="object-cover"
+                  />
+                  <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-primary-900 via-primary-900/40 to-transparent" />
+                </div>
                 <div className="absolute inset-x-0 bottom-0 p-6 lg:p-8">
                   <div className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-300">
                     {p.location} · {p.date}

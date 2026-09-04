@@ -93,7 +93,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               const layouts = ['lg:col-span-6 lg:row-span-2', 'lg:col-span-3', 'lg:col-span-3', 'lg:col-span-2', 'lg:col-span-4']
               const span = i === 0 ? layouts[0] : layouts[(i % (layouts.length - 1)) + 1]
               return (
-                <div key={src} className={`relative overflow-hidden rounded-3xl img-zoom ${span}`}>
+                // aspect op mobiel: zonder eigen hoogte krijgt de tegel onder lg hoogte 0
+                // (het beeld staat met `fill` absoluut) en is de hele galerij onzichtbaar.
+                <div key={src} className={`relative aspect-[4/3] overflow-hidden rounded-3xl img-zoom lg:aspect-auto ${span}`}>
                   <Image
                     src={src}
                     alt={`${project.title}, foto ${i + 1}`}

@@ -166,7 +166,7 @@ do_not_use:
 # ---------------------------------------------------------------------------
 contract:
   paden: [/, /diensten/badkamer-renovatie, /projecten/badkamer-juli-2025, /tegelzetter/breda, /contact]
-  viewports: [1440, 390]
+  viewports: [1440, 1024, 390]
   fontfamilies: [Inter Variable, Fraunces Variable]
   fontschaal: [12, 14, 16, 18, 20, 24, 30, 36, 48]
   fontschaal_vloeiend: [60-76]

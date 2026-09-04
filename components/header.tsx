@@ -35,8 +35,8 @@ export function Header() {
           : 'bg-transparent border-b border-transparent'
       )}
     >
-      <div className="container-x flex h-20 items-center justify-between">
-        <Link href="/" className="group flex items-center gap-3" aria-label={business.name}>
+      <div className="container-x flex h-20 flex-nowrap items-center justify-between">
+        <Link href="/" className="group flex shrink-0 items-center gap-2 xl:gap-3" aria-label={business.name}>
           {/* Tegel-mark */}
           <div className="grid grid-cols-2 gap-[3px] transition-transform duration-500 group-hover:rotate-90">
             <span className="block h-3 w-3 rounded-[2px] bg-primary-900" />
@@ -44,18 +44,18 @@ export function Header() {
             <span className="block h-3 w-3 rounded-[2px] bg-accent-500" />
             <span className="block h-3 w-3 rounded-[2px] bg-primary-900" />
           </div>
-          <span className="font-display text-xl font-bold tracking-tight text-primary-900">
+          <span className="whitespace-nowrap font-display text-xl font-bold tracking-tight text-primary-900">
             Van Wonderen
             <span className="ml-2 font-normal text-primary-500">Tegelwerken</span>
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden shrink-0 lg:flex items-center gap-1">
           {nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="relative px-4 py-2 text-sm font-medium text-primary-600 transition-colors hover:text-primary-900 group"
+              className="group relative whitespace-nowrap px-2.5 py-2 text-sm font-medium text-primary-600 transition-colors hover:text-primary-900 xl:px-4"
             >
               {item.label}
               <span className="absolute inset-x-4 -bottom-0.5 h-px scale-x-0 bg-accent-500 transition-transform duration-300 group-hover:scale-x-100" />
@@ -63,12 +63,12 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-2">
+        <div className="hidden shrink-0 lg:flex items-center gap-2">
           <a
             href={`https://wa.me/${business.whatsapp.replace('+', '')}?text=${encodeURIComponent(business.whatsappPrefills.general)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-primary-900 shadow-sm transition-all hover:bg-[#1ebe57] hover:shadow-lg"
+            className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[#25D366] px-4 py-2.5 text-sm font-semibold text-primary-900 shadow-sm transition-all hover:bg-[#1ebe57] hover:shadow-lg xl:px-5"
           >
             <MessageCircle className="h-4 w-4" />
             <span className="tabular-nums">{business.phone}</span>

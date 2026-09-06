@@ -165,7 +165,37 @@ do_not_use:
 # CONTRACT — machinaal gehandhaafd door motor/scripts/designpoort.mjs.
 # ---------------------------------------------------------------------------
 contract:
-  paden: [/, /diensten/badkamer-renovatie, /projecten/badkamer-juli-2025, /tegelzetter/breda, /contact]
+  # PADEN = PAGINATYPES, niet een greep uit de sitemap. Uitgebreid 6 sep 2026
+  # (TAAK-20260904-CONTRACT-PADENDEKKING). Aanleiding, gemeten op jdg: een contrastfout die
+  # op 50 van de 87 live URL's rendert werd door de poort op EEN pagina gezien, omdat het
+  # paginatype waarop hij stond geen pad in het contract had. Een type kan tientallen URL's
+  # dragen; een ongedekt type is geen gaatje maar een gat.
+  # Per regel staat welk TYPE het pad vertegenwoordigt. Een pad TOEVOEGEN verscherpt de norm
+  # en mag de bouwer; een pad WEGHALEN is een ontwerpbesluit. Let op: de YAML-subset van de
+  # poort kent geen commentaar ACHTER een lijstitem — daarom staat het type erboven.
+  paden:
+    # homepage
+    - /
+    # overzicht diensten
+    - /diensten
+    # dienst-detail
+    - /diensten/badkamer-renovatie
+    # overzicht projecten
+    - /projecten
+    # project-detail
+    - /projecten/badkamer-juli-2025
+    # overzicht plaatsen
+    - /tegelzetter
+    # tegelzetter-stad
+    - /tegelzetter/breda
+    # werkgebied
+    - /werkgebied
+    # redactionele pagina
+    - /over-ons
+    # formulierpagina
+    - /contact
+    # juridische pagina
+    - /privacy
   viewports: [1440, 1024, 390]
   fontfamilies: [Inter Variable, Fraunces Variable]
   fontschaal: [12, 14, 16, 18, 20, 24, 30, 36, 48]

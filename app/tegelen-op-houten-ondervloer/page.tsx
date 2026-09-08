@@ -6,34 +6,34 @@ import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
 /**
- * ANTWOORDEENHEID — "Kan er op een houten ondervloer getegeld worden?"
+ * ANTWOORDEENHEID. Vraag: "Kan er op een houten ondervloer getegeld worden?"
  *
  * Waarom deze pagina root-level staat, net als /badkamer-betegelen-tot-plafond: bij twee
  * antwoordeenheden is een /vragen-hub nog steeds dunne inhoud. Bij de derde verhuizen ze
- * samen naar /vragen/<slug> MÉT redirect — dat is dan een ontwerpbesluit (DESIGN.md),
+ * samen naar /vragen/<slug> MÉT redirect. Dat is dan een ontwerpbesluit (DESIGN.md),
  * geen bouwbeslissing.
  *
- * BRONNEN VAN DE HARDE GETALLEN (wet art. 1.1 — niets verzinnen). Alle vier de
+ * BRONNEN VAN DE HARDE GETALLEN (wet art. 1.1, niets verzinnen). Alle vier de
  * vakbronnen zijn op 8 september 2026 gelezen; de citaten zijn letterlijk.
- *  - Forbo Eurocol, "Tegelen op houten vloeren" — max. tegelformaat 30x30, plaatmateriaal
+ *  - Forbo Eurocol, "Tegelen op houten vloeren": max. tegelformaat 30x30, plaatmateriaal
  *    12-18 mm, cementgebonden plaat in de badkamer, balkdikte + hart-op-hartafstand.
- *  - Omnicol, "Tegelen op een houten vloer, kan dat?" (14 april 2020) — doorbuiging L/500,
+ *  - Omnicol, "Tegelen op een houten vloer, kan dat?" (14 april 2020): doorbuiging L/500,
  *    "zo klein mogelijke tegels met een zo breed mogelijke voeg", vloerdikte/deuren, en in
  *    de reactie van Omnicol zelf (28 juli 2020) het oordeel over de natte ruimte.
- *  - codex Nederland, "Tegels op houten ondergrond verlijmen" — ~25 kg/m2 tegelgewicht,
+ *  - codex Nederland, "Tegels op houten ondergrond verlijmen": ~25 kg/m2 tegelgewicht,
  *    minimaal 10x10 tegel, lijmklasse C2 met S1/S2-vervorming.
- *  - Kiwitz, "Tegels op hout verlijmen" — ontkoppelingsmat 9 mm, lijm C2TE-S2, voeg >= 3 mm,
+ *  - Kiwitz, "Tegels op hout verlijmen": ontkoppelingsmat 9 mm, lijm C2TE-S2, voeg >= 3 mm,
  *    boven 30x30 ook de achterzijde inlijmen.
- *  - Tegels in Huis, "Dikte vloertegels + lijm" — keramiek 8-10 mm, lijm 2-5 mm, opbouw ~14 mm.
+ *  - Tegels in Huis, "Dikte vloertegels + lijm": keramiek 8-10 mm, lijm 2-5 mm, opbouw ~14 mm.
  * De opbouwhoogte-optelsom is AFGELEID uit die gepubliceerde componentmaten en staat als
- * afgeleid op de pagina — het is geen meting van iemands vloer.
+ * afgeleid op de pagina; het is geen meting van iemands vloer.
  *
  * EIGEN GEGEVENS (motor_feiten, eigenaar_akkoord=true): garantietermijnen
  * (`wonderen-garantie`), offertebelofte (`wonderen-offerte-belofte`), reactietijd
  * (`wonderen-reactietijd`), werkgebied (`wonderen-werkgebied-kern`), eenmanszaak zonder
  * onderaannemers (`wonderen-persoon-jaap`), werkwijze vloertegelwerk
  * (`wonderen-dienst-vloertegelwerk`). Het project in Teteringen: motor_bewijs
- * `wonderen-project-vloer-2025-03`. Geen bedragen op deze pagina — er is geen
+ * `wonderen-project-vloer-2025-03`. Geen bedragen op deze pagina, want er is geen
  * prijsfeit met eigenaar-akkoord, en een half prijsantwoord is slechter dan geen.
  *
  * Citaten van bewoners zijn openbare forumberichten, met bronlink en zonder achternaam.
@@ -61,19 +61,19 @@ const faqs = [
   },
   {
     q: 'Hoeveel mag mijn vloer doorbuigen?',
-    a: 'Het technische uitgangspunt dat Omnicol noemt is L/500 bij volle belasting, waarbij L de lengte van het bouwdeel is. Op een overspanning van 4 meter is dat 8 millimeter. Wat geen enkele pagina erbij zet: hoe je dat meet. In de praktijk kijk ik naar de balkdikte en de hart-op-hartafstand van de balken — Eurocol noemt die twee samen bepalend voor de stabiliteit — en dat betekent dat er een plank omhoog moet voordat iemand ja of nee kan zeggen. Wie het antwoord geeft zonder onder de vloer te hebben gekeken, gokt.',
+    a: 'Het technische uitgangspunt dat Omnicol noemt is L/500 bij volle belasting, waarbij L de lengte van het bouwdeel is. Op een overspanning van 4 meter is dat 8 millimeter. Wat geen enkele pagina erbij zet: hoe je dat meet. In de praktijk kijk ik naar de balkdikte en de hart-op-hartafstand van de balken. Eurocol noemt die twee samen bepalend voor de stabiliteit. Daarom moet er een plank omhoog voordat iemand ja of nee kan zeggen. Wie het antwoord geeft zonder onder de vloer te hebben gekeken, gokt.',
   },
   {
     q: 'Hoeveel hoger wordt mijn vloer ervan?',
-    a: 'Reken op ongeveer 3,5 tot 4 centimeter als je de gangbare opbouw volgt: een extra plaatlaag van 12 tot 18 mm (Eurocol), een ontkoppelingsmat van 9 mm (Kiwitz) en lijm plus tegel samen zo\'n 14 mm (Tegels in Huis). Die optelsom is afgeleid uit gepubliceerde componentmaten, geen meting van jouw vloer. Ga je de route met zwaluwstaartplaat en lichtbeton, dan wordt het meer. Meet dus vooraf de ruimte onder je binnendeuren en bij de drempel naar de gang — dat is de maat die de beslissing in de praktijk vaak maakt, en hij staat in geen enkel adviesartikel.',
+    a: 'Reken op ongeveer 3,5 tot 4 centimeter als je de gangbare opbouw volgt: een extra plaatlaag van 12 tot 18 mm (Eurocol), een ontkoppelingsmat van 9 mm (Kiwitz) en lijm plus tegel samen zo\'n 14 mm (Tegels in Huis). Die optelsom is afgeleid uit gepubliceerde componentmaten, geen meting van jouw vloer. Ga je de route met zwaluwstaartplaat en lichtbeton, dan wordt het meer. Meet dus vooraf de ruimte onder je binnendeuren en bij de drempel naar de gang. Dat is de maat die de beslissing in de praktijk vaak maakt, en hij staat in geen enkel adviesartikel.',
   },
   {
     q: 'Kan het in een badkamer of toilet op een houten verdiepingsvloer?',
-    a: 'Daar is het antwoord strenger, en dat lees je bijna nergens. Omnicol schrijft in reactie op precies die vraag: "In een vochtige ruimte is het ten strengste af te raden" — dat gaat over rechtstreeks tegelen op houten plaatmateriaal. Eurocol adviseert in badkamers cementgebonden vloerplaten in plaats van hout- of gipsgebonden platen. Kan het? Ja, met een volledig opgebouwde waterdichting onder het tegelwerk. Maar de foutmarge is klein en de schade zit onder de tegel, waar je hem pas ziet als het plafond eronder vlekt.',
+    a: 'Daar is het antwoord strenger, en dat lees je bijna nergens. Omnicol schrijft in reactie op precies die vraag: "In een vochtige ruimte is het ten strengste af te raden". Dat oordeel gaat over rechtstreeks tegelen op houten plaatmateriaal. Eurocol adviseert in badkamers cementgebonden vloerplaten in plaats van hout- of gipsgebonden platen. Kan het? Ja, met een volledig opgebouwde waterdichting onder het tegelwerk. Maar de foutmarge is klein en de schade zit onder de tegel, waar je hem pas ziet als het plafond eronder vlekt.',
   },
   {
     q: 'Is een ontkoppelingsmat genoeg om alles op te lossen?',
-    a: 'Nee. Een ontkoppelingsmat laat de tegelvloer en de ondergrond onafhankelijk van elkaar bewegen, en hij vangt daarmee krimp en uitzetting op. Hij vangt géén doorbuiging op: een vloer die veert onder je voeten blijft veren met een mat erop. Eerst de stijfheid oplossen, dan pas ontkoppelen — in die volgorde, nooit andersom.',
+    a: 'Nee. Een ontkoppelingsmat laat de tegelvloer en de ondergrond onafhankelijk van elkaar bewegen, en hij vangt daarmee krimp en uitzetting op. Hij vangt géén doorbuiging op: een vloer die veert onder je voeten blijft veren met een mat erop. Eerst de stijfheid oplossen, dan pas ontkoppelen. In die volgorde, nooit andersom.',
   },
   {
     q: 'Welke lijm en welke voeg horen hierbij?',
@@ -81,7 +81,7 @@ const faqs = [
   },
   {
     q: 'Houdt een houten balklaag het gewicht van een tegelvloer?',
-    a: 'Een keramische tegelvloer weegt volgens codex ongeveer 25 kg per m2 — inclusief lijm en de extra plaatlaag kom je in de praktijk hoger uit. Bij 42 m2 praat je dus al gauw over meer dan een ton extra permanent op de balklaag. Bij een moderne, goed gedimensioneerde vloer is dat zelden het probleem; bij een oude balklaag met flinke hart-op-hartafstand kan het dat wel zijn. Dat is een vraag voor iemand die de constructie mag beoordelen, en dat ben ik niet.',
+    a: 'Een keramische tegelvloer weegt volgens codex ongeveer 25 kg per m2. Inclusief lijm en de extra plaatlaag kom je in de praktijk hoger uit. Bij 42 m2 praat je dus al gauw over meer dan een ton extra permanent op de balklaag. Bij een moderne, goed gedimensioneerde vloer is dat zelden het probleem; bij een oude balklaag met flinke hart-op-hartafstand kan het dat wel zijn. Dat is een vraag voor iemand die de constructie mag beoordelen, en dat ben ik niet.',
   },
   {
     q: 'Wat als ik het toch gewoon rechtstreeks op de vloerdelen laat lijmen?',
@@ -106,7 +106,7 @@ const poorten = [
     kop: 'Vocht',
     norm: 'Poort 3',
     body:
-      '"Het hout moet niet vochtig (kunnen) worden", schrijft Omnicol. Dat betekent een vochtwerende laag onder de opbouw én weten wat er ónder de vloer gebeurt — een kruipruimte hoort daar ook bij.',
+      '"Het hout moet niet vochtig (kunnen) worden", schrijft Omnicol. Dat betekent een vochtwerende laag onder de opbouw én weten wat er ónder de vloer gebeurt. Een kruipruimte hoort daar ook bij.',
   },
   {
     kop: 'Hoogte',
@@ -137,32 +137,32 @@ const opbouw = [
 const stemmen = [
   {
     tekst: 'Nu heb ik al van diverse kanten gehoord dat over de houten vloerplanken niet getegeld kan worden.',
-    bron: 'Klusidee — Welke ondervloer voor tegels',
+    bron: 'Klusidee: Welke ondervloer voor tegels',
     href: 'https://www.klusidee.nl/Forum/topic/welke-ondervloer-voor-tegels.46231/',
   },
   {
     tekst: 'Dat hebben we overwogen, maar we willen toch het liefste tegels.',
-    bron: 'Klusidee — Welke ondervloer voor tegels',
+    bron: 'Klusidee: Welke ondervloer voor tegels',
     href: 'https://www.klusidee.nl/Forum/topic/welke-ondervloer-voor-tegels.46231/',
   },
   {
     tekst: 'Dan gewoon de houten vloer er helemaal uithalen, en een beton vloer storten.',
-    bron: 'Klusidee — Welke ondervloer voor tegels',
+    bron: 'Klusidee: Welke ondervloer voor tegels',
     href: 'https://www.klusidee.nl/Forum/topic/welke-ondervloer-voor-tegels.46231/',
   },
   {
     tekst: 'Aan maximale ruimte die ik omhoog kan gaan heb ik ongeveer 5 centimeter.',
-    bron: 'Klusidee — Vloerverwarming op houten ondervloer',
+    bron: 'Klusidee: Vloerverwarming op houten ondervloer',
     href: 'https://www.klusidee.nl/Forum/topic/vloerverwarming-op-houten-ondervloer.56363/',
   },
   {
     tekst: 'Kan het niet zijn dat op een gegeven moment deze laag breekt door het werken van de eronderliggende vloer?',
-    bron: 'Klusidee — Vloerverwarming op houten ondervloer',
+    bron: 'Klusidee: Vloerverwarming op houten ondervloer',
     href: 'https://www.klusidee.nl/Forum/topic/vloerverwarming-op-houten-ondervloer.56363/',
   },
   {
     tekst: 'Zo zweeft je vloer en kan het niet gaan scheuren. Want houten vloeren bewegen.',
-    bron: 'Klusidee — Vloerverwarming op houten ondervloer',
+    bron: 'Klusidee: Vloerverwarming op houten ondervloer',
     href: 'https://www.klusidee.nl/Forum/topic/vloerverwarming-op-houten-ondervloer.56363/',
   },
 ]
@@ -218,7 +218,7 @@ export default function HoutenOndervloerPage() {
             </h1>
 
             <p className="mt-8 text-xl leading-relaxed text-primary-900">
-              Ja, het kan — maar zelden met de tegel die je in gedachten hebt. De twee Nederlandse
+              Ja, het kan. Maar zelden met de tegel die je in gedachten hebt. De twee Nederlandse
               lijmfabrikanten die deze vraag technisch beantwoorden komen op hetzelfde uit: op een
               houten vloer horen kleine tegels met brede voegen, en de vloer mag onder volle
               belasting niet meer dan L/500 doorbuigen. Forbo Eurocol adviseert daarbij niet groter
@@ -292,7 +292,7 @@ export default function HoutenOndervloerPage() {
             Wie deze vraag online stelt, krijgt bijna overal hetzelfde antwoord: het kan, mits je
             een flexibele lijm en een ontkoppelingsmat gebruikt. Dat klopt, en het is onvolledig.
             De twee fabrikanten die er een getal bij durven te zetten, zetten dat getal op de
-            tegelmaat — en dat is precies het deel van de beslissing dat de meeste mensen al hadden
+            tegelmaat. Dat is precies het deel van de beslissing dat de meeste mensen al hadden
             genomen voordat ze gingen zoeken.
           </p>
 
@@ -302,7 +302,7 @@ export default function HoutenOndervloerPage() {
               30 x 30-tegels.&rdquo;
             </blockquote>
             <figcaption className="mt-4 text-sm text-primary-500">
-              Forbo Eurocol, <em>Tegelen op houten vloeren</em> — gelezen 8 september 2026
+              Forbo Eurocol, <em>Tegelen op houten vloeren</em> &middot; gelezen 8 september 2026
             </figcaption>
           </figure>
 
@@ -313,7 +313,7 @@ export default function HoutenOndervloerPage() {
               tegels.&rdquo;
             </blockquote>
             <figcaption className="mt-4 text-sm text-primary-500">
-              Omnicol, <em>Tegelen op een houten vloer, kan dat?</em> — gelezen 8 september 2026
+              Omnicol, <em>Tegelen op een houten vloer, kan dat?</em> &middot; gelezen 8 september 2026
             </figcaption>
           </figure>
 
@@ -323,7 +323,7 @@ export default function HoutenOndervloerPage() {
             antwoord niet een sterkere lijm maar een andere ondergrond: Omnicol beschrijft de route
             met een zwaluwstaartplaat, lichtbeton en een dunne cementdekvloer, en schrijft erbij dat
             daarmee &ldquo;alle beperkingen die aan een houten ondergrond werden gesteld&rdquo;
-            vervallen. Logisch — vanaf dat moment leg je niet meer op hout.
+            vervallen. Logisch: vanaf dat moment leg je niet meer op hout.
           </p>
 
           <div className="mt-16 grid gap-12 lg:grid-cols-12 lg:items-start lg:gap-16">
@@ -342,7 +342,7 @@ export default function HoutenOndervloerPage() {
               </h3>
               <p className="mt-6 text-base leading-relaxed text-primary-600">
                 Dit is 42 m&sup2; keramiek 80&times;80 in betonlook, in Teteringen. Precies het
-                formaat waar de fabrikanten op hout voor waarschuwen — en het kon hier wél, omdat
+                formaat waar de fabrikanten op hout voor waarschuwen. Hier kon het wél, omdat
                 deze tegels op een geëgaliseerde bestaande ondervloer liggen en niet op een houten
                 balklaag. Datzelfde tegelpakket, één laag hout eronder, was een ander gesprek
                 geweest. Dat verschil is niet zichtbaar op de foto, en het is het enige dat telt.
@@ -367,8 +367,8 @@ export default function HoutenOndervloerPage() {
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
             Elk artikel beschrijft de opbouw: extra plaatmateriaal, een ontkoppelingsmat, flexlijm,
-            tegel. Geen enkel artikel telt hem op. Omnicol waarschuwt wel — &ldquo;je moet ook de
-            deur(en) nog open kunnen krijgen&rdquo; — maar zonder getal. Hier staan de maten die de
+            tegel. Geen enkel artikel telt hem op. Omnicol waarschuwt er wel voor (&ldquo;je moet
+            ook de deur(en) nog open kunnen krijgen&rdquo;), maar zonder getal. Hier staan de maten die de
             fabrikanten zelf publiceren, bij elkaar.
           </p>
 
@@ -388,7 +388,7 @@ export default function HoutenOndervloerPage() {
               <dt className="sm:col-span-6">
                 <span className="text-lg font-semibold text-primary-900">Totaal boven je huidige vloer</span>
                 <span className="mt-1 block text-sm text-primary-500">
-                  optelsom van gepubliceerde componentmaten — afgeleid, geen meting van jouw vloer
+                  optelsom van gepubliceerde componentmaten: afgeleid, geen meting van jouw vloer
                 </span>
               </dt>
               <dd className="font-display text-3xl font-bold tabular-nums text-primary-900 sm:col-span-3">
@@ -429,13 +429,13 @@ export default function HoutenOndervloerPage() {
                 In de reacties onder het Omnicol-artikel vraagt iemand of tegels rechtstreeks op
                 watervast plaatmateriaal mogen, zonder ontkoppelingsmat. Omnicol antwoordt zelf, en
                 dat antwoord staat in geen enkele adviespagina die je bovenaan de zoekresultaten
-                vindt: het kan alleen als de ondergrond volledig stabiel is — twee platen kruislings
-                op elkaar, balkafstand maximaal 40 cm, geen te verwachten vervorming — en daarna
+                vindt: het kan alleen als de ondergrond volledig stabiel is. Twee platen kruislings
+                op elkaar, balkafstand maximaal 40 cm, geen te verwachten vervorming. Daarna
                 volgt de zin die telt.
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-300">
                 Forbo Eurocol wijst dezelfde kant op: in badkamers adviseren zij cementgebonden
-                vloerplaten in plaats van hout- of gipsgebonden platen. Kan het? Ja — met een
+                vloerplaten in plaats van hout- of gipsgebonden platen. Kan het? Ja, met een
                 volledig opgebouwde waterdichting ónder het tegelwerk, want tegelwerk en voegwerk
                 zijn zelf niet waterdicht. Maar de foutmarge is klein, en de schade laat zich pas
                 zien als het plafond van de kamer eronder gaat vlekken.
@@ -447,8 +447,8 @@ export default function HoutenOndervloerPage() {
               </blockquote>
               <p className="mt-6 text-base leading-relaxed text-primary-300">
                 Omnicol, in een reactie onder het eigen artikel, over rechtstreeks tegelen op houten
-                plaatmateriaal. Een lijmfabrikant heeft geen enkel commercieel belang bij die zin —
-                en juist daarom is het de zin die je wilt lezen voordat je begint.
+                plaatmateriaal. Een lijmfabrikant heeft geen enkel commercieel belang bij die zin.
+                Juist daarom is het de zin die je wilt lezen voordat je begint.
               </p>
               <a
                 href="https://blog.omnicol.eu/tegelen-op-een-houten-vloer/"
@@ -496,7 +496,7 @@ export default function HoutenOndervloerPage() {
           <p className="mt-12 max-w-2xl text-base leading-relaxed text-primary-600">
             Mijn eerlijke lezing daarvan: &quot;het kan niet&quot; is te kort door de bocht, en
             &quot;het kan met flexlijm&quot; ook. Wat er werkelijk gebeurt, is dat de vier poorten
-            hierboven één voor één langskomen — en dat de meeste mensen op poort 2 of poort 4
+            hierboven één voor één langskomen, en dat de meeste mensen op poort 2 of poort 4
             stranden, niet op de lijm.
           </p>
         </div>
@@ -524,7 +524,7 @@ export default function HoutenOndervloerPage() {
                 waar nodig egaliseren, de juiste lijm en voorlijm bij jouw tegeltype kiezen, en de
                 dilataties op de juiste plek zetten. Egaliseren reken ik apart per m&sup2; en dat
                 zie je terug op de offerte, zodat het geen open eind is. Je krijgt die offerte
-                gespecificeerd, zonder kleine lettertjes, binnen 5 dagen — en via WhatsApp heb je
+                gespecificeerd, zonder kleine lettertjes, binnen 5 dagen. Via WhatsApp heb je
                 binnen 1 werkdag antwoord.
               </p>
             </div>

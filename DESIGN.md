@@ -192,6 +192,8 @@ contract:
     - /werkgebied
     # redactionele pagina
     - /over-ons
+    # antwoordpagina (antwoordlaag: één klantvraag, volledig beantwoord)
+    - /badkamer-betegelen-tot-plafond
     # formulierpagina
     - /contact
     # juridische pagina

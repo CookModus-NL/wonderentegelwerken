@@ -48,6 +48,13 @@ ${plaatsen}
 ${werk}
 - Overzicht: ${base}/projecten
 
+## Beantwoorde klantvragen
+- ${base}/badkamer-betegelen-tot-plafond : "Moet de badkamer tot het plafond betegeld worden?"
+  Kort antwoord: nee, dat is niet verplicht. De bouwregels eisen alleen dat de wand geen water
+  opneemt — bij nieuwbouw tot 1,2 m, en bij bad of douche tot 2,1 m over minstens 3 m lengte
+  (Besluit bouwwerken leefomgeving art. 4.120); bij bestaande bouw 1 m (art. 3.65). Boven die
+  hoogtes is het een keuze van de bewoner. De eis geldt voor de wand, niet voor het materiaal.
+
 ## Pagina's
 - ${base}/ : wat Van Wonderen doet en voor wie
 - ${base}/tegelzetter : het vak zelf — hoe tegelwerk bij Van Wonderen loopt

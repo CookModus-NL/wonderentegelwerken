@@ -159,6 +159,27 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               </details>
             ))}
           </dl>
+
+          {service.answers && service.answers.length > 0 && (
+            <div className="mt-16 border-t border-mist pt-10">
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
+                Uitgebreid antwoord
+              </div>
+              <ul className="mt-6 space-y-8">
+                {service.answers.map((a) => (
+                  <li key={a.href}>
+                    <Link
+                      href={a.href}
+                      className="font-display text-xl font-semibold text-primary-900 underline decoration-mist underline-offset-4 transition-colors hover:text-accent-600"
+                    >
+                      {a.label}
+                    </Link>
+                    <p className="mt-3 max-w-2xl text-base leading-relaxed text-primary-600">{a.teaser}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </section>
 

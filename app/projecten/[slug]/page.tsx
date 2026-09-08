@@ -125,6 +125,27 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         </section>
       )}
 
+      {/* VRAAG BIJ DIT SOORT WERK — antwoordlaag */}
+      {project.category === 'badkamer' && (
+        <section className="bg-paper pt-20">
+          <div className="container-tight border-y border-mist py-10">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
+              Vraag die hierbij hoort
+            </div>
+            <Link
+              href="/badkamer-betegelen-tot-plafond"
+              className="mt-4 inline-block font-display text-xl font-semibold text-primary-900 underline decoration-mist underline-offset-4 transition-colors hover:text-accent-600"
+            >
+              Moet de badkamer tot het plafond betegeld worden?
+            </Link>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-primary-600">
+              Wat de bouwregels echt eisen, waar de beslissing smaak wordt, en wat het voor het
+              tegelwerk betekent.
+            </p>
+          </div>
+        </section>
+      )}
+
       {/* MEER PROJECTEN */}
       <section className="bg-paper py-20">
         <div className="container-x">

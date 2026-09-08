@@ -18,6 +18,8 @@ export type Service = {
   icon: LucideIcon
   hero: string
   faqs: { q: string; a: string }[]
+  /** Antwoordeenheden elders op de site die bij deze dienst horen (antwoordlaag). */
+  answers?: { href: string; label: string; teaser: string }[]
 }
 
 export const services: Service[] = [
@@ -45,6 +47,14 @@ Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We besp
       { q: 'Hoe lang duurt een gemiddelde badkamerrenovatie?', a: 'Voor een standaard badkamer van 4 tot 6 m² plan ik 2 tot 3 weken in. Grote of complexe ruimtes 3 tot 4 weken.' },
       { q: 'Mag ik mijn eigen tegels uitkiezen?', a: 'Ja. Ik adviseer graag bij vaste leveranciers, maar je bent vrij om elders te kopen. Ik verwerk alles vakkundig.' },
       { q: 'Kan ik je via WhatsApp foto’s sturen voor een eerste prijs?', a: 'Liefst zelfs. Stuur de afmetingen en foto’s van de huidige ruimte naar 06-18249249. Je krijgt binnen 1 werkdag een eerste indicatie.' },
+    ],
+    answers: [
+      {
+        href: '/badkamer-betegelen-tot-plafond',
+        label: 'Moet de badkamer tot het plafond betegeld worden?',
+        teaser:
+          'Wat de bouwregels echt eisen (1,2 m — en 2,1 m bij de douche), waar die 1,20 meter uit alle adviesartikelen vandaan komt, en welk deel van de keuze echt van jou is.',
+      },
     ],
   },
   {
@@ -95,6 +105,14 @@ Ook stuc-look, spachtelputz en decoratieve wandpanelen behoren tot mijn werk. Vo
     faqs: [
       { q: 'Kun je ook een visgraat-patroon of kruisverband?', a: 'Ja, elk decoratief patroon. Voor visgraat reken ik wat extra materiaalverlies. Daar is geen omheen.' },
       { q: 'Doe je ook stuc-look of mineraalverf?', a: 'Ja, vaak in combinatie met tegelwerk in dezelfde ruimte. Dat geeft een hele rustige uitstraling.' },
+    ],
+    answers: [
+      {
+        href: '/badkamer-betegelen-tot-plafond',
+        label: 'Moet de badkamer tot het plafond betegeld worden?',
+        teaser:
+          'Wat de bouwregels echt eisen (1,2 m — en 2,1 m bij de douche), waar die 1,20 meter uit alle adviesartikelen vandaan komt, en welk deel van de keuze echt van jou is.',
+      },
     ],
   },
   {

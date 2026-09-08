@@ -85,6 +85,8 @@ const map = {
   '/over-ons': newest(fileDate('app/over-ons/page.tsx'), d.business),
   '/werkgebied': newest(fileDate('app/werkgebied/page.tsx'), d.cities),
   '/contact': newest(fileDate('app/contact/page.tsx'), d.business),
+  // Antwoordeenheid: één losstaande pagina, dus één bestand bepaalt de datum.
+  '/badkamer-betegelen-tot-plafond': fileDate('app/badkamer-betegelen-tot-plafond/page.tsx'),
 }
 
 const groups = [

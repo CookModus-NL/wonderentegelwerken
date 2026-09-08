@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, MapPin, Calendar, Ruler, Layers, ArrowUpRight } from 'lucide-react'
 import { projects } from '@/content/projects'
+import type { Project } from '@/content/projects'
 import type { Metadata } from 'next'
 
 export const dynamicParams = false
@@ -20,6 +21,25 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: project.description,
     openGraph: { images: [project.hero] },
   }
+}
+
+/**
+ * Antwoordeenheid die bij dit soort werk hoort (antwoordlaag). Per categorie hoogstens
+ * één, zodat een projectpagina niet in een linkverzameling verandert.
+ */
+const antwoordBijCategorie: Partial<Record<Project['category'], { href: string; label: string; teaser: string }>> = {
+  badkamer: {
+    href: '/badkamer-betegelen-tot-plafond',
+    label: 'Moet de badkamer tot het plafond betegeld worden?',
+    teaser:
+      'Wat de bouwregels echt eisen, waar de beslissing smaak wordt, en wat het voor het tegelwerk betekent.',
+  },
+  vloer: {
+    href: '/tegelen-op-houten-ondervloer',
+    label: 'Kan er op een houten ondervloer getegeld worden?',
+    teaser:
+      'Deze vloer ligt op een geëgaliseerde ondervloer. Op hout gelden andere maten: maximaal 30×30 volgens de lijmfabrikanten, en doorbuiging onder L/500.',
+  },
 }
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -126,21 +146,20 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       )}
 
       {/* VRAAG BIJ DIT SOORT WERK — antwoordlaag */}
-      {project.category === 'badkamer' && (
+      {antwoordBijCategorie[project.category] && (
         <section className="bg-paper pt-20">
           <div className="container-tight border-y border-mist py-10">
             <div className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
               Vraag die hierbij hoort
             </div>
             <Link
-              href="/badkamer-betegelen-tot-plafond"
+              href={antwoordBijCategorie[project.category]!.href}
               className="mt-4 inline-block font-display text-xl font-semibold text-primary-900 underline decoration-mist underline-offset-4 transition-colors hover:text-accent-600"
             >
-              Moet de badkamer tot het plafond betegeld worden?
+              {antwoordBijCategorie[project.category]!.label}
             </Link>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-primary-600">
-              Wat de bouwregels echt eisen, waar de beslissing smaak wordt, en wat het voor het
-              tegelwerk betekent.
+              {antwoordBijCategorie[project.category]!.teaser}
             </p>
           </div>
         </section>

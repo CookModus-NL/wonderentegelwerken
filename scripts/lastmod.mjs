@@ -87,6 +87,7 @@ const map = {
   '/contact': newest(fileDate('app/contact/page.tsx'), d.business),
   // Antwoordeenheid: één losstaande pagina, dus één bestand bepaalt de datum.
   '/badkamer-betegelen-tot-plafond': fileDate('app/badkamer-betegelen-tot-plafond/page.tsx'),
+  '/tegelen-op-houten-ondervloer': fileDate('app/tegelen-op-houten-ondervloer/page.tsx'),
 }
 
 const groups = [

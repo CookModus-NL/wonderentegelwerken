@@ -194,6 +194,7 @@ contract:
     - /over-ons
     # antwoordpagina (antwoordlaag: één klantvraag, volledig beantwoord)
     - /badkamer-betegelen-tot-plafond
+    - /tegelen-op-houten-ondervloer
     # formulierpagina
     - /contact
     # juridische pagina

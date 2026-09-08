@@ -55,6 +55,12 @@ Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We besp
         teaser:
           'Wat de bouwregels echt eisen (1,2 m — en 2,1 m bij de douche), waar die 1,20 meter uit alle adviesartikelen vandaan komt, en welk deel van de keuze echt van jou is.',
       },
+      {
+        href: '/tegelen-op-houten-ondervloer',
+        label: 'Kan er op een houten ondervloer getegeld worden?',
+        teaser:
+          'Voor een badkamer op een houten verdiepingsvloer geldt het strengste antwoord: Omnicol raadt rechtstreeks tegelen op houten plaatmateriaal in een vochtige ruimte ten strengste af.',
+      },
     ],
   },
   {
@@ -82,6 +88,14 @@ Voor grootformaat tegels (60×120 of groter) werk ik met vloerverwarmings-vriend
       { q: 'Wat zit er in de prijs per m²?', a: 'Lijm, voorlijm (egaliseren oppervlakkig), eventueel click-tegels en voegwerk. Inclusief btw voor particulieren. Tegels en plinten apart.' },
       { q: 'En de plinten?', a: 'Plinten zijn 60×60 mm en worden per strekkende meter geprijsd inclusief afkitten. Komt apart op de offerte zodat je precies ziet wat je krijgt.' },
       { q: 'Wat als de ondervloer ongelijk is?', a: 'Bij grotere oneffenheden egaliseer ik los. Dat reken ik per m² apart. We bespreken vooraf wat nodig is.' },
+    ],
+    answers: [
+      {
+        href: '/tegelen-op-houten-ondervloer',
+        label: 'Kan er op een houten ondervloer getegeld worden?',
+        teaser:
+          'Wat de lijmfabrikanten echt eisen (maximaal 30×30 en doorbuiging onder L/500), hoeveel hoogte de oplossing kost, en waarom de tegelmaat vaker het probleem is dan de vloer.',
+      },
     ],
   },
   {

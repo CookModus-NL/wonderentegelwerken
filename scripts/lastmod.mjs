@@ -88,6 +88,7 @@ const map = {
   // Antwoordeenheid: één losstaande pagina, dus één bestand bepaalt de datum.
   '/badkamer-betegelen-tot-plafond': fileDate('app/badkamer-betegelen-tot-plafond/page.tsx'),
   '/tegelen-op-houten-ondervloer': fileDate('app/tegelen-op-houten-ondervloer/page.tsx'),
+  '/losse-tegels-en-scheurende-voegen': fileDate('app/losse-tegels-en-scheurende-voegen/page.tsx'),
 }
 
 const groups = [

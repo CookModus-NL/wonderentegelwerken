@@ -89,6 +89,7 @@ const map = {
   '/badkamer-betegelen-tot-plafond': fileDate('app/badkamer-betegelen-tot-plafond/page.tsx'),
   '/tegelen-op-houten-ondervloer': fileDate('app/tegelen-op-houten-ondervloer/page.tsx'),
   '/losse-tegels-en-scheurende-voegen': fileDate('app/losse-tegels-en-scheurende-voegen/page.tsx'),
+  '/tegelvloer-belopen-en-vloerverwarming-aanzetten': fileDate('app/tegelvloer-belopen-en-vloerverwarming-aanzetten/page.tsx'),
 }
 
 const groups = [

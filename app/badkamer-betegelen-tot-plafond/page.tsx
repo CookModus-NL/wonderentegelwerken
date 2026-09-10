@@ -450,6 +450,9 @@ export default function TotPlafondBetegelenPage() {
             <Link href="/tegelen-op-houten-ondervloer" className="btn-secondary">
               Tegelen op een houten ondervloer?
             </Link>
+            <Link href="/losse-tegels-en-scheurende-voegen" className="btn-secondary">
+              Tegels los of voeg gescheurd?
+            </Link>
             <Link href="/werkgebied" className="btn-secondary">
               Werkgebied
             </Link>

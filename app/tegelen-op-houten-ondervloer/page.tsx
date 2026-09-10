@@ -607,6 +607,9 @@ export default function HoutenOndervloerPage() {
             <Link href="/badkamer-betegelen-tot-plafond" className="btn-secondary">
               Tot het plafond betegelen?
             </Link>
+            <Link href="/losse-tegels-en-scheurende-voegen" className="btn-secondary">
+              Tegels los of voeg gescheurd?
+            </Link>
             <Link href="/werkgebied" className="btn-secondary">
               Werkgebied
             </Link>

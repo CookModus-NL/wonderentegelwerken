@@ -195,6 +195,7 @@ contract:
     # antwoordpagina (antwoordlaag: één klantvraag, volledig beantwoord)
     - /badkamer-betegelen-tot-plafond
     - /tegelen-op-houten-ondervloer
+    - /losse-tegels-en-scheurende-voegen
     # formulierpagina
     - /contact
     # juridische pagina

@@ -96,6 +96,12 @@ Voor grootformaat tegels (60×120 of groter) werk ik met vloerverwarmings-vriend
         teaser:
           'Wat de lijmfabrikanten echt eisen (maximaal 30×30 en doorbuiging onder L/500), hoeveel hoogte de oplossing kost, en waarom de tegelmaat vaker het probleem is dan de vloer.',
       },
+      {
+        href: '/losse-tegels-en-scheurende-voegen',
+        label: 'Wat gebeurt er als er later tegels loskomen of een voeg scheurt?',
+        teaser:
+          'Wie herstelt het en wie betaalt: de garantietermijn, de vier vragen die de uitkomst bepalen, en de wetsartikelen over aanneming van werk letterlijk erbij.',
+      },
     ],
   },
   {
@@ -174,6 +180,14 @@ Ook voor compleet nieuw voegwerk of voegen herstellen kun je bij me terecht. Gar
     faqs: [
       { q: 'Waarom maar 1 jaar garantie op kitwerk?', a: 'Kit is een onderhoudsgevoelig product. Afhankelijk van gebruik, vocht en schoonmaakmiddelen kan het na verloop verkleuren of barsten. Een jaar garantie is reëel. Voor het tegelwerk zelf geef ik 5 jaar.' },
       { q: 'Hoe lang duurt een gemiddelde kitklus?', a: 'Een hele badkamer hervoegen en kitten meestal 1 werkdag. Losse plekken vaak een paar uur, voorrij en uitvoering.' },
+    ],
+    answers: [
+      {
+        href: '/losse-tegels-en-scheurende-voegen',
+        label: 'Wat gebeurt er als er later tegels loskomen of een voeg scheurt?',
+        teaser:
+          'Waar mijn garantie ophoudt, wat het Burgerlijk Wetboek erover zegt, en hoe je aan het patroon ziet of de beweging in het tegelwerk of in de ondergrond zit.',
+      },
     ],
   },
   {

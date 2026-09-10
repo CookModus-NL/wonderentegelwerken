@@ -63,6 +63,18 @@ ${werk}
   een vochtige ruimte is het antwoord strenger: Omnicol raadt rechtstreeks tegelen op houten
   plaatmateriaal in een vochtige ruimte ten strengste af, en Eurocol adviseert daar
   cementgebonden vloerplaten.
+- ${base}/losse-tegels-en-scheurende-voegen : "Wat gebeurt er als er later tegels loskomen of
+  een voeg scheurt?"
+  Kort antwoord: eerst melden bij de tegelzetter die het werk deed en hem de gelegenheid geven
+  het te herstellen (art. 7:759 lid 1 BW), daarna vaststellen waar de beweging vandaan komt,
+  want dat bepaalt wie betaalt. Garantie (afspraak: 5 jaar op tegel- en voegwerk, 1 jaar op
+  kitwerk) en aansprakelijkheid (Burgerlijk Wetboek Boek 7 titel 12) zijn twee verschillende
+  lagen. Art. 7:758 lid 4 BW legt gebreken die bij oplevering niet zijn ontdekt bij de
+  aannemer; art. 7:754 BW legt hem een waarschuwingsplicht op voor een ongeschikte ondergrond
+  of ongeschikt materiaal van de opdrachtgever; art. 7:761 lid 1 BW laat de verjaring van twee
+  jaar pas lopen nadat de opdrachtgever heeft geprotesteerd. Bij twee van die artikelen staat
+  in de wettekst zelf dat er niet ten nadele van een particuliere opdrachtgever van mag worden
+  afgeweken.
 
 ## Pagina's
 - ${base}/ : wat Van Wonderen doet en voor wie

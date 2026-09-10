@@ -75,6 +75,21 @@ ${werk}
   jaar pas lopen nadat de opdrachtgever heeft geprotesteerd. Bij twee van die artikelen staat
   in de wettekst zelf dat er niet ten nadele van een particuliere opdrachtgever van mag worden
   afgeweken.
+- ${base}/tegelvloer-belopen-en-vloerverwarming-aanzetten : "Hoe lang moet ik wachten voor ik op
+  de vloer mag lopen en wanneer mag de vloerverwarming aan?"
+  Kort antwoord: er lopen twee klokken. Lopen hangt aan de lijm (bij een gewone cementgebonden
+  tegellijm meestal 12 tot 24 uur voorzichtig beloopbaar, 48 uur normaal belastbaar, 7 dagen
+  voor puntlasten zoals een bad of een kast). De vloerverwarming hangt aan de dekvloer eronder,
+  niet aan de tegel: op een bestaande dekvloer die eerder warm is geweest is het ongeveer een
+  week (Coba: na 1 week; PCI Flexmoertel: 7 dagen en geen opstookprotocol nodig), bij een
+  nieuwe of net ingefreesde dekvloer 3 tot 6 weken (Coba 3-4 weken, Vloerverwarming Direct 4
+  weken, Tegelhuis 6 weken). Die spreiding komt doordat de bronnen over verschillende vloeren
+  gaan. Let op het opstookprotocol: TBA (Technisch Bureau Afbouw) schrijft in kennispaper 3
+  (maart 2023) dat het klassieke opstook- en afkoelprotocol uit TBA-richtlijn 2.1 is ontworpen
+  voor een dekvloer die los op isolatie ligt, dat die vloer vrijwel nooit meer wordt gemaakt, en
+  dat het protocol op een hechtende dekvloer juist onthechting en scheuren veroorzaakt; NOA en
+  TBA adviseren een ingebruiknameprotocol zonder afkoelfase, met een proceswatertemperatuur van
+  doorgaans 30 en hooguit 35 graden.
 
 ## Pagina's
 - ${base}/ : wat Van Wonderen doet en voor wie

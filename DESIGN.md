@@ -196,6 +196,7 @@ contract:
     - /badkamer-betegelen-tot-plafond
     - /tegelen-op-houten-ondervloer
     - /losse-tegels-en-scheurende-voegen
+    - /tegelvloer-belopen-en-vloerverwarming-aanzetten
     # formulierpagina
     - /contact
     # juridische pagina

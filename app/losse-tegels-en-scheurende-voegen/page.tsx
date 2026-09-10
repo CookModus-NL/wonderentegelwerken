@@ -610,7 +610,15 @@ export default function LosseTegelsPage() {
                 eerst vlak maken en waar nodig egaliseren, de juiste lijm en voorlijm bij jouw
                 tegeltype, en de dilataties op de juiste plek. Bij vloerverwarming gebruik ik
                 vloerverwarmingsvriendelijke lijm, houd ik de juiste droogtijd aan en gaat de
-                verwarming gefaseerd aan. Meer daarover staat op de pagina over{' '}
+                verwarming gefaseerd aan; welke termijnen daarbij horen en waarom de adviezen
+                daarover van 7 dagen tot 6 weken uiteenlopen, staat op de pagina over{' '}
+                <Link
+                  href="/tegelvloer-belopen-en-vloerverwarming-aanzetten"
+                  className="inline-flex min-h-11 items-center underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
+                >
+                  wanneer je op de vloer mag lopen en de vloerverwarming aan mag
+                </Link>
+                . Meer over het leggen zelf staat op de pagina over{' '}
                 <Link
                   href="/diensten/vloertegels"
                   className="inline-flex min-h-11 items-center underline decoration-primary-300 underline-offset-4 hover:text-accent-600"

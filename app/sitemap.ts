@@ -43,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry('/badkamer-betegelen-tot-plafond', 0.8, 'monthly'),
     entry('/tegelen-op-houten-ondervloer', 0.8, 'monthly'),
     entry('/losse-tegels-en-scheurende-voegen', 0.8, 'monthly'),
+    entry('/tegelvloer-belopen-en-vloerverwarming-aanzetten', 0.8, 'monthly'),
     ...services.map((s) => entry(`/diensten/${s.slug}`, 0.8, 'monthly')),
     ...projects.map((p) => entry(`/projecten/${p.slug}`, 0.7, 'yearly')),
     // Lokale SEO landingspagina's per plaats

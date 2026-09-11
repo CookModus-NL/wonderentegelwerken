@@ -53,7 +53,7 @@ Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We besp
         href: '/badkamer-betegelen-tot-plafond',
         label: 'Moet de badkamer tot het plafond betegeld worden?',
         teaser:
-          'Wat de bouwregels echt eisen (1,2 m — en 2,1 m bij de douche), waar die 1,20 meter uit alle adviesartikelen vandaan komt, en welk deel van de keuze echt van jou is.',
+          'Wat de bouwregels echt eisen (1,2 m, bij de douche 2,1 m), waar die 1,20 meter uit alle adviesartikelen vandaan komt, en welk deel van de keuze echt van jou is.',
       },
       {
         href: '/tegelen-op-houten-ondervloer',
@@ -143,7 +143,7 @@ Ook stuc-look, spachtelputz en decoratieve wandpanelen behoren tot mijn werk. Vo
         href: '/badkamer-betegelen-tot-plafond',
         label: 'Moet de badkamer tot het plafond betegeld worden?',
         teaser:
-          'Wat de bouwregels echt eisen (1,2 m — en 2,1 m bij de douche), waar die 1,20 meter uit alle adviesartikelen vandaan komt, en welk deel van de keuze echt van jou is.',
+          'Wat de bouwregels echt eisen (1,2 m, bij de douche 2,1 m), waar die 1,20 meter uit alle adviesartikelen vandaan komt, en welk deel van de keuze echt van jou is.',
       },
     ],
   },

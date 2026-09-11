@@ -6,14 +6,14 @@ import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
 /**
- * ANTWOORDEENHEID — "Moet de badkamer tot het plafond betegeld worden?"
+ * ANTWOORDEENHEID. Vraag: "Moet de badkamer tot het plafond betegeld worden?"
  *
  * Waarom deze pagina root-level staat en niet onder /vragen: één nieuwe surface per
  * run (schrijver-richtlijn), en een /vragen-hub met één item is dunne inhoud. Komen er
- * meer antwoordeenheden bij, dan verhuist dit naar /vragen/<slug> mét redirect — dat is
+ * meer antwoordeenheden bij, dan verhuist dit naar /vragen/<slug> mét redirect. Dat is
  * dan een ontwerpbesluit, geen bouwbeslissing.
  *
- * BRONNEN VAN DE HARDE GETALLEN (wet art. 1.1 — niets verzinnen):
+ * BRONNEN VAN DE HARDE GETALLEN (wet art. 1.1, niets verzinnen):
  *  - Besluit bouwwerken leefomgeving, art. 4.120 lid 1 en 2 (nieuwbouw) en art. 3.65
  *    (bestaande bouw), letterlijk gelezen op wetten.overheid.nl, geldende tekst 2026-01-01.
  *  - Bbl art. 4.122 lid 5b: badruimte ≥ 14 dm3/s luchtverversing.
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Moet de badkamer tot het plafond betegeld worden? | Van Wonderen Tegelwerken',
     description:
-      'Wat de bouwregels echt eisen (1,2 m — en 2,1 m bij de douche), waar het smaak wordt, en waar de 1,20 meter uit alle adviesartikelen vandaan komt.',
+      'Wat de bouwregels echt eisen (1,2 m, en bij de douche 2,1 m), waar het smaak wordt, en waar de 1,20 meter uit alle adviesartikelen vandaan komt.',
     images: ['/images/projects/portfolio-2025-01-wa0059.webp'],
   },
 }
@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     q: 'Kan ik later alsnog doortegelen tot het plafond?',
-    a: 'Technisch kan dat. Twee dingen maken het lastiger dan het klinkt. De wand boven de bestaande tegels moet dan alsnog geschikt gemaakt worden, en dezelfde tegelserie is jaren later niet vanzelf in dezelfde kleurcharge leverbaar — vraag dat bij aankoop na bij je leverancier. Houd je de optie open, koop dan meteen een paar m2 extra uit dezelfde levering en bewaar die.',
+    a: 'Technisch kan dat. Twee dingen maken het lastiger dan het klinkt. De wand boven de bestaande tegels moet dan alsnog geschikt gemaakt worden, en dezelfde tegelserie is jaren later niet vanzelf in dezelfde kleurcharge leverbaar. Vraag dat bij aankoop na bij je leverancier. Houd je de optie open, koop dan meteen een paar m2 extra uit dezelfde levering en bewaar die.',
   },
   {
     q: 'Wat als mijn plafond niet waterpas is?',
@@ -65,7 +65,7 @@ const faqs = [
   },
   {
     q: 'Moet de douchewand anders behandeld worden dan de rest?',
-    a: 'Ja. Daar geldt de zwaarste eis (2,1 meter hoog over minstens 3 meter lengte) én daar telt de laag onder de tegel. Tegelwerk en voegwerk zijn zelf niet waterdicht: voegwerk neemt water op. De waterdichting hoort dus onder het tegelwerk te zitten, en fabrikanten van afdichtingssystemen adviseren kimband in elke binnenhoek — vloer-wand en wand-wand. Verplicht is dat niet; overslaan is wel de plek waar het over jaren misgaat.',
+    a: 'Ja. Daar geldt de zwaarste eis (2,1 meter hoog over minstens 3 meter lengte) én daar telt de laag onder de tegel. Tegelwerk en voegwerk zijn zelf niet waterdicht: voegwerk neemt water op. De waterdichting hoort dus onder het tegelwerk te zitten, en fabrikanten van afdichtingssystemen adviseren kimband in elke binnenhoek: vloer-wand en wand-wand. Verplicht is dat niet; overslaan is wel de plek waar het over jaren misgaat.',
   },
 ]
 
@@ -74,7 +74,7 @@ const zones = [
     kop: 'Douche en bad',
     norm: 'Geen keuze',
     body:
-      'Hier ligt de zwaarste eis: tot 2,1 meter hoog over minstens 3 meter lengte mag de wand vrijwel geen water opnemen (Bbl art. 4.120 lid 2). En de waterdichting zit onder de tegel, niet in de tegel — voegwerk neemt water op.',
+      'Hier ligt de zwaarste eis: tot 2,1 meter hoog over minstens 3 meter lengte mag de wand vrijwel geen water opnemen (Bbl art. 4.120 lid 2). En de waterdichting zit onder de tegel, niet in de tegel. Voegwerk neemt water op.',
   },
   {
     kop: 'Wastafel en toilet',
@@ -103,7 +103,7 @@ const stemmen = [
   },
   {
     tekst: 'Na 4 jaar nog steeds blij mee.',
-    bron: 'Viva Forum — over gedeeltelijk stucwerk',
+    bron: 'Viva Forum: over gedeeltelijk stucwerk',
     href: 'https://forum.viva.nl/viewtopic.php?t=352751',
   },
   {
@@ -183,7 +183,7 @@ export default function TotPlafondBetegelenPage() {
               badkamer alleen géén water opnemen: bij nieuwbouw tot 1,2 meter hoog, en bij het bad
               of de douche tot 2,1 meter over een lengte van minstens 3 meter (Besluit bouwwerken
               leefomgeving, artikel 4.120). In een bestaande badkamer is die grens 1 meter. Daarboven
-              beslis jij — en let op de formulering: de regel eist geen tegels, hij eist een wand die
+              beslis jij. En let op de formulering: de regel eist geen tegels, hij eist een wand die
               water buiten houdt.
             </p>
 
@@ -241,7 +241,7 @@ export default function TotPlafondBetegelenPage() {
               van die ruimte.&rdquo;
             </blockquote>
             <figcaption className="mt-4 text-sm text-primary-500">
-              Besluit bouwwerken leefomgeving, artikel 4.120 lid 2 — de eis geldt voor de wand
+              Besluit bouwwerken leefomgeving, artikel 4.120 lid 2: de eis geldt voor de wand
               (&quot;scheidingsconstructie&quot;), niet voor het materiaal. Tegelwerk is één manier om
               hem te halen.
             </figcaption>
@@ -292,7 +292,7 @@ export default function TotPlafondBetegelenPage() {
               <p className="mt-6 text-base leading-relaxed text-primary-600">
                 Uit eigen werk: één wand volledig betegeld, de wand ernaast glad afgewerkt zonder
                 tegel. Niemand ziet daar een half afgemaakte ruimte. Wat je wél ziet is dat de
-                overgang op een hele tegel eindigt en niet op een gesneden reepje — dat is het
+                overgang op een hele tegel eindigt en niet op een gesneden reepje. Dat is het
                 verschil tussen een keuze en een compromis.
               </p>
               <Link
@@ -338,7 +338,7 @@ export default function TotPlafondBetegelenPage() {
           <p className="mt-12 max-w-2xl text-base leading-relaxed text-primary-600">
             Mijn eerlijke lezing daarvan: schimmel boven de tegels is een vochtprobleem, geen
             tegelprobleem. Doortegelen verplaatst het naar de voeg en de kit. De bouwregels stellen
-            aan een badruimte niet voor niets ook een ventilatie-eis — minstens 14 dm<sup>3</sup>/s
+            aan een badruimte niet voor niets ook een ventilatie-eis: minstens 14 dm<sup>3</sup>/s
             (Bbl artikel 4.122 lid 5). Wie tot het plafond tegelt om schimmel op te lossen en de
             afzuiging laat zoals hij is, betaalt voor de verkeerde oplossing.
           </p>
@@ -359,7 +359,7 @@ export default function TotPlafondBetegelenPage() {
                 Ik geef 5 jaar garantie op tegelwerk en voegwerk, en 1 jaar op kitwerk. Dat verschil
                 in termijn is niet willekeurig: het zegt iets over welk onderdeel van een badkamer
                 het eerst aan vervanging toe is. Elke keuze die een extra rand of naad oplevert,
-                voegt daar een stukje aan toe. Dat is geen reden om altijd door te tegelen — het is
+                voegt daar een stukje aan toe. Dat is geen reden om altijd door te tegelen. Het is
                 een reden om te weten wat je kiest.
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-300">
@@ -376,7 +376,7 @@ export default function TotPlafondBetegelenPage() {
               <p className="mt-6 text-base leading-relaxed text-primary-300">
                 De enige hoogte in dit hele verhaal waar niet over te onderhandelen valt: de
                 wandzone bij het bad of de douche. Alles daarboven is een gesprek over onderhoud,
-                geld en smaak — en dat gesprek voer ik liever bij je thuis dan via een tabel.
+                geld en smaak. Dat gesprek voer ik liever bij je thuis dan via een tabel.
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-300">
                 Je krijgt van mij een gespecificeerde offerte zonder kleine lettertjes, binnen
@@ -431,7 +431,7 @@ export default function TotPlafondBetegelenPage() {
           <ul className="mt-12 divide-y divide-mist border-y border-mist">
             {[
               'Je wilt een vaste prijs per m2 horen zonder dat iemand de ruimte heeft gezien. Ondergrond, tegelformaat en voorwerk bepalen de prijs; een getal zonder die informatie is een gok en die zet ik niet op papier.',
-              'Je woont buiten Breda en omstreken. Buiten mijn werkgebied ben ik simpelweg te duur in reistijd — kijk op de werkgebied-pagina of jouw plaats erbij staat.',
+              'Je woont buiten Breda en omstreken. Buiten mijn werkgebied ben ik simpelweg te duur in reistijd. Kijk op de werkgebied-pagina of jouw plaats erbij staat.',
               'Je zoekt alleen iemand die snel over de bestaande tegels heen werkt zonder naar de ondergrond te kijken. Dat doe ik niet, want daar komt de garantie van 5 jaar niet doorheen.',
             ].map((t) => (
               <li key={t} className="py-6 text-base leading-relaxed text-primary-600">

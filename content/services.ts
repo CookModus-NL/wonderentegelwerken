@@ -67,6 +67,12 @@ Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We besp
         teaser:
           'Na een badkamerrenovatie lopen er drie klokken achter elkaar: de lijm, de voeg en de kit. Welke termijnen de fabrikanten noemen, en waarom de wachttijd voor de vloerverwarming aan de dekvloer hangt en niet aan de tegel.',
       },
+      {
+        href: '/tegelen-over-bestaande-tegels',
+        label: 'Kan er over bestaande tegels heen getegeld worden?',
+        teaser:
+          'Ja, maar een nieuwe laag tegels plus lijm bouwt 10 tot 14 mm op. Op een douchevloer is dat bijna het hele afschot naar de goot, en die goot gaat niet mee omhoog. Met de gewichtsrekensom voor een wand van gipsplaat erbij.',
+      },
     ],
   },
   {
@@ -114,6 +120,12 @@ Voor grootformaat tegels (60×120 of groter) werk ik met vloerverwarmings-vriend
         teaser:
           'Wie herstelt het en wie betaalt: de garantietermijn, de vier vragen die de uitkomst bepalen, en de wetsartikelen over aanneming van werk letterlijk erbij.',
       },
+      {
+        href: '/tegelen-over-bestaande-tegels',
+        label: 'Kan er over bestaande tegels heen getegeld worden?',
+        teaser:
+          'De vier voorwaarden waar alle adviesartikelen het over eens zijn, plus de twee rekensommen die er geen enkele maakt: wat de tweede laag kost aan hoogte bij de dorpel en de afvoer, en wat hij weegt op gipsplaat.',
+      },
     ],
   },
   {
@@ -144,6 +156,12 @@ Ook stuc-look, spachtelputz en decoratieve wandpanelen behoren tot mijn werk. Vo
         label: 'Moet de badkamer tot het plafond betegeld worden?',
         teaser:
           'Wat de bouwregels echt eisen (1,2 m, bij de douche 2,1 m), waar die 1,20 meter uit alle adviesartikelen vandaan komt, en welk deel van de keuze echt van jou is.',
+      },
+      {
+        href: '/tegelen-over-bestaande-tegels',
+        label: 'Kan er over bestaande tegels heen getegeld worden?',
+        teaser:
+          'Op een wand gaat dit vaker goed dan op een vloer, maar niet op elke wand. Met de rekensom voor gipsplaat: Omnicol noemt 25 kilo per vierkante meter als grens, en twee lagen keramiek plus lijm komen daar ruim boven.',
       },
     ],
   },

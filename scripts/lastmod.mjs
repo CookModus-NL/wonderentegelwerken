@@ -90,6 +90,7 @@ const map = {
   '/tegelen-op-houten-ondervloer': fileDate('app/tegelen-op-houten-ondervloer/page.tsx'),
   '/losse-tegels-en-scheurende-voegen': fileDate('app/losse-tegels-en-scheurende-voegen/page.tsx'),
   '/tegelvloer-belopen-en-vloerverwarming-aanzetten': fileDate('app/tegelvloer-belopen-en-vloerverwarming-aanzetten/page.tsx'),
+  '/tegelen-over-bestaande-tegels': fileDate('app/tegelen-over-bestaande-tegels/page.tsx'),
 }
 
 const groups = [

@@ -197,6 +197,7 @@ contract:
     - /tegelen-op-houten-ondervloer
     - /losse-tegels-en-scheurende-voegen
     - /tegelvloer-belopen-en-vloerverwarming-aanzetten
+    - /tegelen-over-bestaande-tegels
     # formulierpagina
     - /contact
     # juridische pagina

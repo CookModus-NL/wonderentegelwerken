@@ -90,6 +90,23 @@ ${werk}
   dat het protocol op een hechtende dekvloer juist onthechting en scheuren veroorzaakt; NOA en
   TBA adviseren een ingebruiknameprotocol zonder afkoelfase, met een proceswatertemperatuur van
   doorgaans 30 en hooguit 35 graden.
+- ${base}/tegelen-over-bestaande-tegels : "Kan er over bestaande tegels heen getegeld worden?"
+  Kort antwoord: ja, technisch kan het, en op een wand gaat het vaker goed dan op een vloer. Vier
+  voorwaarden gelden overal: de oude tegels zitten vast (afkloppen, hol klinkt eruit), het vlak is
+  vlak, vet en zeep zijn weg, en er is geen vochtprobleem. De beslissende getallen staan nergens
+  in de bovenlaag. Een nieuwe laag tegels plus lijm bouwt 10 tot 14 mm op bij keramiek, 11 tot 17
+  mm bij grootformaat en 13 tot 25 mm bij natuursteen (opbouwtabel Tegels in Huis). Het afschot
+  van een douchevloer hoort 1 tot 2 procent te zijn, ideaal 1,5 procent, dus 15 mm over een meter
+  (Kemp Tegelwerk): de tweede laag is daarmee bijna zo hoog als het hele afschot, terwijl de
+  douchegoot een vaste inbouwhoogte heeft en niet mee omhoog gaat. Op een wand van gipsplaat geldt
+  een gewichtsgrens van 25 kg/m2 (Omnicol), terwijl een laag keramiek van 8 mm alleen al 16 tot 19
+  kg/m2 weegt (soortelijk gewicht 2.000 tot 2.400 kg/m3) plus circa 2,7 kg/m2 lijm (productblad
+  Eurocol 691 bij een kam van 8x8 mm). Tegelwerk maakt niets waterdicht: de ondergrond moet dat al
+  zijn (BouwTotaal met Forbo Eurocol). Een bestaande tegel is een gesloten ondergrond en vraagt een
+  primer plus een gemodificeerde lijm (Omnicol; Eurocol noemt 014 Euroclean, 051 Europrimer Quartz,
+  686 Supercol, 765 Ecolight, 750 Multicol). Praktijkregel van Van Wonderen: meestal ja voor een
+  wand van steen of beton, meestal nee voor een douchevloer, en nooit een tweede laag op gipsplaat
+  zonder het gewicht na te rekenen.
 
 ## Pagina's
 - ${base}/ : wat Van Wonderen doet en voor wie

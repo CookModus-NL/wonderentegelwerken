@@ -6,23 +6,52 @@ import type { Metadata } from 'next'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Eerst de vloer of eerst de wand betegelen?"
- * Contract 62754f3f-fa9f-4cac-8936-b0c3dd5e4878, run schrijver-20260915-1235.
+ * Contract 62754f3f-fa9f-4cac-8936-b0c3dd5e4878, run schrijver-20260915-1235,
+ * HERSTELRONDE 1 door run schrijver-20260915-1323.
  *
- * WAAROM DEZE PAGINA ANDERS IS DAN DE BOVENLAAG. Alle best vindbare Nederlandse antwoorden
- * op deze vraag geven hetzelfde antwoord met dezelfde drie redenen: eerst de wand, want
+ * WAT DE HERSTELRONDE VERANDERDE (criticus-oordeel REJECT van 15-09-2026, twee blokkerende
+ * bevindingen). Bevinding 1: de pagina claimde "in geen enkel stappenplan online" en "in de
+ * hele top-10" terwijl vijf van de tien SERP-domeinen niet gelezen waren. Herstel: de
+ * resterende domeinen zijn alsnog gelezen (zie LEESRONDE hieronder) en elke "niemand"-claim
+ * is vervangen door een geteld, controleerbaar getal met de leeslijst erbij. Dat leverde
+ * drie correcties op de oorspronkelijke tekst op, die hieronder staan. Bevinding 2: er stond
+ * geen BEVESTIGD eigen gegeven in de lopende tekst, alleen [AANNAME]-werkwijze. Herstel: de
+ * gepubliceerde, door de eigenaar bevestigde feiten (garantietermijnen, werkwijze bij
+ * grootformaat, afkitten als aparte offerteregel, kerngebied) staan nu in de lopende tekst
+ * zelf, met bronvermelding in dit commentaar en in de klantkeuring apart gehouden van de
+ * [AANNAME]-zinnen.
+ *
+ * WAAROM DEZE PAGINA ANDERS IS DAN DE BOVENLAAG. Alle twaalf gelezen Nederlandstalige
+ * adviespagina's geven hetzelfde antwoord met dezelfde drie redenen: eerst de wand, want
  * (1) er valt lijm en voeg op de vloer, (2) je werkt makkelijker, (3) de onderste rij sluit
  * netter aan. Ze noemen alle één uitzondering: een patroon dat van vloer naar wand doorloopt.
- * Twee dingen ontbreken in de hele top-10, en die twee zijn precies wat er in een badkamer
- * misgaat:
+ * Na de volledige leesronde blijven hiervan drie verschillen over, elk geteld:
  *   1. Het zijn geen twee beurten maar drie. De onderste rij wandtegels gaat er ná de vloer
- *      op, op maat gesneden. Dat is de reden dat "de onderste rij sluit netter aan" werkt --
- *      geen enkele pagina schrijft het op, terwijl het op de vakfora het eerste is wat
- *      ervaren tegelzetters zeggen.
+ *      op, op maat gesneden. GETELD: geen van de twaalf gelezen adviespagina's beschrijft die
+ *      derde beurt. Op de vakfora wél, en op twee onafhankelijke fora: klusidee.nl (NL) en
+ *      bouwinfo.be (BE, draad 265624, bericht #14 van 09-02-2012: "eerst tegels geplaatst op
+ *      alurij rondom (onderste rij opengelaten) - vloer gelegd - onderste rij tegels afgekort
+ *      en ingepast"). Het dichtst in de buurt komt portugesetegel.be, dat de onderste rij
+ *      "precies afstemt op de hoogte van de vloertegels" — maar dat vooraf uitrekent in
+ *      plaats van de rij open te laten. CORRECTIE OP RONDE 1: de oude tekst zei "staat in
+ *      geen enkel stappenplan online"; dat is nu begrensd tot de twaalf gelezen pagina's,
+ *      en de fora-vondst op bouwinfo.be is erbij gezet.
  *   2. De aansluiting wand/vloer is geen tegelvoeg maar een randvoeg die VRIJ moet blijven
- *      van tegel en voegmortel en elastisch wordt gekit. Dat staat letterlijk in de
- *      uitvoeringsrichtlijn waarop Nederlandse tegelzetbedrijven worden gecertificeerd
- *      (URL 35-101), en het maakt van de volgordevraag een detailvraag met een vast antwoord.
- * En één eerlijke correctie op de framing van de hele SERP: er bestaat geen voorschrift dat
+ *      van tegel en voegmortel en elastisch wordt gekit. CORRECTIE OP RONDE 1: dit is NIET
+ *      "iets wat nergens staat". mondain.nl (positie 7 op de koperszoekterm) schrijft het
+ *      wel degelijk op: "Vul hoeken en aansluitingen met sanitair silicone, niet met
+ *      voegmiddel" en "Laat rondom minimaal 3-5 mm vrij voor kit of plint". Eén van de
+ *      twaalf dus. Wat de overige elf niet doen en mondain.nl ook niet: de herkomst noemen,
+ *      het minimum van 4 mm, en de eis dat de randvoeg over de VOLLEDIGE DIEPTE doorloopt
+ *      (ondergrond én tegelwerk), uit URL 35-101 par. 6.8.
+ *   3. GETELD EN NIEUW UIT DE HERSTELRONDE: vier van de twaalf gelezen pagina's
+ *      (040badkamers.nl, fabinterieurhulp.nl, portugesetegel.be, klustoolsxl.nl) noemen
+ *      "minimaal 80% in de lijm" als eis voor WANDtegels. URL 35-101 par. 6.5 tabel 5 eist
+ *      daar 65%; de 80% is de eis voor VLOERtegelwerk. In ronde 1 stond dit als een fout van
+ *      één pagina; het is een patroon in een derde van de gelezen bovenlaag.
+ * En de bronvondst zelf: GETELD noemt geen van de twaalf gelezen pagina's URL 35-101, BRL
+ * 1017, KOMO of enige andere norm (machinaal getoetst op de opgehaalde tekst). Plus één
+ * eerlijke correctie op de framing van de hele bovenlaag: er bestaat geen voorschrift dat
  * de volgorde bepaalt. URL 35-101 schrijft het resultaat voor, niet de route.
  *
  * SERP-METING (bewijsklasse B, met engine-label; motor/scripts/serp.mjs, 15-09-2026):
@@ -42,8 +71,26 @@ import type { Metadata } from 'next'
  *    Google-uitslag.
  *  - AI-ANTWOORD, sampled 15-09-2026 (websearch-assistent, US-geolokaliseerd): "Het advies is
  *    om te starten met het betegelen van de wand en daarna de vloer", met de drie bekende
- *    redenen en de patroon-uitzondering. Dus: dezelfde drie redenen, dezelfde uitzondering,
- *    geen derde beurt, geen randvoeg, geen richtlijn.
+ *    redenen en de patroon-uitzondering. LET OP (criticus-bevinding 3, niet-blokkerend): die
+ *    steekproef is US-gelokaliseerd en dus NIET representatief voor wat een Nederlandse
+ *    zoeker te zien krijgt. Er wordt op deze pagina daarom geen enkele claim op gebouwd; hij
+ *    staat hier alleen als waarneming, met dat voorbehoud erbij. Een NL-gelokaliseerde
+ *    herhaling is niet gedaan in deze run.
+ *
+ * LEESRONDE (herstelronde 1, 15-09-2026). Bewijsklasse B. Wie de "geen van de twaalf"-claims
+ * hierboven wil narekenen, leest deze twaalf:
+ *    VOLLEDIG GELEZEN, ronde 1: tegelzetter-expert.nl, 040badkamers.nl, klaardeklus.nl,
+ *      purperinterior.nl, vloerenmantegels.nl.
+ *    VOLLEDIG GELEZEN, herstelronde 1 (alsnog): fabinterieurhulp.nl, tegelsinhuis.nl,
+ *      portugesetegel.be (beide posts, 1008 en 9080), mondain.nl, klustoolsxl.nl,
+ *      bouwmaat.nl. Dat zijn de twaalf.
+ *    NIET GELEZEN, en dus buiten elke telling gehouden: webwoordenboek.nl (HTTP 403),
+ *      tegeldepot.nl (HTTP 403), reddit.com (HTTP 403 op het zoek-endpoint), gamma.be
+ *      (HTTP 429 in ronde 1). Vier niet-gelezen bronnen; als één daarvan de derde beurt of
+ *      de herkomst van de randvoeg wél noemt, is de telling op deze pagina te ruim. Daarom
+ *      staat er een getal met een leeslijst en geen "nergens".
+ *    FORA, apart geteld en niet in de twaalf: klusidee.nl (draad 143716 en 32836),
+ *      bouwinfo.be (draad 265624 en 397641).
  *
  * BRONNEN VAN DE HARDE GETALLEN EN REGELS (wet art. 1.1). Alles gelezen op 15 september 2026:
  *  - URL 35-101 d.d. 13-04-2018, "Uitvoeringsrichtlijn voor het aanbrengen van wand- en
@@ -84,17 +131,27 @@ import type { Metadata } from 'next'
  *    advies de tegels zelf na te meten in plaats van de maat op de doos te geloven.
  *  - De drie best gerangschikte antwoorden zijn volledig gelezen: tegelzetter-expert.nl
  *    (kennisbank, vier alinea's), 040badkamers.nl (stappenplan in zes stappen) en klaardeklus.nl
- *    (kort antwoord plus stappenplan). Ook gelezen: purperinterior.nl en vloerenmantegels.nl.
- *  - Garantietermijnen: motor_feiten `wonderen-garantie` (eigenaar_akkoord=true).
- *    Eenmanszaak sinds 2022, werk zelf uitgevoerd: `wonderen-persoon-jaap`. Offerte binnen
- *    5 dagen: `wonderen-offerte-belofte`. Reactie binnen 1 werkdag: `wonderen-reactietijd`.
- *    Werkgebied: `wonderen-werkgebied-kern` en `-uitbreiding`. Vloerverwarming:
- *    `wonderen-vloerverwarming`. Alle zes eigenaar_akkoord=true.
- *  - gamma.be gaf HTTP 429 en is dus NIET gelezen. Dat is een gat in de research, geen
- *    stilzwijgende overslag.
+ *    (kort antwoord plus stappenplan). De overige negen: zie LEESRONDE hierboven.
+ *  - BEVESTIGDE EIGEN GEGEVENS IN DE LOPENDE TEKST (criticus-bevinding 2). Deze staan in de
+ *    zichtbare tekst, niet alleen achter een link, en komen alle uit motor_feiten met
+ *    eigenaar_akkoord=true, herkomst eigenaar, gepubliceerd op zijn eigen site:
+ *      `wonderen-garantie` -> "5 jaar garantie op tegelwerk en voegwerk; 1 jaar op kitwerk"
+ *         (bron wonderentegelwerken.nl/diensten/vloertegels) — staat in de hero, in de
+ *         kitrand-sectie en in FAQ "Valt de wandtegel over de vloertegel".
+ *      `wonderen-dienst-vloertegelwerk` -> "dilataties op de juiste plek; voegwerk inbegrepen;
+ *         plinten apart geprijsd incl. afkitten; ... grootformaat (60x120 of groter) met
+ *         vloerverwarmingsvriendelijke lijm en kruisende lasers" (zelfde bron) — staat in
+ *         "Zo doe ik het" en in de offerte-lijst.
+ *      `wonderen-persoon-jaap` -> eenmanszaak uit Breda sinds 2022, alle klussen zelf.
+ *      `wonderen-offerte-belofte` -> gespecificeerde offerte binnen 5 dagen.
+ *      `wonderen-reactietijd` -> reactie binnen 1 werkdag via WhatsApp.
+ *      `wonderen-werkgebied-kern` -> kerngebied max 15 minuten rijden vanaf Breda.
+ *      `wonderen-principe-prijs` -> geen bedrag per vierkante meter op de site.
  * Werkwijze-uitspraken in de ik-vorm in het blok "Zo doe ik het" staan als [AANNAME] in de
  * klantkeuring: ze zijn niet uit een vastgelegd feit afgeleid en de ondernemer bevestigt of
- * corrigeert ze vóór publicatie.
+ * corrigeert ze vóór publicatie. Ze zijn in de tekst bewust gescheiden gehouden van de
+ * bevestigde feiten hierboven: de [AANNAME]-zinnen gaan over VOLGORDE en AFSPRAAK, de
+ * bevestigde feiten over GARANTIE, PRIJSSTELLING, WERKWIJZE BIJ GROOTFORMAAT en WERKGEBIED.
  */
 
 const url = `${business.url}/eerst-vloer-of-wand-betegelen`
@@ -141,7 +198,7 @@ const beurten = [
     stap: 'De onderste rij wandtegels',
     wat: 'Nu pas. Elke tegel van de onderste rij wordt op maat gesneden naar de vloer die er werkelijk ligt — in een douche dus niet overal even hoog.',
     waarom:
-      'Dit is de stap die in geen enkel online stappenplan staat, en het is de stap waarmee de aansluiting klopt. In de douche ligt de vloer op afschot; een rij hele tegels zou daar meelopen en dus scheef staan.',
+      'Dit is de stap die in geen van de twaalf adviespagina’s staat die ik voor deze pagina heb gelezen, en het is de stap waarmee de aansluiting klopt. In de douche ligt de vloer op afschot; een rij hele tegels zou daar meelopen en dus scheef staan.',
   },
   {
     stap: 'Kitten',
@@ -292,6 +349,12 @@ const stemmen = [
     bron: 'klusidee.nl, reactie halverwege dezelfde draad',
     href: 'https://www.klusidee.nl/Forum/topic/tegelwerk-badkamer-waar-beginnen.143716/',
   },
+  {
+    tekst:
+      'Eerst tegels geplaatst op alurij rondom (onderste rij opengelaten) — vloer gelegd — onderste rij tegels afgekort en ingepast.',
+    bron: 'bouwinfo.be, draad "Eerst betegelen of vloeren in de badkamer?", bericht uit 2012',
+    href: 'https://www.bouwinfo.be/bouwforum/threads/eerst-betegelen-of-vloeren-in-de-badkamer.265624/',
+  },
 ]
 
 const faqs = [
@@ -305,7 +368,7 @@ const faqs = [
   },
   {
     q: 'Valt de wandtegel over de vloertegel, of de vloertegel tegen de wandtegel?',
-    a: 'De wandtegel eindigt boven de vloertegel, met de open randvoeg ertussen. Op de vakfora wordt daar een praktisch argument bij gegeven: zo krijg je een staande kitrand in plaats van een liggende. Een liggende kitrand vangt water, zeep en vuil en veroudert sneller; een staande niet. Er zijn tegelzetters die de vloer eerst leggen omdat ze een liggende kitvoeg lelijk vinden — dat is smaak, en het staat tegenover levensduur. Ik kies levensduur, want de kitrand is het onderdeel met de kortste garantietermijn.',
+    a: 'De wandtegel eindigt boven de vloertegel, met de open randvoeg ertussen. Op de vakfora wordt daar een praktisch argument bij gegeven: zo krijg je een staande kitrand in plaats van een liggende. Een liggende kitrand vangt water, zeep en vuil en veroudert sneller; een staande niet. Er zijn tegelzetters die de vloer eerst leggen omdat ze een liggende kitvoeg lelijk vinden — dat is smaak, en het staat tegenover levensduur. Ik kies levensduur, want de kitrand is het onderdeel met de kortste garantietermijn: bij mij 1 jaar op kitwerk tegenover 5 jaar op tegelwerk en voegwerk.',
   },
   {
     q: 'Waarom gaat de onderste rij er pas na de vloer op?',
@@ -325,7 +388,7 @@ const faqs = [
   },
   {
     q: 'Wat moet ik hierover op mijn offerte terugzien?',
-    a: 'Vier dingen. Eén: op welke afgewerkte vloerhoogte wordt gewerkt, want daar hangt alles aan — bij een drempel of een aansluitende gang is dat geen detail. Twee: hoe het tegelwerk wordt ingedeeld, naar inzicht van de tegelzetter of symmetrisch uitgemeten; de richtlijn vraagt die afspraak vooraf. Drie: dat de aansluiting wand/vloer en de binnenhoeken worden afgekit en niet gevoegd, met het kitwerk als eigen regel, want kit heeft een kortere garantietermijn dan tegel- en voegwerk. Vier: of er inbouwapparatuur komt en wanneer die geplaatst wordt. Bij mij staat dat in een gespecificeerde offerte, zonder kleine lettertjes, binnen 5 dagen.',
+    a: 'Vier dingen. Eén: op welke afgewerkte vloerhoogte wordt gewerkt, want daar hangt alles aan — bij een drempel of een aansluitende gang is dat geen detail. Twee: hoe het tegelwerk wordt ingedeeld, naar inzicht van de tegelzetter of symmetrisch uitgemeten; de richtlijn vraagt die afspraak vooraf. Drie: dat de aansluiting wand/vloer en de binnenhoeken worden afgekit en niet gevoegd, met het kitwerk als eigen regel — bij mij vallen plinten en het afkitten daarvan als aparte post op de offerte, en op kitwerk geef ik 1 jaar garantie tegenover 5 jaar op tegelwerk en voegwerk. Vier: of er inbouwapparatuur komt en wanneer die geplaatst wordt. Bij mij staat dat in een gespecificeerde offerte, zonder kleine lettertjes, binnen 5 dagen.',
   },
 ]
 
@@ -377,23 +440,33 @@ export default function EerstVloerOfWandPage() {
               Eerst de wand, daarna de vloer. Maar in de praktijk zijn het drie beurten en geen
               twee: eerst het wandvlak vanaf de tweede rij, dan de vloer, en als laatste de
               onderste rij wandtegels — op maat gesneden naar de vloer die er dan werkelijk ligt.
-              Die derde beurt is de reden dat de aansluiting klopt, en juist die staat in geen
-              enkel stappenplan online.
+              Die derde beurt is de reden dat de aansluiting klopt. Ik heb twaalf Nederlandstalige
+              adviespagina&apos;s over deze vraag helemaal doorgelezen: geen van de twaalf
+              beschrijft hem. Op de klusfora doen ervaren tegelzetters dat wel.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-primary-600">
-              Er is nog iets wat nergens staat: de naad tussen wand en vloer is geen gewone voeg.
-              Hij moet vrij blijven van tegel en voegmortel, minstens 4 millimeter breed zijn en
-              wordt daarna met blijvend elastische kit gevuld. Zodra je dat weet, is de
-              volgordevraag geen kwestie van voorkeur meer maar van maatvoering — en dan is ook
-              duidelijk waarom de onderste rij het laatst gaat.
+              En de naad tussen wand en vloer is geen gewone voeg. Hij moet vrij blijven van tegel
+              en voegmortel, minstens 4 millimeter breed zijn en wordt daarna met blijvend
+              elastische kit gevuld. Eén van die twaalf pagina&apos;s zegt dat ook — maar geen
+              enkele zegt erbij waar het vandaan komt, hoe breed het minimaal moet en dat die
+              ruimte door de lijmlaag en de ondergrond heen moet doorlopen. Zodra je dat weet, is
+              de volgordevraag geen kwestie van voorkeur meer maar van maatvoering.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-primary-600">
-              En het eerlijkste antwoord op de vraag zelf: er staat nergens een regel die de
-              volgorde voorschrijft. De uitvoeringsrichtlijn waarop Nederlandse tegelzetbedrijven
-              worden gecertificeerd schrijft het resultaat voor, niet de route. Wat dat resultaat
-              precies is, en hoe je het na afloop zelf kunt nameten, staat hieronder.
+              Waarom dat detail geld waard is: op tegelwerk en voegwerk geef ik 5 jaar garantie, op
+              kitwerk 1 jaar. Die rand onderaan de wand is kitwerk. Het is het enige stukje van je
+              badkamer dat onder de korte termijn valt, en precies het stukje dat de volgorde
+              bepaalt.
+            </p>
+
+            <p className="mt-6 text-lg leading-relaxed text-primary-600">
+              En het eerlijkste antwoord op de vraag zelf: in de uitvoeringsrichtlijn waarop
+              Nederlandse tegelzetbedrijven worden gecertificeerd staat geen regel die de volgorde
+              voorschrijft. Ik heb dat document van kaft tot kaft doorgenomen; het schrijft het
+              resultaat voor, niet de route. Wat dat resultaat precies is, en hoe je het na afloop
+              zelf kunt nameten, staat hieronder.
             </p>
 
             <p className="mt-8 text-sm text-primary-500">
@@ -415,9 +488,9 @@ export default function EerstVloerOfWandPage() {
             Zes stappen, en de wand komt er twee keer aan te pas
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
-            De online stappenplannen tellen zes stappen en zetten de wand in één blok. In een echte
-            badkamer valt dat blok in tweeën uiteen, met de vloer ertussen. Dit is de volgorde zoals
-            hij loopt, met per stap de reden dat hij daar staat.
+            De twaalf stappenplannen die ik las tellen er vijf tot zeven en zetten de wand in één
+            blok. In een echte badkamer valt dat blok in tweeën uiteen, met de vloer ertussen. Dit
+            is de volgorde zoals hij loopt, met per stap de reden dat hij daar staat.
           </p>
 
           <ol className="mt-12 space-y-8">
@@ -487,9 +560,15 @@ export default function EerstVloerOfWandPage() {
                 <p className="mt-4 text-base leading-relaxed text-primary-600">
                   Ik heb de pdf van URL 35-101 (versie 13-04-2018) zelf doorgelezen en de
                   paragraafnummers erbij gezet, in plaats van een samenvatting van een adviespagina
-                  over te nemen. Dat is niet overdreven: één van de best gerangschikte antwoorden op
-                  deze vraag noemt 80 procent lijmcontact voor wandtegels, terwijl de richtlijn daar
-                  65 procent eist en de 80 procent over vloertegelwerk gaat.
+                  over te nemen. Dat is niet overdreven: <strong className="font-semibold text-primary-900">vier</strong> van
+                  de twaalf adviespagina&apos;s die ik las noemen &quot;minimaal 80 procent in de
+                  lijm&quot; als eis voor wandtegels. De richtlijn eist daar 65 procent; de 80
+                  procent is de eis voor vloertegelwerk (par. 6.5, tabel 5). Eén op de drie gelezen
+                  pagina&apos;s geeft op dit punt dus het verkeerde getal door.
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-primary-600">
+                  Geen van die twaalf pagina&apos;s noemt overigens waar hun regels vandaan komen:
+                  het woord uitvoeringsrichtlijn, BRL 1017 of KOMO staat er in geen enkele.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-primary-600">
                   Lees het gerust na. Het document is niet geheim en er zitten controlelijsten in
@@ -531,6 +610,34 @@ export default function EerstVloerOfWandPage() {
             wandtegels — gaan over de voegen tússen tegels; de randvoeg langs de wand is een andere
             voeg en heeft zijn eigen minimum van 4 mm.
           </p>
+
+          <div className="mt-10 max-w-3xl rounded-2xl bg-clay p-8">
+            <h3 className="font-display text-lg font-semibold text-primary-900">
+              Wat ik gelezen heb, en wat niet
+            </h3>
+            <p className="mt-4 text-base leading-relaxed text-primary-600">
+              Als ik op deze pagina schrijf &quot;geen van de twaalf&quot;, dan bedoel ik deze
+              twaalf, allemaal gelezen op 15 september 2026: tegelzetter-expert.nl,
+              040badkamers.nl, klaardeklus.nl, purperinterior.nl, vloerenmantegels.nl,
+              fabinterieurhulp.nl, tegelsinhuis.nl, portugesetegel.be (twee artikelen),
+              mondain.nl, klustoolsxl.nl en bouwmaat.nl. Dat zijn de pagina&apos;s die op deze
+              vraag en op &quot;badkamer betegelen eerst vloer of wand&quot; bovenaan stonden bij
+              DuckDuckGo en Brave.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-primary-600">
+              Vier bronnen uit diezelfde lijstjes kreeg ik niet open: webwoordenboek.nl,
+              tegeldepot.nl, een discussie op reddit.com en gamma.be. Die tellen hierboven dus
+              nergens in mee. Staat de derde beurt daar wél in, dan klopt mijn telling niet — en
+              dan hoor ik dat graag, want ik heb liever een scherpe pagina dan een mooie.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-primary-600">
+              Google zelf heb ik niet kunnen meten; dat lukt machinaal niet. Dit is dus geen
+              Google-ranglijst. De klusfora tel ik apart: klusidee.nl en bouwinfo.be. Daar staat de
+              derde beurt wél — op bouwinfo.be al in een bericht uit 2012, in bijna dezelfde
+              woorden als hierboven: eerst de wand met de onderste rij open, dan de vloer, dan die
+              rij afgekort en ingepast.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -671,7 +778,24 @@ export default function EerstVloerOfWandPage() {
                 Ik ben een eenmanszaak uit Breda, actief sinds 2022, en ik voer de klussen zelf uit
                 — geen onderaannemers, geen wisselende ploegen. Bij een volgordevraag helpt dat
                 meer dan het lijkt: er is niemand om het naar door te schuiven. Dezelfde persoon
-                die de ondergrond aantreft, zet de laatste rij erin.
+                die de ondergrond aantreft, zet de laatste rij erin. Mijn kerngebied ligt op
+                maximaal een kwartier rijden van Breda, en dat is geen detail bij deze volgorde:
+                de vloer en de onderste rij zijn twee bezoeken op verschillende dagen.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-primary-600">
+                Drie dingen die op mijn eigen dienstpagina staan en hier rechtstreeks van toepassing
+                zijn. Eén: bij grootformaat — 60x120 en groter — werk ik met kruisende lasers en
+                met vloerverwarmingsvriendelijke lijm. Hoe groter de tegel, hoe harder de derde
+                beurt nodig is, want een afwijking van een millimeter in de dekvloer wordt over
+                120 centimeter zichtbaar. Twee: dilataties leg ik op de juiste plek en voegwerk zit
+                bij het werk in. Drie: plinten reken ik apart, inclusief het afkitten — dat kitwerk
+                is dus een eigen regel op je offerte en geen verstopte post.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-primary-600">
+                En de termijn die daaraan vastzit: 5 jaar garantie op tegelwerk en voegwerk, 1 jaar
+                op kitwerk. Je ziet op je offerte dus precies welk deel van je badkamer onder welke
+                termijn valt. Een prijs per vierkante meter vind je hier niet — die zet ik niet op
+                de site, omdat hij zonder de ondergrond, het formaat en het snijwerk niets betekent.
               </p>
             </div>
             <div className="lg:col-span-5">
@@ -682,8 +806,12 @@ export default function EerstVloerOfWandPage() {
                 <ul className="mt-4 space-y-3 text-base leading-relaxed text-primary-600">
                   <li>De afgewerkte vloerhoogte waarop gewerkt wordt.</li>
                   <li>Hoe het tegelwerk wordt ingedeeld: uitgemeten of naar mijn inzicht.</li>
-                  <li>Kitwerk als eigen regel, met de termijn erbij.</li>
+                  <li>
+                    Plinten en het afkitten daarvan als aparte regel — met de garantietermijn van
+                    1 jaar op kitwerk erbij, tegenover 5 jaar op tegel- en voegwerk.
+                  </li>
                   <li>Of er inbouwapparatuur komt, en wanneer die geplaatst wordt.</li>
+                  <li>Bij 60x120 of groter: dat er met kruisende lasers wordt uitgezet.</li>
                 </ul>
                 <p className="mt-4 text-base leading-relaxed text-primary-600">
                   Je krijgt een gespecificeerde offerte, zonder kleine lettertjes, binnen 5 dagen.
@@ -691,7 +819,7 @@ export default function EerstVloerOfWandPage() {
                   <Link href="/werkgebied" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
                     Breda en omstreken
                   </Link>
-                  .
+                  , met een kerngebied op maximaal 15 minuten rijden.
                 </p>
               </div>
             </div>
@@ -757,9 +885,10 @@ export default function EerstVloerOfWandPage() {
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
             Dat is het opvallende. Zodra iemand echt in een badkamer staat, verschuift de vraag
             binnen een paar berichten van &quot;wat eerst&quot; naar &quot;hoeveel ruimte laat ik
-            onderaan&quot; en &quot;hoe doe ik dat met het afschot naar de put&quot;. Precies de
-            twee dingen waar de adviespagina&apos;s over zwijgen. Deze zinnen zijn niet van mij; ze
-            staan openbaar op Nederlandse klusfora en ik citeer ze zonder naam.
+            onderaan&quot; en &quot;hoe doe ik dat met het afschot naar de put&quot;. Geen van de
+            twaalf adviespagina&apos;s die ik las gaat daarop in. Deze zinnen komen daarom
+            allemaal van vakfora en niet uit een stappenplan; ze zijn niet van mij, ze staan
+            openbaar op Nederlandstalige klusfora en ik citeer ze zonder naam.
           </p>
 
           <ul className="mt-12 divide-y divide-mist border-y border-mist">

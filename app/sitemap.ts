@@ -41,7 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry('/contact', 0.7, 'yearly'),
     // Antwoordeenheid (antwoordlaag) — één klantvraag, volledig beantwoord
     entry('/badkamer-betegelen-tot-plafond', 0.8, 'monthly'),
-    entry('/tegelen-op-houten-ondervloer', 0.8, 'monthly'),
     entry('/losse-tegels-en-scheurende-voegen', 0.8, 'monthly'),
     entry('/tegelvloer-belopen-en-vloerverwarming-aanzetten', 0.8, 'monthly'),
     entry('/tegelen-over-bestaande-tegels', 0.8, 'monthly'),

@@ -62,12 +62,6 @@ Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We besp
           'Wat de bouwregels echt eisen (1,2 m, bij de douche 2,1 m), waar die 1,20 meter uit alle adviesartikelen vandaan komt, en welk deel van de keuze echt van jou is.',
       },
       {
-        href: '/tegelen-op-houten-ondervloer',
-        label: 'Kan er op een houten ondervloer getegeld worden?',
-        teaser:
-          'Voor een badkamer op een houten verdiepingsvloer geldt het strengste antwoord: Omnicol raadt rechtstreeks tegelen op houten plaatmateriaal in een vochtige ruimte ten strengste af.',
-      },
-      {
         href: '/tegelvloer-belopen-en-vloerverwarming-aanzetten',
         label: 'Wanneer mag ik weer douchen en wanneer mag de vloerverwarming aan?',
         teaser:
@@ -113,12 +107,6 @@ Voor grootformaat tegels (60×120 of groter) werk ik met vloerverwarmings-vriend
         label: 'Hoe lang moet ik wachten voor ik op de vloer mag lopen en wanneer mag de vloerverwarming aan?',
         teaser:
           'Er lopen twee klokken: de lijm bepaalt wanneer je mag lopen, de dekvloer bepaalt wanneer de verwarming aan mag. Met de zeven termijnen die online circuleren naast elkaar, en de reden dat ze van 7 dagen tot 6 weken verschillen.',
-      },
-      {
-        href: '/tegelen-op-houten-ondervloer',
-        label: 'Kan er op een houten ondervloer getegeld worden?',
-        teaser:
-          'Wat de lijmfabrikanten echt eisen (maximaal 30×30 en doorbuiging onder L/500), hoeveel hoogte de oplossing kost, en waarom de tegelmaat vaker het probleem is dan de vloer.',
       },
       {
         href: '/losse-tegels-en-scheurende-voegen',

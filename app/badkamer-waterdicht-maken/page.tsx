@@ -477,9 +477,7 @@ export default function BadkamerWaterdichtMakenPage() {
               de pagina over tegelen over bestaande tegels
             </Link>
             . En ligt de badkamer op een houten vloer, lees dan ook{' '}
-            <Link href="/tegelen-op-houten-ondervloer" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
-              wat er bij tegelen op een houten ondervloer geldt
-            </Link>
+            wat er bij tegelen op een houten ondervloer geldt
             , want daar komen eisen aan de plaat en de doorbuiging bovenop deze.
           </p>
         </div>
@@ -741,9 +739,6 @@ export default function BadkamerWaterdichtMakenPage() {
             </Link>
             <Link href="/losse-tegels-en-scheurende-voegen" className="btn-secondary">
               Tegels los of voeg gescheurd?
-            </Link>
-            <Link href="/tegelen-op-houten-ondervloer" className="btn-secondary">
-              Tegelen op een houten ondervloer?
             </Link>
           </div>
         </div>

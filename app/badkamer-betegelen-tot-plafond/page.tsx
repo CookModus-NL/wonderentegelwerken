@@ -461,9 +461,6 @@ export default function TotPlafondBetegelenPage() {
             <Link href="/diensten/wandtegels" className="btn-secondary">
               Wandtegelwerk
             </Link>
-            <Link href="/tegelen-op-houten-ondervloer" className="btn-secondary">
-              Tegelen op een houten ondervloer?
-            </Link>
             <Link href="/tegelen-over-bestaande-tegels" className="btn-secondary">
               Over bestaande tegels heen tegelen?
             </Link>

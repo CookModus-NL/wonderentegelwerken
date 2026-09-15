@@ -35,10 +35,10 @@ const antwoordBijCategorie: Partial<Record<Project['category'], { href: string; 
       'Wat de bouwregels echt eisen, waar de beslissing smaak wordt, en wat het voor het tegelwerk betekent.',
   },
   vloer: {
-    href: '/tegelen-op-houten-ondervloer',
-    label: 'Kan er op een houten ondervloer getegeld worden?',
+    href: '/tegelvloer-belopen-en-vloerverwarming-aanzetten',
+    label: 'Wanneer mag ik op de vloer lopen en de vloerverwarming aanzetten?',
     teaser:
-      'Deze vloer ligt op een geëgaliseerde ondervloer. Op hout gelden andere maten: maximaal 30×30 volgens de lijmfabrikanten, en doorbuiging onder L/500.',
+      'Twee klokken: de lijm bepaalt wanneer je mag lopen, de dekvloer wanneer de verwarming aan mag.',
   },
 }
 

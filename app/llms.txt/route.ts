@@ -54,15 +54,7 @@ ${werk}
   opneemt: bij nieuwbouw tot 1,2 m, en bij bad of douche tot 2,1 m over minstens 3 m lengte
   (Besluit bouwwerken leefomgeving art. 4.120); bij bestaande bouw 1 m (art. 3.65). Boven die
   hoogtes is het een keuze van de bewoner. De eis geldt voor de wand, niet voor het materiaal.
-- ${base}/tegelen-op-houten-ondervloer : "Kan er op een houten ondervloer getegeld worden?"
-  Kort antwoord: ja, maar zelden met grootformaat tegels. Forbo Eurocol adviseert op houten
-  vloeren niet groter te gaan dan 30x30; Omnicol noemt als technisch uitgangspunt een
-  doorbuiging van maximaal L/500 bij volle belasting en "zo klein mogelijke tegels met een zo
-  breed mogelijke voeg". Een ontkoppelingsmat vangt krimp en uitzetting op, geen doorbuiging.
-  De gangbare opbouw kost 35-41 mm hoogte (afgeleid uit gepubliceerde componentmaten). Voor
-  een vochtige ruimte is het antwoord strenger: Omnicol raadt rechtstreeks tegelen op houten
-  plaatmateriaal in een vochtige ruimte ten strengste af, en Eurocol adviseert daar
-  cementgebonden vloerplaten.
+
 - ${base}/losse-tegels-en-scheurende-voegen : "Wat gebeurt er als er later tegels loskomen of
   een voeg scheurt?"
   Kort antwoord: eerst melden bij de tegelzetter die het werk deed en hem de gelegenheid geven

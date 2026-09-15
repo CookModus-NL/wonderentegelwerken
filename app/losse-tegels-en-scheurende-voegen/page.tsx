@@ -405,14 +405,7 @@ export default function LosseTegelsPage() {
           <p className="mt-12 max-w-2xl text-base leading-relaxed text-primary-600">
             Eén ding waar de adviespagina&apos;s overheen stappen: een tegelvloer die op een houten
             ondervloer ligt, speelt een ander spel. Daar is de doorbuiging van de vloer de bepalende
-            factor en niet de lijm, en dat staat uitgelegd op de pagina over{' '}
-            <Link
-              href="/tegelen-op-houten-ondervloer"
-              className="inline-flex min-h-11 items-center underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
-            >
-              tegelen op een houten ondervloer
-            </Link>
-            .
+            factor en niet de lijm.
           </p>
         </div>
       </section>
@@ -748,9 +741,6 @@ export default function LosseTegelsPage() {
           <div className="mt-12 flex flex-wrap gap-3">
             <Link href="/diensten/kitwerk-voegwerk" className="btn-secondary">
               Kitwerk en voegwerk
-            </Link>
-            <Link href="/tegelen-op-houten-ondervloer" className="btn-secondary">
-              Tegelen op een houten ondervloer?
             </Link>
             <Link href="/algemene-voorwaarden" className="btn-secondary">
               Algemene voorwaarden

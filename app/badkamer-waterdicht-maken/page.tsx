@@ -563,6 +563,17 @@ export default function BadkamerWaterdichtMakenPage() {
             spreekt, ook als dat iemand anders is dan ik. Krijg je ze niet op papier, dan weet je
             genoeg.
           </p>
+
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
+            Twee afspraken horen er in dezelfde offerte bij en gaan over de uitvoering in plaats van
+            over de afdichting: op welke afgewerkte vloerhoogte er gewerkt wordt, en hoe het
+            tegelwerk wordt ingedeeld. Waarom dat juist bij de aansluiting tussen wand en vloer
+            uitmaakt staat op{' '}
+            <Link href="/eerst-vloer-of-wand-betegelen" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+              de pagina over eerst de vloer of eerst de wand betegelen
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

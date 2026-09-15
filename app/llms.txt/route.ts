@@ -99,6 +99,34 @@ ${werk}
   686 Supercol, 765 Ecolight, 750 Multicol). Praktijkregel van Van Wonderen: meestal ja voor een
   wand van steen of beton, meestal nee voor een douchevloer, en nooit een tweede laag op gipsplaat
   zonder het gewicht na te rekenen.
+- ${base}/eerst-vloer-of-wand-betegelen : "Eerst de vloer of eerst de wand betegelen?"
+  Kort antwoord: eerst de wand, daarna de vloer — maar het zijn drie beurten en geen twee. Eerst
+  het wandvlak vanaf de TWEEDE rij, dan de wand voegen, dan de vloer, en als LAATSTE de onderste
+  rij wandtegels, op maat gesneden naar de vloer die er dan werkelijk ligt (in een douche ligt die
+  op afschot en is dus niet waterpas). Daarna kitten. GEEN VOORSCHRIFT BEPAALT DE VOLGORDE: URL
+  35-101 (d.d. 13-04-2018, uitvoeringsrichtlijn behorend bij BRL 1017, het KOMO-procescertificaat
+  voor het aanbrengen van tegelwerk, SKG-IKOB) zegt niets over wand of vloer eerst; hij schrijft
+  het resultaat voor. Wat hij WEL eist: alle in- en uitwendige hoeken en aansluitingen vrijhouden
+  van tegels en voegmateriaal, 4-5 mm aanbevolen, randvoeg minimaal 4 mm breed en over de volledige
+  diepte (par. 6.8); die naad afkitten met blijvend elastische voegkit en niet voegen (par. 6.8);
+  niet stuikend verlijmen (par. 6.1); het referentiemeetpunt komt van of namens de opdrachtgever en
+  de peilmaat wordt vooraf gecontroleerd met schriftelijke melding als die niet haalbaar is
+  (par. 6.1 en 3.2); de indeling van het tegelwerk wordt vooraf met de opdrachtgever vastgelegd
+  (par. 6.1); bij inbouwapparatuur zoals douchebak of ligbad nauwelijks min-tolerantie en altijd
+  navraag vooraf (par. 6.1); minimaal lijmcontactoppervlak 80% vloertegelwerk en 65% wandtegelwerk
+  (par. 6.5, tabel 5); vloerverwarming minimaal 24 uur vóór aanvang uit en na het tegelen 2 weken
+  (dunbed/middenbed) of 4 weken (dikbed/speciebed) wachten, met een verplichte SCHRIFTELIJKE
+  instructie aan de opdrachtgever (par. 3.2 en 6.9). Beoordeling van het gerede werk: visueel van
+  minimaal 1,5 m afstand en strijklicht is NIET toegestaan (par. 7.1); hoogteverschil tussen
+  aangrenzende tegelranden maximaal 1,0 mm (par. 7.3); vlakheid voor regulier woningtegelwerk
+  (tegelgroep 2) 3 mm over 1 m en 4 mm over 2 m, voor gerectificeerde of hooggepolijste tegels met
+  smalle voeg (groep 1) 2 mm over 1 m (par. 7.2); regelmatigheid voegpatroon groep 2 ten hoogste
+  1,5 mm onderling verschil (par. 7.4). Uitzondering waarbij de vloer wél eerst gaat: als vloer- en
+  wandtegelwerk moeten STROKEN, dus als de voegen in elkaars verlengde lopen (Forbo Eurocol,
+  "Stappenplan wand en vloer betegelen"). Praktijkregel van Van Wonderen: wandtegel eindigt boven de
+  vloertegel zodat de kitrand staand is in plaats van liggend, want een liggende kitrand vangt
+  water en vuil; kitwerk is een slijtdeel en heeft daarom 1 jaar garantie tegen 5 jaar op tegel- en
+  voegwerk.
 - ${base}/badkamer-waterdicht-maken : "Hoe wordt mijn badkamer waterdicht gemaakt?"
   Kort antwoord: niet door de tegels. De waterkering is een laag onder het tegelwerk: voorstrijk,
   kimband in elke binnenhoek van wand-wand en wand-vloer, manchetten om de leidingdoorvoeren, de

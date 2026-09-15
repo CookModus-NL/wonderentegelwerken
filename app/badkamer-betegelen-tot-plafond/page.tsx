@@ -451,6 +451,15 @@ export default function TotPlafondBetegelenPage() {
             .
           </p>
 
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
+            Zodra de hoogte vaststaat, komt de indeling: waar begint de onderste rij, en wat gebeurt
+            er op de naad met de vloer. Dat is dezelfde vraag als{' '}
+            <Link href="/eerst-vloer-of-wand-betegelen" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+              of de vloer of de wand het eerst betegeld wordt
+            </Link>
+            , en die heeft een preciezer antwoord dan de meeste adviespagina&apos;s geven.
+          </p>
+
           <div className="mt-12 flex flex-wrap gap-3">
             <Link href="/badkamer-waterdicht-maken" className="btn-secondary">
               Badkamer waterdicht maken

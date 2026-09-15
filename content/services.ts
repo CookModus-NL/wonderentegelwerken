@@ -62,6 +62,12 @@ Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We besp
           'Wat de bouwregels echt eisen (1,2 m, bij de douche 2,1 m), waar die 1,20 meter uit alle adviesartikelen vandaan komt, en welk deel van de keuze echt van jou is.',
       },
       {
+        href: '/eerst-vloer-of-wand-betegelen',
+        label: 'Eerst de vloer of eerst de wand betegelen?',
+        teaser:
+          'De wand eerst, maar het zijn drie beurten en geen twee: de onderste rij wandtegels gaat er ná de vloer op, op maat gesneden. Met de eisen uit uitvoeringsrichtlijn URL 35-101 over de randvoeg, het vloerpeil en de indeling die vooraf met jou wordt afgesproken.',
+      },
+      {
         href: '/tegelvloer-belopen-en-vloerverwarming-aanzetten',
         label: 'Wanneer mag ik weer douchen en wanneer mag de vloerverwarming aan?',
         teaser:
@@ -156,6 +162,12 @@ Ook stuc-look, spachtelputz en decoratieve wandpanelen behoren tot mijn werk. Vo
         label: 'Kan er over bestaande tegels heen getegeld worden?',
         teaser:
           'Op een wand gaat dit vaker goed dan op een vloer, maar niet op elke wand. Met de rekensom voor gipsplaat: Omnicol noemt 25 kilo per vierkante meter als grens, en twee lagen keramiek plus lijm komen daar ruim boven.',
+      },
+      {
+        href: '/eerst-vloer-of-wand-betegelen',
+        label: 'Eerst de vloer of eerst de wand betegelen?',
+        teaser:
+          'Waarom de onderste rij wandtegels er als laatste op gaat, waarom de naad met de vloer open blijft en gekit wordt in plaats van gevoegd, en welke vijf controles je na de oplevering zelf kunt doen.',
       },
     ],
   },

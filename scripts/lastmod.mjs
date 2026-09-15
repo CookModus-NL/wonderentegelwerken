@@ -92,6 +92,7 @@ const map = {
   '/tegelvloer-belopen-en-vloerverwarming-aanzetten': fileDate('app/tegelvloer-belopen-en-vloerverwarming-aanzetten/page.tsx'),
   '/tegelen-over-bestaande-tegels': fileDate('app/tegelen-over-bestaande-tegels/page.tsx'),
   '/badkamer-waterdicht-maken': fileDate('app/badkamer-waterdicht-maken/page.tsx'),
+  '/eerst-vloer-of-wand-betegelen': fileDate('app/eerst-vloer-of-wand-betegelen/page.tsx'),
 }
 
 const groups = [

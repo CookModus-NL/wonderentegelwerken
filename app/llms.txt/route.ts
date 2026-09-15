@@ -107,6 +107,25 @@ ${werk}
   686 Supercol, 765 Ecolight, 750 Multicol). Praktijkregel van Van Wonderen: meestal ja voor een
   wand van steen of beton, meestal nee voor een douchevloer, en nooit een tweede laag op gipsplaat
   zonder het gewicht na te rekenen.
+- ${base}/badkamer-waterdicht-maken : "Hoe wordt mijn badkamer waterdicht gemaakt?"
+  Kort antwoord: niet door de tegels. De waterkering is een laag onder het tegelwerk: voorstrijk,
+  kimband in elke binnenhoek van wand-wand en wand-vloer, manchetten om de leidingdoorvoeren, de
+  flens van de afvoer meegenomen, en daaroverheen afdichtingspasta of smeerfolie in minimaal twee
+  lagen met droogtijd (vaak 24 uur) ertussen; daarna pas lijm en tegel (systeembeschrijvingen
+  Kiwitz en Easy Drain; Kemp Tegelwerk: "een dunne bouwmarktlaag is geen waterkering"). Tegel,
+  voeg en kit zijn afwerking: een cementvoeg neemt water op (Sani4comfort: de voegen tussen tegels
+  zijn meestal niet waterdicht) en kit is een slijtdeel. WETTELIJK: het Besluit bouwwerken
+  leefomgeving eist aan de binnenzijde van een badruimte alleen BEPERKTE WATEROPNAME van de wand,
+  tot 1,2 m en bij bad of douche tot 2,1 m over minstens 3 m (art. 4.120; bestaande bouw 1 m,
+  art. 3.65). Het woord waterdicht staat in art. 4.118 en gaat over vocht van buiten. Er is dus
+  GEEN wettelijke eis voor een afdichtingslaag onder je douchetegels; dat is de reden dat hij in
+  Nederland vaak ontbreekt, want niemand controleert erop. Afschot van een douchevloer 1 tot 2
+  procent, ideaal rond 1,5 procent, en afschot alleen is geen waterkering (Kemp Tegelwerk).
+  Praktijkregel van Van Wonderen: de natte zone (douchevloer plus wand binnen het sproeibereik,
+  hoeken en doorvoeren) altijd, de hele vloer bij een verdieping of houten balkenvloer, de wand
+  bij de wastafel meestal niet, een toilet zonder douche niet. Controleren kan alleen vóór het
+  tegelen (fotografeer hoeken, afvoer en doorvoeren) en met de halve-emmertest na oplevering:
+  binnen circa 30 seconden hoort alles naar de afvoer weg te zijn.
 
 ## Pagina's
 - ${base}/ : wat Van Wonderen doet en voor wie

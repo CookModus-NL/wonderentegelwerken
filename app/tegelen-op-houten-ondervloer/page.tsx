@@ -438,7 +438,12 @@ export default function HoutenOndervloerPage() {
                 vloerplaten in plaats van hout- of gipsgebonden platen. Kan het? Ja, met een
                 volledig opgebouwde waterdichting ónder het tegelwerk, want tegelwerk en voegwerk
                 zijn zelf niet waterdicht. Maar de foutmarge is klein, en de schade laat zich pas
-                zien als het plafond van de kamer eronder gaat vlekken.
+                zien als het plafond van de kamer eronder gaat vlekken. Waaruit zo&apos;n
+                waterdichting bestaat en waar hij wel en niet hoort, staat in{' '}
+                <Link href="/badkamer-waterdicht-maken" className="underline decoration-primary-500 underline-offset-4 hover:text-paper">
+                  de uitleg over een badkamer waterdicht maken
+                </Link>
+                .
               </p>
             </div>
             <div className="border-t border-primary-700 pt-8 lg:border-l lg:border-t-0 lg:pl-12 lg:pt-0">

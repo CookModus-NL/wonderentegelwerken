@@ -440,7 +440,21 @@ export default function TotPlafondBetegelenPage() {
             ))}
           </ul>
 
+          <p className="mt-12 max-w-2xl text-base leading-relaxed text-primary-600">
+            En één ding dat los staat van de hoogtevraag: hoe hoog je ook betegelt, tegelwerk en
+            voegwerk houden zelf geen water tegen. De waterkering zit eronder. Hoe die laag is
+            opgebouwd, wat de bouwregels erover zeggen en hoe je controleert dat hij er ligt,
+            staat in{' '}
+            <Link href="/badkamer-waterdicht-maken" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+              de uitleg over een badkamer waterdicht maken
+            </Link>
+            .
+          </p>
+
           <div className="mt-12 flex flex-wrap gap-3">
+            <Link href="/badkamer-waterdicht-maken" className="btn-secondary">
+              Badkamer waterdicht maken
+            </Link>
             <Link href="/diensten/badkamer-renovatie" className="btn-secondary">
               Badkamer renovatie
             </Link>

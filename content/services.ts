@@ -50,6 +50,12 @@ Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We besp
     ],
     answers: [
       {
+        href: '/badkamer-waterdicht-maken',
+        label: 'Hoe wordt mijn badkamer waterdicht gemaakt?',
+        teaser:
+          'Niet door de tegels. De waterkering is een laag eronder: voorstrijk, kimband in elke binnenhoek, manchetten om de doorvoeren en twee lagen afdichtingspasta. Met wat de bouwregels echt eisen, en de drie momenten waarop je nog kunt zien dat hij er ligt.',
+      },
+      {
         href: '/badkamer-betegelen-tot-plafond',
         label: 'Moet de badkamer tot het plafond betegeld worden?',
         teaser:
@@ -212,6 +218,12 @@ Ook voor compleet nieuw voegwerk of voegen herstellen kun je bij me terecht. Gar
       { q: 'Hoe lang duurt een gemiddelde kitklus?', a: 'Een hele badkamer hervoegen en kitten meestal 1 werkdag. Losse plekken vaak een paar uur, voorrij en uitvoering.' },
     ],
     answers: [
+      {
+        href: '/badkamer-waterdicht-maken',
+        label: 'Hoe wordt mijn badkamer waterdicht gemaakt?',
+        teaser:
+          'Kit en voeg zijn de afwerking, niet de waterkering. Die zit eronder. Waarom kitwerk 1 jaar garantie krijgt en tegel- en voegwerk 5 jaar, en waarom in de douchehoek kit hoort en geen cementvoeg.',
+      },
       {
         href: '/losse-tegels-en-scheurende-voegen',
         label: 'Wat gebeurt er als er later tegels loskomen of een voeg scheurt?',

@@ -338,7 +338,7 @@ export default function BadkamerWaterdichtMakenPage() {
       <section className="bg-clay py-24 lg:py-32">
         <div className="container-tight">
           <div className="eyebrow">De opbouw</div>
-          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+          <h2 id="de-opbouw-van-een-waterdichte-badkamer" className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
             Negen lagen, en maar één ervan houdt water tegen
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
@@ -386,7 +386,7 @@ export default function BadkamerWaterdichtMakenPage() {
       <section className="bg-paper py-24 lg:py-32">
         <div className="container-tight">
           <div className="eyebrow">Wat er echt in de wet staat</div>
-          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+          <h2 id="is-waterdichting-wettelijk-verplicht" className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
             De bouwregels eisen geen afdichtingslaag onder je tegels
           </h2>
 
@@ -447,7 +447,7 @@ export default function BadkamerWaterdichtMakenPage() {
       <section className="bg-clay py-24 lg:py-32">
         <div className="container-tight">
           <div className="eyebrow">Per vlak, niet per ruimte</div>
-          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+          <h2 id="waar-hoort-de-waterdichting-wel-en-niet" className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
             Waar de laag hoort, en waar hij niets oplost
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
@@ -489,7 +489,7 @@ export default function BadkamerWaterdichtMakenPage() {
       <section className="bg-paper py-24 lg:py-32">
         <div className="container-tight">
           <div className="eyebrow">Het probleem met deze laag</div>
-          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+          <h2 id="hoe-controleer-ik-of-de-waterdichting-er-ligt" className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
             Drie momenten waarop je hem nog kunt zien
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
@@ -536,7 +536,7 @@ export default function BadkamerWaterdichtMakenPage() {
       <section className="bg-clay py-24 lg:py-32">
         <div className="container-tight">
           <div className="eyebrow">Voordat je tekent</div>
-          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+          <h2 id="wat-hoort-er-over-waterdichting-op-de-offerte" className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
             Vijf regels die op de offerte horen te staan
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
@@ -572,7 +572,7 @@ export default function BadkamerWaterdichtMakenPage() {
       <section className="bg-paper py-24 lg:py-32">
         <div className="container-tight">
           <div className="eyebrow">De vraag die niemand stelt</div>
-          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+          <h2 id="wie-legt-de-waterdichting-aan" className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
             Wie legt die laag eigenlijk aan?
           </h2>
 

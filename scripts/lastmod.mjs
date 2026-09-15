@@ -91,6 +91,7 @@ const map = {
   '/losse-tegels-en-scheurende-voegen': fileDate('app/losse-tegels-en-scheurende-voegen/page.tsx'),
   '/tegelvloer-belopen-en-vloerverwarming-aanzetten': fileDate('app/tegelvloer-belopen-en-vloerverwarming-aanzetten/page.tsx'),
   '/tegelen-over-bestaande-tegels': fileDate('app/tegelen-over-bestaande-tegels/page.tsx'),
+  '/badkamer-waterdicht-maken': fileDate('app/badkamer-waterdicht-maken/page.tsx'),
 }
 
 const groups = [

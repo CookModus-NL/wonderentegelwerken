@@ -93,6 +93,7 @@ const map = {
   '/tegelen-over-bestaande-tegels': fileDate('app/tegelen-over-bestaande-tegels/page.tsx'),
   '/badkamer-waterdicht-maken': fileDate('app/badkamer-waterdicht-maken/page.tsx'),
   '/eerst-vloer-of-wand-betegelen': fileDate('app/eerst-vloer-of-wand-betegelen/page.tsx'),
+  '/wat-kost-vloer-tegelen-per-m2': fileDate('app/wat-kost-vloer-tegelen-per-m2/page.tsx'),
 }
 
 const groups = [

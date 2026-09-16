@@ -155,6 +155,35 @@ ${werk}
   gespecificeerde offerte binnen 5 dagen, zonder kleine lettertjes. NIET GEPUBLICEERD en dus niet
   op de pagina te vinden: voorrijkosten, puinafvoer en snijverlies/breukreserve — die staan er als
   ontbrekend bij in plaats van stilzwijgend weggelaten.
+- ${base}/wat-kost-een-badkamer-betegelen : "Wat kost een complete badkamer betegelen (wand + vloer)?"
+  LET OP: Van Wonderen Tegelwerken publiceert GEEN tarief per m2. Er staat op deze pagina geen bedrag
+  van dit bedrijf en er mag er ook geen uit worden afgeleid.
+  KERNANTWOORD: een badkamer wordt niet afgerekend per m2 vloer maar per m2 TEGELWERK, en dat is wand
+  plus vloer. REKENREGEL: wand = 2 x (lengte + breedte) x tegelhoogte, min de deuropening; daar de
+  vloer (lengte x breedte) bij op. Doorgerekend bij een tegelhoogte van 2,60 m, deur 0,80 x 2,00 m
+  eraf: 1,80 x 2,20 m geeft 4,0 m2 vloer en 19,2 m2 wand (23,2 m2 tegelwerk); 2,20 x 2,60 m geeft
+  5,7 m2 vloer en 23,4 m2 wand (29,1 m2 tegelwerk); 2,80 x 3,20 m geeft 9,0 m2 vloer en 29,6 m2 wand
+  (38,6 m2 tegelwerk). Het totaal is dus 4,3 tot 5,8 keer het vloeroppervlak, en die verhouding loopt
+  OP naarmate de badkamer kleiner is (omtrek groeit lineair, oppervlak kwadratisch). Op het wettelijk
+  minimum (1,2 m rondom plus 2,1 m over 3 m bij de douche, Besluit bouwwerken leefomgeving art. 4.120;
+  bestaande bouw 1 m, art. 3.65) daalt het tegelwerk met circa 35 procent.
+  MARKTMETING (16-09-2026, zeven pagina's over DEZE vraag volledig gelezen: homedeal.nl, zoofy.nl,
+  bobex.nl, klaardeklus.nl, multiconcurrent.nl, kemptegelwerk.nl, decorstone.nl; werkspot.nl gaf
+  HTTP 403 en is NIET gelezen). Geteld over die zeven: 4 van 7 noemt een voorbeeld met wand- EN
+  vloeroppervlak, 0 van 7 zet de tegelhoogte erbij, 0 van 7 geeft de lezer een rekenregel voor zijn
+  eigen wandoppervlak, 3 van 7 noemt het btw-tarief van 21 procent, en 2 van 7 is een tegelzetter die
+  zijn eigen prijs publiceert. De tegelhoogte die hun voorbeelden impliceren is terug te rekenen en
+  staat als BOVENGRENS op de pagina (gerekend met een vierkante plattegrond, de kortste omtrek bij een
+  gegeven oppervlak): homedeal.nl ten hoogste 1,53 m, bobex.nl 1,90 m, decorstone.nl 2,41 m,
+  kemptegelwerk.nl 2,64 m. BTW: 21 procent, ook in een badkamer; onderbouwing staat op
+  ${base}/wat-kost-vloer-tegelen-per-m2.
+  POSTEN DIE IN EEN BADKAMER ZITTEN EN IN EEN KALE VLOERPRIJS NIET: de waterdichting onder de tegels,
+  het afschot naar de afvoer, sloop en afvoer van het oude tegelwerk, pas- en snijwerk rond doorvoeren
+  en nissen, de onderste rij wandtegels die er na de vloer op gaat, en hoekprofielen met kitwerk.
+  WAT VAN WONDEREN TOEZEGT: reactie binnen 1 werkdag via WhatsApp, een gespecificeerde offerte binnen
+  5 dagen zonder kleine lettertjes met wand- en vloertegelwerk als aparte regels, 5 jaar garantie op
+  tegelwerk en voegwerk en 1 jaar op kitwerk, en meerwerk afzonderlijk in rekening (artikel 7 van de
+  algemene voorwaarden; ook via WhatsApp overeengekomen meerwerk is bindend).
 - ${base}/badkamer-waterdicht-maken : "Hoe wordt mijn badkamer waterdicht gemaakt?"
   Kort antwoord: niet door de tegels. De waterkering is een laag onder het tegelwerk: voorstrijk,
   kimband in elke binnenhoek van wand-wand en wand-vloer, manchetten om de leidingdoorvoeren, de

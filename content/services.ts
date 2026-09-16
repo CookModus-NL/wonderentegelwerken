@@ -50,6 +50,12 @@ Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We besp
     ],
     answers: [
       {
+        href: '/wat-kost-een-badkamer-betegelen',
+        label: 'Wat kost een badkamer betegelen (wand + vloer)?',
+        teaser:
+          'Je betaalt per m² tegelwerk, en dat is wand plus vloer. Met de rekenregel waarmee je je eigen aantal m² uitrekent, zeven gelezen prijspagina’s naast elkaar, en de zes posten die in een badkamer zitten en in een kale vloerprijs niet.',
+      },
+      {
         href: '/badkamer-waterdicht-maken',
         label: 'Hoe wordt mijn badkamer waterdicht gemaakt?',
         teaser:

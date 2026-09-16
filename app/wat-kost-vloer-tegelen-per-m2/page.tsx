@@ -613,6 +613,16 @@ export default function WatKostVloerTegelenPage() {
               de zes pagina&apos;s hierboven verdienen wél aan de doorverwijzing.
             </p>
             <p className="text-base leading-relaxed text-primary-600">
+              Gaat het om een badkamer, dan is deze pagina maar de helft van je antwoord. Daar
+              betaal je namelijk niet per m² vloer maar per m² tegelwerk, en de wand is drie tot
+              vijf keer zo groot als de vloer. De rekenregel waarmee je dat aantal m² zelf uitrekent
+              staat op{' '}
+              <Link href="/wat-kost-een-badkamer-betegelen" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+                wat kost een badkamer betegelen
+              </Link>
+              .
+            </p>
+            <p className="text-base leading-relaxed text-primary-600">
               Mocht je tegelwerk op een bestaande tegelvloer overwegen omdat je hoopt dat het
               goedkoper is: dat is een eigen rekensom, en die staat uitgewerkt op{' '}
               <Link href="/tegelen-over-bestaande-tegels" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
@@ -655,7 +665,7 @@ export default function WatKostVloerTegelenPage() {
               'Voorrijkosten als apart bedrag. Die staan hier niet, en volgens de ACM horen ze bij een particuliere klant sowieso niet als losse naheffing te bestaan: onvermijdbare bijkomende kosten moeten in de prijs zitten die je als eerste ziet. Wat ik dus niet gepubliceerd heb is een voorrijtarief — vraag bij de offerte na hoe het erin verwerkt is, bij mij en bij ieder ander.',
               'Puinafvoer van de oude vloer. Wie het puin afvoert en wat dat kost hoort op de offerte te staan, maar er staat hier geen bedrag bij omdat ik er geen gepubliceerd tarief voor heb.',
               'Snijverlies en breukreserve. Hoeveel procent extra tegels je moet bestellen hangt af van het patroon en de ruimte. Het advies dat ik het vaakst tegenkwam: bestel in één keer genoeg, want een nabestelling wijkt vrijwel altijd af in kleur of maat. Een percentage noem ik niet, want dat is voor jouw ruimte een schatting en geen getal.',
-              'Een rekenvoorbeeld voor een badkamer of een hele woning. Dat is een andere vraag met andere posten, en die verdient een eigen pagina in plaats van een alinea hier.',
+              'Een rekenvoorbeeld voor een hele woning. Dat is een andere vraag met andere posten, en die verdient een eigen pagina in plaats van een alinea hier.',
               'Een oordeel over de prijs van een andere tegelzetter. De tabel hierboven vergelijkt prijspagina’s, geen vakmensen.',
             ].map((t) => (
               <li key={t} className="py-6 text-base leading-relaxed text-primary-600">
@@ -680,6 +690,9 @@ export default function WatKostVloerTegelenPage() {
           </p>
 
           <div className="mt-12 flex flex-wrap gap-3">
+            <Link href="/wat-kost-een-badkamer-betegelen" className="btn-secondary">
+              Wat kost een badkamer betegelen?
+            </Link>
             <Link href="/diensten/vloertegels" className="btn-secondary">
               Vloertegelwerk
             </Link>

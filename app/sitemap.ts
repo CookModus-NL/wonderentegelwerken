@@ -47,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry('/badkamer-waterdicht-maken', 0.8, 'monthly'),
     entry('/eerst-vloer-of-wand-betegelen', 0.8, 'monthly'),
     entry('/wat-kost-vloer-tegelen-per-m2', 0.8, 'monthly'),
+    entry('/wat-kost-een-badkamer-betegelen', 0.8, 'monthly'),
     ...services.map((s) => entry(`/diensten/${s.slug}`, 0.8, 'monthly')),
     ...projects.map((p) => entry(`/projecten/${p.slug}`, 0.7, 'yearly')),
     // Lokale SEO landingspagina's per plaats

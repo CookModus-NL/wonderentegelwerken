@@ -153,7 +153,7 @@ ${werk}
   ook mondeling of via WhatsApp overeengekomen meerwerk is bindend). Garantie: 5 jaar op tegelwerk
   en voegwerk, 1 jaar op kitwerk. Toezegging: reactie binnen 1 werkdag via WhatsApp en een
   gespecificeerde offerte binnen 5 dagen, zonder kleine lettertjes. NIET GEPUBLICEERD en dus niet
-  op de pagina te vinden: voorrijkosten, puinafvoer en snijverlies/breukreserve — die staan er als
+  op de pagina te vinden: voorrijkosten, puinafvoer en snijverlies/breukreserve. Die staan er als
   ontbrekend bij in plaats van stilzwijgend weggelaten.
 - ${base}/wat-kost-een-badkamer-betegelen : "Wat kost een complete badkamer betegelen (wand + vloer)?"
   LET OP: Van Wonderen Tegelwerken publiceert GEEN tarief per m2. Er staat op deze pagina geen bedrag

@@ -741,7 +741,7 @@ export default function LosseTegelsPage() {
           <p className="mt-12 max-w-2xl text-base leading-relaxed text-primary-600">
             Eén daarvan verdient wel een eigen plek: wat tegelwerk kost, en waarom de bedragen die
             je online vindt zo ver uiteenlopen. Dat verschil zit niet in de tegelzetter maar in wat
-            er in het bedrag zit — en garantietermijnen horen in die vergelijking thuis. Het staat
+            er in het bedrag zit, en garantietermijnen horen in die vergelijking thuis. Het staat
             uitgewerkt op{' '}
             <Link
               href="/wat-kost-vloer-tegelen-per-m2"

@@ -38,7 +38,7 @@ import type { Metadata } from 'next'
  * /vloeren-tegels/prijzen-kosten/wand-vloertegels-zetten). Dat is uitgerekend de pagina die
  * in het register als bezitter van deze vraag staat (motor_vraagdekking fc79e5d1,
  * bezitter_op 2026-09-01). Als werkspot.nl de btw wel benoemt, is de telling "0 van de
- * zes" op deze pagina te ruim gesteld voor de markt als geheel — daarom staat er een
+ * zes" op deze pagina te ruim gesteld voor de markt als geheel. Daarom staat er een
  * geteld getal met een leeslijst en nergens het woord "niemand".
  * DE TELLINGEN:
  *   - 6 van 6 noemen een bedrag per m2 voor arbeid. Samengenomen loopt de opgegeven
@@ -77,7 +77,7 @@ import type { Metadata } from 'next'
  * antwoord, niet een zwakte) en daarna zelf bij de bron nagekeken. Geen van de zes gelezen
  * prijspagina's noemt deze regel.
  *
- * AI-ANTWOORD, sampled 16-09-2026 (websearch-assistent, US-gelokaliseerd — dus NIET
+ * AI-ANTWOORD, sampled 16-09-2026 (websearch-assistent, US-gelokaliseerd, dus NIET
  * representatief voor wat een Nederlandse zoeker ziet; alleen als waarneming genoteerd,
  * er is geen claim op gebouwd): "A tile setter charges EUR 30 - EUR 55 per hour or EUR 25 -
  * EUR 40 per m2 ... For a 20 m2 floor, costs average EUR 1,500 to EUR 2,000, including tiles
@@ -110,7 +110,7 @@ import type { Metadata } from 'next'
  * besloot de verwante vraag "wat zit er wel en niet in de prijs per m2" NIET te schrijven,
  * omdat drie posten ontbraken waar alle gelezen concurrenten voor waarschuwen: voorrijkosten,
  * puinafvoer en snijverlies/breukreserve. Dat besluit staat nog. Deze pagina omzeilt het niet
- * door ze stil over te slaan, maar noemt ze met zoveel woorden als ontbrekend — zie de sectie
+ * door ze stil over te slaan, maar noemt ze met zoveel woorden als ontbrekend; zie de sectie
  * "Wat hier niet staat". Een pagina die compleet lijkt en juist de naheffingsposten weglaat,
  * breekt de eigen belofte "geen verrassingen achteraf".
  *
@@ -137,7 +137,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Wat kost vloer tegelen per m²? | Van Wonderen Tegelwerken',
     description:
-      'De bandbreedtes die online circuleren lopen van € 10 tot € 100 per m² arbeid. Wat dat verschil verklaart is niet de tegelzetter maar wat er in het bedrag zit — en het btw-tarief dat niemand erbij zet.',
+      'De bandbreedtes die online circuleren lopen van € 10 tot € 100 per m² arbeid. Wat dat verschil verklaart is niet de tegelzetter maar wat er in het bedrag zit, en het btw-tarief dat niemand erbij zet.',
     images: ['/images/projects/portfolio-2025-03-wa0006.webp'],
   },
 }
@@ -177,7 +177,7 @@ const marktmeting = [
     arbeid: '€ 40 – € 60 per m²',
     citaat:
       '“Deze prijs is meestal inclusief lijm, voegmiddel en btw, maar exclusief de tegels zelf.” En: “Egaliseren kost gemiddeld €8 tot €15 per m² extra.”',
-    watErinZit: 'ja — de enige van de zes',
+    watErinZit: 'ja, de enige van de zes',
     btw: '“incl. btw”, geen tarief',
   },
   {
@@ -185,7 +185,7 @@ const marktmeting = [
     href: 'https://www.stuc-concurrent.nl/tegelzetter-prijs/',
     arbeid: '€ 25 – € 100 per m²',
     citaat:
-      '“Berekent hij zijn lijm- en voegmiddel mee of staat dit los van zijn offerte?” — de vraag wordt gesteld, niet beantwoord.',
+      '“Berekent hij zijn lijm- en voegmiddel mee of staat dit los van zijn offerte?” De vraag wordt gesteld, niet beantwoord.',
     watErinZit: 'niet vermeld',
     btw: 'geen tarief',
   },
@@ -202,7 +202,7 @@ const marktmeting = [
 
 /** Wat er bij Van Wonderen in de m²-prijs voor vloertegelwerk zit. Bron: motor_feiten
  *  wonderen-dienst-vloertegelwerk (eigenaar_akkoord = true) + de eigen FAQ op
- *  /diensten/vloertegels. Geen bedragen — die bestaan niet als goedgekeurd feit. */
+ *  /diensten/vloertegels. Geen bedragen: die bestaan niet als goedgekeurd feit. */
 const welErin = [
   {
     post: 'Lijm en voorlijm',
@@ -230,7 +230,7 @@ const nietErin = [
   {
     post: 'De tegels zelf',
     uitleg:
-      'Die koop je zelf of ik bestel ze; ze staan hoe dan ook als eigen regel op de offerte. De zes gelezen pagina’s noemen voor de tegel zelf € 15 tot € 200 per m², afhankelijk van keramiek, porselein of natuursteen — dat is de post met de grootste spreiding en die bepaal jij in de showroom.',
+      'Die koop je zelf of ik bestel ze; ze staan hoe dan ook als eigen regel op de offerte. De zes gelezen pagina’s noemen voor de tegel zelf € 15 tot € 200 per m², afhankelijk van keramiek, porselein of natuursteen. Dat is de post met de grootste spreiding, en die bepaal jij in de showroom.',
   },
   {
     post: 'Los egaliseren bij grotere oneffenheden',
@@ -245,14 +245,14 @@ const nietErin = [
   {
     post: 'Meerwerk',
     uitleg:
-      'Werk buiten de oorspronkelijke opdracht wordt afzonderlijk in rekening gebracht — dat staat met zoveel woorden in artikel 7 van mijn algemene voorwaarden. En: ook mondeling of via WhatsApp afgesproken meerwerk is bindend. Laat het dus altijd terugkomen in een bericht, dan heb je het zwart op wit.',
+      'Werk buiten de oorspronkelijke opdracht wordt afzonderlijk in rekening gebracht: dat staat met zoveel woorden in artikel 7 van mijn algemene voorwaarden. En: ook mondeling of via WhatsApp afgesproken meerwerk is bindend. Laat het dus altijd terugkomen in een bericht, dan heb je het zwart op wit.',
   },
 ]
 
 const faqs = [
   {
     q: 'Wat kost vloer tegelen per m² bij Van Wonderen Tegelwerken?',
-    a: 'Daar staat op deze pagina geen bedrag, en dat is een bewuste keuze. Ik heb nog geen vast tarief per m² gepubliceerd, en een getal opschrijven dat ik niet kan waarmaken voor jouw vloer is precies wat ik de vergelijkingssites zie doen. Wat ik wél doe: binnen 1 werkdag reageren op je WhatsApp, en binnen 5 dagen een gespecificeerde offerte sturen zonder kleine lettertjes, waarin de posten los staan — tegels, tegelwerk, eventueel egaliseren, plinten per strekkende meter. Dan vergelijk je geen bandbreedte maar een bedrag voor jouw ruimte.',
+    a: 'Daar staat op deze pagina geen bedrag, en dat is een bewuste keuze. Ik heb nog geen vast tarief per m² gepubliceerd, en een getal opschrijven dat ik niet kan waarmaken voor jouw vloer is precies wat ik de vergelijkingssites zie doen. Wat ik wél doe: binnen 1 werkdag reageren op je WhatsApp, en binnen 5 dagen een gespecificeerde offerte sturen zonder kleine lettertjes, waarin de posten los staan: tegels, tegelwerk, eventueel egaliseren, plinten per strekkende meter. Dan vergelijk je geen bandbreedte maar een bedrag voor jouw ruimte.',
   },
   {
     q: 'Welke bedragen circuleren er dan online, en kloppen die?',
@@ -264,31 +264,31 @@ const faqs = [
   },
   {
     q: 'Geldt op tegelwerk het lage btw-tarief van 9%?',
-    a: 'Nee. De Belastingdienst noemt voor woningen ouder dan 2 jaar het isoleren, schilderen, stukadoren en behangen onder het 9%-tarief, plus schoonmaken binnen de woning. Tegelen staat niet in die opsomming, en dezelfde pagina sluit af met: “Werkzaamheden aan woningen anders dan hierboven genoemd, zijn belast met 21% btw.” Tegelwerk is dus 21%, over arbeid én materiaal. Geen van de zes prijspagina’s die ik las noemt een btw-percentage; vier schrijven wel “inclusief btw”. Zit het tegelwerk in een grotere verbouwing waar wel 9%-werk in zit, zoals stucwerk, dan moeten die delen op de offerte en de factuur gesplitst worden — ook dat schrijft de Belastingdienst voor.',
+    a: 'Nee. De Belastingdienst noemt voor woningen ouder dan 2 jaar het isoleren, schilderen, stukadoren en behangen onder het 9%-tarief, plus schoonmaken binnen de woning. Tegelen staat niet in die opsomming, en dezelfde pagina sluit af met: “Werkzaamheden aan woningen anders dan hierboven genoemd, zijn belast met 21% btw.” Tegelwerk is dus 21%, over arbeid én materiaal. Geen van de zes prijspagina’s die ik las noemt een btw-percentage; vier schrijven wel “inclusief btw”. Zit het tegelwerk in een grotere verbouwing waar wel 9%-werk in zit, zoals stucwerk, dan moeten die delen op de offerte en de factuur gesplitst worden. Ook dat schrijft de Belastingdienst voor.',
   },
   {
     q: 'Zit het voegwerk in de prijs per m², of komt dat er nog bij?',
-    a: 'Dat zit erin. Net als de lijm en de voorlijm, en de dilataties op de plekken waar ze horen. Het is niet toevallig de vraag die de vergelijkingssites je aanraden te stellen — één van de zes verwoordt het als: “Berekent hij zijn lijm- en voegmiddel mee of staat dit los van zijn offerte?” Mijn antwoord daarop is ja, en het staat ook zo op mijn pagina over vloertegelwerk.',
+    a: 'Dat zit erin. Net als de lijm en de voorlijm, en de dilataties op de plekken waar ze horen. Het is niet toevallig de vraag die de vergelijkingssites je aanraden te stellen. Eén van de zes verwoordt het als: “Berekent hij zijn lijm- en voegmiddel mee of staat dit los van zijn offerte?” Mijn antwoord daarop is ja, en het staat ook zo op mijn pagina over vloertegelwerk.',
   },
   {
     q: 'Wat kost egaliseren, en wanneer is het nodig?',
-    a: 'Oppervlakkige oneffenheden gaan mee in de voorlijm en zitten in de prijs. Is de ondervloer echt uit het lood, dan egaliseer ik los en reken ik dat per m² apart. Een bedrag daarvoor staat hier niet, want ik heb er geen gepubliceerd tarief voor. Wat ik wel toezeg: we bespreken vooraf wat er nodig is, zodat “waar nodig” geen open eind in je offerte is. Eén van de zes gelezen pagina’s noemt hiervoor € 8 tot € 15 per m² extra — dat is hun schatting van de markt, niet mijn prijs.',
+    a: 'Oppervlakkige oneffenheden gaan mee in de voorlijm en zitten in de prijs. Is de ondervloer echt uit het lood, dan egaliseer ik los en reken ik dat per m² apart. Een bedrag daarvoor staat hier niet, want ik heb er geen gepubliceerd tarief voor. Wat ik wel toezeg: we bespreken vooraf wat er nodig is, zodat “waar nodig” geen open eind in je offerte is. Eén van de zes gelezen pagina’s noemt hiervoor € 8 tot € 15 per m² extra. Dat is hun schatting van de markt, niet mijn prijs.',
   },
   {
     q: 'Mogen voorrijkosten er achteraf bij komen?',
-    a: 'Niet als losse verrassing, en dat is geen mening maar een regel. De Autoriteit Consument & Markt schrijft voor dat een verkoopprijs aan consumenten inclusief btw én inclusief onvermijdbare bijkomende kosten wordt vermeld — kosten die jij niet kunt kiezen, en de ACM noemt voorrijkosten daarbij expliciet als voorbeeld. Ze horen dus in de prijs die je als eerste ziet, of ze horen met een rekenvoorbeeld erbij te staan. Wat de ACM wél toestaat is een opbouw zoals “een vast bedrag voor het eerste deel, daarna een tarief per eenheid”, mits je die opbouw meteen ziet. Eén van de zes gelezen prijspagina’s waarschuwt niet voor niets dat bijkomende kosten “niet altijd in het uurtarief zijn inbegrepen”: dat is precies wat er niet hoort te gebeuren.',
+    a: 'Niet als losse verrassing, en dat is geen mening maar een regel. De Autoriteit Consument & Markt schrijft voor dat een verkoopprijs aan consumenten inclusief btw én inclusief onvermijdbare bijkomende kosten wordt vermeld. Onvermijdbaar betekent: kosten die jij niet kunt kiezen. De ACM noemt voorrijkosten daarbij expliciet als voorbeeld. Ze horen dus in de prijs die je als eerste ziet, of ze horen met een rekenvoorbeeld erbij te staan. Wat de ACM wél toestaat is een opbouw zoals “een vast bedrag voor het eerste deel, daarna een tarief per eenheid”, mits je die opbouw meteen ziet. Eén van de zes gelezen prijspagina’s waarschuwt niet voor niets dat bijkomende kosten “niet altijd in het uurtarief zijn inbegrepen”: dat is precies wat er niet hoort te gebeuren.',
   },
   {
     q: 'Wat moet er op mijn offerte staan om twee prijzen eerlijk te kunnen vergelijken?',
-    a: 'Zeven regels. Eén: het aantal m² vloer, apart van eventueel wandwerk. Twee: of lijm, voorlijm en voegwerk in het bedrag zitten. Drie: of er geëgaliseerd moet worden en of dat apart gerekend wordt. Vier: de plinten, met de eenheid erbij — per strekkende meter of per m², en of het afkitten erin zit. Vijf: de tegels zelf, als eigen regel. Zes: het btw-tarief, en of er gesplitst moet worden. Zeven: dat onvermijdbare bijkomende kosten er al in zitten, zoals de ACM voorschrijft. Bij mij komt dat als een gespecificeerde offerte binnen 5 dagen, zonder kleine lettertjes.',
+    a: 'Zeven regels. Eén: het aantal m² vloer, apart van eventueel wandwerk. Twee: of lijm, voorlijm en voegwerk in het bedrag zitten. Drie: of er geëgaliseerd moet worden en of dat apart gerekend wordt. Vier: de plinten, met de eenheid erbij: per strekkende meter of per m², en of het afkitten erin zit. Vijf: de tegels zelf, als eigen regel. Zes: het btw-tarief, en of er gesplitst moet worden. Zeven: dat onvermijdbare bijkomende kosten er al in zitten, zoals de ACM voorschrijft. Bij mij komt dat als een gespecificeerde offerte binnen 5 dagen, zonder kleine lettertjes.',
   },
   {
     q: 'Kan ik afzeggen als de prijs me tegenvalt, en kost dat geld?',
-    a: 'Een offerte is vrijblijvend — daar zit je aan niets vast. Zeg je af of verplaats je nadat het werk is ingepland, dan geldt artikel 4 van mijn algemene voorwaarden: melden mag tot 5 werkdagen voor aanvang. Binnen 48 uur voor aanvang mag ik maximaal € 400 inclusief btw per ingeplande vakman per dag in rekening brengen, en alleen als die vrijgevallen dag redelijkerwijs niet meer opgevuld kan worden. Dat is overigens het enige bedrag dat op deze hele site staat, en ik zet het er liever bij dan dat je het achteraf leest.',
+    a: 'Een offerte is vrijblijvend; daar zit je aan niets vast. Zeg je af of verplaats je nadat het werk is ingepland, dan geldt artikel 4 van mijn algemene voorwaarden: melden mag tot 5 werkdagen voor aanvang. Binnen 48 uur voor aanvang mag ik maximaal € 400 inclusief btw per ingeplande vakman per dag in rekening brengen, en alleen als die vrijgevallen dag redelijkerwijs niet meer opgevuld kan worden. Dat is overigens het enige bedrag dat op deze hele site staat, en ik zet het er liever bij dan dat je het achteraf leest.',
   },
   {
     q: 'Wanneer ben ik bij jou aan het verkeerde adres?',
-    a: 'Als je zoekt naar de laagste prijs per m² en verder niets. Ik ben een eenmanszaak uit Breda en doe elke klus zelf, zonder onderaannemers — dat betekent dat ik niet de goedkoopste hoef te zijn en ook niet de snelst beschikbare ben. En als je vloer buiten mijn werkgebied ligt: het kerngebied is Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst, met Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert erbij, en grotere projecten verder weg op aanvraag.',
+    a: 'Als je zoekt naar de laagste prijs per m² en verder niets. Ik ben een eenmanszaak uit Breda en doe elke klus zelf, zonder onderaannemers. Dat betekent dat ik niet de goedkoopste hoef te zijn en ook niet de snelst beschikbare ben. En als je vloer buiten mijn werkgebied ligt: het kerngebied is Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst, met Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert erbij, en grotere projecten verder weg op aanvraag.',
   },
 ]
 
@@ -347,7 +347,7 @@ export default function WatKostVloerTegelenPage() {
             <p className="mt-6 text-lg leading-relaxed text-primary-600">
               En nog iets dat geen van de zes erbij zet: het btw-tarief. Vier van hen schrijven
               &ldquo;inclusief btw&rdquo; zonder te zeggen welk tarief. Voor tegelwerk is dat 21%,
-              niet de 9% die je bij verbouwen misschien verwacht — tegelen staat namelijk niet in
+              niet de 9% die je bij verbouwen misschien verwacht. Tegelen staat namelijk niet in
               het rijtje van de Belastingdienst. Op een vloer van 20 m² scheelt dat tarief al snel
               meer dan het verschil tussen twee tegelzetters.
             </p>
@@ -423,7 +423,7 @@ export default function WatKostVloerTegelenPage() {
             zetten geen enkele datum bij hun getallen. De twee die dat wel doen, dragen een
             paginadatum van februari 2025 en augustus 2024. Een prijs zonder datum is in een vak met
             stijgende loonkosten geen prijs maar een indruk. Alles in de tabel hierboven is dus een
-            schatting van een vergelijkingssite — niet mijn tarief, en ook geen indicatie ervan.
+            schatting van een vergelijkingssite, niet mijn tarief en ook geen indicatie ervan.
           </p>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -462,7 +462,7 @@ export default function WatKostVloerTegelenPage() {
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
             Twee offertes vergelijken heeft geen zin zolang je niet weet wat er in het bedrag zit.
-            Daarom hieronder mijn lijst — zonder bedrag, want dat heb ik niet gepubliceerd, maar
+            Daarom hieronder mijn lijst: zonder bedrag, want dat heb ik niet gepubliceerd, maar
             wel volledig. Dit is dezelfde opsomming die op mijn pagina over{' '}
             <Link href="/diensten/vloertegels" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
               vloertegelwerk
@@ -566,7 +566,7 @@ export default function WatKostVloerTegelenPage() {
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-primary-600">
                   Ik ben tegelzetter, geen belastingadviseur. Klopt er iets niet in jouw situatie,
-                  dan is de Belastingdienst de baas en niet deze pagina — maar het tarief op mijn
+                  dan is de Belastingdienst de baas en niet deze pagina. Maar het tarief op mijn
                   offerte kun je hiermee zelf narekenen.
                 </p>
               </div>
@@ -590,7 +590,7 @@ export default function WatKostVloerTegelenPage() {
             <p className="text-base leading-relaxed text-primary-900">
               Ik zou hier makkelijk een vanafprijs kunnen neerzetten. Dat leest lekker, het scoort
               waarschijnlijk beter, en het is precies het soort getal waar je later ruzie over
-              krijgt — want &ldquo;vanaf&rdquo; geldt voor de makkelijkste vloer die ik dat jaar
+              krijgt, want &ldquo;vanaf&rdquo; geldt voor de makkelijkste vloer die ik dat jaar
               gelegd heb, en die is de jouwe meestal niet.
             </p>
             <p className="text-base leading-relaxed text-primary-600">
@@ -661,8 +661,8 @@ export default function WatKostVloerTegelenPage() {
           </h2>
           <ul className="mt-12 divide-y divide-mist border-y border-mist">
             {[
-              'Mijn tarief per m². Ik heb er geen gepubliceerd, en de bedragen in de tabel hierboven zijn schattingen van vergelijkingssites — niet mijn prijs en ook geen indicatie ervan.',
-              'Voorrijkosten als apart bedrag. Die staan hier niet, en volgens de ACM horen ze bij een particuliere klant sowieso niet als losse naheffing te bestaan: onvermijdbare bijkomende kosten moeten in de prijs zitten die je als eerste ziet. Wat ik dus niet gepubliceerd heb is een voorrijtarief — vraag bij de offerte na hoe het erin verwerkt is, bij mij en bij ieder ander.',
+              'Mijn tarief per m². Ik heb er geen gepubliceerd, en de bedragen in de tabel hierboven zijn schattingen van vergelijkingssites, niet mijn prijs en ook geen indicatie ervan.',
+              'Voorrijkosten als apart bedrag. Die staan hier niet, en volgens de ACM horen ze bij een particuliere klant sowieso niet als losse naheffing te bestaan: onvermijdbare bijkomende kosten moeten in de prijs zitten die je als eerste ziet. Wat ik dus niet gepubliceerd heb is een voorrijtarief. Vraag bij de offerte na hoe het erin verwerkt is, bij mij en bij ieder ander.',
               'Puinafvoer van de oude vloer. Wie het puin afvoert en wat dat kost hoort op de offerte te staan, maar er staat hier geen bedrag bij omdat ik er geen gepubliceerd tarief voor heb.',
               'Snijverlies en breukreserve. Hoeveel procent extra tegels je moet bestellen hangt af van het patroon en de ruimte. Het advies dat ik het vaakst tegenkwam: bestel in één keer genoeg, want een nabestelling wijkt vrijwel altijd af in kleur of maat. Een percentage noem ik niet, want dat is voor jouw ruimte een schatting en geen getal.',
               'Een rekenvoorbeeld voor een hele woning. Dat is een andere vraag met andere posten, en die verdient een eigen pagina in plaats van een alinea hier.',

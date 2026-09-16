@@ -173,9 +173,12 @@ ${werk}
   vloeroppervlak, 0 van 7 zet de tegelhoogte erbij, 0 van 7 geeft de lezer een rekenregel voor zijn
   eigen wandoppervlak, 3 van 7 noemt het btw-tarief van 21 procent, en 2 van 7 is een tegelzetter die
   zijn eigen prijs publiceert. De tegelhoogte die hun voorbeelden impliceren is terug te rekenen en
-  staat als BOVENGRENS op de pagina (gerekend met een vierkante plattegrond, de kortste omtrek bij een
-  gegeven oppervlak): homedeal.nl ten hoogste 1,53 m, bobex.nl 1,90 m, decorstone.nl 2,41 m,
-  kemptegelwerk.nl 2,64 m. BTW: 21 procent, ook in een badkamer; onderbouwing staat op
+  staat als BOVENGRENS op de pagina. De formule is voor alle vier dezelfde: hoogte = (wandoppervlak +
+  1,60 voor de deuropening) gedeeld door de omtrek van een VIERKANTE plattegrond met dat vloeroppervlak
+  (een vierkant heeft de kortste omtrek, dus de hoogste uitkomst). Homedeal.nl 16,6 / 10,58 = ten
+  hoogste 1,57 m, bobex.nl 21,6 / 11,31 = 1,91 m, decorstone.nl 21,6 / 8,94 = 2,41 m, kemptegelwerk.nl
+  36,6 / 13,86 = 2,64 m; alleen die laatste gaat tot het plafond.
+  BTW: 21 procent, ook in een badkamer; onderbouwing staat op
   ${base}/wat-kost-vloer-tegelen-per-m2.
   POSTEN DIE IN EEN BADKAMER ZITTEN EN IN EEN KALE VLOERPRIJS NIET: de waterdichting onder de tegels,
   het afschot naar de afvoer, sloop en afvoer van het oude tegelwerk, pas- en snijwerk rond doorvoeren

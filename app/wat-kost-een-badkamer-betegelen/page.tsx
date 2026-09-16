@@ -44,15 +44,27 @@ import type { Metadata } from 'next'
  * Vier van de gelezen bronnen noemen een wand- EN een vloeroppervlak, geen enkele noemt erbij
  * tot welke hoogte er dan betegeld is. Die hoogte volgt uit hun eigen twee getallen. Om niet
  * te overdrijven is per bron gerekend met de VIERKANTE plattegrond: bij een gegeven oppervlak
- * heeft een vierkant de kortste omtrek, en dat levert de HOOGST mogelijke tegelhoogte op. Het
- * zijn dus bovengrenzen:
- *     homedeal.nl   15 m2 wand bij  7 m2 vloer -> ten hoogste 1,53 m
- *     bobex.nl      20 m2 wand bij  8 m2 vloer -> ten hoogste 1,90 m
- *     decorstone.nl 20 m2 wand bij  5 m2 vloer -> ten hoogste 2,41 m
- *     kemptegelwerk 35 m2 wand bij 12 m2 vloer -> ten hoogste 2,64 m
+ * heeft een vierkant de kortste omtrek, en dat levert de HOOGST mogelijke tegelhoogte op. De
+ * deuropening (0,80 x 2,00 = 1,60 m2) wordt bij hun wandoppervlak OPGETELD voor hij door de
+ * omtrek wordt gedeeld, want hun getal is netto wand. Ook dat duwt de uitkomst omhoog, dus
+ * blijft het een bovengrens. De formule is voor alle vier dezelfde:
+ *     hoogte = (wandoppervlak + 1,60) / (4 x wortel(vloeroppervlak))
+ *     homedeal.nl   15 m2 wand bij  7 m2 vloer -> 16,6 / 10,58 -> ten hoogste 1,57 m
+ *     bobex.nl      20 m2 wand bij  8 m2 vloer -> 21,6 / 11,31 -> ten hoogste 1,91 m
+ *     decorstone.nl 20 m2 wand bij  5 m2 vloer -> 21,6 /  8,94 -> ten hoogste 2,41 m
+ *     kemptegelwerk 35 m2 wand bij 12 m2 vloer -> 36,6 / 13,86 -> ten hoogste 2,64 m
  * Alleen het voorbeeld van Kemp gaat aantoonbaar tot het plafond. Wie het voorbeeld van
- * homedeal.nl als maatstaf neemt voor een tot het plafond betegelde badkamer, rekent met
- * ongeveer een derde van het tegelwerk.
+ * homedeal.nl als maatstaf neemt voor een tot het plafond betegelde badkamer, rekent te laag:
+ * in diezelfde ruimte van 7 m2 is de wand tot 2,60 m hoog 10,58 x 2,60 - 1,60 = 25,9 m2, en
+ * hun 15 m2 is daar 58% van. Ruim 40% van het wandtegelwerk valt dus buiten dat bedrag.
+ *
+ * HERSTELRONDE 1 (16-09-2026, criticus-bevinding op commit 4cac81a). De homedeal-rij stond op
+ * 1,53 m en was met de bovenstaande formule niet te reproduceren; 1,57 m is de juiste uitkomst.
+ * Bij het narekenen van alle vier de rijen bleek bobex.nl op 1,9092 uit te komen en dus op
+ * 1,91 m af te ronden, niet op 1,90 m - als bovengrens is naar beneden afronden de verkeerde
+ * kant op. Beide getallen zijn gecorrigeerd, de formule staat nu zichtbaar op de pagina, en de
+ * afgeleide bewering "ongeveer een derde van het tegelwerk" (niet reproduceerbaar) is vervangen
+ * door de doorgerekende 15 tegenover 25,9 m2.
  *
  * DE MARKTMETING (bewijsklasse B). Zes Nederlandstalige pagina's over DEZE vraag zijn op
  * 16-09-2026 volledig gelezen. De tellingen op deze pagina slaan uitsluitend op deze zes:
@@ -214,7 +226,7 @@ const marktmeting = [
     bedrag: '€ 25 – € 40 per m² arbeid · totaal € 50 – € 300 per m²',
     citaat:
       '“Je badkamerwand van 15 m² laten betegelen met keramische tegels van hogere kwaliteit kost in totaal gemiddeld € 1000.” Pagina zelf: 11/11/2025.',
-    hoogte: 'niet vermeld. Volgt uit hun eigen getallen: ten hoogste 1,53 m',
+    hoogte: 'niet vermeld. Volgt uit hun eigen getallen: (15 + 1,6) ÷ 10,58 = ten hoogste 1,57 m',
     btw: 'geen tarief',
   },
   {
@@ -234,7 +246,7 @@ const marktmeting = [
     bedrag: '€ 25 – € 40 per m² arbeid · € 1.100 – € 5.000 totaal · sloop € 300',
     citaat:
       '“Een gemiddelde badkamer heeft een wandoppervlakte van zo’n 20 vierkante meter.” Elders: badkamervloer van 8 m².',
-    hoogte: 'niet vermeld. Volgt uit hun eigen getallen: ten hoogste 1,90 m',
+    hoogte: 'niet vermeld. Volgt uit hun eigen getallen: (20 + 1,6) ÷ 11,31 = ten hoogste 1,91 m',
     btw: 'geen tarief',
   },
   {
@@ -264,7 +276,7 @@ const marktmeting = [
     bedrag: '€ 45 – € 75 per m² arbeid, excl. materiaal · waterdichting € 15 – € 25 per m² · afschot € 250 – € 450',
     citaat:
       '“Voorbeeld: 35 m² wand plus 12 m² vloer (47 m²) tegen 55 euro komt op circa 2.585 euro arbeid.” Bijgewerkt 2026-08-04.',
-    hoogte: 'niet vermeld. Volgt uit hun eigen getallen: ten hoogste 2,64 m, dus tot het plafond',
+    hoogte: 'niet vermeld. Volgt uit hun eigen getallen: (35 + 1,6) ÷ 13,86 = ten hoogste 2,64 m, dus tot het plafond',
     btw: '21%',
   },
   {
@@ -274,7 +286,7 @@ const marktmeting = [
     bedrag: '€ 56,00 per m² tegelwerk, excl. 21% btw · 25 m² = € 1.400 excl. / € 1.694 incl.',
     citaat:
       '“Voor particulieren badkamers, zowel renovatie als nieuwbouw hanteren wij een prijs per vierkante meter.” Rekenvoorbeeld: 20 m² wanden + 5 m² vloer.',
-    hoogte: 'niet vermeld. Volgt uit hun eigen getallen: ten hoogste 2,41 m',
+    hoogte: 'niet vermeld. Volgt uit hun eigen getallen: (20 + 1,6) ÷ 8,94 = ten hoogste 2,41 m',
     btw: '21%',
   },
 ]
@@ -329,7 +341,7 @@ const faqs = [
   },
   {
     q: 'Waarom lopen de wandoppervlakken op die prijspagina’s zo uiteen?',
-    a: 'Omdat er een getal ontbreekt: tot welke hoogte er betegeld wordt. Vier van de zeven pagina’s die ik op 16 september 2026 volledig las noemen een voorbeeld met wand én vloer, en geen van de vier zegt tot welke hoogte. Je kunt die hoogte uit hun eigen twee getallen terugrekenen. Ik heb dat gedaan met de gunstigste plattegrond die er bestaat, een vierkante badkamer, want die heeft bij een gegeven oppervlak de kortste omtrek. Zo is het een bovengrens. Dan komt homedeal.nl uit op ten hoogste 1,53 meter, bobex.nl op 1,90 meter, decorstone.nl op 2,41 meter en kemptegelwerk.nl op 2,64 meter. Alleen dat laatste voorbeeld gaat aantoonbaar tot het plafond.',
+    a: 'Omdat er een getal ontbreekt: tot welke hoogte er betegeld wordt. Vier van de zeven pagina’s die ik op 16 september 2026 volledig las noemen een voorbeeld met wand én vloer, en geen van de vier zegt tot welke hoogte. Je kunt die hoogte uit hun eigen twee getallen terugrekenen. Ik heb dat gedaan met de gunstigste plattegrond die er bestaat, een vierkante badkamer, want die heeft bij een gegeven oppervlak de kortste omtrek. De deuropening van 0,80 bij 2,00 meter tel ik eerst bij hun wandoppervlak op, want hun getal is de netto wand; ook dat duwt de uitkomst omhoog. De som is dus (wand + 1,6) gedeeld door de omtrek, en de uitkomst is daarmee een bovengrens. Dan komt homedeal.nl uit op ten hoogste 1,57 meter (16,6 ÷ 10,58), bobex.nl op 1,91 meter (21,6 ÷ 11,31), decorstone.nl op 2,41 meter (21,6 ÷ 8,94) en kemptegelwerk.nl op 2,64 meter (36,6 ÷ 13,86). Alleen dat laatste voorbeeld gaat aantoonbaar tot het plafond.',
   },
   {
     q: 'Scheelt het echt geld om niet tot het plafond te betegelen?',
@@ -643,15 +655,22 @@ export default function WatKostBadkamerBetegelenPage() {
               op, maar vier van hen verraden hem: als je hun wandoppervlak deelt door de omtrek die
               bij hun vloeroppervlak hoort, rolt de hoogte eruit. Ik heb dat per bron gedaan met de
               gunstigste plattegrond die bestaat: een vierkante badkamer heeft bij een gegeven
-              oppervlak de kortste omtrek. Zo is het een bovengrens en doe ik niemand tekort.
+              oppervlak de kortste omtrek. De deuropening van 0,80 bij 2,00 meter tel ik er eerst
+              bij op, want hun getal is de netto wand. Beide keuzes duwen de uitkomst omhoog, dus
+              het is een bovengrens en ik doe niemand tekort.
             </p>
             <p className="text-base leading-relaxed text-primary-600">
-              De uitkomst: het voorbeeld van homedeal.nl gaat tot ten hoogste 1,53 meter, dat van
-              bobex.nl tot ten hoogste 1,90 meter, dat van decorstone.nl tot 2,41 meter en dat van
-              kemptegelwerk.nl tot 2,64 meter. Alleen de laatste gaat aantoonbaar tot het plafond.
-              Wie de € 1.000 van homedeal.nl voor &ldquo;een badkamerwand van 15 m²&rdquo; als
-              maatstaf neemt voor een badkamer die tot het plafond betegeld wordt, rekent met
-              ongeveer een derde van het werk.
+              Eén som, vier keer: hoogte = (wandoppervlak + 1,6) ÷ (4 × √vloeroppervlak). Reken mee.
+              Homedeal.nl: 16,6 ÷ 10,58 = ten hoogste 1,57 meter. Bobex.nl: 21,6 ÷ 11,31 = 1,91
+              meter. Decorstone.nl: 21,6 ÷ 8,94 = 2,41 meter. Kemptegelwerk.nl: 36,6 ÷ 13,86 = 2,64
+              meter. Alleen de laatste gaat aantoonbaar tot het plafond.
+            </p>
+            <p className="text-base leading-relaxed text-primary-600">
+              Wat dat betekent voor het bedrag: wie de € 1.000 van homedeal.nl voor &ldquo;een
+              badkamerwand van 15 m²&rdquo; als maatstaf neemt voor een badkamer die tot het plafond
+              betegeld wordt, rekent te laag. In diezelfde ruimte van 7 m² is de wand tot 2,60 meter
+              namelijk 10,58 × 2,60 − 1,60 = 25,9 m². Hun 15 m² is daar 58% van, dus ruim veertig
+              procent van het wandtegelwerk valt buiten dat bedrag. De vloer komt er dan nog bij.
             </p>
             <p className="text-base leading-relaxed text-primary-600">
               De rekenregel is trouwens te controleren op hun eigen cijfers. Kemptegelwerk.nl

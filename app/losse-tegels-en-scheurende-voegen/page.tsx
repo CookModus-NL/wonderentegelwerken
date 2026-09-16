@@ -738,12 +738,29 @@ export default function LosseTegelsPage() {
             ))}
           </ul>
 
+          <p className="mt-12 max-w-2xl text-base leading-relaxed text-primary-600">
+            Eén daarvan verdient wel een eigen plek: wat tegelwerk kost, en waarom de bedragen die
+            je online vindt zo ver uiteenlopen. Dat verschil zit niet in de tegelzetter maar in wat
+            er in het bedrag zit — en garantietermijnen horen in die vergelijking thuis. Het staat
+            uitgewerkt op{' '}
+            <Link
+              href="/wat-kost-vloer-tegelen-per-m2"
+              className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
+            >
+              de pagina over wat vloer tegelen per m² kost
+            </Link>
+            , met zes gelezen prijspagina&apos;s naast elkaar.
+          </p>
+
           <div className="mt-12 flex flex-wrap gap-3">
             <Link href="/diensten/kitwerk-voegwerk" className="btn-secondary">
               Kitwerk en voegwerk
             </Link>
             <Link href="/algemene-voorwaarden" className="btn-secondary">
               Algemene voorwaarden
+            </Link>
+            <Link href="/wat-kost-vloer-tegelen-per-m2" className="btn-secondary">
+              Wat kost vloer tegelen per m²?
             </Link>
           </div>
         </div>

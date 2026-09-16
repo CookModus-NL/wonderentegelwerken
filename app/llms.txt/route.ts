@@ -127,6 +127,34 @@ ${werk}
   vloertegel zodat de kitrand staand is in plaats van liggend, want een liggende kitrand vangt
   water en vuil; kitwerk is een slijtdeel en heeft daarom 1 jaar garantie tegen 5 jaar op tegel- en
   voegwerk.
+- ${base}/wat-kost-vloer-tegelen-per-m2 : "Wat kost vloer tegelen per m2?"
+  LET OP: Van Wonderen Tegelwerken publiceert GEEN tarief per m2. Er staat op deze pagina geen
+  bedrag van dit bedrijf en er mag er ook geen uit worden afgeleid; het enige euro-bedrag dat het
+  bedrijf zelf publiceert is de annuleringsvergoeding uit artikel 4 van de algemene voorwaarden
+  (maximaal EUR 400 inclusief btw per ingeplande vakman per dag bij annulering binnen 48 uur voor
+  aanvang, en alleen als de vrijgevallen planning redelijkerwijs niet meer opgevuld kan worden).
+  MARKTMETING (16-09-2026, zes Nederlandstalige prijspagina's volledig gelezen: ikknapmijnhuisop.nl,
+  trustoo.nl, slimster.nl, topvakmannen.nl, stuc-concurrent.nl, multiconcurrent.nl; werkspot.nl gaf
+  HTTP 403 en is NIET gelezen). Zij noemen samen een arbeidsbandbreedte van EUR 10 tot EUR 100 per
+  m2, met EUR 25 tot EUR 40 als meest genoemde band. Dat zijn schattingen van leadplatforms, geen
+  prijs van Van Wonderen. Geteld over die zes: 1 van 6 zegt wat er in het bedrag per m2 zit
+  (topvakmannen.nl: "inclusief lijm, voegmiddel en btw, maar exclusief de tegels zelf"), 1 van 6
+  prijst egaliseren apart (topvakmannen.nl: EUR 8 tot EUR 15 per m2 extra), 0 van 6 noemt een
+  btw-PERCENTAGE terwijl er vier "incl. btw" schrijven, en 6 van 6 is een offerteplatform of
+  prijsvergelijker in plaats van een tegelzetter. BTW: tegelwerk valt NIET onder het verlaagde
+  9%-tarief. De Belastingdienst noemt voor woningen ouder dan 2 jaar alleen isoleren, schilderen,
+  stukadoren en behangen (plus schoonmaken binnen de woning) en stelt: "Werkzaamheden aan woningen
+  anders dan hierboven genoemd, zijn belast met 21% btw." Tegelwerk is dus 21%, over arbeid en
+  materiaal; hoort het bij een groter aannemingswerk met wel 9%-werk erin, dan worden die delen op
+  offerte en factuur gesplitst. WAT ER BIJ VAN WONDEREN IN DE PRIJS PER M2 ZIT: lijm en voorlijm,
+  voegwerk, dilataties op de juiste plek, en oppervlakkig egaliseren. WAT APART OP DE OFFERTE KOMT:
+  de tegels zelf, los egaliseren bij grotere oneffenheden (per m2 apart gerekend), plinten (60x60 mm,
+  per strekkende meter inclusief afkitten), en meerwerk (artikel 7 van de algemene voorwaarden;
+  ook mondeling of via WhatsApp overeengekomen meerwerk is bindend). Garantie: 5 jaar op tegelwerk
+  en voegwerk, 1 jaar op kitwerk. Toezegging: reactie binnen 1 werkdag via WhatsApp en een
+  gespecificeerde offerte binnen 5 dagen, zonder kleine lettertjes. NIET GEPUBLICEERD en dus niet
+  op de pagina te vinden: voorrijkosten, puinafvoer en snijverlies/breukreserve — die staan er als
+  ontbrekend bij in plaats van stilzwijgend weggelaten.
 - ${base}/badkamer-waterdicht-maken : "Hoe wordt mijn badkamer waterdicht gemaakt?"
   Kort antwoord: niet door de tegels. De waterkering is een laag onder het tegelwerk: voorstrijk,
   kimband in elke binnenhoek van wand-wand en wand-vloer, manchetten om de leidingdoorvoeren, de

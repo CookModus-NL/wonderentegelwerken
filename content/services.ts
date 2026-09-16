@@ -109,6 +109,12 @@ Voor grootformaat tegels (60×120 of groter) werk ik met vloerverwarmings-vriend
     ],
     answers: [
       {
+        href: '/wat-kost-vloer-tegelen-per-m2',
+        label: 'Wat kost vloer tegelen per m²?',
+        teaser:
+          'Zes Nederlandse prijspagina’s naast elkaar: één van de zes zegt wat er in dat bedrag per m² zit, geen van de zes noemt een btw-tarief, en alle zes verkopen je aanvraag door. Met wat er bij mij wél en niet in de prijs zit.',
+      },
+      {
         href: '/tegelvloer-belopen-en-vloerverwarming-aanzetten',
         label: 'Hoe lang moet ik wachten voor ik op de vloer mag lopen en wanneer mag de vloerverwarming aan?',
         teaser:

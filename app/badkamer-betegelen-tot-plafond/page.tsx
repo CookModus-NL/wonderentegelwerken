@@ -460,6 +460,16 @@ export default function TotPlafondBetegelenPage() {
             , en die heeft een preciezer antwoord dan de meeste adviespagina&apos;s geven.
           </p>
 
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
+            Tot het plafond betegelen kost meer vierkante meters, en daarmee wordt de prijs per m²
+            ineens de beslissende vraag. Wat er in zo&apos;n bedrag hoort te zitten en waarom online
+            genoemde tarieven van € 10 tot € 100 per m² lopen, staat op{' '}
+            <Link href="/wat-kost-vloer-tegelen-per-m2" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+              de pagina over wat vloer tegelen per m² kost
+            </Link>
+            .
+          </p>
+
           <div className="mt-12 flex flex-wrap gap-3">
             <Link href="/badkamer-waterdicht-maken" className="btn-secondary">
               Badkamer waterdicht maken

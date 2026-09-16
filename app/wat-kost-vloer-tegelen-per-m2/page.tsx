@@ -49,6 +49,9 @@ import type { Metadata } from 'next'
  *   - 1 van 6 prijst egaliseren apart met een bedrag: topvakmannen.nl, "Egaliseren kost
  *     gemiddeld EUR 8 tot EUR 15 per m2 extra."
  *   - 0 van 6 noemt een btw-PERCENTAGE. Vier van de zes schrijven wel "inclusief btw".
+ *   - 4 van 6 zet geen enkele datum bij de bedragen; twee dragen een algemene paginadatum
+ *     (trustoo.nl 13-02-2025, slimster.nl 26-08-2024). Getallen zonder datum zijn daarmee
+ *     niet te dateren en dus als schatting gemarkeerd, niet als prijspeil.
  *   - 6 van 6 verdienen aan het doorgeven van je aanvraag (offerteformulier, "Plaats uw
  *     klus", "maximaal 4 offertes"). 0 van 6 is een tegelzetter die zijn eigen prijs
  *     publiceert. Dat laatste is de kern van deze pagina.
@@ -401,10 +404,19 @@ export default function WatKostVloerTegelenPage() {
             </table>
           </div>
 
-          <div className="mt-12 grid gap-8 sm:grid-cols-3">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
+            Nog iets om te weten voor je een van deze bedragen als richtlijn neemt: vier van de zes
+            zetten geen enkele datum bij hun getallen. De twee die dat wel doen, dragen een
+            paginadatum van februari 2025 en augustus 2024. Een prijs zonder datum is in een vak met
+            stijgende loonkosten geen prijs maar een indruk. Alles in de tabel hierboven is dus een
+            schatting van een vergelijkingssite — niet mijn tarief, en ook geen indicatie ervan.
+          </p>
+
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { getal: '1 van 6', tekst: 'zegt wat er in het bedrag per m² zit.' },
               { getal: '0 van 6', tekst: 'noemt een btw-percentage, terwijl vier wel “incl. btw” schrijven.' },
+              { getal: '4 van 6', tekst: 'zet geen enkele datum bij de bedragen; twee dragen een algemene paginadatum (13-02-2025 en 26-08-2024).' },
               { getal: '6 van 6', tekst: 'is een offerteplatform of prijsvergelijker, geen tegelzetter.' },
             ].map((s) => (
               <div key={s.getal} className="border-t border-primary-300 pt-6">

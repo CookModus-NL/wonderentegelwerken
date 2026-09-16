@@ -164,6 +164,12 @@ Ook stuc-look, spachtelputz en decoratieve wandpanelen behoren tot mijn werk. Vo
     ],
     answers: [
       {
+        href: '/wat-kost-een-badkamer-betegelen',
+        label: 'Wat kost een badkamer betegelen (wand + vloer)?',
+        teaser:
+          'Het wandoppervlak is in een badkamer drie tot vijf keer de vloer, en dat bepaalt de prijs meer dan het tarief. Met de rekenregel omtrek maal tegelhoogte, drie doorgerekende badkamers en de tegelhoogte die zeven gelezen prijspagina’s niet noemen.',
+      },
+      {
         href: '/badkamer-betegelen-tot-plafond',
         label: 'Moet de badkamer tot het plafond betegeld worden?',
         teaser:

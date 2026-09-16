@@ -67,6 +67,16 @@ import type { Metadata } from 'next'
  * tegelwerk bij een groter aannemingswerk waar wel 9%-werk in zit, dan moeten die delen op
  * de offerte en de factuur gesplitst worden.
  *
+ * DE ACM-REGEL (bewijsklasse B, regelgeving). Autoriteit Consument & Markt, "Prijzen vermelden"
+ * (acm.nl/nl/verkoop-aan-consumenten/consumenten-informeren/prijzen-vermelden), gelezen 16-09-2026:
+ * een verkoopprijs aan consumenten wordt vermeld inclusief btw en inclusief onvermijdbare bijkomende
+ * kosten - kosten die de consument niet kan kiezen - en de ACM noemt VOORRIJKOSTEN daarbij expliciet
+ * als voorbeeld. De totaalprijs moet in een oogopslag zichtbaar zijn; een opbouw met een vast eerste
+ * bedrag plus een tarief per eenheid mag, mits die opbouw meteen zichtbaar is. Aangereikt door
+ * kennis/10-pricing-offers.md principe P4 (en P6: "wat zit er niet bij" is de tweede helft van het
+ * antwoord, niet een zwakte) en daarna zelf bij de bron nagekeken. Geen van de zes gelezen
+ * prijspagina's noemt deze regel.
+ *
  * AI-ANTWOORD, sampled 16-09-2026 (websearch-assistent, US-gelokaliseerd — dus NIET
  * representatief voor wat een Nederlandse zoeker ziet; alleen als waarneming genoteerd,
  * er is geen claim op gebouwd): "A tile setter charges EUR 30 - EUR 55 per hour or EUR 25 -
@@ -265,8 +275,12 @@ const faqs = [
     a: 'Oppervlakkige oneffenheden gaan mee in de voorlijm en zitten in de prijs. Is de ondervloer echt uit het lood, dan egaliseer ik los en reken ik dat per m² apart. Een bedrag daarvoor staat hier niet, want ik heb er geen gepubliceerd tarief voor. Wat ik wel toezeg: we bespreken vooraf wat er nodig is, zodat “waar nodig” geen open eind in je offerte is. Eén van de zes gelezen pagina’s noemt hiervoor € 8 tot € 15 per m² extra — dat is hun schatting van de markt, niet mijn prijs.',
   },
   {
+    q: 'Mogen voorrijkosten er achteraf bij komen?',
+    a: 'Niet als losse verrassing, en dat is geen mening maar een regel. De Autoriteit Consument & Markt schrijft voor dat een verkoopprijs aan consumenten inclusief btw én inclusief onvermijdbare bijkomende kosten wordt vermeld — kosten die jij niet kunt kiezen, en de ACM noemt voorrijkosten daarbij expliciet als voorbeeld. Ze horen dus in de prijs die je als eerste ziet, of ze horen met een rekenvoorbeeld erbij te staan. Wat de ACM wél toestaat is een opbouw zoals “een vast bedrag voor het eerste deel, daarna een tarief per eenheid”, mits je die opbouw meteen ziet. Eén van de zes gelezen prijspagina’s waarschuwt niet voor niets dat bijkomende kosten “niet altijd in het uurtarief zijn inbegrepen”: dat is precies wat er niet hoort te gebeuren.',
+  },
+  {
     q: 'Wat moet er op mijn offerte staan om twee prijzen eerlijk te kunnen vergelijken?',
-    a: 'Zes regels. Eén: het aantal m² vloer, apart van eventueel wandwerk. Twee: of lijm, voorlijm en voegwerk in het bedrag zitten. Drie: of er geëgaliseerd moet worden en of dat apart gerekend wordt. Vier: de plinten, met de eenheid erbij — per strekkende meter of per m², en of het afkitten erin zit. Vijf: de tegels zelf, als eigen regel. Zes: het btw-tarief, en of er gesplitst moet worden. Bij mij komt dat als een gespecificeerde offerte binnen 5 dagen, zonder kleine lettertjes.',
+    a: 'Zeven regels. Eén: het aantal m² vloer, apart van eventueel wandwerk. Twee: of lijm, voorlijm en voegwerk in het bedrag zitten. Drie: of er geëgaliseerd moet worden en of dat apart gerekend wordt. Vier: de plinten, met de eenheid erbij — per strekkende meter of per m², en of het afkitten erin zit. Vijf: de tegels zelf, als eigen regel. Zes: het btw-tarief, en of er gesplitst moet worden. Zeven: dat onvermijdbare bijkomende kosten er al in zitten, zoals de ACM voorschrijft. Bij mij komt dat als een gespecificeerde offerte binnen 5 dagen, zonder kleine lettertjes.',
   },
   {
     q: 'Kan ik afzeggen als de prijs me tegenvalt, en kost dat geld?',
@@ -615,7 +629,7 @@ export default function WatKostVloerTegelenPage() {
         <div className="container-tight">
           <div className="eyebrow">Wat mensen hierna vragen</div>
           <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
-            Negen vervolgvragen, kort beantwoord
+            Tien vervolgvragen, kort beantwoord
           </h2>
           <dl className="mt-12 divide-y divide-mist border-y border-mist">
             {faqs.map((f) => (
@@ -638,7 +652,7 @@ export default function WatKostVloerTegelenPage() {
           <ul className="mt-12 divide-y divide-mist border-y border-mist">
             {[
               'Mijn tarief per m². Ik heb er geen gepubliceerd, en de bedragen in de tabel hierboven zijn schattingen van vergelijkingssites — niet mijn prijs en ook geen indicatie ervan.',
-              'Voorrijkosten. Ik reken hier geen bedrag voor op, maar ik heb het ook niet als vast tarief gepubliceerd. Vraag het bij de offerte; één van de zes gelezen sites noemt voorrijkosten als bijkomende post die vaak buiten het uurtarief valt.',
+              'Voorrijkosten als apart bedrag. Die staan hier niet, en volgens de ACM horen ze bij een particuliere klant sowieso niet als losse naheffing te bestaan: onvermijdbare bijkomende kosten moeten in de prijs zitten die je als eerste ziet. Wat ik dus niet gepubliceerd heb is een voorrijtarief — vraag bij de offerte na hoe het erin verwerkt is, bij mij en bij ieder ander.',
               'Puinafvoer van de oude vloer. Wie het puin afvoert en wat dat kost hoort op de offerte te staan, maar er staat hier geen bedrag bij omdat ik er geen gepubliceerd tarief voor heb.',
               'Snijverlies en breukreserve. Hoeveel procent extra tegels je moet bestellen hangt af van het patroon en de ruimte. Het advies dat ik het vaakst tegenkwam: bestel in één keer genoeg, want een nabestelling wijkt vrijwel altijd af in kleur of maat. Een percentage noem ik niet, want dat is voor jouw ruimte een schatting en geen getal.',
               'Een rekenvoorbeeld voor een badkamer of een hele woning. Dat is een andere vraag met andere posten, en die verdient een eigen pagina in plaats van een alinea hier.',

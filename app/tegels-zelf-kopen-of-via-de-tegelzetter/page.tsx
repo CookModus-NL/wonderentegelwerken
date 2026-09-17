@@ -515,6 +515,19 @@ export default function TegelsZelfKopenPage() {
             tegelzetter die zijn eigen afspraak publiceert.
           </p>
 
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
+            Er is nog iets opvallends, en het verklaart waarom deze vraag online zo slecht wordt
+            beantwoord: hij levert per formulering een compleet ander soort resultaten op. Vraag je
+            het als &quot;moet ik zelf tegels kopen of levert de tegelzetter ze&quot;, dan krijg je
+            doe-het-zelf-handleidingen over zelf tegelen, want de zoekmachine leest &quot;zelf&quot;
+            als &quot;zelf leggen&quot;. Vraag je het als &quot;tegels zelf kopen of via
+            tegelzetter&quot;, dan krijg je offerteplatforms. En vraag je het als &quot;tegels zelf
+            kopen of laten leveren&quot;, dan bestaat de hele top-10 uit tegelwinkels, want dan
+            leest hij het als een bezorgvraag. Drie formuleringen van dezelfde vraag, drie
+            verschillende werelden, en in geen van de drie iemand die uitlegt wat de keuze voor jou
+            betekent.
+          </p>
+
           <div className="mt-12 divide-y divide-mist border-y border-mist">
             {bovenlaag.map((b) => (
               <article key={b.bron} className="py-8">

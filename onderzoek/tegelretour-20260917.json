@@ -1,0 +1,428 @@
+{
+ "gemeten_op": "2026-09-17T10:47:49.545Z",
+ "leveranciers": 12,
+ "paden": [
+  "/retourneren",
+  "/retour",
+  "/klantenservice",
+  "/klantenservice/retourneren",
+  "/service/retourneren",
+  "/veelgestelde-vragen",
+  "/algemene-voorwaarden",
+  "/klantenservice/veelgestelde-vragen",
+  "/faq"
+ ],
+ "uitslag": [
+  {
+   "host": "maxaro.nl",
+   "bereikt": [
+    "/klantenservice",
+    "/veelgestelde-vragen",
+    "/klantenservice/veelgestelde-vragen"
+   ],
+   "mislukt": [
+    "/retourneren http 404",
+    "/retour http 404",
+    "/klantenservice/retourneren http 404",
+    "/service/retourneren http 404",
+    "/algemene-voorwaarden http 404",
+    "/faq http 404"
+   ],
+   "vondsten": {
+    "retour": [
+     {
+      "pad": "/klantenservice",
+      "zinnen": [
+       "Kan ik mijn bestelling retourneren?",
+       "Ja, je hebt 365 dagen bedenktijd na ontvangst van je bestelling.",
+       "Meld je retour aan in Mijn Maxaro ."
+      ]
+     },
+     {
+      "pad": "/veelgestelde-vragen",
+      "zinnen": [
+       "Gelieve de pallets te bewaren tot je zeker weet dat je geen producten meer wilt retourneren.",
+       "Retourneren & Garantie Kan ik mijn bestelling retourneren?",
+       "Indien je van jouw herroepingsrecht gebruik wilt maken, vul je het retourverzoekformulier online in."
+      ]
+     },
+     {
+      "pad": "/klantenservice/veelgestelde-vragen",
+      "zinnen": [
+       "Gelieve de pallets te bewaren tot je zeker weet dat je geen producten meer wilt retourneren.",
+       "Retourneren & Garantie Kan ik mijn bestelling retourneren?",
+       "Indien je van jouw herroepingsrecht gebruik wilt maken, vul je het retourverzoekformulier online in."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "host": "tegelhoek.nl",
+   "bereikt": [],
+   "mislukt": [
+    "/retourneren http 404",
+    "/retour http 404",
+    "/klantenservice http 404",
+    "/klantenservice/retourneren http 404",
+    "/service/retourneren http 404",
+    "/veelgestelde-vragen http 404",
+    "/algemene-voorwaarden http 404",
+    "/klantenservice/veelgestelde-vragen http 404",
+    "/faq http 404"
+   ],
+   "vondsten": {}
+  },
+  {
+   "host": "tegeldepot.nl",
+   "bereikt": [],
+   "mislukt": [
+    "/retourneren http 403",
+    "/retour http 403",
+    "/klantenservice http 403",
+    "/klantenservice/retourneren http 403",
+    "/service/retourneren http 403",
+    "/veelgestelde-vragen http 403",
+    "/algemene-voorwaarden http 403",
+    "/klantenservice/veelgestelde-vragen http 403",
+    "/faq http 403"
+   ],
+   "vondsten": {}
+  },
+  {
+   "host": "tegelsenlaminaat.nl",
+   "bereikt": [
+    "/retour",
+    "/klantenservice",
+    "/klantenservice/retourneren",
+    "/service/retourneren",
+    "/veelgestelde-vragen",
+    "/algemene-voorwaarden",
+    "/klantenservice/veelgestelde-vragen",
+    "/faq"
+   ],
+   "mislukt": [
+    "/retourneren http 404"
+   ],
+   "vondsten": {
+    "retour": [
+     {
+      "pad": "/klantenservice/retourneren",
+      "zinnen": [
+       "Dan is het retourneren van onze producten onder bepaalde voorwaarden mogelijk.",
+       "Bij aankoop van een product in de showroom geldt er een afwijkend retourtermijn conform onderstaand tabel.",
+       "Let op: er geldt een uitzondering op het retourneren van producten welke speciaal voor u besteld zijn."
+      ]
+     },
+     {
+      "pad": "/service/retourneren",
+      "zinnen": [
+       "Dan is het retourneren van onze producten onder bepaalde voorwaarden mogelijk.",
+       "Bij aankoop van een product in de showroom geldt er een afwijkend retourtermijn conform onderstaand tabel.",
+       "Let op: er geldt een uitzondering op het retourneren van producten welke speciaal voor u besteld zijn."
+      ]
+     },
+     {
+      "pad": "/veelgestelde-vragen",
+      "zinnen": [
+       "Retourneren kan binnen 2 weken na aflever/afhaal datum.",
+       "Het is mogelijk om 5% van de bestelde hoeveelheid tegels, PVC of lijm in onbeschadigde ongeopende verpakkingen te retourneren.",
+       "Speciaal bestelde producten die niet uit het vast assortiment komen, kunnen niet geretourneerd worden."
+      ]
+     },
+     {
+      "pad": "/algemene-voorwaarden",
+      "zinnen": [
+       "De consument hoeft bij een buiten de verkoopruimte of op afstand gesloten overeenkomst geen annuleringskosten te betalen als hij gebruik maakt van het herroepingsrecht zoals in de wet en in artikel 20 D voor deze verkoopmethode is vastgelegd.",
+       "de voorwaarden waaronder en hoe de consument van het herroepingsrecht gebruik kan maken, of een duidelijke melding inzake het uitgesloten zijn van het herroepingsrecht; c.",
+       "als de consument een herroepingsrecht heeft, het model- formulier voor herroeping."
+      ]
+     },
+     {
+      "pad": "/klantenservice/veelgestelde-vragen",
+      "zinnen": [
+       "Retourneren kan binnen 2 weken na aflever/afhaal datum.",
+       "Het is mogelijk om 5% van de bestelde hoeveelheid tegels, PVC of lijm in onbeschadigde ongeopende verpakkingen te retourneren.",
+       "Speciaal bestelde producten die niet uit het vast assortiment komen, kunnen niet geretourneerd worden."
+      ]
+     },
+     {
+      "pad": "/faq",
+      "zinnen": [
+       "Retourneren kan binnen 2 weken na aflever/afhaal datum.",
+       "Het is mogelijk om 5% van de bestelde hoeveelheid tegels, PVC of lijm in onbeschadigde ongeopende verpakkingen te retourneren.",
+       "Speciaal bestelde producten die niet uit het vast assortiment komen, kunnen niet geretourneerd worden."
+      ]
+     }
+    ],
+    "snijverlies": [
+     {
+      "pad": "/veelgestelde-vragen",
+      "zinnen": [
+       "Lees verder Hoe bereken ik snijverlies/zaagverlies?",
+       "Bij het leggen van uw vloertegels en plaatsen van uw wandtegels gaat een gedeelte van de tegels verloren, dit wordt ook wel snij of zaagverlies genoemd.",
+       "Wij adviseren bij aankoop van uw tegels voldoende snijverlies mee te rekenen en te kopen u kunt namelijk de tegels terugbrengen indien ze nog goed in de verpakking zitten en in takt zijn."
+      ]
+     },
+     {
+      "pad": "/algemene-voorwaarden",
+      "zinnen": [
+       "kolommen en insprongen en snijverlies, zijn geen minderwerk."
+      ]
+     },
+     {
+      "pad": "/klantenservice/veelgestelde-vragen",
+      "zinnen": [
+       "Lees verder Hoe bereken ik snijverlies/zaagverlies?",
+       "Bij het leggen van uw vloertegels en plaatsen van uw wandtegels gaat een gedeelte van de tegels verloren, dit wordt ook wel snij of zaagverlies genoemd.",
+       "Wij adviseren bij aankoop van uw tegels voldoende snijverlies mee te rekenen en te kopen u kunt namelijk de tegels terugbrengen indien ze nog goed in de verpakking zitten en in takt zijn."
+      ]
+     },
+     {
+      "pad": "/faq",
+      "zinnen": [
+       "Lees verder Hoe bereken ik snijverlies/zaagverlies?",
+       "Bij het leggen van uw vloertegels en plaatsen van uw wandtegels gaat een gedeelte van de tegels verloren, dit wordt ook wel snij of zaagverlies genoemd.",
+       "Wij adviseren bij aankoop van uw tegels voldoende snijverlies mee te rekenen en te kopen u kunt namelijk de tegels terugbrengen indien ze nog goed in de verpakking zitten en in takt zijn."
+      ]
+     }
+    ],
+    "charge": [
+     {
+      "pad": "/veelgestelde-vragen",
+      "zinnen": [
+       "Bij Tegels en Laminaat laten wij de tegelplinten professioneel verzagen uit dezelfde partij tegels die u geleverd krijgt.",
+       "Hierdoor is er geen kans dat er kleurverschil is.",
+       "kleurverschil op de foto ten op zichte van werkelijke kleuren."
+      ]
+     },
+     {
+      "pad": "/klantenservice/veelgestelde-vragen",
+      "zinnen": [
+       "Bij Tegels en Laminaat laten wij de tegelplinten professioneel verzagen uit dezelfde partij tegels die u geleverd krijgt.",
+       "Hierdoor is er geen kans dat er kleurverschil is.",
+       "kleurverschil op de foto ten op zichte van werkelijke kleuren."
+      ]
+     },
+     {
+      "pad": "/faq",
+      "zinnen": [
+       "Bij Tegels en Laminaat laten wij de tegelplinten professioneel verzagen uit dezelfde partij tegels die u geleverd krijgt.",
+       "Hierdoor is er geen kans dat er kleurverschil is.",
+       "kleurverschil op de foto ten op zichte van werkelijke kleuren."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "host": "debudgettegels.nl",
+   "bereikt": [],
+   "mislukt": [
+    "/retourneren http 404",
+    "/retour http 404",
+    "/klantenservice http 404",
+    "/klantenservice/retourneren http 404",
+    "/service/retourneren http 404",
+    "/veelgestelde-vragen http 404",
+    "/algemene-voorwaarden http 404",
+    "/klantenservice/veelgestelde-vragen http 404",
+    "/faq http 404"
+   ],
+   "vondsten": {}
+  },
+  {
+   "host": "tegelzetshop.nl",
+   "bereikt": [
+    "/retourneren",
+    "/klantenservice",
+    "/algemene-voorwaarden"
+   ],
+   "mislukt": [
+    "/retour http 404",
+    "/klantenservice/retourneren http 404",
+    "/service/retourneren http 404",
+    "/veelgestelde-vragen http 404",
+    "/klantenservice/veelgestelde-vragen http 404",
+    "/faq http 404"
+   ],
+   "vondsten": {
+    "retour": [
+     {
+      "pad": "/retourneren",
+      "zinnen": [
+       "Bestelling retourneren?",
+       "Dan kun je deze retourneren binnen 30 dagen na ontvangst .",
+       "Je kunt een retour via de onderstaande button aanmelden en vervolgens de stappen doorlopen."
+      ]
+     },
+     {
+      "pad": "/algemene-voorwaarden",
+      "zinnen": [
+       "De klant is verplicht het product aan tegelzetshop te retourneren om zodoende een goede beoordeling en afhandeling van de garantieaanspraak te bewerkstelligen.",
+       "Herroepingsrecht 11.1.",
+       "Via de e-mail voor de levering of schriftelijk bij de aflevering van de bestelling wordt de klant gewezen op het herroepingsrecht."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "host": "tegel-uitverkoop.nl",
+   "bereikt": [
+    "/klantenservice",
+    "/klantenservice/retourneren",
+    "/service/retourneren",
+    "/algemene-voorwaarden",
+    "/faq"
+   ],
+   "mislukt": [
+    "/retourneren http 404",
+    "/retour http 404",
+    "/veelgestelde-vragen http 404",
+    "/klantenservice/veelgestelde-vragen http 404"
+   ],
+   "vondsten": {
+    "retour": [
+     {
+      "pad": "/klantenservice",
+      "zinnen": [
+       "Bestellen en betalen Betaalmogelijkheden Levering Retourneren Klachten Afhaalpunten Veelgestelde vragen Algemene voorwaarden Disclaimer Privacy statement Heeft u hulp nodig?"
+      ]
+     },
+     {
+      "pad": "/klantenservice/retourneren",
+      "zinnen": [
+       "Retourneren - Tegel-uitverkoop Skip to navigation Skip to main content 9.9/10 (251 beoordelingen) Tot 80% korting, hoe kan dat?",
+       "De kosten voor het retourneren van de bestelling naar Tegel-uitverkoop.nl zijn voor uw rekening.",
+       "U kunt het product retourneren/ terugbrengen mits het aan de volgende voorwaarden voldoet: Voorwaarden U doet beroep op het herroepingsrecht binnen 14 kalenderdagen na ontvangst; Het product is ongebruikt en niet verwerkt/gemonteerd geweest; Het product is geheel onbeschadigd; Het product zit in de originele verpakking."
+      ]
+     },
+     {
+      "pad": "/service/retourneren",
+      "zinnen": [
+       "Retourneren - Tegel-uitverkoop Skip to navigation Skip to main content 9.9/10 (251 beoordelingen) Tot 80% korting, hoe kan dat?",
+       "De kosten voor het retourneren van de bestelling naar Tegel-uitverkoop.nl zijn voor uw rekening.",
+       "U kunt het product retourneren/ terugbrengen mits het aan de volgende voorwaarden voldoet: Voorwaarden U doet beroep op het herroepingsrecht binnen 14 kalenderdagen na ontvangst; Het product is ongebruikt en niet verwerkt/gemonteerd geweest; Het product is geheel onbeschadigd; Het product zit in de originele verpakking."
+      ]
+     },
+     {
+      "pad": "/algemene-voorwaarden",
+      "zinnen": [
+       "Artikel 6 – Herroepingsrecht De consument kan een overeenkomst met betrekking tot de aankoop van een product gedurende een bedenktijd van maximaal 14 dagen zonder opgave van redenen ontbinden.",
+       "De ondernemer mag de consument vragen naar de reden van herroeping, maar deze niet tot opgave van zijn reden(en) verplichten.",
+       "De in lid 1 genoemde bedenktijd gaat in op de dag nadat de consument, of een vooraf door de consument aangewezen derde, die niet de vervoerder is, het product heeft ontvangen, of: Als de consument in eenzelfde bestelling meerdere producten heeft besteld: de dag waarop de consument, of een door hem aangewezen derde, het laatste product heeft ontvangen."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "host": "hornbach.nl",
+   "bereikt": [
+    "/retourneren",
+    "/retour",
+    "/klantenservice",
+    "/klantenservice/retourneren",
+    "/service/retourneren",
+    "/veelgestelde-vragen",
+    "/algemene-voorwaarden",
+    "/klantenservice/veelgestelde-vragen",
+    "/faq"
+   ],
+   "mislukt": [],
+   "vondsten": {}
+  },
+  {
+   "host": "gamma.nl",
+   "bereikt": [],
+   "mislukt": [
+    "/retourneren http 429",
+    "/retour http 429",
+    "/klantenservice http 429",
+    "/klantenservice/retourneren http 429",
+    "/service/retourneren http 429",
+    "/veelgestelde-vragen http 429",
+    "/algemene-voorwaarden http 429",
+    "/klantenservice/veelgestelde-vragen http 429",
+    "/faq http 429"
+   ],
+   "vondsten": {}
+  },
+  {
+   "host": "praxis.nl",
+   "bereikt": [
+    "/klantenservice",
+    "/service/retourneren",
+    "/algemene-voorwaarden"
+   ],
+   "mislukt": [
+    "/retourneren http 404",
+    "/retour http 404",
+    "/klantenservice/retourneren http 404",
+    "/veelgestelde-vragen http 404",
+    "/klantenservice/veelgestelde-vragen http 404",
+    "/faq http 404"
+   ],
+   "vondsten": {
+    "retour": [
+     {
+      "pad": "/klantenservice",
+      "zinnen": [
+       "Orderinformatie: Volg je bestelling Product retourneren Andere vraag?"
+      ]
+     },
+     {
+      "pad": "/service/retourneren",
+      "zinnen": [
+       "Je kunt het artikel standaard binnen 30 dagen na ontvangst nog retourneren.",
+       "Dan heb je een bedenktijd van 90 dagen.",
+       "Je kunt het artikel standaard binnen 30 dagen na ontvangst nog retourneren."
+      ]
+     },
+     {
+      "pad": "/algemene-voorwaarden",
+      "zinnen": [
+       "Artikel 6 – Herroepingsrecht Bij producten: De consument kan een overeenkomst met betrekking tot de aankoop van een product gedurende een bedenktijd van 14 dagen zonder opgave van redenen ontbinden.",
+       "De ondernemer mag de consument vragen naar de reden van herroeping, maar deze niet tot opgave van zijn reden(en) verplichten.",
+       "De in lid 1 genoemde bedenktijd gaat in op de dag nadat de consument, of een vooraf door de consument aangewezen derde, die niet de vervoerder is, het product heeft ontvangen, of: als de consument in eenzelfde bestelling meerdere producten heeft besteld: de dag waarop de consument, of een door hem aangewezen derde, het laatste product heeft ontvangen."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "host": "tegels.nl",
+   "bereikt": [],
+   "mislukt": [
+    "/retourneren http 404",
+    "/retour http 404",
+    "/klantenservice http 404",
+    "/klantenservice/retourneren http 404",
+    "/service/retourneren http 404",
+    "/veelgestelde-vragen http 404",
+    "/algemene-voorwaarden http 404",
+    "/klantenservice/veelgestelde-vragen http 404",
+    "/faq http 404"
+   ],
+   "vondsten": {}
+  },
+  {
+   "host": "vtwonen-tegels.nl",
+   "bereikt": [
+    "/algemene-voorwaarden"
+   ],
+   "mislukt": [
+    "/retourneren http 404",
+    "/retour http 404",
+    "/klantenservice http 404",
+    "/klantenservice/retourneren http 404",
+    "/service/retourneren http 404",
+    "/veelgestelde-vragen http 404",
+    "/klantenservice/veelgestelde-vragen http 404",
+    "/faq http 404"
+   ],
+   "vondsten": {}
+  }
+ ]
+}

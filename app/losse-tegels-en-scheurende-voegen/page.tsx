@@ -752,6 +752,20 @@ export default function LosseTegelsPage() {
             , met zes gelezen prijspagina&apos;s naast elkaar.
           </p>
 
+          <p className="mt-8 max-w-2xl text-base leading-relaxed text-primary-600">
+            Vraag vier hierboven, wiens materiaal het was, is bij nieuw werk een vraag die je
+            vooraf kunt beslissen in plaats van achteraf uitzoeken. Wat zelf tegels kopen betekent
+            voor de hoeveelheid die je moet bestellen, voor het overschot dat de tegelhandel wel of
+            niet terugneemt, en voor de plek waar een materiaalprobleem landt, staat op{' '}
+            <Link
+              href="/tegels-zelf-kopen-of-via-de-tegelzetter"
+              className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
+            >
+              de pagina over tegels zelf kopen of via de tegelzetter
+            </Link>
+            , met de retourvoorwaarden van vijf leveranciers ernaast.
+          </p>
+
           <div className="mt-12 flex flex-wrap gap-3">
             <Link href="/diensten/kitwerk-voegwerk" className="btn-secondary">
               Kitwerk en voegwerk
@@ -761,6 +775,9 @@ export default function LosseTegelsPage() {
             </Link>
             <Link href="/wat-kost-vloer-tegelen-per-m2" className="btn-secondary">
               Wat kost vloer tegelen per m²?
+            </Link>
+            <Link href="/tegels-zelf-kopen-of-via-de-tegelzetter" className="btn-secondary">
+              Tegels zelf kopen of via de tegelzetter?
             </Link>
           </div>
         </div>

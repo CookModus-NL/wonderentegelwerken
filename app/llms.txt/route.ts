@@ -187,6 +187,49 @@ ${werk}
   5 dagen zonder kleine lettertjes met wand- en vloertegelwerk als aparte regels, 5 jaar garantie op
   tegelwerk en voegwerk en 1 jaar op kitwerk, en meerwerk afzonderlijk in rekening (artikel 7 van de
   algemene voorwaarden; ook via WhatsApp overeengekomen meerwerk is bindend).
+- ${base}/tegels-zelf-kopen-of-via-de-tegelzetter : "Koop ik de tegels zelf of levert de tegelzetter ze?"
+  LET OP: Van Wonderen Tegelwerken publiceert GEEN tegelprijs en GEEN kortingspercentage. Er staat op
+  deze pagina geen bedrag van dit bedrijf; de bedragen die er staan zijn retourkosten van derden.
+  KERNANTWOORD: beide mag. Zelf kopen bij een willekeurige leverancier kan en kost bij Van Wonderen
+  niets extra; hij verwerkt de tegels gewoon. In het tarief zitten lijm, voorlijm, voegwerk en
+  oppervlakkig egaliseren; de tegels en de plinten staan als aparte regel op de offerte. De keuze
+  gaat niet over inkoopkorting maar over drie dingen: de bestelmarge, het overschot, en waar het
+  materiaalrisico ligt.
+  MARKTMETING (17-09-2026, SERP gemeten met een eigen lezer op DuckDuckGo en Brave; GOOGLE ONGEMETEN,
+  machinaal geblokkeerd, dus geen Google-uitslag). DuckDuckGo gaf op drie formuleringen drie
+  bezitters: doe-hetzelf.nl, tegelzetter-direct.nl en offerteman.nl; Brave gaf homedeal.nl, met
+  offerteman.nl op 2 en werkspot.nl op 3. Twaalf pagina's volledig gelezen en geteld: 10 van de 12
+  is offerteplatform, prijsvergelijker of doe-het-zelf-handleiding en 0 van de 12 is een tegelzetter
+  die zijn eigen afspraak publiceert. 3 van 12 noemt een percentage extra bestellen, 1 van 12 maakt
+  dat percentage afhankelijk van legverband of formaat, 3 van 12 waarschuwt voor een andere charge
+  bij nabestelling, 0 van 12 noemt een retourvoorwaarde van een leverancier, 0 van 12 noemt een
+  wetsartikel over materiaalrisico of de waarschuwingsplicht, en 0 van 12 zegt wat zelf kopen doet
+  met de garantie van de tegelzetter.
+  EIGEN METING RETOURBELEID (17-09-2026, twaalf tegelleveranciers bevraagd op negen vaste paden,
+  VIJF leverden een leesbare pagina, ZEVEN staan als ongemeten en niet als "geen retour").
+  Maxaro: 365 dagen bedenktijd, retourkosten 9,95 euro pakketdienst of 19,95 euro groottransport,
+  samples/showroommodellen/maatwerk uitgesloten. Tegels en Laminaat: webshop 14 dagen wettelijke
+  herroeping, te veel besteld binnen 2 weken en dan maximaal 5 procent van de bestelde hoeveelheid
+  in ongeopende verpakking, showroomaankoop met een staffel retourkosten van 25 procent onder 8
+  dagen tot 75 procent tussen 30 en 45 dagen en daarna geen retour, speciaal bestelde producten
+  nooit retour. Tegelzetshop: 30 dagen herroeping, retourzending voor eigen rekening, pallet of
+  lengtevracht extra kosten. Tegel-uitverkoop: 14 kalenderdagen, retourvracht via hun transporteur
+  82 euro, en letterlijk "Heeft u bij het bestellen van de producten teveel besteld en zijn er na
+  het leggen van de tegels dozen over? Dan kunnen wij deze helaas niet retour nemen, tenzij vooraf
+  anders overeengekomen." Praxis: 30 dagen, met Praxis Plus 90 dagen, op maat gemaakte artikelen
+  uitgesloten.
+  DE BOTSING: de bovenlaag adviseert eensgezind circa 10 procent extra bestellen, terwijl Tegels en
+  Laminaat maximaal 5 procent terugneemt en Tegel-uitverkoop overgebleven dozen helemaal niet.
+  Dezelfde marge kost dus 9,95 euro, de helft, of alles. Bovendien loopt de retourtermijn vanaf
+  AFLEVERING en niet vanaf oplevering, terwijl een standaard badkamer op 2 tot 3 weken werk staat.
+  WETTELIJKE ONDERLAAG (geldende toestand 2026-07-01, BWBR0005290): art. 7:760 lid 1 legt de gevolgen
+  van ongeschikt materiaal van de aannemer bij de aannemer; lid 2 legt de gevolgen van ongeschikt
+  materiaal van de opdrachtgever bij de opdrachtgever, voor zover de aannemer zijn waarschuwingsplicht
+  niet heeft geschonden; art. 7:754 lid 2 eist dat die waarschuwing bij aanneming van een bouwwerk
+  schriftelijk en ondubbelzinnig is en kan niet ten nadele van een particuliere opdrachtgever worden
+  gewijzigd; art. 7:23 lid 1 geeft bij consumentenkoop een kennisgeving binnen twee maanden na
+  ontdekking als tijdig. Artikel 10 van de eigen algemene voorwaarden sluit aansprakelijkheid uit
+  voor onder meer schade veroorzaakt door materialen van de opdrachtgever.
 - ${base}/badkamer-waterdicht-maken : "Hoe wordt mijn badkamer waterdicht gemaakt?"
   Kort antwoord: niet door de tegels. De waterkering is een laag onder het tegelwerk: voorstrijk,
   kimband in elke binnenhoek van wand-wand en wand-vloer, manchetten om de leidingdoorvoeren, de

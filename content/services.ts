@@ -74,6 +74,12 @@ Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We besp
           'De wand eerst, maar het zijn drie beurten en geen twee: de onderste rij wandtegels gaat er ná de vloer op, op maat gesneden. Met de eisen uit uitvoeringsrichtlijn URL 35-101 over de randvoeg, het vloerpeil en de indeling die vooraf met jou wordt afgesproken.',
       },
       {
+        href: '/tegels-zelf-kopen-of-via-de-tegelzetter',
+        label: 'Koop ik de tegels zelf of levert Jaap ze?',
+        teaser:
+          'Zelf kopen mag en kost bij mij niets extra. Wat het wél verandert: hoeveel je moet bestellen, wat de tegelhandel terugneemt van wat overblijft, en bij wie een probleem met dat materiaal landt.',
+      },
+      {
         href: '/tegelvloer-belopen-en-vloerverwarming-aanzetten',
         label: 'Wanneer mag ik weer douchen en wanneer mag de vloerverwarming aan?',
         teaser:
@@ -114,6 +120,12 @@ Voor grootformaat tegels (60×120 of groter) werk ik met vloerverwarmings-vriend
       { q: 'Wat als de ondervloer ongelijk is?', a: 'Bij grotere oneffenheden egaliseer ik los. Dat reken ik per m² apart. We bespreken vooraf wat nodig is.' },
     ],
     answers: [
+      {
+        href: '/tegels-zelf-kopen-of-via-de-tegelzetter',
+        label: 'Koop ik de tegels zelf of levert de tegelzetter ze?',
+        teaser:
+          'Beide mag. Maar de 10% extra die overal wordt geadviseerd botst met het retourplafond van de tegelhandel: vijf leveranciers nagelezen op termijn, kosten en hoeveel er terug mag, plus bij wie een materiaalprobleem landt.',
+      },
       {
         href: '/wat-kost-vloer-tegelen-per-m2',
         label: 'Wat kost vloer tegelen per m²?',

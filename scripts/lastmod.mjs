@@ -95,6 +95,7 @@ const map = {
   '/eerst-vloer-of-wand-betegelen': fileDate('app/eerst-vloer-of-wand-betegelen/page.tsx'),
   '/wat-kost-vloer-tegelen-per-m2': fileDate('app/wat-kost-vloer-tegelen-per-m2/page.tsx'),
   '/wat-kost-een-badkamer-betegelen': fileDate('app/wat-kost-een-badkamer-betegelen/page.tsx'),
+  '/tegels-zelf-kopen-of-via-de-tegelzetter': fileDate('app/tegels-zelf-kopen-of-via-de-tegelzetter/page.tsx'),
 }
 
 const groups = [

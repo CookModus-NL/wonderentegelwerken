@@ -209,7 +209,7 @@ const faqs = [
   },
   {
     q: 'Krijg ik korting als jij de tegels bestelt?',
-    a: 'Daar doe ik op deze pagina geen belofte over, en dat is bewust. Homedeal en Tegelzetter Direct noemen allebei de inkoopkorting van de vakman als het voordeel van laten bestellen. Of dat bij een concrete tegel bij een concrete leverancier ook zo uitpakt, hangt af van de serie, het formaat en de voorraad, en een percentage noemen dat ik niet kan waarmaken is precies wat ik niet doe. Wat ik wel doe: je krijgt een gespecificeerde offerte binnen 5 werkdagen waarin de tegels als eigen regel staan, met het bedrag erbij. Dan kun je dat bedrag zelf naast de prijs in de showroom leggen en zelf beslissen. Dat is een controleerbare afspraak; een kortingsbelofte is dat niet.',
+    a: 'Daar doe ik op deze pagina geen belofte over, en dat is bewust. Homedeal en Tegelzetter Direct noemen allebei de inkoopkorting van de vakman als het voordeel van laten bestellen. Of dat bij een concrete tegel bij een concrete leverancier ook zo uitpakt, hangt af van de serie, het formaat en de voorraad, en een percentage noemen dat ik niet kan waarmaken is precies wat ik niet doe. Wat ik wel doe: je krijgt een gespecificeerde offerte binnen 5 dagen waarin de tegels als eigen regel staan, met het bedrag erbij. Dan kun je dat bedrag zelf naast de prijs in de showroom leggen en zelf beslissen. Dat is een controleerbare afspraak; een kortingsbelofte is dat niet.',
   },
   {
     q: 'Ik heb de tegels zelf gekocht en er gaat iets mis. Wie betaalt?',
@@ -342,7 +342,7 @@ export default function TegelsZelfKopenPage() {
           </dl>
 
           <p className="mt-10 max-w-2xl text-base leading-relaxed text-primary-600">
-            Je krijgt een gespecificeerde offerte binnen 5 werkdagen. Wat er precies in het
+            Je krijgt een gespecificeerde offerte binnen 5 dagen. Wat er precies in het
             vloertarief zit en wat los wordt gerekend, staat ook op mijn pagina over{' '}
             <Link href="/diensten/vloertegels" className="underline decoration-accent-400 underline-offset-4 hover:text-accent-600">
               vloertegels leggen, inclusief lijm en voorlijm
@@ -680,7 +680,7 @@ export default function TegelsZelfKopenPage() {
             Stuur me de serie, het formaat en de afmetingen van de ruimte via WhatsApp. Dan zeg ik
             of hij geschikt is voor die plek, reken ik de marge uit op jouw plattegrond in plaats
             van op een vuistregel, en weet je wat je moet bestellen vóór je in de showroom staat.
-            Je krijgt binnen 1 werkdag antwoord. Ik werk in Breda en omstreken.
+            Je krijgt binnen 1 dag antwoord. Ik werk in Breda en omstreken.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a href={`https://wa.me/${business.whatsapp.replace('+', '')}`} className="btn-primary" target="_blank" rel="noopener noreferrer">

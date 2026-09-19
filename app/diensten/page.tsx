@@ -72,6 +72,72 @@ export default function DienstenPage() {
           </div>
         </div>
       </section>
+
+      {/* ─── DRIE VRAGEN VOOR JE KIEST ────────── */}
+      <section className="bg-clay py-24 lg:py-32">
+        <div className="container-tight">
+          <div className="eyebrow">Voor je kiest</div>
+          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+            Drie dingen die bij elke dienst hetzelfde zijn
+          </h2>
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
+            Welke van de zes je ook nodig hebt: dit verandert er niet aan.
+          </p>
+
+          <div className="mt-12 space-y-12">
+            <div className="border-t border-mist pt-8">
+              <h3
+                id="wie-voert-het-werk-uit"
+                className="font-display text-xl font-semibold text-primary-900 sm:text-2xl"
+              >
+                Wie voert het werk uit?
+              </h3>
+              <p className="mt-4 text-base leading-relaxed text-primary-900">
+                Ik, Jaap van Wonderen. Van Wonderen Tegelwerken is een eenmanszaak uit Breda,
+                gestart in 2022, ingeschreven bij de KvK onder nummer 86555499. Alle klussen doe ik
+                zelf: geen onderaannemers, geen tussenpersonen, geen wisselende ploeg. De man die
+                je aan de deur krijgt voor de opname is dezelfde man die de tegels legt en dezelfde
+                man die je belt als er iets tegenvalt.
+              </p>
+            </div>
+
+            <div className="border-t border-mist pt-8">
+              <h3
+                id="welke-garantie-zit-er-op-het-tegelwerk"
+                className="font-display text-xl font-semibold text-primary-900 sm:text-2xl"
+              >
+                Welke garantie zit er op het tegelwerk?
+              </h3>
+              <p className="mt-4 text-base leading-relaxed text-primary-900">
+                5 jaar garantie op tegelwerk en voegwerk, en 1 jaar op kitwerk. Dat verschil is geen
+                slordigheid: kit is een afdichting die slijt, tegelwerk en voegwerk horen te blijven
+                zitten. Een kitrand die na drie jaar loslaat is normaal onderhoud; een tegel die na
+                drie jaar loskomt is mijn werk en dus mijn probleem.
+              </p>
+            </div>
+
+            <div className="border-t border-mist pt-8">
+              <h3
+                id="in-welke-plaatsen-werk-je"
+                className="font-display text-xl font-semibold text-primary-900 sm:text-2xl"
+              >
+                In welke plaatsen werk je?
+              </h3>
+              <p className="mt-4 text-base leading-relaxed text-primary-900">
+                Mijn kerngebied is alles binnen 15 minuten rijden van Breda: Breda zelf, Teteringen,
+                Princenhage, Bavel, Ulvenhout, Effen en Dorst. Daar kom ik ook voor een kleine klus.
+                Op 15 tot 30 minuten doe ik Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert. Voor
+                grotere projecten kom ik op aanvraag ook in Made, Dongen, Gilze en Roosendaal — bij
+                een losse reparatie is de rijtijd dan groter dan de klus.
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-12 max-w-2xl text-sm leading-relaxed text-primary-500">
+            Jaap van Wonderen, tegelzetter in Breda · bijgewerkt 19 september 2026
+          </p>
+        </div>
+      </section>
     </>
   )
 }

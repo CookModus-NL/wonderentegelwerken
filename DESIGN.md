@@ -193,8 +193,16 @@ contract:
     # redactionele pagina
     - /over-ons
     # antwoordpagina (antwoordlaag: één klantvraag, volledig beantwoord)
+    # 20 sep 2026 (TAAK-20260919-WONDEREN-CONTRACTPAD-404, dispatcher-20260920-2137):
+    # /tegelen-op-houten-ondervloer is hier WEGGEHAALD en /badkamer-waterdicht-maken
+    # toegevoegd. Grond voor het weghalen: Jaap wees die vraag 10 sep 2026 in het portaal af
+    # ("krijg ik zelden tot nooit"), de pagina is 15 sep teruggetrokken (commit e4f79f6) en
+    # geeft op productie 404 — het pad mat een gat in de meting, niet in de site. Weghalen is
+    # per de kop hierboven een ontwerpbesluit: ter bekrachtiging bij Bart uitgezet.
+    # Grond voor het toevoegen: /badkamer-waterdicht-maken is live (200) en staat in de
+    # productie-sitemap, maar stond in geen enkel contractpad en werd dus niet gemeten.
     - /badkamer-betegelen-tot-plafond
-    - /tegelen-op-houten-ondervloer
+    - /badkamer-waterdicht-maken
     - /losse-tegels-en-scheurende-voegen
     - /tegelvloer-belopen-en-vloerverwarming-aanzetten
     - /tegelen-over-bestaande-tegels

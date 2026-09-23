@@ -70,14 +70,14 @@ export function localBusinessSchema() {
         },
       })),
     },
+    // GEEN aggregateRating op dit blok. Google: "If the entity that's being reviewed
+    // controls the reviews about itself, their pages that use LocalBusiness or any other
+    // type of Organization structured data are ineligible for star review feature"
+    // (developers.google.com/search/docs/appearance/structured-data/review-snippet,
+    // bijgewerkt 08-09-2026). De zeven reviews zijn echt en blijven zichtbaar op de
+    // pagina staan; alleen de markup die nooit sterren kan opleveren is weg.
+    // Verwijderd 23-09-2026, TAAK-20260920-WONDEREN-ZELFBEOORDELING.
     ...(testimonials.length > 0 && {
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: testimonials.length,
-        bestRating: '5',
-        worstRating: '1',
-      },
       review: testimonials.map((t) => ({
         '@type': 'Review',
         reviewRating: {

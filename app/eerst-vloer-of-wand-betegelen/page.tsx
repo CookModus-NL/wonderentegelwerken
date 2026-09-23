@@ -91,6 +91,18 @@ import type { Metadata } from 'next'
  *      staat er een getal met een leeslijst en geen "nergens".
  *    FORA, apart geteld en niet in de twaalf: klusidee.nl (draad 143716 en 32836),
  *      bouwinfo.be (draad 265624 en 397641).
+ *    APART GETELD EN NIET IN DE TWAALF, maar wél gelezen en wél geciteerd: forbo.com
+ *      (Forbo Eurocol, "Stappenplan wand en vloer betegelen"), Brave-positie 8. Het is een
+ *      fabrikantsvoorschrift en geen adviespagina; daarom staat het buiten de twaalf, net als
+ *      de fora. Toegevoegd 23-09-2026 na criticus-bevinding 2 op contract 62754f3f: het stond
+ *      in het bronnenblok maar in geen van beide disclosure-lijsten, en dat maakte de
+ *      volledigheidsclaim onnaspeurbaar. Getoetst op de drie tellingen, uit de eigen leesronde
+ *      van 15-09-2026: (1) derde beurt - NEE, Forbo werkt de wanden volledig af inclusief
+ *      voegwerk en gaat dan pas naar de vloer, dus twee beurten; (2) randvoeg - Forbo noemt
+ *      hoekvoegen vrijhouden en naderhand afkitten, maar zonder herkomst en zonder minimumbreedte,
+ *      precies het verschil dat de pagina claimt; (3) URL 35-101 / BRL 1017 / KOMO - NEE, wordt
+ *      niet genoemd. Meetellen zou de tellingen dus niet veranderen. Zichtbaar gemaakt in het
+ *      disclosure-blok op de pagina zelf.
  *
  * BRONNEN VAN DE HARDE GETALLEN EN REGELS (wet art. 1.1). Alles gelezen op 15 september 2026:
  *  - URL 35-101 d.d. 13-04-2018, "Uitvoeringsrichtlijn voor het aanbrengen van wand- en
@@ -439,7 +451,7 @@ export default function EerstVloerOfWandPage() {
             <p className="mt-8 text-xl leading-relaxed text-primary-900">
               Eerst de wand, daarna de vloer. Maar in de praktijk zijn het drie beurten en geen
               twee: eerst het wandvlak vanaf de tweede rij, dan de vloer, en als laatste de
-              onderste rij wandtegels — op maat gesneden naar de vloer die er dan werkelijk ligt.
+              onderste rij wandtegels, op maat gesneden naar de vloer die er dan werkelijk ligt.
               Die derde beurt is de reden dat de aansluiting klopt. Ik heb twaalf Nederlandstalige
               adviespagina&apos;s over deze vraag helemaal doorgelezen: geen van de twaalf
               beschrijft hem. Op de klusfora doen ervaren tegelzetters dat wel.
@@ -448,7 +460,7 @@ export default function EerstVloerOfWandPage() {
             <p className="mt-6 text-lg leading-relaxed text-primary-600">
               En de naad tussen wand en vloer is geen gewone voeg. Hij moet vrij blijven van tegel
               en voegmortel, minstens 4 millimeter breed zijn en wordt daarna met blijvend
-              elastische kit gevuld. Eén van die twaalf pagina&apos;s zegt dat ook — maar geen
+              elastische kit gevuld. Eén van die twaalf pagina&apos;s zegt dat ook. Maar geen
               enkele zegt erbij waar het vandaan komt, hoe breed het minimaal moet en dat die
               ruimte door de lijmlaag en de ondergrond heen moet doorlopen. Zodra je dat weet, is
               de volgordevraag geen kwestie van voorkeur meer maar van maatvoering.
@@ -623,6 +635,16 @@ export default function EerstVloerOfWandPage() {
               mondain.nl, klustoolsxl.nl en bouwmaat.nl. Dat zijn de pagina&apos;s die op deze
               vraag en op &quot;badkamer betegelen eerst vloer of wand&quot; bovenaan stonden bij
               DuckDuckGo en Brave.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-primary-600">
+              Eén bron uit die lijstjes staat hier bewust niet tussen en wordt verderop wél
+              geciteerd: forbo.com, het stappenplan van lijmfabrikant Forbo Eurocol, achtste bij
+              Brave. Dat is geen adviespagina van een klussite maar een fabrikantsvoorschrift, dus
+              ik houd hem apart, net als de fora. Gelezen heb ik hem wel, op dezelfde dag. Voor de
+              tellingen hierboven maakt het niets uit: Forbo werkt de wanden volledig af, inclusief
+              voegen, en gaat dan pas naar de vloer. Dat zijn twee beurten, geen drie. En over de
+              naad onderaan zegt Forbo wel dat je hem vrij moet houden en naderhand moet afkitten,
+              maar ook daar ontbreekt waar het vandaan komt en hoe breed hij minimaal moet zijn.
             </p>
             <p className="mt-4 text-base leading-relaxed text-primary-600">
               Vier bronnen uit diezelfde lijstjes kreeg ik niet open: webwoordenboek.nl,

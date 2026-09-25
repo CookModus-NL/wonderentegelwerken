@@ -1,5 +1,8 @@
 ---
 versie: 1
+# route toegevoegd 23 sep 2026 (wet art. 3.5b): deze site is door l3art gebouwd, dus het
+# contract komt uit ontwerpbesluiten en niet uit een opgraving van een bestaande site.
+route: ontworpen
 klant: wonderen
 domein: https://www.wonderentegelwerken.nl
 opgesteld: 2026-09-03

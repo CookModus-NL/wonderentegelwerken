@@ -3,7 +3,6 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import Beacon from '@/components/Beacon'
 import { WhatsAppFloating } from '@/components/whatsapp-floating'
 import { localBusinessSchema } from '@/lib/schema'
 import { business } from '@/content/business'
@@ -70,8 +69,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }}
         />
         <Analytics />
-        <Beacon />
         <SpeedInsights />
+        {/* l3art-beacon: anonieme conversieteller (klik op tel:/mailto:/WhatsApp en het
+            versturen van een contactformulier). Verving 26 sep 2026 het eigen component
+            components/Beacon.tsx — dat telde geen formulieren, en twee tellers naast
+            elkaar zouden elke klik dubbel boeken. Geen cookie, geen identificatie, dus
+            geen gevolgen voor de cookiebanner. */}
+        <script src="https://l3art.nl/b.js" data-bedrijf="wonderen" defer />
       </body>
     </html>
   )

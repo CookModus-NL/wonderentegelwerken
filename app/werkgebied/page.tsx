@@ -4,6 +4,7 @@ import { business } from '@/content/business'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/werkgebied' },
   title: 'Werkgebied',
   description: 'Van Wonderen Tegelwerken werkt in Breda, Teteringen, Oosterhout, Tilburg, Etten-Leur en heel West-Brabant.',
 }

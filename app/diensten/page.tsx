@@ -4,6 +4,7 @@ import { services } from '@/content/services'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/diensten' },
   title: 'Diensten · Badkamer, vloer, wand, terras, kitwerk',
   description: 'Badkamerrenovatie, vloer- en wandtegels, buitentegelwerk, kitwerk en maatwerk in Breda en omstreken. Eén vakman voor alles.',
 }

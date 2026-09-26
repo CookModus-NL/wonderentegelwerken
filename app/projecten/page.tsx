@@ -5,6 +5,7 @@ import { projects } from '@/content/projects'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/projecten' },
   title: 'Projecten · recent tegelwerk',
   description: 'Recente badkamerrenovaties, vloeren en terras-projecten in Breda en omstreken. Bekijk wat ik recent heb opgeleverd.',
 }

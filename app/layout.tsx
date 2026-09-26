@@ -31,7 +31,6 @@ export const metadata: Metadata = {
   publisher: business.name,
   applicationName: business.name,
   category: 'Tegelzetter',
-  alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     locale: 'nl_NL',

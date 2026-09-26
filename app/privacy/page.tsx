@@ -2,6 +2,7 @@ import { business } from '@/content/business'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/privacy' },
   title: 'Privacyverklaring',
   description: 'Hoe Van Wonderen Tegelwerken omgaat met jouw persoonsgegevens.',
 }

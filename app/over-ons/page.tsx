@@ -5,6 +5,7 @@ import { business } from '@/content/business'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/over-ons' },
   title: 'Over ons',
   description: 'Van Wonderen Tegelwerken: tegelzettersbedrijf uit Breda, opgericht in 2022. Persoonlijk vakwerk zonder onderaannemers.',
 }

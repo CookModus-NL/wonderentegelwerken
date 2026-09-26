@@ -8,6 +8,10 @@ import { services } from '@/content/services'
 import { projects } from '@/content/projects'
 import { business } from '@/content/business'
 import { testimonials } from '@/content/testimonials'
+import type { Metadata } from 'next'
+
+// Eigen canonical: de layout zet er bewust geen, anders erft elke pagina zonder eigen metadata '/'.
+export const metadata: Metadata = { alternates: { canonical: '/' } }
 
 export default function HomePage() {
   return (

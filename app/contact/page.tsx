@@ -4,6 +4,7 @@ import { business } from '@/content/business'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/contact' },
   title: 'Contact · vrijblijvende offerte via WhatsApp',
   description: 'Stuur Jaap van Van Wonderen Tegelwerken een WhatsApp met je vraag of foto’s van je ruimte. Binnen 1 werkdag een eerste prijsindicatie. Of bel direct 06-18249249.',
 }

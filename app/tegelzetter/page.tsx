@@ -5,6 +5,7 @@ import { cities } from '@/content/cities'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tegelzetter' },
   title: 'Tegelzetter per plaats · Breda, Oosterhout, Tilburg en meer',
   description: 'Tegelzetter Van Wonderen werkt in Breda, Teteringen, Oosterhout, Etten-Leur, Tilburg en heel West-Brabant. Klik op je plaats voor lokale info en projecten.',
 }

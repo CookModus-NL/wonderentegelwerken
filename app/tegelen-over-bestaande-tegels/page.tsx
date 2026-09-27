@@ -80,7 +80,7 @@ const faqs = [
   },
   {
     q: 'Kan het ook op de douchevloer?',
-    a: 'Dat is de plek waar ik het bijna nooit doe. De douchegoot of de put heeft een vaste inbouwhoogte en gaat niet mee omhoog. Het afschot naar die afvoer hoort 1 tot 2 procent te zijn, ideaal rond 1,5 procent, en dat is 15 millimeter over een meter. Een nieuwe keramische laag van 10 tot 14 millimeter is dus bijna precies zoveel als het hele afschot: leg je die eroverheen, dan houdt het verval naar de afvoer vrijwel niets over, terwijl juist dat verval het water weg moet krijgen. Je kunt dat oplossen door de afvoer te verzetten, maar dan breek je de douchevloer alsnog open en is de tijdwinst weg.',
+    a: 'Dat is de plek waar de rekensom vastloopt. De douchegoot of de put heeft een vaste inbouwhoogte en gaat niet mee omhoog. Het afschot naar die afvoer hoort 1 tot 2 procent te zijn, ideaal rond 1,5 procent, en dat is 15 millimeter over een meter. Een nieuwe keramische laag van 10 tot 14 millimeter is dus bijna precies zoveel als het hele afschot: leg je die eroverheen, dan houdt het verval naar de afvoer vrijwel niets over, terwijl juist dat verval het water weg moet krijgen. Je kunt dat oplossen door de afvoer te verzetten, maar dan breek je de douchevloer alsnog open en is de tijdwinst weg.',
   },
   {
     q: 'Mijn wand is gipsplaat. Kan daar een tweede laag tegels op?',

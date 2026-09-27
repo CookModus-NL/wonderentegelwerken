@@ -105,7 +105,7 @@ export default function OverOnsPage() {
             </div>
             <div>
               <div className="font-display text-6xl font-bold text-accent-300">5 jr</div>
-              <div className="mt-2 text-sm text-primary-300">Garantie standaard</div>
+              <div className="mt-2 text-sm text-primary-300">Garantie op tegel- en voegwerk, 1 jaar op kitwerk</div>
             </div>
             <div>
               <div className="font-display text-6xl font-bold text-accent-300">100%</div>

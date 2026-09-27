@@ -42,7 +42,7 @@ export default function HomePage() {
                 blijft staan.
               </h1>
               <p className="mt-8 max-w-xl text-lg leading-relaxed text-primary-600 sm:text-xl">
-                Voor je badkamerrenovatie, vloer, wand, terras of nieuw kitwerk. Persoonlijk vakwerk, geen onderaannemers, vijf jaar garantie.
+                Voor je badkamerrenovatie, vloer, wand, terras of nieuw kitwerk. Persoonlijk vakwerk, geen onderaannemers, vijf jaar garantie op tegel- en voegwerk en een jaar op kitwerk.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-3">
@@ -68,7 +68,7 @@ export default function HomePage() {
                   <span className="font-semibold text-primary-900">Google reviews</span>
                 </div>
                 <div className="flex items-center gap-2 text-primary-600">
-                  <ShieldCheck className="h-4 w-4 text-accent-600" /> 5 jaar garantie
+                  <ShieldCheck className="h-4 w-4 text-accent-600" /> 5 jaar garantie op tegelwerk
                 </div>
                 <div className="flex items-center gap-2 text-primary-600">
                   <Hammer className="h-4 w-4 text-accent-600" /> Eigen vakman

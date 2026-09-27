@@ -1,0 +1,29 @@
+diff --git a/app/algemene-voorwaarden/page.tsx b/app/algemene-voorwaarden/page.tsx
+index 957e7aa..1902c12 100644
+--- a/app/algemene-voorwaarden/page.tsx
++++ b/app/algemene-voorwaarden/page.tsx
+@@ -170,6 +170,14 @@ export default function AVPage() {
+             <h2 className="font-display text-2xl font-bold text-primary-900">Artikel 12 – Garantie</h2>
+             <ol className="mt-4 space-y-2 list-decimal pl-5">
+               <li>Garantie wordt uitsluitend verleend op correct uitgevoerde werkzaamheden.</li>
++              <li>
++                De garantietermijnen zijn:
++                <ul className="mt-2 space-y-1 list-disc pl-5">
++                  <li>tegelwerk en voegwerk: 5 jaar;</li>
++                  <li><strong>kitwerk: 1 jaar</strong>.</li>
++                </ul>
++              </li>
++              <li>De garantietermijn vangt aan op de dag van oplevering zoals bedoeld in artikel 9 lid 1.</li>
+               <li>
+                 Garantie vervalt indien:
+                 <ul className="mt-2 space-y-1 list-disc pl-5">
+@@ -179,8 +187,7 @@ export default function AVPage() {
+                   <li>instructies niet worden opgevolgd.</li>
+                 </ul>
+               </li>
+-              <li>Op kitwerk wordt 1 jaar garantie verleend. Tegel- en voegwerk: 5 jaar garantie.</li>
+-              <li>Kitwerk en voegwerk vallen onder normale onderhoudsgevoelige onderdelen.</li>
++              <li>Kitwerk en voegwerk vallen onder normale onderhoudsgevoelige onderdelen. Na afloop van de garantietermijn valt vervanging of herstel daarvan onder regulier onderhoud en komt dit voor rekening van opdrachtgever.</li>
+             </ol>
+           </section>
+ 

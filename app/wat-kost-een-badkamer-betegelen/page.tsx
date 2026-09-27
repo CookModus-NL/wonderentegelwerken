@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react'
 import { business } from '@/content/business'
+import { KlantCitaat } from '@/components/klant-citaat'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
@@ -762,6 +763,15 @@ export default function WatKostBadkamerBetegelenPage() {
                 hoeveelheid erbij, zodat je ze naast een andere offerte kunt leggen in plaats van
                 twee eindbedragen te vergelijken.
               </p>
+              <p className="text-base leading-relaxed text-primary-600">
+                Dat die offerte ook de rekening wordt, kun je bij een klant op Google nalezen. Het
+                ging daar om een tegelvloer en niet om een badkamer, maar de offerte werkt bij
+                mij op dezelfde manier:
+              </p>
+              <KlantCitaat
+                auteur="Edward"
+                fragment="Vooraf werd duidelijk gecommuniceerd wat de kosten zouden zijn, en bij de eindafrekening werd het zelfs nog iets lager, dat hoor je tegenwoordig nog maar zelden."
+              />
               <p className="text-base leading-relaxed text-primary-600">
                 In het tegelwerk zitten de lijm en de voorlijm, oppervlakkig egaliseren, de
                 dilataties op de juiste plek en het voegwerk. Apart op de offerte komen de tegels

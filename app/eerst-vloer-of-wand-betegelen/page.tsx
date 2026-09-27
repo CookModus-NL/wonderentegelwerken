@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react'
 import { business } from '@/content/business'
+import { KlantCitaat } from '@/components/klant-citaat'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
@@ -171,7 +172,7 @@ const url = `${business.url}/eerst-vloer-of-wand-betegelen`
 export const metadata: Metadata = {
   title: 'Eerst de vloer of eerst de wand betegelen?',
   description:
-    'De wand eerst, de vloer daarna — maar het zijn drie beurten en geen twee: wand vanaf de tweede rij, dan de vloer, en als laatste de onderste rij wandtegels op maat. Met wat de uitvoeringsrichtlijn voor tegelwerk er wél en niet over zegt.',
+    'De wand eerst, de vloer daarna. Maar het zijn drie beurten en geen twee: wand vanaf de tweede rij, dan de vloer, en als laatste de onderste rij wandtegels op maat. Met wat de uitvoeringsrichtlijn voor tegelwerk er wél en niet over zegt.',
   alternates: { canonical: '/eerst-vloer-of-wand-betegelen' },
   openGraph: {
     title: 'Eerst de vloer of eerst de wand betegelen? | Van Wonderen Tegelwerken',
@@ -208,7 +209,7 @@ const beurten = [
   },
   {
     stap: 'De onderste rij wandtegels',
-    wat: 'Nu pas. Elke tegel van de onderste rij wordt op maat gesneden naar de vloer die er werkelijk ligt — in een douche dus niet overal even hoog.',
+    wat: 'Nu pas. Elke tegel van de onderste rij wordt op maat gesneden naar de vloer die er werkelijk ligt, in een douche dus niet overal even hoog.',
     waarom:
       'Dit is de stap die in geen van de twaalf adviespagina’s staat die ik voor deze pagina heb gelezen, en het is de stap waarmee de aansluiting klopt. In de douche ligt de vloer op afschot; een rij hele tegels zou daar meelopen en dus scheef staan.',
   },
@@ -252,7 +253,7 @@ const richtlijn = [
     waar: 'par. 6.1',
   },
   {
-    eis: 'Hoe vol de lijm moet zitten — en het verschil tussen wand en vloer',
+    eis: 'Hoe vol de lijm moet zitten, en het verschil tussen wand en vloer',
     tekst:
       'Minimaal lijmcontactoppervlak: 80% bij vloertegelwerk en 65% bij wandtegelwerk. Bij dubbelzijdige verlijming of vloeibedlijm op de vloer is dat 95%.',
     waar: 'par. 6.5, tabel 5',
@@ -270,7 +271,7 @@ const uitzonderingen = [
     geval: 'De voegen van wand en vloer moeten in elkaars verlengde lopen',
     oordeel: 'Dan eerst de vloer',
     uitleg:
-      'Dit is de enige uitzondering die de vakbronnen noemen, en Forbo Eurocol zegt het in één zin: begin op de wanden, tenzij je het vloer- en wandtegelwerk wilt laten stroken — in dat geval begin je met de vloertegels. Het werkt alleen als de formaten op elkaar passen en de indeling vooraf op papier staat, want je hebt dan geen speelruimte meer in de onderste rij.',
+      'Dit is de enige uitzondering die de vakbronnen noemen, en Forbo Eurocol zegt het in één zin: begin op de wanden, tenzij je het vloer- en wandtegelwerk wilt laten stroken; in dat geval begin je met de vloertegels. Het werkt alleen als de formaten op elkaar passen en de indeling vooraf op papier staat, want je hebt dan geen speelruimte meer in de onderste rij.',
   },
   {
     geval: 'Er komt een ligbad of een douchebak in',
@@ -282,13 +283,13 @@ const uitzonderingen = [
     geval: 'De vloer ligt er al en blijft liggen',
     oordeel: 'Dan is er geen volgordevraag, maar wel een hoogtevraag',
     uitleg:
-      'Bij alleen nieuwe wandtegels op een bestaande vloer vervalt de derde beurt: de onderste rij wordt meteen op maat gesneden naar de vloer die er ligt. Let dan op de randvoeg — die moet er alsnog komen, ook als de oude aansluiting dichtgesmeerd was.',
+      'Bij alleen nieuwe wandtegels op een bestaande vloer vervalt de derde beurt: de onderste rij wordt meteen op maat gesneden naar de vloer die er ligt. Let dan op de randvoeg: die moet er alsnog komen, ook als de oude aansluiting dichtgesmeerd was.',
   },
   {
     geval: 'Iemand wil de vloer eerst en dekt hem af',
     oordeel: 'Kan, maar het kost de derde beurt en het is een risico',
     uitleg:
-      'Op de vakfora verdedigen doe-het-zelvers dit: vloer eerst, twee lagen stucloper eroverheen, dan de wand in één keer zonder snijwerk onderaan. Het tegenargument komt uit dezelfde draden en is praktisch: stucloper houdt een vallende tegel of spaan niet tegen, en de onderste rij komt dan vlak op de vloer te staan terwijl daar juist een open voeg hoort. Wie dit doet, doet het bewust — niet omdat het sneller is.',
+      'Op de vakfora verdedigen doe-het-zelvers dit: vloer eerst, twee lagen stucloper eroverheen, dan de wand in één keer zonder snijwerk onderaan. Het tegenargument komt uit dezelfde draden en is praktisch: stucloper houdt een vallende tegel of spaan niet tegen, en de onderste rij komt dan vlak op de vloer te staan terwijl daar juist een open voeg hoort. Wie dit doet, doet het bewust, niet omdat het sneller is.',
   },
 ]
 
@@ -363,7 +364,7 @@ const stemmen = [
   },
   {
     tekst:
-      'Eerst tegels geplaatst op alurij rondom (onderste rij opengelaten) — vloer gelegd — onderste rij tegels afgekort en ingepast.',
+      '- eerst tegels geplaatst op alurij rondom (onderste rij opengelaten)\n- vloer gelegd\n- onderste rij tegels afgekort en ingepast',
     bron: 'bouwinfo.be, draad "Eerst betegelen of vloeren in de badkamer?", bericht uit 2012',
     href: 'https://www.bouwinfo.be/bouwforum/threads/eerst-betegelen-of-vloeren-in-de-badkamer.265624/',
   },
@@ -372,7 +373,7 @@ const stemmen = [
 const faqs = [
   {
     q: 'Is het fout als mijn tegelzetter eerst de vloer doet?',
-    a: 'Nee, en dat is een eerlijker antwoord dan je elders leest. Er bestaat geen voorschrift dat de volgorde bepaalt: URL 35-101, de uitvoeringsrichtlijn waarop Nederlandse tegelzetbedrijven worden gecertificeerd, zegt er niets over. Hij schrijft het resultaat voor — vlakheid, lippen, voegpatroon, een randvoeg die vrij blijft — en laat de route aan de vakman. Wat wél telt: als de vloer er eerst ligt, moet hij echt beschermd worden, en de onderste rij wandtegels mag nog steeds niet koud op die vloer komen te staan. Vraag dus niet "waarom doe je het zo", vraag "hoe houd je de aansluiting open en wat komt daar in".',
+    a: 'Nee, en dat is een eerlijker antwoord dan je elders leest. Er bestaat geen voorschrift dat de volgorde bepaalt: URL 35-101, de uitvoeringsrichtlijn waarop Nederlandse tegelzetbedrijven worden gecertificeerd, zegt er niets over. Hij schrijft het resultaat voor (vlakheid, lippen, voegpatroon, een randvoeg die vrij blijft) en laat de route aan de vakman. Wat wél telt: als de vloer er eerst ligt, moet hij echt beschermd worden, en de onderste rij wandtegels mag nog steeds niet koud op die vloer komen te staan. Vraag dus niet "waarom doe je het zo", vraag "hoe houd je de aansluiting open en wat komt daar in".',
   },
   {
     q: 'Hoeveel ruimte moet er tussen de onderste wandtegel en de vloer blijven?',
@@ -380,7 +381,7 @@ const faqs = [
   },
   {
     q: 'Valt de wandtegel over de vloertegel, of de vloertegel tegen de wandtegel?',
-    a: 'De wandtegel eindigt boven de vloertegel, met de open randvoeg ertussen. Op de vakfora wordt daar een praktisch argument bij gegeven: zo krijg je een staande kitrand in plaats van een liggende. Een liggende kitrand vangt water, zeep en vuil en veroudert sneller; een staande niet. Er zijn tegelzetters die de vloer eerst leggen omdat ze een liggende kitvoeg lelijk vinden — dat is smaak, en het staat tegenover levensduur. Ik kies levensduur, want de kitrand is het onderdeel met de kortste garantietermijn: bij mij 1 jaar op kitwerk tegenover 5 jaar op tegelwerk en voegwerk.',
+    a: 'De wandtegel eindigt boven de vloertegel, met de open randvoeg ertussen. Op de vakfora wordt daar een praktisch argument bij gegeven: zo krijg je een staande kitrand in plaats van een liggende. Een liggende kitrand vangt water, zeep en vuil en veroudert sneller; een staande niet. Er zijn tegelzetters die de vloer eerst leggen omdat ze een liggende kitvoeg lelijk vinden. Dat is smaak, en het staat tegenover levensduur. Ik kies levensduur, want de kitrand is het onderdeel met de kortste garantietermijn: bij mij 1 jaar op kitwerk tegenover 5 jaar op tegelwerk en voegwerk.',
   },
   {
     q: 'Waarom gaat de onderste rij er pas na de vloer op?',
@@ -388,7 +389,7 @@ const faqs = [
   },
   {
     q: 'Wanneer is het wél logisch om met de vloer te beginnen?',
-    a: 'Als de voegen van wand en vloer in elkaars verlengde moeten lopen. Forbo Eurocol formuleert het als de enige uitzondering in zijn stappenplan: begin op de wanden, tenzij je het vloer- en wandtegelwerk wilt laten stroken. Dan begin je met de vloer, want die bepaalt het raster. Het werkt alleen als de formaten dat toelaten en de indeling van tevoren is uitgetekend; je levert er namelijk je speling in de onderste rij voor in. Spreek dat vooraf af — de richtlijn vraagt sowieso dat de indeling vóór het werk met jou wordt vastgelegd.',
+    a: 'Als de voegen van wand en vloer in elkaars verlengde moeten lopen. Forbo Eurocol formuleert het als de enige uitzondering in zijn stappenplan: begin op de wanden, tenzij je het vloer- en wandtegelwerk wilt laten stroken. Dan begin je met de vloer, want die bepaalt het raster. Het werkt alleen als de formaten dat toelaten en de indeling van tevoren is uitgetekend; je levert er namelijk je speling in de onderste rij voor in. Spreek dat vooraf af; de richtlijn vraagt sowieso dat de indeling vóór het werk met jou wordt vastgelegd.',
   },
   {
     q: 'Moet ik de tegels laten nameten voordat er begonnen wordt?',
@@ -396,11 +397,11 @@ const faqs = [
   },
   {
     q: 'Hoe lang is mijn badkamer onbruikbaar door deze volgorde?',
-    a: 'De volgorde zelf kost geen extra dagen — hij spaart er juist een uit, omdat je niet hoeft te wachten tot de vloerlijm hard is voordat de wanden kunnen. De echte wachttijden zitten erna: de lijm bepaalt wanneer je op de vloer mag, de voeg en de kit hebben hun eigen klok, en de vloerverwarming heeft de langste. De richtlijn is daar streng in: na een dunbed- of middenbedlijm minstens 2 weken wachten met de vloerverwarming, bij dikbed of speciebed 4 weken, en de vloerverwarming moet minstens 24 uur vóór aanvang van het tegelwerk al uit zijn. Diezelfde richtlijn verplicht de tegelzetter je daar schríftelijk over te informeren. Alle termijnen staan naast elkaar op de pagina over droogtijden en wachttijden.',
+    a: 'De volgorde zelf kost geen extra dagen. Hij spaart er juist een uit, omdat je niet hoeft te wachten tot de vloerlijm hard is voordat de wanden kunnen. De echte wachttijden zitten erna: de lijm bepaalt wanneer je op de vloer mag, de voeg en de kit hebben hun eigen klok, en de vloerverwarming heeft de langste. De richtlijn is daar streng in: na een dunbed- of middenbedlijm minstens 2 weken wachten met de vloerverwarming, bij dikbed of speciebed 4 weken, en de vloerverwarming moet minstens 24 uur vóór aanvang van het tegelwerk al uit zijn. Diezelfde richtlijn verplicht de tegelzetter je daar schríftelijk over te informeren. Alle termijnen staan naast elkaar op de pagina over droogtijden en wachttijden.',
   },
   {
     q: 'Wat moet ik hierover op mijn offerte terugzien?',
-    a: 'Vier dingen. Eén: op welke afgewerkte vloerhoogte wordt gewerkt, want daar hangt alles aan — bij een drempel of een aansluitende gang is dat geen detail. Twee: hoe het tegelwerk wordt ingedeeld, naar inzicht van de tegelzetter of symmetrisch uitgemeten; de richtlijn vraagt die afspraak vooraf. Drie: dat de aansluiting wand/vloer en de binnenhoeken worden afgekit en niet gevoegd, met het kitwerk als eigen regel — bij mij vallen plinten en het afkitten daarvan als aparte post op de offerte, en op kitwerk geef ik 1 jaar garantie tegenover 5 jaar op tegelwerk en voegwerk. Vier: of er inbouwapparatuur komt en wanneer die geplaatst wordt. Bij mij staat dat in een gespecificeerde offerte, zonder kleine lettertjes, binnen 5 dagen.',
+    a: 'Vier dingen. Eén: op welke afgewerkte vloerhoogte wordt gewerkt, want daar hangt alles aan: bij een drempel of een aansluitende gang is dat geen detail. Twee: hoe het tegelwerk wordt ingedeeld, naar inzicht van de tegelzetter of symmetrisch uitgemeten; de richtlijn vraagt die afspraak vooraf. Drie: dat de aansluiting wand/vloer en de binnenhoeken worden afgekit en niet gevoegd, met het kitwerk als eigen regel. Bij mij vallen plinten en het afkitten daarvan als aparte post op de offerte, en op kitwerk geef ik 1 jaar garantie tegenover 5 jaar op tegelwerk en voegwerk. Vier: of er inbouwapparatuur komt en wanneer die geplaatst wordt. Bij mij staat dat in een gespecificeerde offerte, zonder kleine lettertjes, binnen 5 dagen.',
   },
 ]
 
@@ -527,7 +528,7 @@ export default function EerstVloerOfWandPage() {
               de pagina over een badkamer waterdicht maken
             </Link>
             . De richtlijn eist daar bij een bad of douche overigens kimband over de volle hoogte en
-            breedte van de inwendige hoeken (par. 6.3) — dus precies in de hoeken die later ook de
+            breedte van de inwendige hoeken (par. 6.3), dus precies in de hoeken die later ook de
             kitrand krijgen.
           </p>
         </div>
@@ -541,7 +542,7 @@ export default function EerstVloerOfWandPage() {
             id="wat-de-uitvoeringsrichtlijn-voorschrijft"
             className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl"
           >
-            Geen voorschrift over de volgorde — wel zes over het resultaat
+            Geen voorschrift over de volgorde, wel zes over het resultaat
           </h2>
 
           <div className="mt-12 grid gap-12 lg:grid-cols-12 lg:gap-16">
@@ -618,8 +619,8 @@ export default function EerstVloerOfWandPage() {
           <p className="mt-8 max-w-2xl text-sm leading-relaxed text-primary-500">
             Bron: URL 35-101 d.d. 13-04-2018, uitvoeringsrichtlijn voor het aanbrengen van wand- en
             vloertegelwerk in reguliere binnentoepassing, behorend bij BRL 1017 (SKG-IKOB). De
-            minimale voegbreedtes die Omnicol eruit citeert — 3 mm voor vloertegels, 2 mm voor
-            wandtegels — gaan over de voegen tússen tegels; de randvoeg langs de wand is een andere
+            minimale voegbreedtes die Omnicol eruit citeert (3 mm voor vloertegels, 2 mm voor
+            wandtegels) gaan over de voegen tússen tegels; de randvoeg langs de wand is een andere
             voeg en heeft zijn eigen minimum van 4 mm.
           </p>
 
@@ -649,13 +650,13 @@ export default function EerstVloerOfWandPage() {
             <p className="mt-4 text-base leading-relaxed text-primary-600">
               Vier bronnen uit diezelfde lijstjes kreeg ik niet open: webwoordenboek.nl,
               tegeldepot.nl, een discussie op reddit.com en gamma.be. Die tellen hierboven dus
-              nergens in mee. Staat de derde beurt daar wél in, dan klopt mijn telling niet — en
+              nergens in mee. Staat de derde beurt daar wél in, dan klopt mijn telling niet, en
               dan hoor ik dat graag, want ik heb liever een scherpe pagina dan een mooie.
             </p>
             <p className="mt-4 text-base leading-relaxed text-primary-600">
               Google zelf heb ik niet kunnen meten; dat lukt machinaal niet. Dit is dus geen
               Google-ranglijst. De klusfora tel ik apart: klusidee.nl en bouwinfo.be. Daar staat de
-              derde beurt wél — op bouwinfo.be al in een bericht uit 2012, in bijna dezelfde
+              derde beurt wél: op bouwinfo.be al in een bericht uit 2012, in bijna dezelfde
               woorden als hierboven: eerst de wand met de onderste rij open, dan de vloer, dan die
               rij afgekort en ingepast.
             </p>
@@ -732,8 +733,8 @@ export default function EerstVloerOfWandPage() {
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-600">
                 Wat geen kwestie van smaak is: dat er een open voeg zit. De richtlijn verbiedt
-                stuikend verlijmen — tegelvlakken horen bij inwendige hoeken vrij te zijn, zo&apos;n
-                4 à 5 millimeter — en wil die voeg gevuld met blijvend elastische kit, over de
+                stuikend verlijmen (tegelvlakken horen bij inwendige hoeken vrij te zijn, zo&apos;n
+                4 à 5 millimeter) en wil die voeg gevuld met blijvend elastische kit, over de
                 volledige diepte. Wand en vloer bewegen los van elkaar, en cement beweegt niet mee.
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-600">
@@ -797,8 +798,17 @@ export default function EerstVloerOfWandPage() {
                 gewoon: we lopen het samen door, en ik schrijf op wat we afspreken.
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-600">
-                Ik ben een eenmanszaak uit Breda, actief sinds 2022, en ik voer de klussen zelf uit
-                — geen onderaannemers, geen wisselende ploegen. Bij een volgordevraag helpt dat
+                Hoe dat doorlopen er in de praktijk uitziet, beschreef een klant op Google zo:
+              </p>
+              <div className="mt-6">
+                <KlantCitaat
+                  auteur="Brenda Van der Swaluw"
+                  fragment="Heel secuur en hij overlegt goed over de details, bespreekt de opties en mogelijkheden voor de afwerking."
+                />
+              </div>
+              <p className="mt-6 text-base leading-relaxed text-primary-600">
+                Ik ben een eenmanszaak uit Breda, actief sinds 2022, en ik voer de klussen zelf
+                uit, zonder onderaannemers en zonder wisselende ploegen. Bij een volgordevraag helpt dat
                 meer dan het lijkt: er is niemand om het naar door te schuiven. Dezelfde persoon
                 die de ondergrond aantreft, zet de laatste rij erin. Mijn kerngebied ligt op
                 maximaal een kwartier rijden van Breda, en dat is geen detail bij deze volgorde:
@@ -806,17 +816,17 @@ export default function EerstVloerOfWandPage() {
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-600">
                 Drie dingen die op mijn eigen dienstpagina staan en hier rechtstreeks van toepassing
-                zijn. Eén: bij grootformaat — 60x120 en groter — werk ik met kruisende lasers en
+                zijn. Eén: bij grootformaat (60x120 en groter) werk ik met kruisende lasers en
                 met vloerverwarmingsvriendelijke lijm. Hoe groter de tegel, hoe harder de derde
                 beurt nodig is, want een afwijking van een millimeter in de dekvloer wordt over
                 120 centimeter zichtbaar. Twee: dilataties leg ik op de juiste plek en voegwerk zit
-                bij het werk in. Drie: plinten reken ik apart, inclusief het afkitten — dat kitwerk
+                bij het werk in. Drie: plinten reken ik apart, inclusief het afkitten. Dat kitwerk
                 is dus een eigen regel op je offerte en geen verstopte post.
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-600">
                 En de termijn die daaraan vastzit: 5 jaar garantie op tegelwerk en voegwerk, 1 jaar
                 op kitwerk. Je ziet op je offerte dus precies welk deel van je badkamer onder welke
-                termijn valt. Een prijs per vierkante meter vind je hier niet — die zet ik niet op
+                termijn valt. Een prijs per vierkante meter vind je hier niet. Die zet ik niet op
                 de site, omdat hij zonder de ondergrond, het formaat en het snijwerk niets betekent.
               </p>
             </div>
@@ -829,7 +839,7 @@ export default function EerstVloerOfWandPage() {
                   <li>De afgewerkte vloerhoogte waarop gewerkt wordt.</li>
                   <li>Hoe het tegelwerk wordt ingedeeld: uitgemeten of naar mijn inzicht.</li>
                   <li>
-                    Plinten en het afkitten daarvan als aparte regel — met de garantietermijn van
+                    Plinten en het afkitten daarvan als aparte regel, met de garantietermijn van
                     1 jaar op kitwerk erbij, tegenover 5 jaar op tegel- en voegwerk.
                   </li>
                   <li>Of er inbouwapparatuur komt, en wanneer die geplaatst wordt.</li>
@@ -887,8 +897,8 @@ export default function EerstVloerOfWandPage() {
             </h3>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-primary-600">
               De richtlijn kent een formulier &quot;melding gebreken ondergrond&quot; (bijlage 3).
-              Treft de tegelzetter een ondergrond aan die niet deugt — niet vlak, te vochtig,
-              scheuren, geen dilataties — dan hoort hij dat schriftelijk bij jou te melden vóór hij
+              Treft de tegelzetter een ondergrond aan die niet deugt (niet vlak, te vochtig,
+              scheuren, geen dilataties), dan hoort hij dat schriftelijk bij jou te melden vóór hij
               begint. Wil jij dat er tóch doorgewerkt wordt, dan vraagt de richtlijn daar een
               schriftelijke opdracht van jou voor. Dat klinkt formeel, maar het beschermt je
               allebei: het is het verschil tussen een bekend risico en een verrassing achteraf.
@@ -916,7 +926,7 @@ export default function EerstVloerOfWandPage() {
           <ul className="mt-12 divide-y divide-mist border-y border-mist">
             {stemmen.map((s) => (
               <li key={s.tekst} className="py-6">
-                <p className="text-lg leading-relaxed text-primary-900">&ldquo;{s.tekst}&rdquo;</p>
+                <p className="text-lg leading-relaxed text-primary-900 whitespace-pre-line">&ldquo;{s.tekst}&rdquo;</p>
                 <a
                   href={s.href}
                   target="_blank"
@@ -961,8 +971,8 @@ export default function EerstVloerOfWandPage() {
             <Link href="/tegelvloer-belopen-en-vloerverwarming-aanzetten" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
               het overzicht van droogtijden en wachttijden
             </Link>
-            . En hoe hoog de wandtegels eigenlijk moeten komen — een vraag die de indeling van de
-            hele wand bepaalt — staat op{' '}
+            . En hoe hoog de wandtegels eigenlijk moeten komen, een vraag die de indeling van de
+            hele wand bepaalt, staat op{' '}
             <Link href="/badkamer-betegelen-tot-plafond" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
               de pagina over betegelen tot het plafond
             </Link>
@@ -982,7 +992,7 @@ export default function EerstVloerOfWandPage() {
             {[
               'Een prijs. De volgorde van het werk verandert de prijs niet noemenswaard; het formaat, de ondergrond, het snijwerk en het voorwerk doen dat wel. Bedragen van vergelijkings- en leadplatforms zijn niet mijn prijs.',
               'Een doe-het-zelfhandleiding. Hierboven staat waaróm de volgorde is zoals hij is en waar je op kunt toetsen. Hoe je een tegelsnijder bedient of een lijmkam kiest staat er bewust niet in; daar zijn de fabrikanten beter in.',
-              'De volledige tekst van URL 35-101. Ik citeer de paragrafen die de aansluiting tussen wand en vloer raken. Het document behandelt veel meer — vochtpercentages, lijmtypen, controlelijsten — en is openbaar na te lezen.',
+              'De volledige tekst van URL 35-101. Ik citeer de paragrafen die de aansluiting tussen wand en vloer raken. Het document behandelt veel meer (vochtpercentages, lijmtypen, controlelijsten) en is openbaar na te lezen.',
               'Een oordeel over wand- of vloerverwarming onder de tegels in jouw situatie. De richtlijn noemt wachttijden van 2 tot 4 weken en een verplichte schriftelijke instructie; welke van de twee bij jouw dekvloer hoort, hangt van die dekvloer af en niet van een webpagina.',
               'Een meting van jouw vloer. De vlakheidseisen hierboven zijn de norm, geen opname van jouw dekvloer. Die doe ik ter plekke met een rei.',
               'Hoe vaak het in Nederland misgaat op deze aansluiting. Ik heb daar geen meting van, en een getal zonder bron hoort niet op deze site.',

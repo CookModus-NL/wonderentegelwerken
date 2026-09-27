@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react'
 import { business } from '@/content/business'
+import { KlantCitaat } from '@/components/klant-citaat'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
@@ -606,6 +607,14 @@ export default function WatKostVloerTegelenPage() {
               zonder kleine lettertjes. Gespecificeerd betekent: de posten uit de lijst hierboven
               los, zodat je ze naast een andere offerte kunt leggen.
             </p>
+            <p className="text-base leading-relaxed text-primary-600">
+              Dat het bedrag vooraf ook het bedrag achteraf is, hoef je niet van mij aan te nemen.
+              Een klant over de tegelvloer die ik legde, op Google:
+            </p>
+            <KlantCitaat
+              auteur="Edward"
+              fragment="Vooraf werd duidelijk gecommuniceerd wat de kosten zouden zijn, en bij de eindafrekening werd het zelfs nog iets lager, dat hoor je tegenwoordig nog maar zelden."
+            />
             <p className="text-base leading-relaxed text-primary-600">
               En omdat ik een eenmanszaak uit Breda ben en elke klus zelf doe, zonder
               onderaannemers en zonder tussenpersoon, is het bedrag dat je van mij hoort ook het

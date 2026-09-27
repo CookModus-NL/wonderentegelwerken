@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react'
 import { business } from '@/content/business'
+import { KlantCitaat } from '@/components/klant-citaat'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
@@ -497,6 +498,29 @@ export default function TegelsZelfKopenPage() {
             De conclusie is: vraag het retourbeleid op vóór je bestelt, en stem het bestelmoment af
             op de startdatum in plaats van op de dag dat je de tegels uitkiest.
           </p>
+        </div>
+      </section>
+
+      {/* ─── ZELF GEKOCHT, IN DE PRAKTIJK ─────── */}
+      <section className="bg-clay py-24 lg:py-32">
+        <div className="container-tight">
+          <div className="eyebrow">Zelf gekocht, in de praktijk</div>
+          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+            Budgettegels die niet allemaal even groot waren
+          </h2>
+          <div className="mt-12 max-w-3xl space-y-8">
+            <p className="text-base leading-relaxed text-primary-600">
+              Zelf kopen mag, en het kan goed uitpakken. Een klant kocht de vloertegels zelf en
+              schreef daarna op Google wat ik ermee moest doen:
+            </p>
+            <KlantCitaat auteur="Liza Verhaert" />
+            <p className="text-base leading-relaxed text-primary-600">
+              Dat is het risico uit het blok hierboven, maar dan zichtbaar in de dozen: tegels die
+              in maat verschillen, op een vloer die niet vlak is, tegen wanden en dorpels die er al
+              zaten. Het is gelukt. Maar zulke verschillen wil ik liever vóór de bestelling zien dan
+              pas als de dozen open zijn, want dan kan er nog een andere serie gekozen worden.
+            </p>
+          </div>
         </div>
       </section>
 

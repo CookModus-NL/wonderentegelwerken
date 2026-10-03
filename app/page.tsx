@@ -59,7 +59,7 @@ const antwoordblokken: { id: string; vraag: string; delen: Deel[] }[] = [
     id: 'zit-het-voegwerk-in-het-tegelwerk',
     vraag: 'Zit het voegwerk in het tegelwerk, of komt dat er nog bij?',
     delen: [
-      'Het voegwerk zit erin. Net als de lijm en de voorlijm, het egaliseren van de ondervloer waar dat nodig is, en de dilataties op de plekken waar ze horen. Apart op de offerte staan de plinten, inclusief het afkitten. Sloopwerk, puinafvoer en voorrijkosten horen niet in dat standaardrijtje: die verschillen per klus en staan daarom als eigen regel in de offerte. Wat er onder je vloer gebeurt — ook bij grootformaat van 60×120 of groter — staat op de pagina over ',
+      'Het voegwerk zit erin. Net als de lijm en de voorlijm, het egaliseren van de ondervloer waar dat nodig is, en de dilataties op de plekken waar ze horen. Apart op de offerte staan de plinten, inclusief het afkitten. Sloopwerk, puinafvoer en voorrijkosten horen niet in dat standaardrijtje: die verschillen per klus en staan daarom als eigen regel in de offerte. Wat er onder je vloer gebeurt, ook bij grootformaat van 60×120 of groter, staat op de pagina over ',
       { tekst: 'vloertegelwerk', href: '/diensten/vloertegels' },
       '.',
     ],

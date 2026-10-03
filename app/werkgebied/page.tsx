@@ -32,8 +32,8 @@ export default function WerkgebiedPage() {
             </p>
             {/* Inkomende link naar de antwoordeenheid op de homepage (contract 961be3b4, 3 okt 2026). */}
             <p className="mt-5 text-base text-primary-600 max-w-xl leading-relaxed">
-              Zoek je eerst het korte antwoord — wie er komt, wat er in het tegelwerk zit en binnen
-              welke termijn je een prijs hebt? Dat staat bij{' '}
+              Het korte antwoord op wie er komt, wat er in het tegelwerk zit en binnen welke
+              termijn je een prijs hebt, staat bij{' '}
               <Link href="/#tegelzetter-breda" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
                 tegelzetter in Breda: wie er komt
               </Link>

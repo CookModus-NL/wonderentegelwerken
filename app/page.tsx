@@ -8,14 +8,88 @@ import { services } from '@/content/services'
 import { projects } from '@/content/projects'
 import { business } from '@/content/business'
 import { testimonials } from '@/content/testimonials'
+import { faqSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
 // Eigen canonical: de layout zet er bewust geen, anders erft elke pagina zonder eigen metadata '/'.
 export const metadata: Metadata = { alternates: { canonical: '/' } }
 
+/**
+ * DE ANTWOORDEENHEID "TEGELZETTER BREDA" (3 okt 2026, contract 961be3b4, klasse
+ * antwoordeenheid-verdiepen).
+ *
+ * WAAROM DIT BLOK BESTAAT. "tegelzetter breda" gaf in 28 dagen 93 vertoningen en 2 kliks op déze
+ * pagina, op gemiddelde positie 8,4 (motor_gsc, query × pagina, 02-09 t/m 29-09-2026, niet-merk).
+ * Een eigen Google-meting op 03-10-2026 (desktop, Nederland, via DataForSEO) zet de homepage
+ * organisch op 5 en absoluut op 10: boven ons staan een kaartblok van drie, een vergelijkblok en
+ * vier concurrenten. De pagina had tot vandaag geen enkele alinea die de vraag afmaakt — alleen
+ * labels, kaarten en beeld. Daarmee was er niets om te citeren en niets om op door te klikken.
+ *
+ * WAAROM DEZE VORM. De eenheid is de passage, niet de pagina (brand/antwoordlaag-doctrine §1/§2):
+ * elk blok hieronder moet los van deze pagina blijven kloppen. Vandaar één antwoord-eerst alinea
+ * die het bedrijf zelf benoemt, en drie vragen die een lokale zoeker als eerste afstreept.
+ *
+ * ZICHTBAAR == SCHEMA. De FAQPage-markup wordt uit dezelfde array gegenereerd als de zichtbare
+ * tekst (`platteTekst`), zodat markup nooit iets kan beweren dat niet op de pagina staat
+ * (wet art. 1, search compliance 23-09-2026).
+ *
+ * ELKE BEWERING KOMT UIT EEN GOEDGEKEURD FEIT (motor_feiten, bedrijf_id=wonderen,
+ * eigenaar_akkoord=true): persoon.eigenaar · bedrijf.registratie · werkgebied.kern ·
+ * werkgebied.uitbreiding · dienst.vloertegelwerk · dienst.vloerverwarming · proces.reactietijd ·
+ * voorwaarde.offerte. GEEN bedrag en GEEN nieuwe garantietermijn: die blijven een mensbesluit
+ * (_beleid.mjs ALTIJD_MENS), en het m²-tarief bestaat bewust niet op deze site.
+ * GEEN frequentieclaim over welke vraag Jaap vaak krijgt — hij wees 10-09-2026 een pagina af met
+ * "deze vraag krijg ik zelden tot nooit" (lering 04d76b17). De framing is de onze, niet de zijne.
+ */
+type Deel = string | { tekst: string; href: string }
+
+const antwoordblokken: { id: string; vraag: string; delen: Deel[] }[] = [
+  {
+    id: 'kom-je-ook-in-mijn-plaats',
+    vraag: 'Kom je ook in mijn plaats?',
+    delen: [
+      'Mijn kerngebied is maximaal 15 minuten rijden: Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst. Op 15 tot 30 minuten kom ik in Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert. Made, Dongen, Gilze en Roosendaal doe ik op aanvraag, en dan voor grotere projecten. Staat jouw plaats er niet bij, vraag het dan gewoon. Het volledige ',
+      { tekst: 'werkgebied met reistijden per plaats', href: '/werkgebied' },
+      ' staat apart, en voor de stad zelf is er een pagina over ',
+      { tekst: 'tegelwerk in Breda en de wijken', href: '/tegelzetter/breda' },
+      '.',
+    ],
+  },
+  {
+    id: 'zit-het-voegwerk-in-het-tegelwerk',
+    vraag: 'Zit het voegwerk in het tegelwerk, of komt dat er nog bij?',
+    delen: [
+      'Het voegwerk zit erin. Net als de lijm en de voorlijm, het egaliseren van de ondervloer waar dat nodig is, en de dilataties op de plekken waar ze horen. Apart op de offerte staan de plinten, inclusief het afkitten. Sloopwerk, puinafvoer en voorrijkosten horen niet in dat standaardrijtje: die verschillen per klus en staan daarom als eigen regel in de offerte. Wat er onder je vloer gebeurt — ook bij grootformaat van 60×120 of groter — staat op de pagina over ',
+      { tekst: 'vloertegelwerk', href: '/diensten/vloertegels' },
+      '.',
+    ],
+  },
+  {
+    id: 'hoe-snel-heb-ik-antwoord-en-een-prijs',
+    vraag: 'Hoe snel heb ik antwoord en een prijs?',
+    delen: [
+      'Stuur foto’s en maten via WhatsApp, dan heb je binnen 1 werkdag antwoord. Daarna kom ik vrijblijvend kijken en opmeten, en binnen 5 dagen ligt er een gespecificeerde offerte zonder kleine lettertjes: de posten los, zodat je ziet waar je ja tegen zegt. Een tarief per vierkante meter staat niet op deze site. Waarom niet, en welke bedragen de vergelijkingssites er wél bij noemen, staat op de pagina over ',
+      { tekst: 'wat vloer tegelen per m² kost', href: '/wat-kost-vloer-tegelen-per-m2' },
+      '.',
+    ],
+  },
+]
+
+const platteTekst = (delen: Deel[]) => delen.map((d) => (typeof d === 'string' ? d : d.tekst)).join('')
+
 export default function HomePage() {
   return (
     <>
+      {/* Zichtbaar == schema: dezelfde array die de sectie hieronder rendert. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            faqSchema(antwoordblokken.map((b) => ({ q: b.vraag, a: platteTekst(b.delen) })))
+          ),
+        }}
+      />
+
       {/* ╔═══════════════════════════════════════════════ HERO ╗ */}
       <section className="relative overflow-hidden bg-paper pt-8 pb-20 lg:pb-32">
         {/* Achtergrond: tegelpattern + warme gradient */}
@@ -164,6 +238,64 @@ export default function HomePage() {
               <div key={s.label} className={`px-2 lg:px-8 ${i === 0 ? 'lg:pl-0' : ''}`}>
                 <div className="font-display text-5xl font-bold text-paper sm:text-6xl">{s.value}</div>
                 <div className="mt-2 text-sm text-primary-300 leading-relaxed">{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ╔═══════════════════════════════════════ ANTWOORDEENHEID ╗ */}
+      {/* Het enige vlak op deze pagina waar je leest in plaats van kijkt. Staat bewust hoog
+          (direct na de cijferstrook, in de eerste 30% van de pagina) en bewust zonder beeld:
+          er is geen klantfoto van werk in uitvoering en stock is verboden (DESIGN.md). */}
+      <section id="tegelzetter-breda" className="bg-clay py-20 lg:py-28">
+        <div className="container-x">
+          <div className="max-w-3xl">
+            <div className="eyebrow">
+              <MapPin className="h-3 w-3" />
+              Tegelzetter in Breda
+            </div>
+            <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-primary-900 sm:text-5xl">
+              Tegelzetter in Breda nodig?<br />
+              <span className="italic font-light text-primary-600">Dit is wie er komt.</span>
+            </h2>
+
+            <p className="mt-8 text-lg leading-relaxed text-primary-900 sm:text-xl">
+              Van Wonderen Tegelwerken is de eenmanszaak van Jaap van Wonderen, Leistraat 19 in
+              Breda, KvK {business.kvk}. Ik werk sinds 2022 en doe elke klus zelf: geen
+              onderaannemers, geen tussenpersonen. Mijn kerngebied is Breda met zes plaatsen
+              eromheen, allemaal binnen 15 minuten rijden. Je krijgt binnen 1 werkdag antwoord
+              op WhatsApp en binnen 5 dagen een gespecificeerde offerte zonder kleine lettertjes.
+            </p>
+
+            <p className="mt-6 text-base leading-relaxed text-primary-600">
+              Hieronder de drie dingen die je wilt afstrepen voordat je iemand in huis laat: kom
+              ik bij jou, wat zit er in het werk, en hoe snel weet je waar je aan toe bent.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-x-10 gap-y-10 border-t border-mist pt-12 md:grid-cols-3 md:divide-x md:divide-mist">
+            {antwoordblokken.map((b, i) => (
+              <div key={b.id} className={`md:px-8 ${i === 0 ? 'md:pl-0' : ''} ${i === antwoordblokken.length - 1 ? 'md:pr-0' : ''}`}>
+                <h3 id={b.id} className="font-display text-xl font-semibold leading-snug text-primary-900">
+                  {b.vraag}
+                </h3>
+                {/* text-base (16px): 15px valt buiten contract.fontschaal — gemeten 03-10-2026. */}
+                <p className="mt-4 text-base leading-relaxed text-primary-600">
+                  {b.delen.map((d, j) =>
+                    typeof d === 'string' ? (
+                      d
+                    ) : (
+                      <Link
+                        key={j}
+                        href={d.href}
+                        className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
+                      >
+                        {d.tekst}
+                      </Link>
+                    )
+                  )}
+                </p>
               </div>
             ))}
           </div>

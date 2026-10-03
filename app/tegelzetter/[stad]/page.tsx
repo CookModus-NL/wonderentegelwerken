@@ -117,6 +117,16 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
             <span className="italic font-light text-primary-600">geen standaard pakket.</span>
           </h2>
           <p className="mt-8 text-lg leading-relaxed text-primary-600">{city.localContext}</p>
+          {/* Inkomende link naar de antwoordeenheid op de homepage (contract 961be3b4, 3 okt 2026).
+              Werkt voor elke stad: Breda is de thuisbasis waar de reistijd vandaan gerekend wordt. */}
+          <p className="mt-6 text-base leading-relaxed text-primary-600">
+            Wie er komt, wat er standaard in het tegelwerk zit en hoe snel je een gespecificeerde
+            offerte hebt, staat kort bij elkaar bij{' '}
+            <Link href="/#tegelzetter-breda" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+              tegelzetter in Breda: wie er komt
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

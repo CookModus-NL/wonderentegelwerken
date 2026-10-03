@@ -30,6 +30,15 @@ export default function WerkgebiedPage() {
             <p className="mt-8 text-lg text-primary-600 max-w-xl leading-relaxed">
               Vanuit Breda werk ik in {business.serviceArea.length} kerngemeenten. Net buiten het kerngebied? Voor grotere projecten rijd ik gerust wat verder.
             </p>
+            {/* Inkomende link naar de antwoordeenheid op de homepage (contract 961be3b4, 3 okt 2026). */}
+            <p className="mt-5 text-base text-primary-600 max-w-xl leading-relaxed">
+              Zoek je eerst het korte antwoord — wie er komt, wat er in het tegelwerk zit en binnen
+              welke termijn je een prijs hebt? Dat staat bij{' '}
+              <Link href="/#tegelzetter-breda" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+                tegelzetter in Breda: wie er komt
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>

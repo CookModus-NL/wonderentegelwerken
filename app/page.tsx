@@ -40,6 +40,17 @@ export const metadata: Metadata = { alternates: { canonical: '/' } }
  * (_beleid.mjs ALTIJD_MENS), en het m²-tarief bestaat bewust niet op deze site.
  * GEEN frequentieclaim over welke vraag Jaap vaak krijgt — hij wees 10-09-2026 een pagina af met
  * "deze vraag krijg ik zelden tot nooit" (lering 04d76b17). De framing is de onze, niet de zijne.
+ *
+ * WAT HIER BEWUST NIET STAAT (herstelronde 1, 03-10-2026). Van sloopwerk, puinafvoer en
+ * voorrijkosten weten we uit dienst.vloertegelwerk alleen dat ze NIET in het standaardrijtje
+ * zitten. Hoe ze vervolgens op de offerte verschijnen is niet bevestigd, dus staat dat er niet
+ * meer: de vraag ligt bij de eigenaar (EVIDENCE-wonderen-posten-buiten-standaard).
+ *
+ * GEEN KANNIBALISATIE MET /tegelzetter/breda — gemeten, niet aangenomen. In motor_gsc over
+ * 02-09 t/m 29-09-2026 heeft geen enkele /tegelzetter/<stad>-pagina ook maar één vertoning, op
+ * geen enkele zoekvraag. Op "tegelzetter breda" is deze homepage de enige pagina van deze site
+ * die Google toont (182 vertoningen, 2 kliks, positie 8,4 over beide host-varianten). Verdiepen
+ * hoort dus hier.
  */
 type Deel = string | { tekst: string; href: string }
 
@@ -48,7 +59,7 @@ const antwoordblokken: { id: string; vraag: string; delen: Deel[] }[] = [
     id: 'kom-je-ook-in-mijn-plaats',
     vraag: 'Kom je ook in mijn plaats?',
     delen: [
-      'Mijn kerngebied is maximaal 15 minuten rijden: Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst. Op 15 tot 30 minuten kom ik in Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert. Made, Dongen, Gilze en Roosendaal doe ik op aanvraag, en dan voor grotere projecten. Staat jouw plaats er niet bij, vraag het dan gewoon. Het volledige ',
+      'Van Wonderen Tegelwerken zit in Breda en mijn kerngebied is maximaal 15 minuten rijden: Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst. Op 15 tot 30 minuten kom ik in Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert. Made, Dongen, Gilze en Roosendaal doe ik op aanvraag, en dan voor grotere projecten. Staat jouw plaats er niet bij, vraag het dan gewoon. Het volledige ',
       { tekst: 'werkgebied met reistijden per plaats', href: '/werkgebied' },
       ' staat apart, en voor de stad zelf is er een pagina over ',
       { tekst: 'tegelwerk in Breda en de wijken', href: '/tegelzetter/breda' },
@@ -59,7 +70,7 @@ const antwoordblokken: { id: string; vraag: string; delen: Deel[] }[] = [
     id: 'zit-het-voegwerk-in-het-tegelwerk',
     vraag: 'Zit het voegwerk in het tegelwerk, of komt dat er nog bij?',
     delen: [
-      'Het voegwerk zit erin. Net als de lijm en de voorlijm, het egaliseren van de ondervloer waar dat nodig is, en de dilataties op de plekken waar ze horen. Apart op de offerte staan de plinten, inclusief het afkitten. Sloopwerk, puinafvoer en voorrijkosten horen niet in dat standaardrijtje: die verschillen per klus en staan daarom als eigen regel in de offerte. Wat er onder je vloer gebeurt, ook bij grootformaat van 60×120 of groter, staat op de pagina over ',
+      'Het voegwerk zit erin. Net als de lijm en de voorlijm, het egaliseren van de ondervloer waar dat nodig is, en de dilataties op de plekken waar ze horen. Apart op de offerte staan de plinten, inclusief het afkitten. Sloopwerk, puinafvoer en voorrijkosten staan niet in dat standaardrijtje. Wat er bij jouw klus wél nodig is, lees je in de gespecificeerde offerte zonder kleine lettertjes, die er binnen 5 dagen ligt. Wat er onder je vloer gebeurt, ook bij grootformaat van 60×120 of groter, staat op de pagina over ',
       { tekst: 'vloertegelwerk', href: '/diensten/vloertegels' },
       '.',
     ],

@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     q: 'Wat moet ik als eerste doen, en binnen welke termijn?',
-    a: 'Meld het bij de tegelzetter die het werk heeft gedaan, en doe dat schriftelijk, ook als je hem daarnaast belt. Maak eerst foto’s: de hele ruimte, de plek van dichtbij, en een foto met iets erbij dat de maat aangeeft. Noteer wanneer je het voor het eerst zag. Twee termijnen zijn belangrijk. Wat je bij de oplevering al kon zien, hoort op de opleverlijst: in mijn voorwaarden staat dat een gebrek dat je toen redelijkerwijs had moeten zien en niet hebt gemeld, niet meer onder mijn verantwoordelijkheid valt. Wat later opkomt meld je zodra je het ziet; binnen twee maanden na ontdekking is volgens mijn voorwaarden altijd op tijd. Voor wat later opkomt, zegt artikel 7:761 lid 1 van het Burgerlijk Wetboek dat een rechtsvordering wegens een gebrek verjaart door verloop van twee jaren nadat de opdrachtgever ter zake heeft geprotesteerd. Die klok gaat dus lopen op het moment dat je protesteert, en niet eerder.',
+    a: 'Meld het bij de tegelzetter die het werk heeft gedaan, en doe dat schriftelijk, ook als je hem daarnaast belt. Maak eerst foto’s: de hele ruimte, de plek van dichtbij, en een foto met iets erbij dat de maat aangeeft. Noteer wanneer je het voor het eerst zag. Twee termijnen zijn belangrijk. Wat je bij de oplevering al ziet, zet je op de opleverlijst die we samen maken. Wat later opkomt meld je zodra je het ziet; binnen twee maanden na ontdekking is volgens mijn voorwaarden altijd op tijd. Voor wat later opkomt, zegt artikel 7:761 lid 1 van het Burgerlijk Wetboek dat een rechtsvordering wegens een gebrek verjaart door verloop van twee jaren nadat de opdrachtgever ter zake heeft geprotesteerd. Die klok gaat dus lopen op het moment dat je protesteert, en niet eerder.',
   },
   {
     q: 'Mag ik het door iemand anders laten repareren en de rekening opsturen?',
@@ -501,11 +501,11 @@ export default function LosseTegelsPage() {
                 Oplevering en klachten
               </h3>
               <p className="mt-4 text-base leading-relaxed text-primary-600">
-                We lopen het werk samen na en schrijven op wat niet goed is. Een gebrek dat je bij
-                de oplevering redelijkerwijs had moeten zien en niet hebt gemeld, valt daarna niet
-                meer onder mijn verantwoordelijkheid. Wat je later ontdekt, meld je zodra je het
-                ziet; binnen twee maanden na ontdekking is altijd op tijd. Loop de vloer dus na
-                tijdens de oplevering, met de verlichting aan en op je knieën.
+                We lopen het werk samen na en schrijven op wat niet goed is. Douchen of de ruimte
+                gewoon gebruiken telt niet als goedkeuren. Wat je later ontdekt, meld je zodra je
+                het ziet; binnen twee maanden na ontdekking is altijd op tijd. Loop de vloer toch
+                goed na tijdens de oplevering, met de verlichting aan en op je knieën: wat dan op
+                de lijst staat, hoeft later niemand meer te bewijzen.
               </p>
             </div>
             <div className="border-t border-mist pt-8">

@@ -623,20 +623,21 @@ export default function TegelvloerBelopenPage() {
         <div className="container-tight">
           <div className="eyebrow">Iets wat nergens anders bij staat</div>
           <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
-            De eerste keer dat je de vloer gebruikt, telt ook juridisch
+            De oplevering is ook een juridisch moment
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
             Deze vraag lijkt puur technisch, maar er hangt een tweede ding aan vast dat op geen van
-            de gemeten zoekresultaten voorkomt. In mijn eigen{' '}
+            de gemeten zoekresultaten voorkomt. In de voorwaarden van veel tegelzetters staat dat
+            werk als opgeleverd geldt zodra je het in gebruik neemt. In mijn eigen{' '}
             <Link
-              href="/algemene-voorwaarden"
+              href="/algemene-voorwaarden#artikel-9"
               className="inline-flex min-h-11 items-center underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
             >
               algemene voorwaarden
-            </Link>
-            , en in die van veel collega&apos;s, staat dat in gebruik nemen ook geldt als
-            goedkeuren, behalve voor wat je al hebt gemeld. De eerste keer dat je over die vloer loopt om te
-            kijken hoe hij is geworden, is dus niet alleen een technisch moment.
+            </Link>{' '}
+            staat het andersom: over de vloer lopen of douchen telt niet als goedkeuren. Maar lees
+            dat bij iedereen na, want de eerste keer dat je over die vloer loopt is niet overal
+            alleen een technisch moment.
           </p>
 
           <div className="mt-12 grid gap-10 lg:grid-cols-3 lg:gap-12">
@@ -645,13 +646,13 @@ export default function TegelvloerBelopenPage() {
                 Artikel 9
               </div>
               <h3 className="mt-3 font-display text-xl font-semibold text-primary-900">
-                In gebruik nemen is opleveren
+                Opleveren doen we samen
               </h3>
               <p className="mt-4 text-base leading-relaxed text-primary-600">
-                In gebruik nemen geldt als goedkeuren, behalve voor wat je al hebt gemeld. En een
-                gebrek dat je bij de oplevering had moeten zien maar niet hebt gemeld, valt daarna
-                niet meer onder mijn verantwoordelijkheid. Loop de vloer dus nauwkeurig na op het
-                moment dat je er voor het eerst op mag, met de verlichting aan en op je knieën.
+                We lopen het werk samen na en schrijven op wat niet goed is. Het is opgeleverd als
+                jij het goedkeurt, of als je 8 dagen na mijn bericht dat het klaar is niets hebt
+                laten weten. Loop de vloer dus nauwkeurig na op het moment dat je er voor het eerst
+                op mag, met de verlichting aan en op je knieën.
               </p>
             </div>
             <div className="border-t border-mist pt-8">

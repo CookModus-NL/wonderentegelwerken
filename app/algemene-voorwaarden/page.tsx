@@ -83,8 +83,8 @@ const artikelen: Artikel[] = [
       'Deze voorwaarden gelden voor elke offerte en elke overeenkomst tussen jou en mij.',
       'Ik stuur ze mee met elke offerte, of ik stuur een link naar deze pagina waar je ze kunt opslaan en printen. Zo ken je ze voordat je akkoord geeft.',
       'Staat in de offerte iets anders dan in deze voorwaarden, dan geldt de offerte.',
-      'Andere afspraken gelden alleen als we ze schriftelijk maken. Algemene voorwaarden van een zakelijke opdrachtgever gelden niet.',
-      'Blijkt één bepaling niet geldig, dan blijven de andere staan. Voor die ene bepaling geldt dan wat er inhoudelijk het dichtst bij komt en wel geldig is.',
+      'Leg andere afspraken schriftelijk vast, dan weten we allebei waar we aan toe zijn. Algemene voorwaarden van een zakelijke opdrachtgever gelden niet.',
+      'Blijkt één bepaling niet geldig, dan blijven de andere staan.',
     ],
   },
   {
@@ -107,11 +107,12 @@ const artikelen: Artikel[] = [
       {
         tekst: 'Annuleer of verplaats je later, dan mag ik een vergoeding vragen van ten hoogste:',
         lijst: [
-          'tussen 5 en 2 werkdagen voor de start: 50% van de dagprijs van de geplande dagen;',
+          'tussen 5 en 2 werkdagen voor de start: per geplande werkdag de helft van wat één werkdag kost (de prijs van het werk gedeeld door het aantal geplande werkdagen);',
           'binnen 2 werkdagen voor de start: € 400 inclusief btw per geplande werkdag per ingeplande vakman.',
         ],
       },
       'Die vergoeding vraag ik alleen voor dagen die ik redelijkerwijs niet meer met ander werk kan vullen. Vul ik ze toch, dan reken ik niets.',
+      'Zeg je de overeenkomst op nadat ik ben begonnen, dan geldt de wet: je betaalt de prijs, min wat ik bespaar doordat ik het werk niet afmaak.',
       'Heb je als consument nog bedenktijd (artikel 16), dan geldt dat artikel en niet dit artikel.',
       'Loop ik zelf vertraging op, dan laat ik je dat weten zodra ik het weet, met een nieuwe datum.',
     ],
@@ -127,10 +128,11 @@ const artikelen: Artikel[] = [
           'er water en stroom zijn;',
           'materialen die jij levert er op tijd zijn (zie ook artikel 15);',
           'werk van anderen dat vóór mij klaar moet zijn, klaar is;',
-          'je mij vooraf vertelt waar leidingen, kabels en vloerverwarming in vloer en wanden lopen, voor zover je dat weet.',
+          'je mij vooraf vertelt waar leidingen, kabels en vloerverwarming in vloer en wanden lopen, voor zover je dat weet;',
+          'je, als je in een appartement woont, toestemming van de VvE regelt waar die nodig is, en mij vertelt welke werktijden daar gelden.',
         ],
       },
-      'Lukt dat niet, of loopt het werk vertraging op door vakmensen die jij zelf inschakelt, dan komt die vertraging voor jouw rekening, met de grenzen uit artikel 4.',
+      'Lukt dat niet, of loopt het werk vertraging op door vakmensen die jij zelf inschakelt, dan komt die vertraging voor jouw rekening, met de grenzen uit artikel 4 lid 2.',
     ],
   },
   {
@@ -148,7 +150,7 @@ const artikelen: Artikel[] = [
     nr: 7,
     titel: 'Meerwerk en minderwerk',
     leden: [
-      'Meerwerk is werk dat niet in de offerte staat. Ik doe meerwerk alleen nadat ik je de reden en de prijs heb gegeven en jij er schriftelijk akkoord op hebt gegeven. Zonder dat akkoord komt er geen meerwerk op de factuur.',
+      'Meerwerk is werk dat niet in de offerte staat. Ik doe meerwerk alleen nadat ik je de reden en de prijs heb gegeven en jij er schriftelijk akkoord op hebt gegeven. Zonder dat akkoord komt er geen meerwerk op de factuur, behalve in het geval van lid 2.',
       'Uitzondering: dreigt er directe schade, bijvoorbeeld een lekkage die ik bij het werk tegenkom, dan mag ik doen wat nodig is om die schade te voorkomen. Ik laat je dat zo snel mogelijk weten, met wat ik heb gedaan en wat het kost.',
       'Vervalt er werk uit de offerte (minderwerk), dan verreken ik dat.',
       'Staat er in de offerte een stelpost (een geschat bedrag voor iets wat nog gekozen moet worden), dan reken ik af wat het werkelijk kost en laat ik je zien waar dat bedrag vandaan komt.',
@@ -161,7 +163,7 @@ const artikelen: Artikel[] = [
       'Je betaalt een factuur binnen 7 dagen na de factuurdatum, tenzij we schriftelijk iets anders hebben afgesproken.',
       'Ik kan een aanbetaling vragen. Dat staat dan in de offerte, en het is nooit meer dan de helft van de prijs.',
       'Bij een grotere klus kan de offerte betaling in termijnen noemen. Elke termijn hoort dan bij een stuk werk dat klaar is.',
-      'Betaal je niet op tijd, dan stuur ik eerst een herinnering met 14 dagen om alsnog te betalen. Betaal je ook dan niet, dan mag ik de wettelijke rente en de incassokosten volgens de wettelijke staffel rekenen, en mag ik het werk stilleggen tot er betaald is.',
+      'Betaal je niet op tijd, dan stuur ik eerst een herinnering. Daarin staat dat je 14 dagen na ontvangst de tijd hebt om alsnog te betalen, en welke incassokosten ik reken als dat niet gebeurt. Betaal je ook dan niet, dan mag ik de wettelijke rente en die incassokosten (volgens de wettelijke staffel) rekenen, en mag ik het werk stilleggen tot er betaald is.',
       'Heb je een klacht over een deel van het werk, dan mag je het bedrag voor dat deel inhouden tot het is opgelost. De rest betaal je op tijd.',
     ],
   },
@@ -170,11 +172,10 @@ const artikelen: Artikel[] = [
     titel: 'Oplevering en klachten',
     leden: [
       'Als het werk klaar is, laat ik het je weten en lopen we het samen na. Wat je dan ziet en niet goed vindt, schrijven we op. Die punten los ik binnen een redelijke termijn op.',
-      'Het werk is opgeleverd als jij het hebt goedgekeurd, of als je niet binnen 8 dagen na mijn bericht dat het klaar is laat weten wat er niet goed is. In gebruik nemen geldt ook als goedkeuren, behalve voor de punten die je al hebt gemeld.',
+      'Het werk is opgeleverd als jij het hebt goedgekeurd, of als je niet binnen 8 dagen na mijn bericht dat het klaar is laat weten wat er niet goed is. In dat bericht wijs ik je op die 8 dagen. Douchen of de ruimte gewoon gebruiken telt niet als goedkeuren.',
       'Een klein opleverpunt dat het gebruik niet in de weg zit, houdt de oplevering niet tegen.',
-      'Een gebrek dat je bij de oplevering redelijkerwijs had moeten zien en niet hebt gemeld, valt niet meer onder mijn verantwoordelijkheid.',
-      'Ontdek je later een gebrek, meld het mij dan schriftelijk zodra je het ziet, met foto’s. Een melding binnen twee maanden na ontdekking is altijd op tijd.',
-      'Geef mij eerst de gelegenheid het gebrek te herstellen voordat je iemand anders inschakelt.',
+      'Ontdek je later een gebrek, meld het mij dan zodra je het ziet, het liefst met foto’s. Een melding binnen twee maanden na ontdekking is altijd op tijd.',
+      'Geef mij eerst de gelegenheid het gebrek te herstellen voordat je iemand anders inschakelt. Bij een noodgeval, zoals een lekkage die doorloopt terwijl ik niet op tijd kan komen, mag je meteen doen wat nodig is om erger te voorkomen; laat het me dan direct weten.',
     ],
   },
   {
@@ -183,11 +184,11 @@ const artikelen: Artikel[] = [
     leden: [
       'Schiet ik tekort in het werk, dan ben ik aansprakelijk volgens de wet, met de grenzen uit dit artikel.',
       'Mijn aansprakelijkheid voor schade is beperkt tot het bedrag van de opdracht waar het om gaat. Keert een verzekering in dat geval meer uit, dan geldt dat hogere bedrag.',
-      'Voor indirecte schade en gevolgschade ben ik niet aansprakelijk, zoals gederfde inkomsten of de kosten van een hotel terwijl de badkamer buiten gebruik is.',
+      'Voor indirecte schade en gevolgschade, zoals gederfde inkomsten, ben ik niet aansprakelijk.',
       {
         tekst: 'Ik ben niet aansprakelijk voor schade die niet door mijn werk komt, zoals:',
         lijst: [
-          'vocht, scheuren of verzakking die ontstaan in de constructie van het huis, in een dekvloer die nog werkt, of door opstijgend vocht;',
+          'vocht, scheuren of verzakking die ontstaan in de constructie van het huis, in een dekvloer die ik niet heb aangebracht, of door opstijgend vocht;',
           'lekkage uit leidingen of sanitair die ik niet heb aangelegd of aangesloten;',
           'gebreken in de ondergrond of in materialen die jij hebt geleverd, behalve als ik ze had moeten zien en je niet heb gewaarschuwd (artikel 6 lid 3).',
         ],
@@ -199,7 +200,7 @@ const artikelen: Artikel[] = [
     nr: 11,
     titel: 'Overmacht',
     leden: [
-      'Kan ik door overmacht niet werken, dan is dat geen tekortkoming en schuift de planning op. Overmacht is bijvoorbeeld ziekte van mij, extreem weer bij buitenwerk, een leverancier die niet levert, of een maatregel van de overheid.',
+      'Kan ik door overmacht niet werken, dan is dat geen tekortkoming en schuift de planning op. Overmacht is bijvoorbeeld ziekte van mij, extreem weer bij buitenwerk, een leverancier die niet levert terwijl ik op tijd heb besteld en ik geen vervanger kan vinden, of een maatregel van de overheid.',
       'Duurt de overmacht langer dan 30 dagen, dan mogen we allebei de overeenkomst schriftelijk beëindigen voor het deel dat nog niet is uitgevoerd. Het werk dat al is gedaan, betaal je.',
     ],
   },
@@ -209,7 +210,7 @@ const artikelen: Artikel[] = [
     leden: [
       'Op tegelwerk en voegwerk geef ik 5 jaar garantie, op kitwerk 1 jaar. De garantie loopt vanaf de oplevering.',
       'Garantie betekent: komt een tegel los, scheurt een voeg of laat de kit los doordat ik het werk niet goed heb gedaan, dan herstel ik dat zonder kosten. Ook als zo’n gebrek zich eerst laat zien als vocht of als een scheur.',
-      'Voor andere onderdelen van het werk noemt de offerte de garantie. Noemt de offerte niets, dan gelden je rechten volgens de wet. Op sanitair, apparaten en materialen geldt de garantie van de fabrikant of leverancier; ik sta in voor de montage.',
+      'Voor andere onderdelen van het werk noemt de offerte de garantie. Noemt de offerte niets, dan gelden je rechten volgens de wet. Lever ik sanitair of materialen zelf, dan kun je bij een gebrek daarin bij mij terecht; de garantie van de fabrikant komt daar bovenop. Lever jij ze, dan sta ik in voor de montage en loopt de garantie op het product via jouw leverancier.',
       {
         tekst: 'Buiten de garantie valt:',
         lijst: [
@@ -244,9 +245,9 @@ const artikelen: Artikel[] = [
     leden: [
       'Dit artikel geldt aanvullend als het werk meer is dan tegelwerk, zoals een complete badkamerrenovatie.',
       'De offerte noemt per onderdeel of ik het doe: sloop en afvoer van puin, leidingwerk voor water en afvoer, waterdichting, tegelwerk, sanitair plaatsen, kitwerk en afwerking. De offerte noemt ook wie welke materialen levert. Een onderdeel dat er niet in staat, zoals elektra, regel je zelf met een eigen vakman. Die valt niet onder onze overeenkomst; we stemmen de planning wel samen af.',
-      'Bij slopen kom ik soms iets tegen wat vooraf niet te zien was, zoals rot, een oude lekkage, een ondergrond die niet draagt of leidingen die niet meer voldoen. Dan stop ik met dat onderdeel, laat ik je zien wat ik heb gevonden en geef ik je een prijs voor het herstel. Ik ga pas verder als jij schriftelijk akkoord geeft (artikel 7).',
-      'Is je huis gebouwd vóór 1994, dan kan er asbest in zitten, bijvoorbeeld in oude vloerbedekking, kitten of platen. Vertel mij vooraf wat je daarover weet. Vermoed ik asbest, dan stop ik op die plek. Onderzoek en verwijdering laat je doen door een bedrijf dat daarvoor gecertificeerd is, voor jouw rekening. De planning schuift dan op; artikel 4 lid 2 geldt.',
-      'De waterdichting zit straks onder de tegels en is daarna niet meer te zien. Daarom maak ik er foto’s van voordat ik eroverheen tegel, en stuur ik je die.',
+      'Bij slopen kom ik soms iets tegen wat vooraf niet te zien was, zoals rot, een oude lekkage, een ondergrond die niet draagt of leidingen die niet meer voldoen. Dan stop ik met dat onderdeel, laat ik je zien wat ik heb gevonden en geef ik je een prijs voor het herstel. Ik ga pas verder als jij schriftelijk akkoord geeft (artikel 7). Voor de dagen dat ik op jouw besluit moet wachten geldt artikel 4 lid 2.',
+      'Is je huis gebouwd vóór 1994, dan kan er asbest in zitten, bijvoorbeeld in oude vloerbedekking, kitten of platen. Vertel mij vooraf wat je daarover weet. Vermoed ik asbest, dan stop ik op die plek. Onderzoek en verwijdering laat je doen door een bedrijf dat daarvoor gecertificeerd is, voor jouw rekening. De planning schuift dan op. Voor de dagen dat ik daardoor niet kan werken geldt artikel 4 lid 2, ook als je niet wist dat er asbest zat.',
+      'De waterdichting zit straks onder de tegels en is daarna niet meer te zien. Daarom maak ik er foto’s van voordat ik eroverheen tegel, en stuur ik je die. Foto’s van jouw huis gebruik ik alleen voor mijn site of social media als jij daar toestemming voor geeft.',
       'Lever je zelf sanitair of andere materialen, controleer ze dan bij aflevering op schade en compleetheid. Zie ik voor de montage een gebrek, dan meld ik dat voordat ik monteer. Een gebrek in het product zelf los je op met je leverancier.',
       'Tijdens de renovatie is de badkamer buiten gebruik. Ik vertel je vooraf hoeveel dagen, en bij de oplevering wanneer je weer mag douchen.',
     ],
@@ -255,7 +256,7 @@ const artikelen: Artikel[] = [
     nr: 16,
     titel: 'Bedenktijd voor consumenten',
     leden: [
-      'Sluiten we de overeenkomst op afstand (via WhatsApp, telefoon of e-mail) of bij jou thuis, dan heb je als consument 14 dagen bedenktijd. Die gaan in op de dag dat je akkoord geeft. In die tijd kun je de overeenkomst zonder opgave van reden ontbinden.',
+      'Sluiten we de overeenkomst op afstand (via WhatsApp, telefoon of e-mail) of bij jou thuis, dan heb je als consument 14 dagen bedenktijd, te tellen vanaf de dag na je akkoord. In die tijd kun je de overeenkomst zonder opgave van reden ontbinden (de wet noemt dat herroepen).',
       <>
         Ontbinden doe je met een duidelijk bericht via WhatsApp, e-mail of per brief (adres
         bovenaan deze pagina). Je mag daarvoor het{' '}
@@ -265,9 +266,10 @@ const artikelen: Artikel[] = [
         onderaan deze pagina gebruiken, maar dat hoeft niet. Je bent op tijd als je bericht
         binnen de 14 dagen is verstuurd.
       </>,
-      'Ontbind je binnen de bedenktijd, dan betaal ik wat je al hebt betaald binnen 14 dagen terug, min wat je volgens lid 4 verschuldigd bent.',
-      'Wil je dat ik binnen de bedenktijd begin, dan vraag je dat schriftelijk. Ontbind je daarna toch, dan betaal je voor het werk dat ik tot dat moment heb gedaan, naar verhouding van de hele prijs. Heb ik het werk binnen de bedenktijd op jouw verzoek helemaal afgemaakt, en wist je dat je bedenktijd daarmee vervalt, dan kun je niet meer ontbinden.',
-      'Heb je mij zelf gevraagd langs te komen voor een dringende reparatie, dan geldt voor die reparatie geen bedenktijd.',
+      'Ontbind je binnen de bedenktijd, dan betaal ik wat je al hebt betaald binnen 14 dagen na je bericht terug, min wat je volgens lid 4 verschuldigd bent.',
+      'Wil je dat ik binnen de bedenktijd begin, dan vraag je dat schriftelijk. In dat verzoek zeg je ook dat je weet dat je bedenktijd vervalt zodra ik het werk helemaal heb afgemaakt. Ontbind je daarna toch, dan betaal je voor het werk dat ik tot dat moment heb gedaan, naar verhouding van de hele prijs. Heb ik het werk binnen de bedenktijd op dat verzoek helemaal afgemaakt, dan kun je niet meer ontbinden.',
+      'Heb ik je niet goed over je bedenktijd geïnformeerd, dan betaal je niets voor werk dat ik binnen de bedenktijd heb gedaan.',
+      'Heb je mij zelf gevraagd langs te komen voor een dringende reparatie, dan geldt voor die reparatie geen bedenktijd. Doe ik bij dat bezoek meer dan de dringende reparatie, dan heb je voor dat extra werk wel bedenktijd.',
     ],
   },
   {
@@ -366,7 +368,7 @@ export default function AVPage() {
             </h2>
             <p className="mt-4 max-w-2xl">
               Alleen invullen en terugsturen als je de overeenkomst binnen de bedenktijd wilt
-              ontbinden (artikel 16).
+              ontbinden (herroepen, artikel 16).
             </p>
             <div className="mt-6 max-w-2xl space-y-3 border-l border-mist pl-6">
               <p>
@@ -374,14 +376,19 @@ export default function AVPage() {
                 {business.address.city}, {business.email}
               </p>
               <p>
-                Ik deel u hierbij mede dat ik onze overeenkomst betreffende de levering van de
-                volgende dienst herroep: ……………………
+                Ik/Wij (*) deel/delen (*) u hierbij mede dat ik/wij (*) onze overeenkomst
+                betreffende de verkoop van de volgende goederen/levering van de volgende dienst (*)
+                herroep/herroepen (*): ……………………
               </p>
-              <p>Overeenkomst gesloten op: ……………………</p>
-              <p>Naam consument: ……………………</p>
-              <p>Adres consument: ……………………</p>
-              <p>Handtekening consument (alleen wanneer dit formulier op papier wordt ingediend): ……………………</p>
+              <p>Besteld op (*)/Ontvangen op (*): ……………………</p>
+              <p>Naam/Namen consument(en): ……………………</p>
+              <p>Adres consument(en): ……………………</p>
+              <p>
+                Handtekening van consument(en) (alleen wanneer dit formulier op papier wordt
+                ingediend): ……………………
+              </p>
               <p>Datum: ……………………</p>
+              <p className="text-sm text-primary-500">(*) Doorhalen wat niet van toepassing is.</p>
             </div>
           </section>
         </div>

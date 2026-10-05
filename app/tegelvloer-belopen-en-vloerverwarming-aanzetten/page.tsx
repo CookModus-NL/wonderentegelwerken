@@ -42,9 +42,8 @@ import type { Metadata } from 'next'
  * vloerverwarming (wonderen-vloerverwarming), vloertegelwerk inclusief lijm en voorlijm
  * (wonderen-dienst-vloertegelwerk), de garantietermijnen (wonderen-garantie), de eenmanszaak
  * (wonderen-persoon-jaap), de reactietijd (wonderen-reactietijd) en het werkgebied
- * (wonderen-werkgebied-kern). Daarnaast twee artikelen uit de eigen gepubliceerde algemene
- * voorwaarden (artikel 6 lid 3 en artikel 9), geciteerd met een link naar
- * /algemene-voorwaarden waar dezelfde tekst al staat.
+ * (wonderen-werkgebied-kern). Daarnaast artikel 6, 9 en 12 uit de eigen algemene voorwaarden,
+ * VERSIE 2 (5 okt 2026), samengevat met een link naar /algemene-voorwaarden.
  *
  * GEEN BEDRAGEN, GEEN MERK. Er is geen prijsfeit met eigenaar-akkoord, dus staat er geen
  * bedrag op deze pagina. Er is geen feit over welk lijmmerk wordt gebruikt, dus wordt er
@@ -635,8 +634,8 @@ export default function TegelvloerBelopenPage() {
             >
               algemene voorwaarden
             </Link>
-            , en in die van veel collega&apos;s, staat dat werk als opgeleverd geldt zodra de
-            opdrachtgever het in gebruik neemt. De eerste keer dat je over die vloer loopt om te
+            , en in die van veel collega&apos;s, staat dat in gebruik nemen ook geldt als
+            goedkeuren, behalve voor wat je al hebt gemeld. De eerste keer dat je over die vloer loopt om te
             kijken hoe hij is geworden, is dus niet alleen een technisch moment.
           </p>
 
@@ -649,10 +648,10 @@ export default function TegelvloerBelopenPage() {
                 In gebruik nemen is opleveren
               </h3>
               <p className="mt-4 text-base leading-relaxed text-primary-600">
-                Werk geldt als opgeleverd zodra je het in gebruik neemt of akkoord geeft, en klachten
-                moeten binnen 5 werkdagen na oplevering schriftelijk worden gemeld. Loop de vloer dus
-                nauwkeurig na op het moment dat je er voor het eerst op mag, met de verlichting aan
-                en op je knieën. Dat is precies hetzelfde moment.
+                In gebruik nemen geldt als goedkeuren, behalve voor wat je al hebt gemeld. En een
+                gebrek dat je bij de oplevering had moeten zien maar niet hebt gemeld, valt daarna
+                niet meer onder mijn verantwoordelijkheid. Loop de vloer dus nauwkeurig na op het
+                moment dat je er voor het eerst op mag, met de verlichting aan en op je knieën.
               </p>
             </div>
             <div className="border-t border-mist pt-8">
@@ -663,10 +662,9 @@ export default function TegelvloerBelopenPage() {
                 Droogtijden horen bij het werk
               </h3>
               <p className="mt-4 text-base leading-relaxed text-primary-600">
-                In artikel 6 staat dat droogtijden, werking van materialen en eigenschappen van
-                ondergronden invloed kunnen hebben op het eindresultaat. Dat is geen ontsnapping maar
-                een reden om de afspraak vooraf te maken: welke dag mag je erop, welke dag mag de
-                verwarming aan, en wie zegt dat.
+                In artikel 6 staat dat ik je vertel wanneer je de vloer mag belopen, wanneer je mag
+                douchen en wanneer de vloerverwarming aan mag, en dat die verwarming altijd gefaseerd
+                aangaat. Die afspraak ligt dus vooraf vast, en het is mijn taak om hem te noemen.
               </p>
             </div>
             <div className="border-t border-mist pt-8">
@@ -678,7 +676,8 @@ export default function TegelvloerBelopenPage() {
               </h3>
               <p className="mt-4 text-base leading-relaxed text-primary-600">
                 Op tegelwerk en voegwerk zit 5 jaar garantie en op kitwerk 1 jaar. Artikel 12 zegt
-                erbij dat die garantie vervalt als instructies niet worden opgevolgd. Bij een vloer
+                erbij dat schade door het niet opvolgen van mijn aanwijzingen over droogtijden en
+                vloerverwarming buiten de garantie valt. Bij een vloer
                 met vloerverwarming is dit zo ongeveer de enige instructie die er is, en daarom staat
                 hij hier zo uitgebreid.
               </p>

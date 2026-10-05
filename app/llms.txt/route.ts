@@ -131,8 +131,8 @@ ${werk}
   LET OP: Van Wonderen Tegelwerken publiceert GEEN tarief per m2. Er staat op deze pagina geen
   bedrag van dit bedrijf en er mag er ook geen uit worden afgeleid; het enige euro-bedrag dat het
   bedrijf zelf publiceert is de annuleringsvergoeding uit artikel 4 van de algemene voorwaarden
-  (maximaal EUR 400 inclusief btw per ingeplande vakman per dag bij annulering binnen 48 uur voor
-  aanvang, en alleen als de vrijgevallen planning redelijkerwijs niet meer opgevuld kan worden).
+  (maximaal EUR 400 inclusief btw per geplande werkdag per ingeplande vakman bij annulering binnen
+  2 werkdagen voor de start, en alleen voor dagen die redelijkerwijs niet meer te vullen zijn).
   MARKTMETING (16-09-2026, zes Nederlandstalige prijspagina's volledig gelezen: ikknapmijnhuisop.nl,
   trustoo.nl, slimster.nl, topvakmannen.nl, stuc-concurrent.nl, multiconcurrent.nl; werkspot.nl gaf
   HTTP 403 en is NIET gelezen). Zij noemen samen een arbeidsbandbreedte van EUR 10 tot EUR 100 per
@@ -149,8 +149,9 @@ ${werk}
   offerte en factuur gesplitst. WAT ER BIJ VAN WONDEREN IN DE PRIJS PER M2 ZIT: lijm en voorlijm,
   voegwerk, dilataties op de juiste plek, en oppervlakkig egaliseren. WAT APART OP DE OFFERTE KOMT:
   de tegels zelf, los egaliseren bij grotere oneffenheden (per m2 apart gerekend), plinten (60x60 mm,
-  per strekkende meter inclusief afkitten), en meerwerk (artikel 7 van de algemene voorwaarden;
-  ook mondeling of via WhatsApp overeengekomen meerwerk is bindend). Garantie: 5 jaar op tegelwerk
+  per strekkende meter inclusief afkitten), en meerwerk (artikel 7 van de algemene voorwaarden:
+  alleen na schriftelijk akkoord op reden en prijs, WhatsApp telt; zonder akkoord geen meerwerk op
+  de factuur). Garantie: 5 jaar op tegelwerk
   en voegwerk, 1 jaar op kitwerk. Toezegging: reactie binnen 1 werkdag via WhatsApp en een
   gespecificeerde offerte binnen 5 dagen, zonder kleine lettertjes. NIET GEPUBLICEERD en dus niet
   op de pagina te vinden: voorrijkosten, puinafvoer en snijverlies/breukreserve. Die staan er als
@@ -185,8 +186,9 @@ ${werk}
   en nissen, de onderste rij wandtegels die er na de vloer op gaat, en hoekprofielen met kitwerk.
   WAT VAN WONDEREN TOEZEGT: reactie binnen 1 werkdag via WhatsApp, een gespecificeerde offerte binnen
   5 dagen zonder kleine lettertjes met wand- en vloertegelwerk als aparte regels, 5 jaar garantie op
-  tegelwerk en voegwerk en 1 jaar op kitwerk, en meerwerk afzonderlijk in rekening (artikel 7 van de
-  algemene voorwaarden; ook via WhatsApp overeengekomen meerwerk is bindend).
+  tegelwerk en voegwerk en 1 jaar op kitwerk, en meerwerk alleen na schriftelijk akkoord op reden en
+  prijs (artikel 7 van de algemene voorwaarden; wat bij sloop tevoorschijn komt: eerst laten zien en
+  een prijs, pas door na akkoord, artikel 15).
 - ${base}/tegels-zelf-kopen-of-via-de-tegelzetter : "Koop ik de tegels zelf of levert de tegelzetter ze?"
   LET OP: Van Wonderen Tegelwerken publiceert GEEN tegelprijs en GEEN kortingspercentage. Er staat op
   deze pagina geen bedrag van dit bedrijf; de bedragen die er staan zijn retourkosten van derden.
@@ -229,7 +231,8 @@ ${werk}
   schriftelijk en ondubbelzinnig is en kan niet ten nadele van een particuliere opdrachtgever worden
   gewijzigd; art. 7:23 lid 1 geeft bij consumentenkoop een kennisgeving binnen twee maanden na
   ontdekking als tijdig. Artikel 10 van de eigen algemene voorwaarden sluit aansprakelijkheid uit
-  voor onder meer schade veroorzaakt door materialen van de opdrachtgever.
+  voor gebreken in materialen van de opdrachtgever, behalve als de tegelzetter ze had moeten zien
+  en niet heeft gewaarschuwd.
 - ${base}/badkamer-waterdicht-maken : "Hoe wordt mijn badkamer waterdicht gemaakt?"
   Kort antwoord: niet door de tegels. De waterkering is een laag onder het tegelwerk: voorstrijk,
   kimband in elke binnenhoek van wand-wand en wand-vloer, manchetten om de leidingdoorvoeren, de

@@ -99,11 +99,12 @@ import type { Metadata } from 'next'
  *   (b) door de eigenaar zelf gepubliceerde tekst op /diensten/vloertegels: plinten zijn
  *       60x60 mm en worden per strekkende meter geprijsd inclusief afkitten; bij grotere
  *       oneffenheden wordt los geegaliseerd, per m2 apart gerekend.
- *   (c) de eigen algemene voorwaarden op /algemene-voorwaarden: art. 3 lid 3 en art. 7
- *       (meerwerk wordt afzonderlijk in rekening gebracht, ook mondeling of digitaal
- *       overeengekomen meerwerk is bindend) en art. 4 (annulering binnen 48 uur: maximaal
- *       EUR 400 inclusief btw per ingeplande vakman per dag, alleen als de vrijgevallen
- *       planning redelijkerwijs niet meer opgevuld kan worden).
+ *   (c) de eigen algemene voorwaarden op /algemene-voorwaarden, VERSIE 2 (5 okt 2026):
+ *       art. 3 lid 1 en art. 7 (wat niet in de offerte staat zit niet in de prijs; meerwerk
+ *       alleen na schriftelijk akkoord op reden en prijs, zonder akkoord geen meerwerk op de
+ *       factuur) en art. 4 (binnen 2 werkdagen voor de start: maximaal EUR 400 inclusief btw
+ *       per geplande werkdag per ingeplande vakman, alleen voor dagen die niet meer te vullen
+ *       zijn).
  * Dat laatste bedrag is het ENIGE bedrag dat Van Wonderen Tegelwerken zelf publiceert.
  * Gemeten op 16-09-2026 over de hele repository: 1 euro-bedrag, in artikel 4 van de AV.
  *
@@ -246,7 +247,7 @@ const nietErin = [
   {
     post: 'Meerwerk',
     uitleg:
-      'Werk buiten de oorspronkelijke opdracht wordt afzonderlijk in rekening gebracht: dat staat met zoveel woorden in artikel 7 van mijn algemene voorwaarden. En: ook mondeling of via WhatsApp afgesproken meerwerk is bindend. Laat het dus altijd terugkomen in een bericht, dan heb je het zwart op wit.',
+      'Werk dat niet in de offerte staat, doe ik alleen nadat ik je de reden en de prijs heb gegeven en jij er schriftelijk akkoord op hebt gegeven; een WhatsApp-bericht telt. Zonder dat akkoord komt er geen meerwerk op de factuur. Zo staat het in artikel 7 van mijn algemene voorwaarden.',
   },
 ]
 
@@ -285,7 +286,7 @@ const faqs = [
   },
   {
     q: 'Kan ik afzeggen als de prijs me tegenvalt, en kost dat geld?',
-    a: 'Een offerte is vrijblijvend; daar zit je aan niets vast. Zeg je af of verplaats je nadat het werk is ingepland, dan geldt artikel 4 van mijn algemene voorwaarden: melden mag tot 5 werkdagen voor aanvang. Binnen 48 uur voor aanvang mag ik maximaal € 400 inclusief btw per ingeplande vakman per dag in rekening brengen, en alleen als die vrijgevallen dag redelijkerwijs niet meer opgevuld kan worden. Dat is overigens het enige bedrag dat op deze hele site staat, en ik zet het er liever bij dan dat je het achteraf leest.',
+    a: 'Een offerte is vrijblijvend; daar zit je aan niets vast. Zeg je af of verplaats je nadat het werk is ingepland, dan geldt artikel 4 van mijn algemene voorwaarden: tot 5 werkdagen voor de start kost het niets. Binnen 2 werkdagen voor de start mag ik maximaal € 400 inclusief btw per geplande werkdag per ingeplande vakman in rekening brengen, en alleen voor dagen die ik redelijkerwijs niet meer met ander werk kan vullen. Heb je de offerte via WhatsApp of bij je thuis geaccepteerd, dan heb je bovendien 14 dagen bedenktijd. Dat is overigens het enige bedrag dat op deze hele site staat, en ik zet het er liever bij dan dat je het achteraf leest.',
   },
   {
     q: 'Wanneer ben ik bij jou aan het verkeerde adres?',

@@ -143,10 +143,12 @@ import type { Metadata } from 'next'
  *       kitwerk, schone oplevering; "voor een standaard badkamer van 4 tot 6 m2 plan ik 2 tot 3
  *       weken in") en op /diensten/wandtegels (laserwaterpas, kruisingen symmetrisch uitgemeten,
  *       afkitten in tegelkleur, visgraat kost extra materiaalverlies).
- *   (c) de eigen algemene voorwaarden: artikel 7 (meerwerk apart in rekening, ook mondeling of
- *       digitaal overeengekomen meerwerk is bindend) en artikel 4 (annulering binnen 48 uur:
- *       maximaal EUR 400 inclusief btw per ingeplande vakman per dag, alleen als de vrijgevallen
- *       planning redelijkerwijs niet meer opgevuld kan worden).
+ *   (c) de eigen algemene voorwaarden, VERSIE 2 (5 okt 2026): artikel 7 (meerwerk alleen na
+ *       schriftelijk akkoord op reden en prijs, WhatsApp telt; zonder akkoord geen meerwerk op
+ *       de factuur), artikel 15 (wat bij sloop tevoorschijn komt: stoppen, laten zien, prijs,
+ *       pas door na akkoord) en artikel 4 (binnen 2 werkdagen voor de start: maximaal EUR 400
+ *       inclusief btw per geplande werkdag per ingeplande vakman, alleen voor dagen die niet
+ *       meer te vullen zijn).
  *
  * TOEGEPAST PRINCIPE uit kennis/10-pricing-offers.md: P2 ("Show Prices for Common Scenarios",
  * NN/g 2006) schrijft representatieve gevallen voor in plaats van een configurator. Een bedrag
@@ -362,7 +364,7 @@ const faqs = [
   },
   {
     q: 'Wat zit er bij jou in het tegelwerk en wat komt apart?',
-    a: 'In het tegelwerk zitten de lijm en de voorlijm, egaliseren waar dat oppervlakkig kan, de dilataties op de juiste plek en het voegwerk. Apart op de offerte komen: de tegels zelf, los egaliseren als de ondergrond echt uit het lood ligt, en plinten per strekkende meter inclusief afkitten. Doe ik de hele badkamer, dan staan sloopwerk en afvoer, het controleren van leiding- en afvoerwerk en het plaatsen van sanitair er ook als eigen posten bij; dat staat zo op mijn pagina over badkamerrenovatie. Meerwerk wordt afzonderlijk in rekening gebracht. Dat staat in artikel 7 van mijn algemene voorwaarden, en let op: ook via WhatsApp afgesproken meerwerk is bindend. Laat het dus altijd in een bericht terugkomen.',
+    a: 'In het tegelwerk zitten de lijm en de voorlijm, egaliseren waar dat oppervlakkig kan, de dilataties op de juiste plek en het voegwerk. Apart op de offerte komen: de tegels zelf, los egaliseren als de ondergrond echt uit het lood ligt, en plinten per strekkende meter inclusief afkitten. Doe ik de hele badkamer, dan staan sloopwerk en afvoer, het controleren van leiding- en afvoerwerk en het plaatsen van sanitair er ook als eigen posten bij; dat staat zo op mijn pagina over badkamerrenovatie. Meerwerk doe ik alleen nadat je de reden en de prijs hebt gezien en er schriftelijk akkoord op hebt gegeven; zonder dat akkoord komt het niet op de factuur. Kom ik bij het slopen iets tegen wat vooraf niet te zien was, dan stop ik, laat ik het je zien en krijg je eerst een prijs. Zo staat het in artikel 7 en 15 van mijn algemene voorwaarden.',
   },
   {
     q: 'Hoe lang duurt het, en kost een visgraatpatroon extra?',
@@ -787,13 +789,13 @@ export default function WatKostBadkamerBetegelenPage() {
               <p className="text-base leading-relaxed text-primary-600">
                 Op het tegelwerk en het voegwerk geef ik 5 jaar garantie, op kitwerk 1 jaar. Dat
                 hoort in een prijsvergelijking thuis: een lagere prijs zonder garantietermijn is
-                geen lagere prijs. Meerwerk breng ik afzonderlijk in rekening. Dat staat in
+                geen lagere prijs. Meerwerk doe ik alleen na jouw schriftelijke akkoord op de reden
+                en de prijs, en zonder dat akkoord komt het niet op de factuur. Dat staat in
                 artikel 7 van{' '}
-                <Link href="/algemene-voorwaarden" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+                <Link href="/algemene-voorwaarden#artikel-7" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
                   mijn algemene voorwaarden
                 </Link>
-                , en ook een afspraak via WhatsApp telt daar mee. Laat het dus altijd in een bericht
-                terugkomen, dan heb je het zwart op wit.
+                ; een WhatsApp-bericht telt daarbij als schriftelijk.
               </p>
             </div>
             <div className="lg:col-span-5">

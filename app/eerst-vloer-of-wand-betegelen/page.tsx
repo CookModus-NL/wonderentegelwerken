@@ -760,7 +760,7 @@ export default function EerstVloerOfWandPage() {
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-primary-600">
                   Welke situaties buiten de garantie vallen staat open en compleet in{' '}
-                  <Link href="/algemene-voorwaarden" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+                  <Link href="/algemene-voorwaarden#artikel-12" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
                     mijn algemene voorwaarden
                   </Link>
                   . Lees ze voordat je tekent, bij mij of bij iemand anders.

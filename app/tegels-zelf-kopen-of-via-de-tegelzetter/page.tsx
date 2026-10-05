@@ -45,9 +45,9 @@ import type { Metadata } from 'next'
  * zinnen die al gepubliceerd staan op de eigen site: de FAQ op /diensten/badkamer-renovatie
  * ("Ja. Ik adviseer graag bij vaste leveranciers, maar je bent vrij om elders te kopen.")
  * en het prijsblok op /diensten/vloertegels ("Tegels en plinten apart."). Artikel 10 van
- * de eigen algemene voorwaarden wordt letterlijk geciteerd met een link naar
- * /algemene-voorwaarden, waar dezelfde tekst al gepubliceerd staat; het is ook vastgelegd
- * als `wonderen-aansprakelijkheid-uitsluiting`.
+ * de eigen algemene voorwaarden, VERSIE 2 (5 okt 2026), wordt samengevat met een link naar
+ * /algemene-voorwaarden#artikel-10. Registerrij `wonderen-aansprakelijkheid-uitsluiting`
+ * beschrijft nog versie 1 en moet mee zodra Jaap versie 2 vaststelt.
  *
  * GEEN BEDRAGEN VAN DIT BEDRIJF. Er is geen prijsfeit met eigenaar-akkoord, dus staat er
  * geen enkel eigen tarief op deze pagina. De bedragen die er wel staan zijn retourkosten
@@ -625,15 +625,14 @@ export default function TegelsZelfKopenPage() {
           <p className="mt-12 max-w-2xl text-base leading-relaxed text-primary-600">
             In{' '}
             <Link
-              href="/algemene-voorwaarden"
+              href="/algemene-voorwaarden#artikel-10"
               className="underline decoration-accent-400 underline-offset-4 hover:text-accent-600"
             >
               artikel 10 van mijn eigen algemene voorwaarden
             </Link>{' '}
-            staat dezelfde lijn, en harder: aansprakelijkheid is beperkt tot het factuurbedrag en
-            uitgesloten voor onder meer schade veroorzaakt door materialen van de opdrachtgever.
-            Ik druk de wettekst hier bewust naast die bepaling af, ook waar de wet in mijn nadeel
-            uitpakt. Wat er gebeurt als er ná oplevering iets losraakt of scheurt, en welke vier
+            staat dezelfde lijn: voor gebreken in materialen die jij levert ben ik niet
+            aansprakelijk, behalve als ik ze had moeten zien en je niet heb gewaarschuwd. Dat is
+            de waarschuwingsplicht uit de wet, in mijn eigen woorden. Wat er gebeurt als er ná oplevering iets losraakt of scheurt, en welke vier
             vragen dan de rekening bepalen, staat uitgebreider op mijn pagina over{' '}
             <Link
               href="/losse-tegels-en-scheurende-voegen"

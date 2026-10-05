@@ -33,10 +33,10 @@ import type { Metadata } from 'next'
  * reactietijd (`wonderen-reactietijd`), werkwijze vloertegelwerk
  * (`wonderen-dienst-vloertegelwerk`), vloerverwarming (`wonderen-vloerverwarming`),
  * werkgebied (`wonderen-werkgebied-kern`). De artikelen uit de eigen algemene voorwaarden
- * (9, 10 en 12) worden LETTERLIJK geciteerd met een link naar /algemene-voorwaarden, waar
- * dezelfde tekst al gepubliceerd staat; ze zijn 10 september 2026 ook in het register
- * vastgelegd als `wonderen-garantie-uitsluitingen`, `wonderen-klachttermijn-oplevering` en
- * `wonderen-aansprakelijkheid-uitsluiting`.
+ * (9, 10 en 12) worden geciteerd uit VERSIE 2 op /algemene-voorwaarden (5 okt 2026); versie 1
+ * stond 10 september 2026 in het register als `wonderen-garantie-uitsluitingen`,
+ * `wonderen-klachttermijn-oplevering` en `wonderen-aansprakelijkheid-uitsluiting`. Die
+ * registerrijen moeten mee zodra Jaap versie 2 vaststelt.
  *
  * GEEN BEDRAGEN. Er is geen prijsfeit met eigenaar-akkoord, dus staat er geen enkel bedrag
  * op deze pagina, ook niet voor herstel.
@@ -66,15 +66,15 @@ const faqs = [
   },
   {
     q: 'Wat moet ik als eerste doen, en binnen welke termijn?',
-    a: 'Meld het bij de tegelzetter die het werk heeft gedaan, en doe dat schriftelijk, ook als je hem daarnaast belt. Maak eerst foto’s: de hele ruimte, de plek van dichtbij, en een foto met iets erbij dat de maat aangeeft. Noteer wanneer je het voor het eerst zag. Twee termijnen zijn belangrijk. In mijn voorwaarden staat dat klachten binnen 5 werkdagen na oplevering schriftelijk gemeld moeten worden; dat gaat over wat je bij de oplevering al kon zien. Voor wat later opkomt, zegt artikel 7:761 lid 1 van het Burgerlijk Wetboek dat een rechtsvordering wegens een gebrek verjaart door verloop van twee jaren nadat de opdrachtgever ter zake heeft geprotesteerd. Die klok gaat dus lopen op het moment dat je protesteert, en niet eerder.',
+    a: 'Meld het bij de tegelzetter die het werk heeft gedaan, en doe dat schriftelijk, ook als je hem daarnaast belt. Maak eerst foto’s: de hele ruimte, de plek van dichtbij, en een foto met iets erbij dat de maat aangeeft. Noteer wanneer je het voor het eerst zag. Twee termijnen zijn belangrijk. Wat je bij de oplevering al kon zien, hoort op de opleverlijst: in mijn voorwaarden staat dat een gebrek dat je toen redelijkerwijs had moeten zien en niet hebt gemeld, niet meer onder mijn verantwoordelijkheid valt. Wat later opkomt meld je zodra je het ziet; binnen twee maanden na ontdekking is volgens mijn voorwaarden altijd op tijd. Voor wat later opkomt, zegt artikel 7:761 lid 1 van het Burgerlijk Wetboek dat een rechtsvordering wegens een gebrek verjaart door verloop van twee jaren nadat de opdrachtgever ter zake heeft geprotesteerd. Die klok gaat dus lopen op het moment dat je protesteert, en niet eerder.',
   },
   {
     q: 'Mag ik het door iemand anders laten repareren en de rekening opsturen?',
-    a: 'Dat is precies de stap die je positie kan kosten. Artikel 7:759 lid 1 BW zegt dat je de aannemer de gelegenheid moet geven de gebreken binnen een redelijke termijn weg te nemen, tenzij dat in verband met de omstandigheden niet van je kan worden gevergd. En in mijn eigen voorwaarden staat dat de garantie vervalt als derden werkzaamheden uitvoeren aan het geleverde werk. Die twee wijzen dezelfde kant op: eerst melden en de kans op herstel geven, daarna pas iemand anders. Bij acute waterschade ligt dat anders, want dan telt schadebeperking mee.',
+    a: 'Dat is precies de stap die je positie kan kosten. Artikel 7:759 lid 1 BW zegt dat je de aannemer de gelegenheid moet geven de gebreken binnen een redelijke termijn weg te nemen, tenzij dat in verband met de omstandigheden niet van je kan worden gevergd. En in mijn eigen voorwaarden staat dat de garantie niet geldt voor het deel van het werk waaraan iemand anders na de oplevering heeft gewerkt. Die twee wijzen dezelfde kant op: eerst melden en de kans op herstel geven, daarna pas iemand anders. Bij acute waterschade ligt dat anders, want dan telt schadebeperking mee.',
   },
   {
     q: 'Valt dit onder de 5 jaar garantie?',
-    a: 'Op mijn tegelwerk en voegwerk zit 5 jaar garantie en op kitwerk 1 jaar. Maar garantie is geen dekking voor alles wat er met een vloer gebeurt. In artikel 12 van mijn algemene voorwaarden staat dat garantie uitsluitend wordt verleend op correct uitgevoerde werkzaamheden, en dat hij vervalt bij werkzaamheden door derden, onjuist gebruik, vocht, verzakking of werking van materialen, en als instructies niet worden opgevolgd. De vraag is dus nooit "hoe oud is het werk", maar "waar komt de beweging vandaan". Daarom staat op deze pagina eerst hoe je dat vaststelt, en pas daarna wat de termijn is.',
+    a: 'Op mijn tegelwerk en voegwerk zit 5 jaar garantie en op kitwerk 1 jaar. Maar garantie is geen dekking voor alles wat er met een vloer gebeurt. In artikel 12 van mijn algemene voorwaarden staat dat ik herstel wat loskomt of scheurt doordat ik het werk niet goed heb gedaan, ook als dat zich eerst laat zien als vocht of een scheur. Wat erbuiten valt: slijtage van voeg en kit door gebruik, verkeerd gebruik of gebrek aan onderhoud, werk van een ander aan mijn werk, en vocht, scheuren of verzakking met een oorzaak buiten mijn werk. De vraag is dus nooit "hoe oud is het werk", maar "waar komt de beweging vandaan". Daarom staat op deze pagina eerst hoe je dat vaststelt, en pas daarna wat de termijn is.',
   },
   {
     q: 'Wat als de tegelzetter zegt dat het aan de ondergrond ligt?',
@@ -94,7 +94,7 @@ const faqs = [
   },
   {
     q: 'Waarom zit er maar 1 jaar garantie op kitwerk?',
-    a: 'Omdat kit een onderhoudsproduct is. In artikel 12 van mijn voorwaarden staat dat kitwerk en voegwerk onder normale onderhoudsgevoelige onderdelen vallen. Kit in een douche krijgt dagelijks water, zeep en schoonmaakmiddel te verwerken; dat hij na een aantal jaar verkleurt of laat los is geen gebrek maar slijtage. Een kitnaad die binnen een paar maanden loslaat of scheurt is dat wél. Zie ook mijn pagina over kitwerk en voegwerk voor hoe die naden worden opgebouwd.',
+    a: 'Omdat kit een onderhoudsproduct is. In artikel 12 van mijn voorwaarden staat dat kit na het eerste jaar onderhoud is, en dat verkleuring en slijtage van voeg en kit door gebruik buiten de garantie vallen. Kit in een douche krijgt dagelijks water, zeep en schoonmaakmiddel te verwerken; dat hij na een aantal jaar verkleurt of laat los is geen gebrek maar slijtage. Een kitnaad die binnen een paar maanden loslaat of scheurt is dat wél. Zie ook mijn pagina over kitwerk en voegwerk voor hoe die naden worden opgebouwd.',
   },
 ]
 
@@ -279,7 +279,7 @@ export default function LosseTegelsPage() {
               wordt vastgesteld wáár de beweging vandaan komt, want dat bepaalt wie betaalt, en niet
               de leeftijd van de vloer. Pas als dat vaststaat, komt de garantie in beeld. Op mijn
               tegelwerk en voegwerk zit 5 jaar garantie, op kitwerk 1 jaar. Wat die garantie niet
-              dekt, staat verderop op deze pagina, letterlijk uit mijn eigen voorwaarden.
+              dekt, staat verderop op deze pagina, samengevat uit mijn eigen voorwaarden.
             </p>
 
             <p className="mt-6 text-sm text-primary-500">
@@ -466,14 +466,14 @@ export default function LosseTegelsPage() {
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
             Een garantie van 5 jaar op de homepage zetten is makkelijk. De grenzen ervan op dezelfde
             pagina zetten, is dat niet. Toch staat het hier, want dit is precies wat je wilt weten
-            als de vraag actueel wordt. Alles hieronder komt letterlijk uit{' '}
+            als de vraag actueel wordt. Alles hieronder komt, samengevat, uit{' '}
             <Link
               href="/algemene-voorwaarden"
               className="inline-flex min-h-11 items-center underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
             >
               mijn algemene voorwaarden
             </Link>
-            , waar het al stond.
+            , waar de volledige tekst staat.
           </p>
 
           <div className="mt-12 grid gap-10 lg:grid-cols-3 lg:gap-12">
@@ -482,14 +482,15 @@ export default function LosseTegelsPage() {
                 Artikel 12
               </div>
               <h3 className="mt-3 font-display text-xl font-semibold text-primary-900">
-                Wanneer de garantie vervalt
+                Wat de garantie dekt en wat niet
               </h3>
               <p className="mt-4 text-base leading-relaxed text-primary-600">
-                Garantie wordt uitsluitend verleend op correct uitgevoerde werkzaamheden, en vervalt
-                als derden werkzaamheden uitvoeren aan het geleverde werk, als schade ontstaat door
-                onjuist gebruik, als sprake is van vocht, verzakking of werking van materialen, of
-                als instructies niet worden opgevolgd. Op kitwerk 1 jaar, op tegel- en voegwerk
-                5 jaar. Kitwerk en voegwerk vallen onder normale onderhoudsgevoelige onderdelen.
+                Op tegelwerk en voegwerk 5 jaar, op kitwerk 1 jaar, vanaf de oplevering. Komt een
+                tegel los, scheurt een voeg of laat de kit los doordat ik het werk niet goed heb
+                gedaan, dan herstel ik dat zonder kosten. Erbuiten valt: slijtage van voeg en kit
+                door gebruik, verkeerd gebruik of gebrek aan onderhoud, het deel waaraan een ander
+                na de oplevering heeft gewerkt, en vocht, scheuren of verzakking met een oorzaak
+                buiten mijn werk.
               </p>
             </div>
             <div className="border-t border-mist pt-8">
@@ -500,11 +501,11 @@ export default function LosseTegelsPage() {
                 Oplevering en klachten
               </h3>
               <p className="mt-4 text-base leading-relaxed text-primary-600">
-                Werk geldt als opgeleverd zodra je het in gebruik neemt of akkoord geeft. Klachten
-                dienen binnen 5 werkdagen na oplevering schriftelijk gemeld te worden. Kleine
-                esthetische afwijkingen of normale werking van materialen vormen geen reden voor
-                afkeuring. Loop de vloer dus na vóórdat de laatste factuur wordt betaald, met de
-                verlichting aan en op je knieën.
+                We lopen het werk samen na en schrijven op wat niet goed is. Een gebrek dat je bij
+                de oplevering redelijkerwijs had moeten zien en niet hebt gemeld, valt daarna niet
+                meer onder mijn verantwoordelijkheid. Wat je later ontdekt, meld je zodra je het
+                ziet; binnen twee maanden na ontdekking is altijd op tijd. Loop de vloer dus na
+                tijdens de oplevering, met de verlichting aan en op je knieën.
               </p>
             </div>
             <div className="border-t border-mist pt-8">
@@ -515,18 +516,19 @@ export default function LosseTegelsPage() {
                 Wat is uitgesloten
               </h3>
               <p className="mt-4 text-base leading-relaxed text-primary-600">
-                Aansprakelijkheid is beperkt tot het factuurbedrag van de betreffende werkzaamheden
-                en uitgesloten voor onder meer gevolgschade, scheurvorming, werking van ondergronden,
-                vochtproblemen en schade veroorzaakt door materialen van de opdrachtgever. Dat is een
-                harde bepaling, en daarom staat hier ook wat de wet ernaast zet.
+                Aansprakelijkheid is beperkt tot het bedrag van de opdracht, of meer als een
+                verzekering meer uitkeert. Uitgesloten zijn gevolgschade en schade die niet door mijn
+                werk komt: vocht of scheuren uit de constructie of een dekvloer die nog werkt,
+                lekkage uit leidingen die ik niet heb aangelegd, en gebreken in materiaal of
+                ondergrond van jou, behalve als ik ze had moeten zien en je niet heb gewaarschuwd.
               </p>
             </div>
           </div>
 
           <div className="mt-16 border-l border-mist pl-6">
             <p className="max-w-2xl text-base leading-relaxed text-primary-600">
-              Die uitsluiting in artikel 10 en de wetsartikelen hierboven staan naast elkaar, en dat
-              is geen toeval van slordig opschrijven. In artikel 7:754 lid 2 en artikel 7:758 lid 4
+              Die grenzen in artikel 10 en de wetsartikelen hierboven staan naast elkaar, en artikel
+              10 zegt zelf dat het niet verder gaat dan de wet toestaat. In artikel 7:754 lid 2 en artikel 7:758 lid 4
               staat zelf de zin: &ldquo;Van dit lid kan niet ten nadele van de opdrachtgever worden
               afgeweken, voor zover de opdrachtgever een natuurlijk persoon is die niet handelt in de
               uitoefening van een beroep of bedrijf.&rdquo; Ik druk die zin hier af omdat je hem moet

@@ -53,8 +53,8 @@ import type { Metadata } from 'next'
  *  - Garantietermijn: motor_feiten `wonderen-garantie` (eigenaar_akkoord=true).
  *  - Offerte binnen 5 dagen, reactie binnen 1 werkdag: motor_feiten
  *    `wonderen-offerte-belofte` en `wonderen-reactietijd` (beide eigenaar_akkoord=true).
- *  - Artikel 10 en 12 worden genoemd en gelinkt, niet geciteerd: ze staan letterlijk op
- *    /algemene-voorwaarden van deze site. De klant keurt deze pagina zelf.
+ *  - Artikel 10 en 12 (versie 2, 5 okt 2026) worden genoemd en gelinkt, niet geciteerd: ze
+ *    staan letterlijk op /algemene-voorwaarden van deze site. De klant keurt deze pagina zelf.
  * Citaten van bewoners zijn publieke forumberichten, met bron en zonder achternaam.
  */
 
@@ -615,8 +615,9 @@ export default function TegelenOverBestaandeTegelsPage() {
                 Dat is niet hetzelfde als &quot;dan doe ik het niet&quot;. Het betekent dat we het
                 gesprek vooraf voeren en niet achteraf. In mijn algemene voorwaarden staat welke
                 situaties buiten de garantie en buiten de aansprakelijkheid vallen; artikel 12 gaat
-                over de garantie, artikel 10 over aansprakelijkheid. Vocht, verzakking en de werking
-                van een ondergrond staan daar allebei in. Bij tegel op tegel is dat geen juridische
+                over de garantie, artikel 10 over aansprakelijkheid. Vocht, scheuren en verzakking met
+                een oorzaak buiten mijn werk staan daar allebei in, en de bestaande tegellaag is
+                precies zo&apos;n oorzaak. Bij tegel op tegel is dat geen juridische
                 kleine letter maar precies het risico waar je over aan het nadenken bent. Lees ze
                 dus even door:{' '}
                 <Link href="/algemene-voorwaarden" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">

@@ -94,7 +94,7 @@ import type { Metadata } from 'next'
  *       wonderen-offerte-belofte        gespecificeerde offerte, geen kleine lettertjes, binnen 5 dagen
  *       wonderen-reactietijd            reactie binnen 1 dag via WhatsApp
  *       wonderen-principe-prijs         vooraf weten wat het kost, geen verborgen meerwerk
- *       wonderen-persoon-jaap           eenmanszaak Breda sinds 2022, geen onderaannemers
+ *       wonderen-persoon-jaap           eenmanszaak Breda sinds 2022, eindverantwoordelijk (6 okt 2026; was: geen onderaannemers)
  *       wonderen-werkgebied-kern        Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen, Dorst
  *   (b) door de eigenaar zelf gepubliceerde tekst op /diensten/vloertegels: plinten zijn
  *       60x60 mm en worden per strekkende meter geprijsd inclusief afkitten; bij grotere
@@ -290,7 +290,7 @@ const faqs = [
   },
   {
     q: 'Wanneer ben ik bij jou aan het verkeerde adres?',
-    a: 'Als je zoekt naar de laagste prijs per m² en verder niets. Ik ben een eenmanszaak uit Breda en doe elke klus zelf, zonder onderaannemers. Dat betekent dat ik niet de goedkoopste hoef te zijn en ook niet de snelst beschikbare ben. En als je vloer buiten mijn werkgebied ligt: het kerngebied is Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst, met Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert erbij, en grotere projecten verder weg op aanvraag.',
+    a: 'Als je zoekt naar de laagste prijs per m² en verder niets. Ik ben een eenmanszaak uit Breda, zonder tussenpersonen, en eindverantwoordelijk voor elke klus. Dat betekent dat ik niet de goedkoopste hoef te zijn en ook niet de snelst beschikbare ben. En als je vloer buiten mijn werkgebied ligt: het kerngebied is Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst, met Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert erbij, en grotere projecten verder weg op aanvraag.',
   },
 ]
 
@@ -617,9 +617,8 @@ export default function WatKostVloerTegelenPage() {
               fragment="Vooraf werd duidelijk gecommuniceerd wat de kosten zouden zijn, en bij de eindafrekening werd het zelfs nog iets lager, dat hoor je tegenwoordig nog maar zelden."
             />
             <p className="text-base leading-relaxed text-primary-600">
-              En omdat ik een eenmanszaak uit Breda ben en elke klus zelf doe, zonder
-              onderaannemers en zonder tussenpersoon, is het bedrag dat je van mij hoort ook het
-              bedrag dat de man betaalt die op je vloer staat. Er gaat geen commissie vanaf. Zes van
+              En omdat ik een eenmanszaak uit Breda ben zonder tussenpersoon, is het bedrag dat je
+              van mij hoort ook het bedrag dat je betaalt. Er gaat geen commissie vanaf. Zes van
               de zes pagina&apos;s hierboven verdienen wél aan de doorverwijzing.
             </p>
             <p className="text-base leading-relaxed text-primary-600">

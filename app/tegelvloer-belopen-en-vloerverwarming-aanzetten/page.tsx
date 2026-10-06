@@ -595,9 +595,9 @@ export default function TegelvloerBelopenPage() {
                 .
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-600">
-                Ik ben een eenmanszaak uit Breda en voer alle klussen zelf uit, zonder onderaannemers.
-                Voor deze vraag betekent dat vooral: de man die weet welke lijm er ligt, is de man die
-                de telefoon opneemt. Via WhatsApp heb je binnen 1 werkdag antwoord, ook een half jaar
+                Ik ben een eenmanszaak uit Breda, zonder tussenpersonen, en eindverantwoordelijk voor
+                elke klus. Voor deze vraag betekent dat vooral: wie wil weten welke lijm er ligt,
+                belt mij. Via WhatsApp heb je binnen 1 werkdag antwoord, ook een half jaar
                 later. Ik werk in{' '}
                 <Link
                   href="/werkgebied"

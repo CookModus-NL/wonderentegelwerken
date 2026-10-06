@@ -79,3 +79,14 @@ Vraag daarbij ook wat de Wet kwaliteitsborging van je vraagt bij een badkamerren
 klant vooraf informeren over je verzekering, en bij de oplevering een dossier meegeven. De
 foto's van de waterdichting passen in dat dossier.
 Dit concept is zorgvuldig opgesteld, maar het is geen juridisch advies.
+
+## Uitkomst (6 okt 2026)
+
+Jaap via WhatsApp aan Bart: "Alleen 9 nee". Hij gaf ook zijn eigen regel voor punt 9: "Ik blijf
+wel eindverantwoordelijk natuurlijk. Maar ik kan mijn werk dus wel uitbestede."
+
+Artikel 6 lid 2 staat nu zo: Jaap mag het werk, of een deel ervan, laten uitvoeren door een
+andere vakman, en blijft eindverantwoordelijk, ook voor de garantie. Tussenpersonen gebruikt hij
+niet. "Geen onderaannemers" en "dezelfde vakman" zijn daarom overal op de site vervangen door
+"eindverantwoordelijk, geen tussenpersonen". De punten 1-8 en 10-20 zijn overgenomen zoals
+voorgesteld.

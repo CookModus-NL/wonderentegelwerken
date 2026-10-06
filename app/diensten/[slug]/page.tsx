@@ -117,7 +117,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           </h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { title: 'Vakman op de klus', body: 'Geen onderaannemers. Jaap zelf van begin tot eind.' },
+              { title: 'Eén aanspreekpunt', body: 'Geen tussenpersonen. Jaap is eindverantwoordelijk, van offerte tot oplevering.' },
               { title: 'Heldere offerte', body: 'Gespecificeerd, geen kleine lettertjes, binnen 5 dagen.' },
               { title: 'Schoon werk', body: 'Stof minimaal, puin direct afgevoerd, ruimte opgeruimd opgeleverd.' },
               { title: 'Garantie', body: '5 jaar op tegelwerk en voegwerk. 1 jaar op kitwerk.' },

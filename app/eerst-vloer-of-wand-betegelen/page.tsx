@@ -155,7 +155,7 @@ import type { Metadata } from 'next'
  *         plinten apart geprijsd incl. afkitten; ... grootformaat (60x120 of groter) met
  *         vloerverwarmingsvriendelijke lijm en kruisende lasers" (zelfde bron) — staat in
  *         "Zo doe ik het" en in de offerte-lijst.
- *      `wonderen-persoon-jaap` -> eenmanszaak uit Breda sinds 2022, alle klussen zelf.
+ *      `wonderen-persoon-jaap` -> eenmanszaak uit Breda sinds 2022, eindverantwoordelijk (6 okt 2026; was: alle klussen zelf).
  *      `wonderen-offerte-belofte` -> gespecificeerde offerte binnen 5 dagen.
  *      `wonderen-reactietijd` -> reactie binnen 1 werkdag via WhatsApp.
  *      `wonderen-werkgebied-kern` -> kerngebied max 15 minuten rijden vanaf Breda.
@@ -807,10 +807,10 @@ export default function EerstVloerOfWandPage() {
                 />
               </div>
               <p className="mt-6 text-base leading-relaxed text-primary-600">
-                Ik ben een eenmanszaak uit Breda, actief sinds 2022, en ik voer de klussen zelf
-                uit, zonder onderaannemers en zonder wisselende ploegen. Bij een volgordevraag helpt dat
-                meer dan het lijkt: er is niemand om het naar door te schuiven. Dezelfde persoon
-                die de ondergrond aantreft, zet de laatste rij erin. Mijn kerngebied ligt op
+                Ik ben een eenmanszaak uit Breda, actief sinds 2022, zonder tussenpersonen, en ik
+                ben eindverantwoordelijk voor elke klus, ook als een andere vakman een deel van mij
+                uitvoert. Bij een volgordevraag helpt dat meer dan het lijkt: er is niemand om het
+                naar door te schuiven. Van de ondergrond tot de laatste rij sta ik ervoor in. Mijn kerngebied ligt op
                 maximaal een kwartier rijden van Breda, en dat is geen detail bij deze volgorde:
                 de vloer en de onderste rij zijn twee bezoeken op verschillende dagen.
               </p>

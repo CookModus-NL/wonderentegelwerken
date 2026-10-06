@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: '%s | Van Wonderen Tegelwerken',
   },
   description:
-    'Tegelzetter Jaap van Wonderen in Breda. Vakwerk voor badkamer, vloer, wand, terras en kitwerk. Eén vakman, geen onderaannemers. Vrijblijvende offerte via WhatsApp.',
+    'Tegelzetter Jaap van Wonderen in Breda. Vakwerk voor badkamer, vloer, wand, terras en kitwerk. Eén aanspreekpunt, geen tussenpersonen. Vrijblijvende offerte via WhatsApp.',
   keywords: [
     'tegelzetter Breda', 'tegelzetter in Breda', 'tegelzetter Zandberg',
     'badkamer renoveren Breda', 'badkamer renovatie Breda', 'vloertegels Breda',

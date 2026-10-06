@@ -95,10 +95,10 @@ export default function DienstenPage() {
               </h3>
               <p className="mt-4 text-base leading-relaxed text-primary-900">
                 Ik, Jaap van Wonderen. Van Wonderen Tegelwerken is een eenmanszaak uit Breda,
-                gestart in 2022, ingeschreven bij de KvK onder nummer 86555499. Alle klussen doe ik
-                zelf: geen onderaannemers, geen tussenpersonen, geen wisselende ploeg. De man die
-                je aan de deur krijgt voor de opname is dezelfde man die de tegels legt en dezelfde
-                man die je belt als er iets tegenvalt.
+                gestart in 2022, ingeschreven bij de KvK onder nummer 86555499. Geen tussenpersonen:
+                ik ben je aanspreekpunt van de opname tot de oplevering, en ik blijf
+                eindverantwoordelijk voor het werk, ook als een andere vakman een klus van mij
+                uitvoert. Valt er iets tegen, dan bel je mij.
               </p>
             </div>
 

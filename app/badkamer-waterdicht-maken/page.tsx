@@ -54,7 +54,7 @@ import type { Metadata } from 'next'
  *  - Afdichten van alleen de natte zone binnen het sproeibereik van de douchekop en
  *    membraan direct betegelbaar: easydrain.nl/inspiration/waterdicht-maken-badkamer.
  *  - Garantietermijnen: motor_feiten `wonderen-garantie` (eigenaar_akkoord=true).
- *  - Eenmanszaak, werk zelf uitgevoerd zonder onderaannemers: motor_feiten
+ *  - Eenmanszaak, eindverantwoordelijk ook bij uitbesteed werk (tot 6 okt 2026: zonder onderaannemers): motor_feiten
  *    `wonderen-persoon-jaap`. Werkgebied: `wonderen-werkgebied-kern` en
  *    `-uitbreiding`. Offerte binnen 5 dagen en reactie binnen 1 werkdag:
  *    `wonderen-offerte-belofte` en `wonderen-reactietijd`. Alle vijf eigenaar_akkoord=true.
@@ -595,10 +595,10 @@ export default function BadkamerWaterdichtMakenPage() {
                 planning.
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-600">
-                Bij mij bestaat die naad niet. Ik ben een eenmanszaak uit Breda, actief sinds
-                2022, en ik voer de klussen zelf uit. Geen onderaannemers, geen tussenpersonen,
-                geen wisselende ploegen. Dat betekent dat de persoon die de ondergrond aantreft
-                dezelfde is als de persoon die de tegels erop zet, en dat ik dus ook zelf zie wat
+                Bij mij is die naad mijn verantwoordelijkheid. Ik ben een eenmanszaak uit Breda,
+                actief sinds 2022, zonder tussenpersonen, en ik blijf eindverantwoordelijk voor de
+                hele klus, ook als een andere vakman een deel van mij uitvoert. Dat betekent dat
+                waterkering en tegelwerk bij één partij liggen, en dat ik dus ook zie wat
                 er onder ligt.
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-600">

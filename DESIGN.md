@@ -30,7 +30,7 @@ description: >
   je kunt narekenen.
 
 merk:
-  identiteit: eenmanszaak van Jaap van Wonderen (Breda, sinds 2022) die vloeren, wanden, badkamers en buitentegelwerk zelf legt — geen onderaannemers, geen tussenpersonen
+  identiteit: eenmanszaak van Jaap van Wonderen (Breda, sinds 2022) die vloeren, wanden, badkamers en buitentegelwerk legt en voor elke klus eindverantwoordelijk is, ook als hij werk uitbesteedt (6 okt 2026, Jaap) — geen tussenpersonen
   belofte: tegelwerk dat blijft liggen, met vooraf een gespecificeerde prijs en achteraf geen meerwerk
   karakter: technisch, uitgelijnd, nuchter, controleerbaar, onopgesmukt
   gewenste_perceptie: deze man weet wat er ONDER de tegel gebeurt, en legt dat uit voordat ik het vraag

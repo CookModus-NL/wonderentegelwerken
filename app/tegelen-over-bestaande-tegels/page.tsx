@@ -648,7 +648,7 @@ export default function TegelenOverBestaandeTegelsPage() {
                   <Link href="/werkgebied" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
                     Breda en omstreken
                   </Link>{' '}
-                  en voer het werk zelf uit, zonder onderaannemers. Je krijgt een gespecificeerde
+                  en ben eindverantwoordelijk voor elke klus, zonder tussenpersonen. Je krijgt een gespecificeerde
                   offerte zonder kleine lettertjes, binnen 5 dagen.
                 </p>
               </div>

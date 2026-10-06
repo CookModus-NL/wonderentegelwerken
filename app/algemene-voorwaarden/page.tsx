@@ -9,8 +9,8 @@ import type { ReactNode } from 'react'
  * WAAROM EEN NIEUWE VERSIE. Versie 1 (bewaard op /algemene-voorwaarden/versie-1) was geschreven
  * voor tegelwerk, terwijl de site een complete badkamerrenovatie verkoopt: over sloop, wat je
  * bij sloop aantreft, asbest, sanitair, leidingwerk, waterdichting en termijnbetaling stond er
- * niets. Daarnaast spraken drie bepalingen de getekende feiten tegen (werk door derden tegenover
- * `wonderen-persoon-jaap`; mondeling meerwerk bindend tegenover `wonderen-principe-prijs`;
+ * niets. Daarnaast spraken bepalingen de getekende feiten tegen (mondeling meerwerk bindend
+ * tegenover `wonderen-principe-prijs`;
  * voegwerk "onderhoudsgevoelig" tegenover 5 jaar garantie in `wonderen-garantie`), en een deel
  * hield tegenover een consument geen stand (forumkeuze en uitsluiting van opschorting staan op
  * de zwarte lijst van art. 6:236 BW; bedenktijd bij een overeenkomst via WhatsApp of aan huis
@@ -27,13 +27,17 @@ import type { ReactNode } from 'react'
  * antwoordpagina's en llms.txt naar die nummers verwijzen. Nieuw: 15 (renovatie), 16
  * (bedenktijd), 17 (versies), plus het modelformulier.
  *
- * STATUS. Zolang `versie.vastgesteld` null is, toont de pagina "concept" en staat ze op
- * noindex. Pas zetten nadat Jaap de tekst als zijn officiële voorwaarden heeft vastgesteld.
+ * STATUS. Vastgesteld door Jaap op 6 okt 2026 (WhatsApp aan Bart, 08:34-08:39): "Alleen 9 nee"
+ * op de twintig punten in onderzoek/voorstellen/av-v2-voor-jaap.md. Punt 9 (werk door anderen)
+ * is in zijn woorden herschreven: "Ik blijf wel eindverantwoordelijk natuurlijk. Maar ik kan
+ * mijn werk dus wel uitbestede." Daarmee vervalt "geen onderaannemers" overal op de site en in
+ * `wonderen-persoon-jaap`. Zolang `versie.vastgesteld` null is: "concept" en noindex.
+ * Het voorstel onderzoek/voorstellen/av-art12-garantietermijnen.patch (27 sep) is hierin opgegaan.
  */
 const versie = {
   nummer: 2,
   /** ISO-datum waarop Jaap deze versie vaststelt; null = concept. */
-  vastgesteld: null as string | null,
+  vastgesteld: '2026-10-06' as string | null,
 }
 
 const isConcept = versie.vastgesteld === null
@@ -140,7 +144,7 @@ const artikelen: Artikel[] = [
     titel: 'Hoe ik werk',
     leden: [
       'Ik voer het werk uit volgens de regels van het vak en de geldende bouwregels.',
-      'Ik doe het werk zelf. Ik werk niet met onderaannemers of tussenpersonen. Is voor een onderdeel een tweede paar handen nodig, bijvoorbeeld bij grootformaat tegels, dan werkt die persoon met mij op de klus en blijf ik voor het hele werk verantwoordelijk.',
+      'Ik mag het werk, of een deel ervan, laten uitvoeren door een andere vakman. Ik blijf dan eindverantwoordelijk voor het hele werk, ook voor de garantie, en je blijft mij aanspreken. Ik werk niet met tussenpersonen.',
       'Zie ik dat de ondergrond, een materiaal of een onderdeel van de opdracht niet deugt, dan waarschuw ik je voordat ik verder ga, en we besluiten samen hoe het verder gaat.',
       'Tegels uit verschillende productiepartijen kunnen iets in kleur of maat verschillen. Verschillen die binnen de opgave van de fabrikant blijven, zijn geen gebrek.',
       'Lijm, voeg en kit hebben droogtijd nodig, en een nieuwe dekvloer moet eerst uitharden. Ik vertel je wanneer je de vloer mag belopen, wanneer je mag douchen en wanneer de vloerverwarming aan mag. Vloerverwarming gaat altijd gefaseerd aan.',

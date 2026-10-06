@@ -28,7 +28,7 @@ export const services: Service[] = [
     title: 'Badkamer renovatie',
     tagline: 'Van slooppuin tot droombadkamer',
     short:
-      'Complete renovatie van A tot Z. Sloop, leidingwerk, tegelwerk, sanitair en afwerking. Eén planning, één vakman, één eindprijs.',
+      'Complete renovatie van A tot Z. Sloop, leidingwerk, tegelwerk, sanitair en afwerking. Eén planning, één eindverantwoordelijke, één eindprijs.',
     long: `Een badkamer renoveren is meer dan tegels leggen. Ik strip de oude ruimte. Controleer leidingwerk en afvoer. Egaliseer waar nodig. Leg wand- en vloertegels. Installeer sanitair. Werk alles af met strakke voegen en kit.
 
 Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We bespreken vooraf welke tegels je wilt. Je mag ze zelf uitzoeken bij elke leverancier of ik adviseer op basis van budget en stijl.`,

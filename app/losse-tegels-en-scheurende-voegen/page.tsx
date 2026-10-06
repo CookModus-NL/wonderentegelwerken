@@ -29,7 +29,7 @@ import type { Metadata } from 'next'
  *  - Tegels in Huis, "Waarom barsten of scheuren tegels?", gelezen 10 september 2026.
  *
  * EIGEN GEGEVENS. Getekende feiten (motor_feiten, eigenaar_akkoord=true): garantietermijnen
- * (`wonderen-garantie`), eenmanszaak zonder onderaannemers (`wonderen-persoon-jaap`),
+ * (`wonderen-garantie`), eenmanszaak, eindverantwoordelijk ook bij uitbesteed werk (`wonderen-persoon-jaap`, 6 okt 2026),
  * reactietijd (`wonderen-reactietijd`), werkwijze vloertegelwerk
  * (`wonderen-dienst-vloertegelwerk`), vloerverwarming (`wonderen-vloerverwarming`),
  * werkgebied (`wonderen-werkgebied-kern`). De artikelen uit de eigen algemene voorwaarden
@@ -594,11 +594,10 @@ export default function LosseTegelsPage() {
           <div className="mt-12 grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
               <p className="text-base leading-relaxed text-primary-600">
-                Ik ben een eenmanszaak uit Breda en voer alle klussen zelf uit, zonder
-                onderaannemers en zonder tussenpersonen. Dat is voor deze vraag belangrijker dan het
-                klinkt. Als er over drie jaar een tegel loskomt, is er geen partij die naar een
-                andere partij kan wijzen: de man die het heeft gelegd is de man die de telefoon
-                opneemt. Via WhatsApp heb je binnen 1 werkdag antwoord.
+                Ik ben een eenmanszaak uit Breda, zonder tussenpersonen, en ik ben eindverantwoordelijk
+                voor elke klus, ook als een andere vakman een klus van mij uitvoert. Dat is voor deze
+                vraag belangrijker dan het klinkt. Als er over drie jaar een tegel loskomt, is er geen
+                partij die naar een andere partij kan wijzen: je belt mij, en ik sta ervoor in. Via WhatsApp heb je binnen 1 werkdag antwoord.
               </p>
               <p className="mt-6 text-base leading-relaxed text-primary-600">
                 Bij het leggen zelf zitten de dingen die dit soort problemen voorkomen: de ondervloer

@@ -134,7 +134,7 @@ import type { Metadata } from 'next'
  *   (a) motor_feiten met eigenaar_akkoord = true: voorwaarde.garantie (5 jaar tegelwerk en
  *       voegwerk, 1 jaar kitwerk), voorwaarde.offerte (gespecificeerd, geen kleine lettertjes,
  *       binnen 5 dagen), proces.reactietijd (reactie binnen 1 dag via WhatsApp),
- *       persoon.eigenaar (eenmanszaak Breda sinds 2022, geen onderaannemers),
+ *       persoon.eigenaar (eenmanszaak Breda sinds 2022, eindverantwoordelijk; tot 6 okt 2026: geen onderaannemers),
  *       principe.prijsopgaaf (vooraf weten wat het kost, geen verborgen meerwerk),
  *       dienst.vloertegelwerk (lijm en voorlijm, egaliseren waar nodig, dilataties, voegwerk
  *       inbegrepen, plinten apart incl. afkitten), werkgebied.kern en werkgebied.uitbreiding.
@@ -372,7 +372,7 @@ const faqs = [
   },
   {
     q: 'Wanneer ben ik bij jou aan het verkeerde adres?',
-    a: 'Als je alleen de laagste prijs per m² zoekt. Ik ben een eenmanszaak uit Breda en doe elke klus zelf, zonder onderaannemers. Ik hoef dus niet de goedkoopste te zijn en ik ben ook niet de snelst beschikbare. En als je badkamer buiten mijn gebied ligt: mijn kerngebied is Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst, met Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert erbij, en grotere projecten verder weg op aanvraag.',
+    a: 'Als je alleen de laagste prijs per m² zoekt. Ik ben een eenmanszaak uit Breda, zonder tussenpersonen, en eindverantwoordelijk voor elke klus. Ik hoef dus niet de goedkoopste te zijn en ik ben ook niet de snelst beschikbare. En als je badkamer buiten mijn gebied ligt: mijn kerngebied is Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst, met Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert erbij, en grotere projecten verder weg op aanvraag.',
   },
 ]
 

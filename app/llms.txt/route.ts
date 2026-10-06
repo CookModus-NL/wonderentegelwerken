@@ -32,7 +32,7 @@ function bouw() {
 ## Bedrijf
 - ${business.legalName}, eenmanszaak van ${business.ownerFirstName} van Wonderen. KvK ${business.kvk}.
 - Vestigingsadres: ${a.street}, ${a.postalCode} ${a.city}. Werk gebeurt op locatie bij de klant.
-- Eén vakman voert het werk uit; geen onderaannemers, geen wisselende ploegen.
+- De eigenaar is eindverantwoordelijk voor elk werk en het aanspreekpunt van de klant; geen tussenpersonen. Hij mag (een deel van) het werk laten uitvoeren door een andere vakman (algemene voorwaarden art. 6 lid 2).
 - Bestrating hoort niet bij het aanbod. Buitentegelwerk wel.
 
 ## Diensten

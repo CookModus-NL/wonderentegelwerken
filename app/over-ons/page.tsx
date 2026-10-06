@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   alternates: { canonical: '/over-ons' },
   title: 'Over ons',
-  description: 'Van Wonderen Tegelwerken: tegelzettersbedrijf uit Breda, opgericht in 2022. Persoonlijk vakwerk zonder onderaannemers.',
+  description: 'Van Wonderen Tegelwerken: tegelzettersbedrijf uit Breda, opgericht in 2022. Persoonlijk vakwerk zonder tussenpersonen.',
 }
 
 export default function OverOnsPage() {
@@ -28,7 +28,7 @@ export default function OverOnsPage() {
                   Ik ben Jaap van <strong className="text-primary-900">Van Wonderen Tegelwerken</strong>. Eenmanszaak uit Breda, sinds 2022 gespecialiseerd in binnen- en buitentegelwerk, kitwerk en complete badkamerrenovaties.
                 </p>
                 <p>
-                  Geen tussenpersonen, geen onderaannemers. Je krijgt vanaf de eerste WhatsApp tot de laatste voeg dezelfde vakman op de klus. Eerlijk advies, strakke planning, kwaliteit waar ik mijn naam aan verbind.
+                  Geen tussenpersonen. Van de eerste WhatsApp tot de laatste voeg ben ik je aanspreekpunt, en ik blijf eindverantwoordelijk voor het werk. Eerlijk advies, strakke planning, kwaliteit waar ik mijn naam aan verbind.
                 </p>
               </div>
 
@@ -108,8 +108,8 @@ export default function OverOnsPage() {
               <div className="mt-2 text-sm text-primary-300">Garantie op tegel- en voegwerk, 1 jaar op kitwerk</div>
             </div>
             <div>
-              <div className="font-display text-6xl font-bold text-accent-300">100%</div>
-              <div className="mt-2 text-sm text-primary-300">Eigen werk, geen onderaannemers</div>
+              <div className="font-display text-6xl font-bold text-accent-300">5 dgn</div>
+              <div className="mt-2 text-sm text-primary-300">Gespecificeerde offerte, geen kleine lettertjes</div>
             </div>
           </div>
         </div>

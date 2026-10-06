@@ -42,7 +42,7 @@ export default function HomePage() {
                 blijft staan.
               </h1>
               <p className="mt-8 max-w-xl text-lg leading-relaxed text-primary-600 sm:text-xl">
-                Voor je badkamerrenovatie, vloer, wand, terras of nieuw kitwerk. Persoonlijk vakwerk, geen onderaannemers, vijf jaar garantie op tegel- en voegwerk en een jaar op kitwerk.
+                Voor je badkamerrenovatie, vloer, wand, terras of nieuw kitwerk. Persoonlijk vakwerk zonder tussenpersonen, vijf jaar garantie op tegel- en voegwerk en een jaar op kitwerk.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-3">
@@ -71,7 +71,7 @@ export default function HomePage() {
                   <ShieldCheck className="h-4 w-4 text-accent-600" /> 5 jaar garantie op tegelwerk
                 </div>
                 <div className="flex items-center gap-2 text-primary-600">
-                  <Hammer className="h-4 w-4 text-accent-600" /> Eigen vakman
+                  <Hammer className="h-4 w-4 text-accent-600" /> Geen tussenpersonen
                 </div>
               </div>
             </div>
@@ -156,7 +156,7 @@ export default function HomePage() {
         <div className="container-x py-16">
           <div className="grid gap-y-12 sm:grid-cols-2 lg:grid-cols-4 lg:divide-x lg:divide-primary-700">
             {[
-              { value: '100%', label: 'Eigen vakwerk, geen onderaannemers' },
+              { value: '5 dagen', label: 'Gespecificeerde offerte, geen kleine lettertjes' },
               { value: '5 jaar', label: 'Garantie op tegel- en voegwerk' },
               { value: '1 dag', label: 'Reactietijd via WhatsApp' },
               { value: '< 1 week', label: 'Wachttijd voor klein werk' },
@@ -178,7 +178,7 @@ export default function HomePage() {
               <div className="eyebrow">Mijn specialismen</div>
               <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-primary-900 sm:text-5xl">
                 Zes diensten,<br />
-                <span className="italic font-light text-primary-600">één vakman.</span>
+                <span className="italic font-light text-primary-600">één aanspreekpunt.</span>
               </h2>
             </div>
             <Link href="/diensten" className="btn-ghost hidden sm:inline-flex">

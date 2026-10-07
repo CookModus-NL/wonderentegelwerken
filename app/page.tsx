@@ -59,6 +59,22 @@ export const metadata: Metadata = {
  * daarom alleen gebruikt wat OOK in de live voorwaarden staat: de termijnen 5 en 1 jaar en de vier
  * uitsluitingen van artikel 12. Zodra v2 live is kan blok 4 de meldtermijn erbij krijgen.
  *
+ * DE HANDTEKENING ONDER DE GARANTIE-UITSLUITINGEN, GEMETEN EN NIET AANGENOMEN (07-10-2026).
+ * Feit voorwaarde.garantie.uitsluitingen staat in motor_feiten (bedrijf_id=wonderen) op
+ * eigenaar_akkoord=true, akkoord_door "Jaap (WhatsApp aan Bart, 6 okt 2026)", akkoord_op
+ * 06-10-2026, herkomst document, zichtbaarheid publiek, geen geldig_tot. _feitbeleid.mjs
+ * (feitbeleid-v1-20260907) classificeert hem daarmee als OWNER_APPROVED en bruikbaar, en dat is
+ * wat wet art. 1.3 voor een garantiefeit eist. De vier feiten die bij deze klant WEL op de
+ * eigenaar wachten zijn andere: economie.orderwaarde, kanaal.contactvormen,
+ * reviews.google.aantal en reviews.google.gemiddelde. Van die vier staat er niets op deze pagina.
+ *
+ * DE UITSLUITINGENLIJST IS NIET VOLLEDIG EN ZEGT DAT NU OOK. Live artikel 12 noemt vijf
+ * categorieen; de vijfde ("vocht, verzakking of werking van materialen") staat hier niet, omdat
+ * de live tekst hem onvoorwaardelijk formuleert en het getekende v2-feit hem beperkt tot een
+ * oorzaak buiten het eigen werk. Wie de ene versie kiest spreekt de andere tegen. Blok 4 somt
+ * daarom de belangrijkste op en wijst voor de volledige lijst naar artikel 12 zelf; dat is waar
+ * onder beide versies en belooft niets extra.
+ *
  * ZICHTBAAR == SCHEMA. De FAQPage-markup wordt uit dezelfde array gegenereerd als de zichtbare
  * tekst (`platteTekst`), zodat markup nooit iets kan beweren dat niet op de pagina staat
  * (wet art. 1, search compliance 23-09-2026).
@@ -127,7 +143,7 @@ const antwoordblokken: { id: string; vraag: string; delen: Deel[] }[] = [
     delen: [
       'Dan val je onder de garantie uit artikel 12 van mijn algemene voorwaarden: 5 jaar op tegel- en voegwerk, 1 jaar op kitwerk. Die termijnen staan in de ',
       { tekst: 'algemene voorwaarden', href: '/algemene-voorwaarden' },
-      ' waar je op kunt terugvallen, en dus niet alleen op deze pagina. Wat er buiten de garantie valt zeg ik liever vooraf dan achteraf: slijtage en verkleuring van voeg en kit door gebruik (kit is na het eerste jaar onderhoud), verkeerd gebruik of gebrek aan onderhoud, aanwijzingen over droogtijden en vloerverwarming die niet zijn opgevolgd, en een deel waaraan na de oplevering iemand anders heeft gewerkt. Bij wie je aanklopt is nooit de vraag: je hebt één aanspreekpunt en ik blijf eindverantwoordelijk voor elke klus, ook als ik een deel van het werk door een andere vakman laat doen. Wat er technisch gebeurt als tegels loskomen of een voeg scheurt, en waar je aan ziet waar het aan ligt, staat op de pagina over ',
+      ' waar je op kunt terugvallen, en dus niet alleen op deze pagina. Wat er buiten de garantie valt zeg ik liever vooraf dan achteraf. De belangrijkste: slijtage en verkleuring van voeg en kit door gebruik (kit is na het eerste jaar onderhoud), verkeerd gebruik of gebrek aan onderhoud, aanwijzingen over droogtijden en vloerverwarming die niet zijn opgevolgd, en een deel waaraan na de oplevering iemand anders heeft gewerkt. De volledige lijst staat in datzelfde artikel 12. Bij wie je aanklopt is nooit de vraag: je hebt één aanspreekpunt en ik blijf eindverantwoordelijk voor elke klus, ook als ik een deel van het werk door een andere vakman laat doen. Wat er technisch gebeurt als tegels loskomen of een voeg scheurt, en waar je aan ziet waar het aan ligt, staat op de pagina over ',
       { tekst: 'losse tegels en scheurende voegen', href: '/losse-tegels-en-scheurende-voegen' },
       '.',
     ],

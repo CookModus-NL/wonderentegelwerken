@@ -12,45 +12,80 @@ import { faqSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
 // Eigen canonical: de layout zet er bewust geen, anders erft elke pagina zonder eigen metadata '/'.
-export const metadata: Metadata = { alternates: { canonical: '/' } }
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+  // Eigen description voor /: de sitebrede tekst in layout.tsx droeg tot 07-10-2026 "geen
+  // onderaannemers", en dat feit is op 06-10-2026 vervangen (motor_feiten persoon.eigenaar).
+  // Deze pagina is de enige die op "tegelzetter breda" vertoond wordt (124 vertoningen,
+  // 2 kliks, positie 8,6 — motor_gsc 09-09 t/m 04-10-2026), dus hier telt de snippet.
+  description:
+    'Tegelzetter in Breda: Jaap van Wonderen, eenmanszaak sinds 2022. Wat er wel en niet in het '
+    + 'tegelwerk zit, waar ik kom, en 5 jaar garantie op tegel- en voegwerk. Antwoord binnen 1 '
+    + 'werkdag via WhatsApp.',
+}
 
 /**
- * DE ANTWOORDEENHEID "TEGELZETTER BREDA" (3 okt 2026, contract 961be3b4, klasse
- * antwoordeenheid-verdiepen).
+ * DE ANTWOORDEENHEID "TEGELZETTER BREDA" — verdiept 07-10-2026 (contract 93056d54, klasse
+ * antwoordeenheid-verdiepen). Eerste versie 03-10-2026 (contract 961be3b4, vervallen zonder
+ * publicatie; de drie blokken hieronder stammen daaruit en zijn nooit live geweest).
  *
- * WAAROM DIT BLOK BESTAAT. "tegelzetter breda" gaf in 28 dagen 93 vertoningen en 2 kliks op déze
- * pagina, op gemiddelde positie 8,4 (motor_gsc, query × pagina, 02-09 t/m 29-09-2026, niet-merk).
- * Een eigen Google-meting op 03-10-2026 (desktop, Nederland, via DataForSEO) zet de homepage
- * organisch op 5 en absoluut op 10: boven ons staan een kaartblok van drie, een vergelijkblok en
- * vier concurrenten. De pagina had tot vandaag geen enkele alinea die de vraag afmaakt — alleen
- * labels, kaarten en beeld. Daarmee was er niets om te citeren en niets om op door te klikken.
+ * WAAROM DIT BLOK BESTAAT. "tegelzetter breda" gaf in 24 meetdagen 124 vertoningen en 2 kliks op
+ * deze pagina, op gemiddelde positie 8,6 over beide host-varianten (motor_gsc, query x pagina,
+ * 09-09 t/m 04-10-2026, 443 rijen, niet afgekapt). Een eigen Google-meting (desktop, Nederland,
+ * DataForSEO, 03-10-2026) zet de homepage organisch op 5 en absoluut op 10.
  *
- * WAAROM DEZE VORM. De eenheid is de passage, niet de pagina (brand/antwoordlaag-doctrine §1/§2):
- * elk blok hieronder moet los van deze pagina blijven kloppen. Vandaar één antwoord-eerst alinea
- * die het bedrijf zelf benoemt, en drie vragen die een lokale zoeker als eerste afstreept.
+ * WAT DE VERDIEPING VAN 07-10 TOEVOEGT, en waarom precies dat. In dezelfde meting bestaat het
+ * "Mensen vragen ook"-blok op deze zoekvraag uit drie prijsvragen en niets anders ("Wat kost
+ * gemiddeld een tegelzetter?", "Hoeveel kost een tegelzetter per m2 per uur?", "Wat kost een ZZP
+ * tegelzetter per uur?"). De enige aanvulling die Google Suggest op de zoekvraag geeft is
+ * "tegelzetter breda reviews" (gemeten 07-10-2026). En een AI-antwoord op dezelfde vraag
+ * (sampled, 07-10-2026, US-gelokaliseerd) bouwt zijn hele antwoord uit leadplatforms en eindigt
+ * met twee opdrachten aan de koper: vraag of de prijs inclusief of exclusief tegels, lijm,
+ * voegmiddel en btw is, en vraag welke garantie de tegelzetter geeft. Van de vijf best gerankte
+ * antwoorden die op 07-10 volledig zijn gelezen (blomtegelwerken.nl, tegelzetterbreda.net,
+ * nickystegelwerken.nl, trustoo.nl; werkspot.nl gaf HTTP 403 en is NIET gelezen) publiceert geen
+ * enkele een antwoord op een van die twee vragen. Daarom gaat blok 2 nu over de indeling van de
+ * prijs in plaats van alleen over het voegwerk, en is blok 4 nieuw: de garantievraag.
+ *
+ * GEEN BEDRAG. Er staat bewust geen euro op deze pagina: een tarief per m2 publiceert dit bedrijf
+ * niet en prijzen zijn een eigenaarsbesluit (_beleid.mjs ALTIJD_MENS). Wat de vergelijkingssites
+ * wel noemen staat op /wat-kost-vloer-tegelen-per-m2, en daarheen wijst blok 2.
+ *
+ * WAT HIER NIET STAAT TERWIJL HET FEIT ER WEL IS (07-10-2026). De algemene voorwaarden v2 zijn op
+ * 06-10-2026 door de eigenaar vastgesteld en leverden vier getekende feiten (proces.klachttermijn,
+ * voorwaarde.droogtijden, voorwaarde.aansprakelijkheid, voorwaarde.garantie.uitsluitingen). LIVE
+ * staat echter nog versie 1: /algemene-voorwaarden bevat geen opleverlijst, geen meldtermijn van
+ * twee maanden en geen "herstel zonder kosten" (zelf gelezen, 07-10-2026). Uit die feiten is
+ * daarom alleen gebruikt wat OOK in de live voorwaarden staat: de termijnen 5 en 1 jaar en de vier
+ * uitsluitingen van artikel 12. Zodra v2 live is kan blok 4 de meldtermijn erbij krijgen.
  *
  * ZICHTBAAR == SCHEMA. De FAQPage-markup wordt uit dezelfde array gegenereerd als de zichtbare
  * tekst (`platteTekst`), zodat markup nooit iets kan beweren dat niet op de pagina staat
  * (wet art. 1, search compliance 23-09-2026).
  *
- * ELKE BEWERING KOMT UIT EEN GOEDGEKEURD FEIT (motor_feiten, bedrijf_id=wonderen,
- * eigenaar_akkoord=true): persoon.eigenaar · bedrijf.registratie · werkgebied.kern ·
- * werkgebied.uitbreiding · dienst.vloertegelwerk · dienst.vloerverwarming · proces.reactietijd ·
- * voorwaarde.offerte. GEEN bedrag en GEEN nieuwe garantietermijn: die blijven een mensbesluit
- * (_beleid.mjs ALTIJD_MENS), en het m²-tarief bestaat bewust niet op deze site.
+ * ELKE BEWERING KOMT UIT EEN GETEKEND FEIT (motor_feiten, bedrijf_id=wonderen,
+ * eigenaar_akkoord=true): persoon.eigenaar (herzien 06-10-2026) · bedrijf.registratie ·
+ * werkgebied.kern · werkgebied.uitbreiding · dienst.vloertegelwerk · proces.reactietijd ·
+ * voorwaarde.offerte · voorwaarde.garantie · voorwaarde.garantie.uitsluitingen.
+ * GEEN reviewcijfer: reviews.google.aantal en .gemiddelde staan op eigenaar_akkoord=false en zijn
+ * daarmee niet publiek bruikbaar (wet art. 1.3); blok 1 wijst alleen naar de reviews die al
+ * zichtbaar op deze pagina staan.
  * GEEN frequentieclaim over welke vraag Jaap vaak krijgt — hij wees 10-09-2026 een pagina af met
  * "deze vraag krijg ik zelden tot nooit" (lering 04d76b17). De framing is de onze, niet de zijne.
  *
- * WAT HIER BEWUST NIET STAAT (herstelronde 1, 03-10-2026). Van sloopwerk, puinafvoer en
- * voorrijkosten weten we uit dienst.vloertegelwerk alleen dat ze NIET in het standaardrijtje
- * zitten. Hoe ze vervolgens op de offerte verschijnen is niet bevestigd, dus staat dat er niet
- * meer: de vraag ligt bij de eigenaar (EVIDENCE-wonderen-posten-buiten-standaard).
+ * "GEEN ONDERAANNEMERS" IS HIER WEG, EN DAT IS EEN CORRECTIE. Feit persoon.eigenaar is op
+ * 06-10-2026 vervangen: Jaap mag werk (deels) uitbesteden en blijft eindverantwoordelijk (eigen
+ * woorden via WhatsApp, 06-10 08:36). De oude formulering is dus geen geldige claim meer en staat
+ * sinds 07-10 niet meer op deze pagina, niet in de stats-strook en niet in de sitebrede
+ * description. Op andere pagina's staat zij nog wel; die reparatie ligt klaar op tak av-finaal.
  *
- * GEEN KANNIBALISATIE MET /tegelzetter/breda — gemeten, niet aangenomen. In motor_gsc over
- * 02-09 t/m 29-09-2026 heeft geen enkele /tegelzetter/<stad>-pagina ook maar één vertoning, op
- * geen enkele zoekvraag. Op "tegelzetter breda" is deze homepage de enige pagina van deze site
- * die Google toont (182 vertoningen, 2 kliks, positie 8,4 over beide host-varianten). Verdiepen
- * hoort dus hier.
+ * GEEN KANNIBALISATIE MET /tegelzetter/breda — opnieuw gemeten, niet aangenomen (lering 5afc4a7c).
+ * In motor_gsc over 09-09 t/m 04-10-2026 heeft geen enkele /tegelzetter/<stad>-pagina ook maar een
+ * vertoning, op geen enkele zoekvraag. Op "tegelzetter breda" toont Google alleen deze homepage
+ * (75 vertoningen op www, 49 op de niet-www-variant) plus een losse vertoning op
+ * /diensten/vloertegels (positie 49). Verdiepen hoort dus hier. Blok 2 en 4 houden zich kort en
+ * wijzen door naar /wat-kost-vloer-tegelen-per-m2 en /losse-tegels-en-scheurende-voegen, die de
+ * diepe versie van die twee vragen bezitten.
  */
 type Deel = string | { tekst: string; href: string }
 
@@ -67,10 +102,12 @@ const antwoordblokken: { id: string; vraag: string; delen: Deel[] }[] = [
     ],
   },
   {
-    id: 'zit-het-voegwerk-in-het-tegelwerk',
-    vraag: 'Zit het voegwerk in het tegelwerk, of komt dat er nog bij?',
+    id: 'wat-zit-er-wel-en-niet-in-de-prijs',
+    vraag: 'Wat zit er wel en niet in de prijs?',
     delen: [
-      'Het voegwerk zit erin. Net als de lijm en de voorlijm, het egaliseren van de ondervloer waar dat nodig is, en de dilataties op de plekken waar ze horen. Apart op de offerte staan de plinten, inclusief het afkitten. Sloopwerk, puinafvoer en voorrijkosten staan niet in dat standaardrijtje. Wat er bij jouw klus wél nodig is, lees je in de gespecificeerde offerte zonder kleine lettertjes, die er binnen 5 dagen ligt. Wat er onder je vloer gebeurt, ook bij grootformaat van 60×120 of groter, staat op de pagina over ',
+      'In het tegelwerk zitten de lijm en de voorlijm, het egaliseren van de ondervloer waar dat nodig is, de dilataties op de plekken waar ze horen, en het voegwerk. Apart op de offerte staan de plinten, inclusief het afkitten. Sloopwerk, puinafvoer en voorrijkosten staan niet in dat standaardrijtje. Een tarief per vierkante meter staat niet op deze site; welke bedragen de vergelijkingssites noemen en wat daar niet in zit, lees je op de pagina over ',
+      { tekst: 'wat vloer tegelen per m² kost', href: '/wat-kost-vloer-tegelen-per-m2' },
+      '. Wat er onder je vloer gebeurt bij grootformaat van 60×120 of groter, met vloerverwarmingsvriendelijke lijm en kruisende lasers, staat op de pagina over ',
       { tekst: 'vloertegelwerk', href: '/diensten/vloertegels' },
       '.',
     ],
@@ -79,8 +116,19 @@ const antwoordblokken: { id: string; vraag: string; delen: Deel[] }[] = [
     id: 'hoe-snel-heb-ik-antwoord-en-een-prijs',
     vraag: 'Hoe snel heb ik antwoord en een prijs?',
     delen: [
-      'Stuur foto’s en maten via WhatsApp, dan heb je binnen 1 werkdag antwoord. Daarna kom ik vrijblijvend kijken en opmeten, en binnen 5 dagen ligt er een gespecificeerde offerte zonder kleine lettertjes: de posten los, zodat je ziet waar je ja tegen zegt. Een tarief per vierkante meter staat niet op deze site. Waarom niet, en welke bedragen de vergelijkingssites er wél bij noemen, staat op de pagina over ',
-      { tekst: 'wat vloer tegelen per m² kost', href: '/wat-kost-vloer-tegelen-per-m2' },
+      'Stuur foto’s en maten via WhatsApp, dan heb je binnen 1 werkdag antwoord. Daarna kom ik vrijblijvend kijken en opmeten, en binnen 5 dagen ligt er een gespecificeerde offerte zonder kleine lettertjes: de posten los, zodat je ziet waar je ja tegen zegt. Wil je eerst zien wat eerdere klanten over de uitvoering schrijven, dan staan hun ',
+      { tekst: 'beoordelingen verderop op deze pagina', href: '#beoordelingen' },
+      '.',
+    ],
+  },
+  {
+    id: 'en-als-er-later-een-voeg-scheurt',
+    vraag: 'En als er over twee jaar een voeg scheurt?',
+    delen: [
+      'Dan val je onder de garantie uit artikel 12 van mijn algemene voorwaarden: 5 jaar op tegel- en voegwerk, 1 jaar op kitwerk. Die termijnen staan in de ',
+      { tekst: 'algemene voorwaarden', href: '/algemene-voorwaarden' },
+      ' waar je op kunt terugvallen, en dus niet alleen op deze pagina. Wat er buiten de garantie valt zeg ik liever vooraf dan achteraf: slijtage en verkleuring van voeg en kit door gebruik (kit is na het eerste jaar onderhoud), verkeerd gebruik of gebrek aan onderhoud, aanwijzingen over droogtijden en vloerverwarming die niet zijn opgevolgd, en een deel waaraan na de oplevering iemand anders heeft gewerkt. Bij wie je aanklopt is nooit de vraag: je hebt één aanspreekpunt en ik blijf eindverantwoordelijk voor elke klus, ook als ik een deel van het werk door een andere vakman laat doen. Wat er technisch gebeurt als tegels loskomen of een voeg scheurt, en waar je aan ziet waar het aan ligt, staat op de pagina over ',
+      { tekst: 'losse tegels en scheurende voegen', href: '/losse-tegels-en-scheurende-voegen' },
       '.',
     ],
   },
@@ -127,7 +175,7 @@ export default function HomePage() {
                 blijft staan.
               </h1>
               <p className="mt-8 max-w-xl text-lg leading-relaxed text-primary-600 sm:text-xl">
-                Voor je badkamerrenovatie, vloer, wand, terras of nieuw kitwerk. Persoonlijk vakwerk, geen onderaannemers, vijf jaar garantie op tegel- en voegwerk en een jaar op kitwerk.
+                Voor je badkamerrenovatie, vloer, wand, terras of nieuw kitwerk. Persoonlijk vakwerk, één aanspreekpunt van het eerste appje tot de oplevering, vijf jaar garantie op tegel- en voegwerk en een jaar op kitwerk.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-3">
@@ -241,7 +289,7 @@ export default function HomePage() {
         <div className="container-x py-16">
           <div className="grid gap-y-12 sm:grid-cols-2 lg:grid-cols-4 lg:divide-x lg:divide-primary-700">
             {[
-              { value: '100%', label: 'Eigen vakwerk, geen onderaannemers' },
+              { value: '1', label: 'Aanspreekpunt, eindverantwoordelijk voor elke klus' },
               { value: '5 jaar', label: 'Garantie op tegel- en voegwerk' },
               { value: '1 dag', label: 'Reactietijd via WhatsApp' },
               { value: '< 1 week', label: 'Wachttijd voor klein werk' },
@@ -273,21 +321,29 @@ export default function HomePage() {
 
             <p className="mt-8 text-lg leading-relaxed text-primary-900 sm:text-xl">
               Van Wonderen Tegelwerken is de eenmanszaak van Jaap van Wonderen, Leistraat 19 in
-              Breda, KvK {business.kvk}. Ik werk sinds 2022 en doe elke klus zelf: geen
-              onderaannemers, geen tussenpersonen. Mijn kerngebied is Breda met zes plaatsen
-              eromheen, allemaal binnen 15 minuten rijden. Je krijgt binnen 1 werkdag antwoord
-              op WhatsApp en binnen 5 dagen een gespecificeerde offerte zonder kleine lettertjes.
+              Breda, KvK {business.kvk}. Ik werk sinds 2022 en je hebt één aanspreekpunt: mij, van
+              het eerste appje tot de oplevering. Laat ik een deel van het werk door een andere
+              vakman doen, dan blijf ik eindverantwoordelijk. Mijn kerngebied is Breda met zes
+              plaatsen eromheen, allemaal binnen 15 minuten rijden. Je krijgt binnen 1 werkdag
+              antwoord op WhatsApp en binnen 5 dagen een gespecificeerde offerte zonder kleine
+              lettertjes.
             </p>
 
             <p className="mt-6 text-base leading-relaxed text-primary-600">
-              Hieronder de drie dingen die je wilt afstrepen voordat je iemand in huis laat: kom
-              ik bij jou, wat zit er in het werk, en hoe snel weet je waar je aan toe bent.
+              Vier dingen wil je weten voordat je iemand in huis laat: kom ik bij jou, wat zit er
+              wel en niet in de prijs, hoe snel weet je waar je aan toe bent, en wat er gebeurt
+              als er later iets loskomt. Hier staan ze op een rij.
             </p>
           </div>
 
+          {/* Drie afstreepvragen naast elkaar; de vierde (de garantievraag) staat eronder in de
+              volle kolombreedte. Reden: DESIGN.md schrijft voor dat de haarlijn de VOEG van het
+              ontwerp is en overal doorloopt. Een vierde kaart in een raster van drie geeft een
+              halve voeg; een volle band onder een doorlopende lijn niet. Het is bovendien de
+              vraag die als laatste wordt gesteld, vlak voor het ja. */}
           <div className="mt-14 grid gap-x-10 gap-y-10 border-t border-mist pt-12 md:grid-cols-3 md:divide-x md:divide-mist">
-            {antwoordblokken.map((b, i) => (
-              <div key={b.id} className={`md:px-8 ${i === 0 ? 'md:pl-0' : ''} ${i === antwoordblokken.length - 1 ? 'md:pr-0' : ''}`}>
+            {antwoordblokken.slice(0, 3).map((b, i) => (
+              <div key={b.id} className={`md:px-8 ${i === 0 ? 'md:pl-0' : ''} ${i === 2 ? 'md:pr-0' : ''}`}>
                 <h3 id={b.id} className="font-display text-xl font-semibold leading-snug text-primary-900">
                   {b.vraag}
                 </h3>
@@ -310,6 +366,31 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+
+          {antwoordblokken.slice(3).map((b) => (
+            <div key={b.id} className="mt-12 border-t border-mist pt-12">
+              <div className="max-w-3xl">
+                <h3 id={b.id} className="font-display text-xl font-semibold leading-snug text-primary-900">
+                  {b.vraag}
+                </h3>
+                <p className="mt-4 text-base leading-relaxed text-primary-600">
+                  {b.delen.map((d, j) =>
+                    typeof d === 'string' ? (
+                      d
+                    ) : (
+                      <Link
+                        key={j}
+                        href={d.href}
+                        className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
+                      >
+                        {d.tekst}
+                      </Link>
+                    )
+                  )}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -477,7 +558,10 @@ export default function HomePage() {
       </section>
 
       {/* ╔═══════════════════════════════════════════════ REVIEWS ╗ */}
-      <section className="bg-primary-900 text-paper py-24 lg:py-32 relative overflow-hidden">
+      {/* id sinds 07-10-2026: blok 3 van de antwoordeenheid wijst hierheen. "tegelzetter breda
+          reviews" is de enige aanvulling die Google Suggest op de zoekvraag geeft (07-10-2026),
+          en de teksten stonden al op deze pagina zonder dat er iets heen wees. */}
+      <section id="beoordelingen" className="bg-primary-900 text-paper py-24 lg:py-32 relative overflow-hidden">
         <div aria-hidden className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-accent-500/20 blur-3xl" />
         <div className="container-x relative">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">

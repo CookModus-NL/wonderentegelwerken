@@ -55,8 +55,11 @@ export function localBusinessSchema() {
     paymentAccepted: 'Cash, Pin, Bank transfer, Tikkie',
     currenciesAccepted: 'EUR',
     sameAs: [
-      // Voeg toe na GBP/social setup
+      business.social.google,
+      business.social.facebook,
+      business.social.instagram,
     ].filter(Boolean),
+    ...(business.social.google ? { hasMap: business.social.google } : {}),
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Diensten',

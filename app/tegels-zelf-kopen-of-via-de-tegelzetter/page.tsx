@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react'
 import { business } from '@/content/business'
 import { KlantCitaat } from '@/components/klant-citaat'
+import { FaqAntwoord } from '@/components/faq-antwoord'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
@@ -48,6 +49,17 @@ import type { Metadata } from 'next'
  * de eigen algemene voorwaarden wordt letterlijk geciteerd met een link naar
  * /algemene-voorwaarden, waar dezelfde tekst al gepubliceerd staat; het is ook vastgelegd
  * als `wonderen-aansprakelijkheid-uitsluiting`.
+ *
+ * GIGATEGELSTORE (12-10-2026). Jaap vroeg in de app om een link naar Gigategelstore (Breda);
+ * zijn eigen woorden: "Nja bijna elke maand sowieso al een klant die tegels heeft gekocht en dat
+ * ik ze dan mag komen plakken". Daarom een eigen vervolgvraag in plaats van een kale link: wie
+ * daar koopt, moet vóór het bestellen weten wat er met het overschot gebeurt. Bronnen, met de
+ * hand gelezen op 12-10-2026: gigategelstore.com/FAQ/ ("U kunt GEEN tegels retour brengen";
+ * lijm en voegsel niet retour; "Haal uw tegels daarom altijd 1 week voor dat u ze nodig heeft
+ * op!") en /Algemene-voorwaarden-NL/ (art. 8.1 geen terugname, art. 10.1 klacht over breuk
+ * binnen 48 uur). Hun FAQ noemt 7 dagen voor breuk; bij die tegenspraak noemen we de strengste
+ * termijn, die uit de voorwaarden. NIET in de retourtabel: die is de meting van 17-09 en
+ * Gigategelstore zat niet bij de twaalf.
  *
  * GEEN BEDRAGEN VAN DIT BEDRIJF. Er is geen prijsfeit met eigenaar-akkoord, dus staat er
  * geen enkel eigen tarief op deze pagina. De bedragen die er wel staan zijn retourkosten
@@ -203,6 +215,15 @@ const faqs = [
   {
     q: 'Wat gebeurt er met de dozen die overblijven?',
     a: 'Dat is de vraag die de hele keuze bepaalt en die ik nergens beantwoord zag. Het hangt volledig af van waar je koopt, en de verschillen zijn groot. Tegel-uitverkoop schrijft letterlijk dat overgebleven dozen ná het leggen niet retour kunnen, tenzij vooraf anders is afgesproken. Tegels en Laminaat neemt maximaal 5% van de bestelde hoeveelheid terug, ongeopend, binnen twee weken. Maxaro geeft 365 dagen bedenktijd tegen € 9,95 of € 19,95 retourkosten. Praxis 30 dagen, of 90 met een Plus-lidmaatschap. Dat is het verschil tussen tien euro en een stapel dozen in de schuur. Vraag het dus vóór je bestelt, en zet het antwoord op papier.',
+  },
+  {
+    q: 'Ik koop mijn tegels bij Gigategelstore in Breda. Waar let ik op?',
+    a: 'Dat hoor ik vaak: bijna elke maand leg ik tegels die een klant bij Gigategelstore aan de Ettensebaan heeft gekocht. Drie dingen uit hun eigen veelgestelde vragen en voorwaarden, gelezen op 12 oktober 2026. Eén: wat je koopt, gaat niet terug. Ze schrijven letterlijk: "U kunt GEEN tegels retour brengen, u blijft ten alle tijde zelf verantwoordelijk voor de afgenomen en bestelde hoeveelheden." Laat de hoeveelheid dus uitrekenen vóór je bestelt; ik doe dat bij de opname op de plattegrond. Twee: koop er geen lijm bij. Lijm en voorlijm zitten bij mij in het tarief, en ook lijm en voegsel nemen ze niet terug. Drie: haal de tegels een week voor de klus op, zoals ze zelf adviseren, en kijk de dozen meteen na. Hun voorwaarden geven 48 uur na afhalen om breuk te melden.',
+    links: [
+      { tekst: 'Gigategelstore aan de Ettensebaan', href: 'https://gigategelstore.com/?utm_source=wonderentegelwerken.nl&utm_medium=referral' },
+      { tekst: 'veelgestelde vragen', href: 'https://gigategelstore.com/FAQ/' },
+      { tekst: 'voorwaarden', href: 'https://gigategelstore.com/Algemene-voorwaarden-NL/' },
+    ],
   },
   {
     q: 'Waarom zou ik dan niet gewoon precies genoeg bestellen?',
@@ -651,14 +672,14 @@ export default function TegelsZelfKopenPage() {
         <div className="container-tight">
           <div className="eyebrow">Wat er daarna gevraagd wordt</div>
           <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
-            Tien vervolgvragen, kort beantwoord
+            Elf vervolgvragen, kort beantwoord
           </h2>
 
           <dl className="mt-12 divide-y divide-mist border-y border-mist">
             {faqs.map((f) => (
               <div key={f.q} className="py-8">
                 <dt className="font-display text-xl font-semibold text-primary-900">{f.q}</dt>
-                <dd className="mt-4 text-base leading-relaxed text-primary-600">{f.a}</dd>
+                <dd className="mt-4 text-base leading-relaxed text-primary-600"><FaqAntwoord a={f.a} links={'links' in f ? f.links : undefined} /></dd>
               </div>
             ))}
           </dl>

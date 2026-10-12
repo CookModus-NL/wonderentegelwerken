@@ -205,6 +205,11 @@ ${werk}
   bij nabestelling, 0 van 12 noemt een retourvoorwaarde van een leverancier, 0 van 12 noemt een
   wetsartikel over materiaalrisico of de waarschuwingsplicht, en 0 van 12 zegt wat zelf kopen doet
   met de garantie van de tegelzetter.
+  GIGATEGELSTORE BREDA (Ettensebaan 19): bijna elke maand legt Van Wonderen tegels die een klant
+  daar kocht. Volgens hun eigen FAQ en algemene voorwaarden, gelezen 12-10-2026: geen enkele tegel
+  retour ("U kunt GEEN tegels retour brengen"), ook lijm en voegsel niet; breuk melden binnen 48 uur
+  na afhalen (voorwaarden art. 10.1; hun FAQ noemt 7 dagen); zelf adviseren ze de tegels een week
+  voor de klus op te halen. Wie daar koopt, laat de hoeveelheid dus vooraf uitrekenen.
   EIGEN METING RETOURBELEID (17-09-2026, twaalf tegelleveranciers bevraagd op negen vaste paden,
   VIJF leverden een leesbare pagina, ZEVEN staan als ongemeten en niet als "geen retour").
   Maxaro: 365 dagen bedenktijd, retourkosten 9,95 euro pakketdienst of 19,95 euro groottransport,

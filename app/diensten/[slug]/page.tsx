@@ -5,6 +5,7 @@ import { ArrowUpRight, Phone, MessageCircle, ChevronRight, Check } from 'lucide-
 import { services, servicesBySlug } from '@/content/services'
 import { business } from '@/content/business'
 import { serviceSchema, faqSchema, breadcrumbSchema } from '@/lib/schema'
+import { FaqAntwoord } from '@/components/faq-antwoord'
 import type { Metadata } from 'next'
 
 export const dynamicParams = false
@@ -155,7 +156,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                     <span className="absolute h-3 w-px bg-current" />
                   </span>
                 </summary>
-                <dd className="mt-4 text-base leading-relaxed text-primary-600 pr-12">{f.a}</dd>
+                <dd className="mt-4 text-base leading-relaxed text-primary-600 pr-12"><FaqAntwoord a={f.a} links={f.links} /></dd>
               </details>
             ))}
           </dl>

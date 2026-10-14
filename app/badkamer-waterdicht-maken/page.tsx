@@ -706,6 +706,16 @@ export default function BadkamerWaterdichtMakenPage() {
           </dl>
 
           <p className="mt-12 max-w-2xl text-base leading-relaxed text-primary-600">
+            Wie de waterkering aanbrengt is in een complete verbouwing niet vanzelfsprekend
+            dezelfde die de tegels legt, en dat bepaalt bij wie een vochtprobleem later landt. De
+            vijf routes die je in Breda kunt kiezen en wat ze betekenen voor garantie staan op{' '}
+            <Link href="/badkamer-renovatie-breda" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+              wie wat doet bij een badkamerrenovatie in Breda
+            </Link>
+            .
+          </p>
+
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
             De klok die na het tegelen gaat lopen is een aparte: wanneer je weer op de vloer mag
             en wanneer de vloerverwarming aan mag, staat in{' '}
             <Link href="/tegelvloer-belopen-en-vloerverwarming-aanzetten" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">

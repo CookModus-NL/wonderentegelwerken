@@ -209,6 +209,9 @@ contract:
     - /losse-tegels-en-scheurende-voegen
     - /tegelvloer-belopen-en-vloerverwarming-aanzetten
     - /tegelen-over-bestaande-tegels
+    # lokale dienstvraag met antwoordeenheid (toegevoegd 14 okt 2026 door
+    # schrijver-20261014-1435, contract 8dca7665: een pad TOEVOEGEN verscherpt de norm)
+    - /badkamer-renovatie-breda
     # formulierpagina
     - /contact
     # juridische pagina

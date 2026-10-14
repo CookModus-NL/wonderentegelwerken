@@ -52,6 +52,12 @@ Per project plan ik 2 tot 4 weken in. Voor kleine badkamers vaak korter. We besp
     ],
     answers: [
       {
+        href: '/badkamer-renovatie-breda',
+        label: 'Badkamerrenovatie in Breda: wie doet wat?',
+        teaser:
+          'Een renovatie is vijf klussen achter elkaar, en in Breda kun je er vijf soorten bedrijven voor bellen. Wat elke route betekent voor planning, prijs en garantie, plus een telling van wat negen gelezen Bredase pagina’s niet zeggen: nul van de negen schrijft op waar de aansprakelijkheid stopt.',
+      },
+      {
         href: '/wat-kost-een-badkamer-betegelen',
         label: 'Wat kost een badkamer betegelen (wand + vloer)?',
         teaser:

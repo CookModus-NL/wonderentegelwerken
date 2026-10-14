@@ -49,6 +49,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry('/wat-kost-vloer-tegelen-per-m2', 0.8, 'monthly'),
     entry('/wat-kost-een-badkamer-betegelen', 0.8, 'monthly'),
     entry('/tegels-zelf-kopen-of-via-de-tegelzetter', 0.8, 'monthly'),
+    // Lokale dienstvraag met antwoordeenheid (badkamerrenovatie Breda)
+    entry('/badkamer-renovatie-breda', 0.85, 'monthly'),
     ...services.map((s) => entry(`/diensten/${s.slug}`, 0.8, 'monthly')),
     ...projects.map((p) => entry(`/projecten/${p.slug}`, 0.7, 'yearly')),
     // Lokale SEO landingspagina's per plaats

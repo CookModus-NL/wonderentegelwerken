@@ -729,6 +729,11 @@ export default function WatKostBadkamerBetegelenPage() {
             <Link href="/eerst-vloer-of-wand-betegelen" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
               eerst de vloer of eerst de wand
             </Link>
+            . Gaat het niet om tegelwerk alleen maar om de hele verbouwing, dan is de vraag wie
+            welk deel doet en bij wie een probleem later landt; dat staat uitgewerkt op{' '}
+            <Link href="/badkamer-renovatie-breda" className="underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+              wie wat doet bij een badkamerrenovatie in Breda
+            </Link>
             .
           </p>
         </div>

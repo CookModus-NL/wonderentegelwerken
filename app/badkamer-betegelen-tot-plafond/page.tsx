@@ -387,7 +387,7 @@ export default function TotPlafondBetegelenPage() {
                 >
                   Breda en omstreken
                 </Link>{' '}
-                en voer het werk zelf uit.
+                en ben eindverantwoordelijk voor elke klus.
               </p>
             </div>
           </div>

@@ -169,7 +169,7 @@ export default function ContactPage() {
                 Wie ben ik?
               </h2>
               <p className="mt-6 text-primary-600 leading-relaxed">
-                Ik ben Jaap van Wonderen, tegelzetter uit Breda sinds 2022. Geen onderaannemers, geen tussenpersonen. Vanaf het eerste WhatsAppje tot de oplevering krijg je dezelfde vakman op de klus.
+                Ik ben Jaap van Wonderen, tegelzetter uit Breda sinds 2022. Geen tussenpersonen. Vanaf het eerste WhatsAppje tot de oplevering ben ik je aanspreekpunt, en ik blijf eindverantwoordelijk voor het werk.
               </p>
             </div>
 

@@ -93,7 +93,10 @@ export const metadata: Metadata = {
  * 06-10-2026 vervangen: Jaap mag werk (deels) uitbesteden en blijft eindverantwoordelijk (eigen
  * woorden via WhatsApp, 06-10 08:36). De oude formulering is dus geen geldige claim meer en staat
  * sinds 07-10 niet meer op deze pagina, niet in de stats-strook en niet in de sitebrede
- * description. Op andere pagina's staat zij nog wel; die reparatie ligt klaar op tak av-finaal.
+ * description. Op 14-10-2026 is de rest van de site bijgetrokken (de hunks van av-finaal 1aaa077
+ * op main toegepast, niet gemerged): /over-ons, /contact, /diensten, de dienst-template, zeven
+ * antwoordpagina's, content/services.ts en llms.txt. In de trust-strook hierboven stond toen nog
+ * "Eigen vakman" — dezelfde vervallen claim in andere woorden — en die is nu "Geen tussenpersonen".
  *
  * GEEN KANNIBALISATIE MET /tegelzetter/breda — opnieuw gemeten, niet aangenomen (lering 5afc4a7c).
  * In motor_gsc over 09-09 t/m 04-10-2026 heeft geen enkele /tegelzetter/<stad>-pagina ook maar een
@@ -220,7 +223,7 @@ export default function HomePage() {
                   <ShieldCheck className="h-4 w-4 text-accent-600" /> 5 jaar garantie op tegelwerk
                 </div>
                 <div className="flex items-center gap-2 text-primary-600">
-                  <Hammer className="h-4 w-4 text-accent-600" /> Eigen vakman
+                  <Hammer className="h-4 w-4 text-accent-600" /> Geen tussenpersonen
                 </div>
               </div>
             </div>

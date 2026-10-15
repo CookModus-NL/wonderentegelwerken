@@ -59,7 +59,7 @@ const url = `${business.url}/tegelvloer-belopen-en-vloerverwarming-aanzetten`
 export const metadata: Metadata = {
   title: 'Wanneer mag je op een nieuwe tegelvloer lopen en de vloerverwarming aan?',
   description:
-    'Er lopen twee klokken. De lijm bepaalt wanneer je mag lopen, de dekvloer bepaalt wanneer de verwarming aan mag. Waarom de adviezen online van 7 dagen tot 6 weken lopen, met de bronnen erbij.',
+    'Hoe lang moet je wachten? Voorzichtig lopen kan meestal na 12 tot 24 uur, normaal belasten na 48 uur. De vloerverwarming hangt aan de dekvloer, niet aan de lijm.',
   alternates: { canonical: '/tegelvloer-belopen-en-vloerverwarming-aanzetten' },
   openGraph: {
     title:

@@ -28,7 +28,7 @@ const url = `${business.url}/badkamer-betegelen-tot-plafond`
 export const metadata: Metadata = {
   title: 'Moet de badkamer tot het plafond betegeld worden?',
   description:
-    'Nee, dat hoeft niet. Wettelijk moet de wand alleen geen water opnemen: tot 1,2 m, en bij douche of bad tot 2,1 m over minstens 3 m (Bbl art. 4.120). Uitgelegd door een tegelzetter uit Breda.',
+    'Nee, badkamer tot het plafond betegelen hoeft niet. Bbl 4.120: 1,2 m, bij douche of bad 2,1 m over minstens 3 m. Uitgelegd door een tegelzetter uit Breda.',
   alternates: { canonical: '/badkamer-betegelen-tot-plafond' },
   openGraph: {
     title: 'Moet de badkamer tot het plafond betegeld worden? | Van Wonderen Tegelwerken',

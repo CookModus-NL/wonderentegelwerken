@@ -105,6 +105,15 @@ export const metadata: Metadata = {
  * /diensten/vloertegels (positie 49). Verdiepen hoort dus hier. Blok 2 en 4 houden zich kort en
  * wijzen door naar /wat-kost-vloer-tegelen-per-m2 en /losse-tegels-en-scheurende-voegen, die de
  * diepe versie van die twee vragen bezitten.
+ *
+ * DIE METING IS PER 08-10-2026 VERLOPEN VOOR ETTEN-LEUR, niet voor Breda (hermeten 19 okt 2026,
+ * contract f4d87796). Sinds 8 oktober krijgt /tegelzetter/etten-leur wél vertoningen, op zes
+ * zoekvragen, en op "tegelzetter etten leur" dingen vier URL's van deze site tegelijk mee: die
+ * plaatspagina (5 vertoningen, gemiddelde positie 14,0), /werkgebied (1, positie 8), deze
+ * homepage (35, positie 33,6) en de hub /tegelzetter (6, positie 60,2). Voor Etten-Leur is de
+ * plaatspagina daarom de eigenaar gemaakt en wijst blok 1 hier naar haar; op "tegelzetter breda"
+ * blijft deze homepage de enige pagina met vertoningen en blijft verdiepen hier horen. De les is
+ * niet dat de meting fout was, maar dat een kannibalisatie-uitspraak een peildatum heeft.
  */
 type Deel = string | { tekst: string; href: string }
 
@@ -115,8 +124,10 @@ const antwoordblokken: { id: string; vraag: string; delen: Deel[] }[] = [
     delen: [
       'Van Wonderen Tegelwerken zit in Breda en mijn kerngebied is maximaal 15 minuten rijden: Breda, Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst. Op 15 tot 30 minuten kom ik in Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert. Made, Dongen, Gilze en Roosendaal doe ik op aanvraag, en dan voor grotere projecten. Staat jouw plaats er niet bij, vraag het dan gewoon. Het volledige ',
       { tekst: 'werkgebied met reistijden per plaats', href: '/werkgebied' },
-      ' staat apart, en voor de stad zelf is er een pagina over ',
+      ' staat apart, voor de stad zelf is er een pagina over ',
       { tekst: 'tegelwerk in Breda en de wijken', href: '/tegelzetter/breda' },
+      ', en voor Etten-Leur staat wat ik daar doe en wat het kost op de pagina over ',
+      { tekst: 'tegelzetter in Etten-Leur', href: '/tegelzetter/etten-leur' },
       '.',
     ],
   },

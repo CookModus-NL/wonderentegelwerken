@@ -191,6 +191,12 @@ contract:
     - /tegelzetter
     # tegelzetter-stad
     - /tegelzetter/breda
+    # tegelzetter-stad MET antwoordeenheid (toegevoegd 19 okt 2026 door schrijver-20261019-1635,
+    # contract f4d87796: een pad TOEVOEGEN verscherpt de norm). /tegelzetter/breda dekt de kale
+    # variant van dit type; sinds vandaag bestaat er een tweede variant, met een antwoordvlak in
+    # surface-kleur en haarlijnen in plaats van de dienstenkaarten. Zonder dit pad zou de
+    # designpoort dat vlak nooit meten, want het rendert niet op /tegelzetter/breda.
+    - /tegelzetter/etten-leur
     # werkgebied
     - /werkgebied
     # redactionele pagina

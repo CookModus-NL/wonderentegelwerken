@@ -6,7 +6,7 @@ import { cities, citiesBySlug } from '@/content/cities'
 import { services } from '@/content/services'
 import { projects } from '@/content/projects'
 import { business } from '@/content/business'
-import { localBusinessSchema, breadcrumbSchema } from '@/lib/schema'
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
 export const dynamicParams = false
@@ -21,7 +21,11 @@ export async function generateMetadata({ params }: { params: Promise<{ stad: str
   if (!city) return {}
   return {
     title: `Tegelzetter ${city.name}`,
-    description: `Tegelzetter in ${city.name} en omstreken. Badkamerrenovatie, vloer- en wandtegels, kitwerk en buitentegelwerk. Eén vakman voor alles. WhatsApp Jaap op 06-18249249.`,
+    // Draagt deze plaats een antwoordeenheid, dan draagt de description het antwoord en niet de
+    // dienstenopsomming: het woord waarop de pagina rankt hoort in de snippet te staan.
+    description:
+      city.antwoord?.description ??
+      `Tegelzetter in ${city.name} en omstreken. Badkamerrenovatie, vloer- en wandtegels, kitwerk en buitentegelwerk. Eén vakman voor alles. WhatsApp Jaap op 06-18249249.`,
     keywords: [
       `tegelzetter ${city.name}`,
       `tegelzetter in ${city.name}`,
@@ -62,6 +66,16 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
         { name: 'Werkgebied', url: `${business.url}/tegelzetter` },
         { name: `Tegelzetter ${city.name}`, url: `${business.url}/tegelzetter/${city.slug}` },
       ])) }} />
+      {/* FAQPage alleen waar de vragen ook ZICHTBAAR op de pagina staan (searchcompliance
+          23 sep 2026). De vraagtekst in het schema is letterlijk dezelfde string als de h3. */}
+      {city.antwoord && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(
+          city.antwoord.vragen.map((v) => ({
+            q: v.vraag,
+            a: v.delen.map((d) => (typeof d === 'string' ? d : d.tekst)).join(''),
+          })),
+        )) }} />
+      )}
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-paper pt-12 lg:pt-20 pb-16 lg:pb-24">
@@ -118,17 +132,81 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
           </h2>
           <p className="mt-8 text-lg leading-relaxed text-primary-600">{city.localContext}</p>
           {/* Inkomende link naar de antwoordeenheid op de homepage (contract 961be3b4, 3 okt 2026).
-              Werkt voor elke stad: Breda is de thuisbasis waar de reistijd vandaan gerekend wordt. */}
-          <p className="mt-6 text-base leading-relaxed text-primary-600">
-            Wie er komt, wat er standaard in het tegelwerk zit en hoe snel je een gespecificeerde
-            offerte hebt, staat kort bij elkaar bij{' '}
-            <Link href="/#tegelzetter-breda" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
-              tegelzetter in Breda: wie er komt
-            </Link>
-            .
-          </p>
+              Werkt voor elke stad: Breda is de thuisbasis waar de reistijd vandaan gerekend wordt.
+              NIET op een plaats die zelf een antwoordeenheid draagt (contract f4d87796, 19 okt
+              2026): daar staan dezelfde drie antwoorden hieronder op deze pagina zelf, en twee
+              keer hetzelfde antwoord op één URL is precies de dubbeling die samenvoegen wegneemt. */}
+          {!city.antwoord && (
+            <p className="mt-6 text-base leading-relaxed text-primary-600">
+              Wie er komt, wat er standaard in het tegelwerk zit en hoe snel je een gespecificeerde
+              offerte hebt, staat kort bij elkaar bij{' '}
+              <Link href="/#tegelzetter-breda" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+                tegelzetter in Breda: wie er komt
+              </Link>
+              .
+            </p>
+          )}
         </div>
       </section>
+
+      {/* ╔══════════════════════════════ ANTWOORDEENHEID (alleen waar hij bestaat) ╗
+          Zie content/cities.ts → StadAntwoord voor de meting achter dit blok. Vorm volgt de
+          antwoordeenheid op de homepage: vlak in surface-kleur, haarlijnen als voeg, geen kaart
+          om een alinea heen (DESIGN.md do_not_use), en geen beeld — er is geen klantfoto van werk
+          in Etten-Leur en stock is verboden. */}
+      {city.antwoord && (
+        <section id={`tegelzetter-${city.slug}`} className="bg-clay py-20 lg:py-28">
+          <div className="container-x">
+            <div className="max-w-3xl">
+              <div className="eyebrow">
+                <MapPin className="h-3 w-3" /> {city.antwoord.eyebrow}
+              </div>
+              <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-primary-900 sm:text-5xl">
+                {city.antwoord.kop[0]}
+                <br />
+                <span className="italic font-light text-primary-600">{city.antwoord.kop[1]}</span>
+              </h2>
+
+              <p className="mt-8 text-lg leading-relaxed text-primary-900 sm:text-xl">
+                {city.antwoord.antwoordEerst}
+              </p>
+
+              <p className="mt-6 text-base leading-relaxed text-primary-600">
+                {city.antwoord.marktalinea}
+              </p>
+
+              <p className="mt-8 text-sm text-primary-500">{city.antwoord.herkomstregel}</p>
+            </div>
+
+            {/* Elke vraag een volle band onder een doorlopende haarlijn: de voeg loopt door en
+                stopt niet halverwege (DESIGN.md vorm.lijnen). */}
+            {city.antwoord.vragen.map((v) => (
+              <div key={v.id} className="mt-12 border-t border-mist pt-12">
+                <div className="max-w-3xl">
+                  <h3 id={v.id} className="font-display text-xl font-semibold leading-snug text-primary-900">
+                    {v.vraag}
+                  </h3>
+                  <p className="mt-4 text-base leading-relaxed text-primary-600">
+                    {v.delen.map((d, j) =>
+                      typeof d === 'string' ? (
+                        d
+                      ) : (
+                        <Link
+                          key={j}
+                          href={d.href}
+                          className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
+                        >
+                          {d.tekst}
+                        </Link>
+                      ),
+                    )}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* DIENSTEN GRID */}
       <section className="bg-paper py-20">

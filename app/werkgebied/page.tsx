@@ -75,6 +75,21 @@ export default function WerkgebiedPage() {
                 </div>
               ))}
             </div>
+            {/* Uitgaande link naar de plaats die zijn eigen antwoord draagt (contract f4d87796,
+                19 okt 2026, samenvoegen). Deze pagina kreeg zelf vertoningen op "tegelzetter
+                etten leur"; in plaats van mee te dingen wijst hij nu naar de pagina die de vraag
+                beantwoordt. Eén plaats, omdat er één zo'n pagina is — niet als voorkeur. */}
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-primary-600">
+              Voor Etten-Leur staat de aanpak apart uitgeschreven:{' '}
+              <Link
+                href="/tegelzetter/etten-leur"
+                className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
+              >
+                tegelzetter in Etten-Leur, met reistijd, wat er in het tegelwerk zit en waar de
+                garantie stopt
+              </Link>
+              .
+            </p>
           </div>
 
           {/* Tier 3 */}

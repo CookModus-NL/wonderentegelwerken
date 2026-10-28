@@ -174,9 +174,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             {otherProjects.map((p) => (
               <Link key={p.slug} href={`/projecten/${p.slug}`} className="group relative overflow-hidden rounded-3xl img-zoom aspect-[16/10]">
                 <Image src={p.hero} alt={p.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
-                <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-primary-900 via-primary-900/30 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-8">
-                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-300">
+                <div className="beeldvoet absolute inset-x-0 bottom-0 p-8">
+                  <div className="beeldlabel">
                     {p.location} · {p.date}
                   </div>
                   <h3 className="mt-2 font-display text-2xl font-semibold text-paper">{p.title}</h3>

@@ -117,6 +117,13 @@ vorm:
     Die lijn is bewust de VOEG van het ontwerp: hij is overal even breed, loopt door waar vlakken
     elkaar raken, en stopt niet halverwege. Een ongelijke voeg is bij deze klant een inhoudelijke
     fout, geen detail.
+  signaalvlak: >
+    ONTWERPBESLUIT 28-10-2026 (zelfde ronde). Op het signaalvlak — het accent-verloop van de
+    CTA-blokken — draagt transparantie GEEN hiërarchie. Gemeten op productie: een regel in
+    op-donker/70 haalde daar 3,55:1 en op-donker/90 bleef op 4,82:1 steken, en op-donker-mute
+    (#c7c4be) zou er 3,30:1 geven — op dit vlak bestaat dus geen gedempte tekstkleur die de eis
+    haalt. Alle tekst op het signaalvlak staat daarom in volle op-donker; het verschil tussen
+    eerste en tweede regel komt van maat en gewicht, zoals het in een technisch register hoort.
   kaarten: >
     Alleen waar de inhoud werkelijk los staat (een project, een dienst, een werkgebied). Nooit om
     een alinea heen — een kaart die alleen tekst inpakt maakt van het raster een verzameling
@@ -135,6 +142,29 @@ beeld:
     Recht van voren of recht van boven, daglicht, geen kleurfilter, geen kunstmatige warmte.
     Uitsnede volgt het raster: de beeldrand valt samen met een kolomlijn.
   stock: verboden zolang er eigen werk gefotografeerd kan worden — en dat kan altijd
+  labelvoet: >
+    ONTWERPBESLUIT 28-10-2026 (bouwer-20261028-1205, TAAK-20260903-VW-CONTRAST-BEELD).
+    Op een foto is de achtergrond geen kleur maar een opname: hij verschilt per project, per
+    uitsnede en per daglicht. Leesbaarheid is daarom nooit een eigenschap van de foto en altijd
+    een eigenschap van het ontwerp. Twee regels, samen de grammatica .beeldlabel/.beeldvoet in
+    globals.css. EEN: op een foto draagt het accent geen TEKST meer maar de VOEG — de tekst van
+    het metalabel staat in op-donker (#fbfaf7), het accent keert terug als de haarlijn ervoor,
+    en die haarlijn staat op elk label, ook waar er al een icoon staat, zodat de labelregels van
+    naast elkaar liggende kaarten op dezelfde x beginnen. TWEE: de leesgrond hoort bij het
+    LABELBLOK en niet bij de foto — de voet wordt door het blok zelf gemaakt (::before, uitloop
+    4rem) en reikt dus altijd tot boven zijn eigen tekst, ongeacht hoeveel regels erin staan.
+    GROND IN DE THESE: het raster is de belofte en de voeg is het ontwerpelement dat dat raster
+    draagt; het accent als voeg laten terugkomen houdt die belofte, een oranje label op een foto
+    breekt hem. Verworpen alternatief A, een eigen achtergrondvlakje achter het label: dat is de
+    kaart om een alinea die `vorm.kaarten` en de anti-sloplijst verbieden, en het zweeft
+    bovendien over bewijs. Verworpen alternatief B, alleen de scrim verzwaren: dat laat de
+    leesbaarheid van elke volgende projectfoto een gok, en het was precies de te korte scrim die
+    deze fouten maakte. BIJVANGST: de oude scrim lag over het HELE beeld (inset-0, 30-40% op
+    halve hoogte) en sluierde dus ook de bovenkant; de voet raakt alleen het labelblok, zodat de
+    opbouw op de foto onbehandeld in beeld blijft — wat `beeld.behandeling` sowieso al eiste.
+    GEMETEN: voor, op productie 28-10-2026, 13 monsters van 1,19:1 tot 4,29:1 over /, /projecten,
+    /projecten/badkamer-juli-2025 en /tegelzetter; na, in de losse render van dezelfde kaarten
+    over dezelfde foto's, 10,9:1 tot 17,5:1 (motor/scripts/contrastpixels.mjs).
 
 motion:
   micro: 120-200ms
@@ -326,5 +356,27 @@ koper werkelijk heeft: niet "wordt het mooi", maar "gaat het scheuren".
   toe, omdat die op de bestaande site dragend zijn en een gedwongen herbouw niet in verhouding
   staat tot het budget van deze klant. Dit is een richting, geen norm — pas aan bij de eerstvolgende
   ontwerpronde, niet tussendoor.
+- **Het decoratieve cijfer is geen ornament meer (besloten 28-10-2026).** De stapcijfers
+  01/02/03 op `/contact` en `/over-ons` stonden in 72px serif op 30% dekking en maten 1,43:1.
+  Besluit: een cijfer dat de stap nummert is TEKST, want het draagt de volgorde. Het is daarom
+  naar het microregister van dit contract verhuisd (`typography.micro`: labels, maten, stempels)
+  en gebruikt de bestaande `.eyebrow`-grammatica — gemeten 5,23:1. Tweede grond: 72px serif was
+  een tweede, derde en vierde serif-uitspraak per scherm, terwijl `typography.display.rol` er
+  precies één toestaat, en een ordinaal is bovendien niets naretelbaars. Het alternatief
+  (`aria-hidden` + de stap in woorden) is verworpen: het cijfer blijft dan op het scherm staan
+  en blijft dus gemeten tekst — onzichtbaar voor de schermlezer én onleesbaar voor het oog is
+  geen oplossing maar een verbergtruc.
+
+- **GEEN ontwerpbesluit: vier van de veertien gemelde contrastfouten zijn meetfouten.**
+  `contrastpixels.mjs` meet alle tekstrechthoeken éénmaal vooraf en fotografeert ze daarna één
+  voor één; bij paginas die tijdens die reeks nog verschuiven wijst een rechthoek dan naar een
+  andere plek. Nagemeten met een verse rechthoek vlak vóór elke opname (28-10-2026) staat de
+  eyebrow `Breda` op `/projecten/badkamer-juli-2025` op zuiver #fbfaf7 — 795 van de 795 pixels —
+  en haalt dus 5,75:1 in plaats van de gemelde 4,20:1; hetzelfde geldt voor `Fase` op
+  `/badkamer-renovatie-breda` en voor twee handtekeningregels in #6b6862. Die vier zijn NIET
+  gerepareerd: een kleurwijziging op grond van een meetfout verslechtert het ontwerp zonder iets
+  op te lossen. Uitgezet als werkorder voor de motor-bouwer (het meetinstrument is motorcode en
+  niet van deze klant).
+
 - **[AANNAME] `raakvlak_hard: false`.** Overgenomen van de andere contracten, niet zelfstandig
   onderbouwd voor deze klant. Zet hem op `true` zodra de raakvlakken op 390px gemeten zijn.

@@ -207,7 +207,7 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
               <h2 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
                 Tegelwerk in {city.name}?
               </h2>
-              <p className="mt-6 text-lg text-paper/90">
+              <p className="mt-6 text-lg text-paper">
                 WhatsApp me met foto’s en wat maten. Binnen 1 werkdag krijg je een eerste prijsindicatie.
               </p>
               <div className="mt-8 inline-flex items-center gap-2 rounded-full bg-paper px-7 py-3.5 font-semibold text-accent-700 transition-transform group-hover:scale-105">

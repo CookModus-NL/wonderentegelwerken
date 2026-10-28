@@ -57,10 +57,9 @@ export default function ProjectenPage() {
                       sizes={i === 0 ? '(max-width: 1024px) 100vw, 60vw' : '(max-width: 1024px) 100vw, 40vw'}
                       className="object-cover"
                     />
-                    <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-primary-900 via-primary-900/30 to-transparent" />
                   </div>
-                  <div className="absolute inset-x-0 bottom-0 p-6 lg:p-8">
-                    <div className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-300">
+                  <div className="beeldvoet absolute inset-x-0 bottom-0 p-6 lg:p-8">
+                    <div className="beeldlabel">
                       {p.location} · {p.date}
                     </div>
                     <h2 className="mt-2 font-display text-2xl font-semibold text-paper lg:text-3xl">{p.title}</h2>

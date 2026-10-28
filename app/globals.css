@@ -108,6 +108,64 @@
     @apply h-px w-8 bg-accent-500;
   }
 
+  /* ── Label op een foto ────────────────────────────────────────────────
+     Op een foto is de achtergrond geen kleur maar een opname: hij verschilt
+     per project, per uitsnede en per daglicht. Leesbaarheid mag daarom geen
+     eigenschap van de FOTO zijn maar van het ONTWERP. Twee regels, samen een
+     grammatica (DESIGN.md > beeld.labelvoet, ontwerpbesluit 28-10-2026):
+
+     1. Het accent draagt op een foto geen TEKST meer, maar de VOEG. Oranje
+        van 12px haalt op geen enkele opname 4,5:1 — gemeten 28-10-2026 op
+        productie: 1,19:1 tot 4,29:1 over vier paden. De tekst staat in
+        op-donker; het accent keert terug als de haarlijn ervoor, en blijft
+        zo de voeg die dit ontwerp overal gebruikt.
+     2. De leesgrond hoort bij het LABELBLOK, niet bij de foto. Een scrim op
+        de foto is te kort zodra er een regel tekst bij komt, en precies zo
+        zijn deze fouten ontstaan: de gradient was onderaan sterk genoeg voor
+        de kop en te zwak voor het label erboven. De voet wordt daarom door
+        het blok zelf gemaakt en reikt altijd tot boven zijn eigen tekst.
+        Bijvangst: de bovenkant van de foto wordt niet langer gesluierd. */
+  .beeldlabel {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-paper;
+  }
+  /* De haarlijn staat op ELK beeldlabel, ook waar het label al een eigen icoon
+     draagt: de labelregels van naast elkaar liggende kaarten moeten op dezelfde
+     x beginnen. Een kaart die met een pin begint en zijn buur met een lijn legt
+     de rij uit lood, en dat is het enige wat deze site over zichzelf niet mag
+     beweren. */
+  .beeldlabel::before {
+    content: '';
+    @apply h-px w-8 shrink-0 bg-accent-300;
+  }
+
+  /* De voet hoort bij het blok. `relative` is hier alleen de terugval: waar
+     het blok al absoluut staat wint die utility, en dat is precies goed. */
+  .beeldvoet {
+    @apply relative;
+  }
+  /* De tekst moet NA de voet geschilderd worden. Statische kinderen schilderen
+     voor een absolute ::before; positioneren zet ze er weer bovenop. */
+  .beeldvoet > * {
+    @apply relative;
+  }
+  .beeldvoet::before {
+    content: '';
+    @apply pointer-events-none absolute inset-x-0 bottom-0;
+    /* de uitloop boven het blok: de voet vervaagt, hij knipt niet af */
+    top: -4rem;
+    /* 20 19 15 IS --color-primary-900 (#14130F). Hier bewust uitgeschreven en
+       niet als var() in een color-mix: deze gradient is de leesgrond waar de
+       contrasteis op rust, en die mag niet afhangen van wat de CSS-compiler
+       met color-mix of met een opacity-modifier doet. Verandert het token,
+       dan verandert deze regel mee — zie DESIGN.md > beeld.labelvoet. */
+    background-image: linear-gradient(
+      to top,
+      rgb(20 19 15 / 1) 0%,
+      rgb(20 19 15 / 0.88) 55%,
+      rgb(20 19 15 / 0) 100%
+    );
+  }
+
   /* Tegel-grid achtergrond */
   .tile-pattern {
     background-image:

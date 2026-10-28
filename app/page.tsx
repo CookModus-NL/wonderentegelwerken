@@ -241,10 +241,9 @@ export default function HomePage() {
                     sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-cover"
                   />
-                  <div aria-hidden className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-primary-900/60 to-transparent" />
-                  <div className="absolute bottom-4 left-4 z-10 text-paper">
-                    <div className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-300">Badkamer</div>
-                    <div className="font-display text-lg font-semibold">Recent in Breda</div>
+                  <div className="beeldvoet absolute inset-x-0 bottom-0 z-10 p-4 text-paper">
+                    <div className="beeldlabel">Badkamer</div>
+                    <div className="mt-1 font-display text-lg font-semibold">Recent in Breda</div>
                   </div>
                 </div>
 
@@ -554,10 +553,9 @@ export default function HomePage() {
                     sizes={i === 0 ? '(max-width: 768px) 100vw, 60vw' : '(max-width: 768px) 100vw, 33vw'}
                     className="object-cover"
                   />
-                  <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-primary-900 via-primary-900/40 to-transparent" />
                 </div>
-                <div className="absolute inset-x-0 bottom-0 p-6 lg:p-8">
-                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-300">
+                <div className="beeldvoet absolute inset-x-0 bottom-0 p-6 lg:p-8">
+                  <div className="beeldlabel">
                     {p.location} · {p.date}
                   </div>
                   <h3 className="mt-2 font-display text-2xl font-semibold text-paper lg:text-3xl">
@@ -689,10 +687,10 @@ export default function HomePage() {
               <h2 className="font-display text-4xl font-bold tracking-tight text-paper sm:text-5xl lg:text-6xl leading-[1.05]">
                 Klaar voor je nieuwe tegelwerk?
               </h2>
-              <p className="mt-6 text-lg text-paper/90 max-w-lg">
+              <p className="mt-6 text-lg text-paper max-w-lg">
                 Stuur me een paar foto’s van je ruimte via WhatsApp. Binnen één werkdag krijg je een eerste prijsindicatie. Vrijblijvend en altijd gratis.
               </p>
-              <p className="mt-3 text-base text-paper/70">Of bel direct. Ik neem zo veel mogelijk zelf op.</p>
+              <p className="mt-3 text-base text-paper">Of bel direct. Ik neem zo veel mogelijk zelf op.</p>
               <div className="mt-10 flex flex-wrap gap-3">
                 <a
                   href={`https://wa.me/${business.whatsapp.replace('+', '')}?text=${encodeURIComponent(business.whatsappPrefills.offerte)}`}

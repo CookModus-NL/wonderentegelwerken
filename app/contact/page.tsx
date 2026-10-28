@@ -150,7 +150,12 @@ export default function ContactPage() {
               },
             ].map((s) => (
               <div key={s.num} className="reveal">
-                <div className="font-display text-7xl font-bold text-accent-500/30 leading-none">{s.num}</div>
+                {/* Het cijfer nummert de stap en is dus tekst, geen ornament: het
+                    staat in het microregister van het contract (labels, maten,
+                    stempels) en haalt daar 5,23:1. Was: 72px serif op 30% dekking,
+                    gemeten 1,43:1 — en bovendien een tweede serif-uitspraak per
+                    scherm, wat het contract aan de display-rol niet toestaat. */}
+                <div className="eyebrow">Stap {s.num}</div>
                 <h3 className="mt-4 font-display text-2xl font-semibold">{s.title}</h3>
                 <p className="mt-3 text-primary-600 leading-relaxed">{s.body}</p>
               </div>

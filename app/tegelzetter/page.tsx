@@ -46,10 +46,9 @@ export default function TegelzetterIndexPage() {
                   sizes="(max-width: 1024px) 100vw, 33vw"
                   className="object-cover"
                 />
-                <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-primary-900 via-primary-900/40 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-7">
-                  <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent-300">
-                    <MapPin className="h-3 w-3" /> {city.distance}
+                <div className="beeldvoet absolute inset-x-0 bottom-0 p-7">
+                  <div className="beeldlabel gap-1.5">
+                    <MapPin className="h-3 w-3 text-accent-300" /> {city.distance}
                   </div>
                   <h2 className="mt-3 font-display text-3xl font-bold text-paper">
                     {city.name}

@@ -82,7 +82,8 @@ export default function OverOnsPage() {
               },
             ].map((p) => (
               <div key={p.num} className="reveal">
-                <div className="font-display text-7xl font-bold text-accent-500/30 leading-none">{p.num}</div>
+                {/* zie /contact: nummering is tekst, niet ornament (28-10-2026) */}
+                <div className="eyebrow">{p.num}</div>
                 <h3 className="mt-4 font-display text-2xl font-semibold">{p.title}</h3>
                 <p className="mt-3 text-primary-600 leading-relaxed">{p.body}</p>
               </div>

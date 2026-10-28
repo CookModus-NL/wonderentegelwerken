@@ -128,6 +128,33 @@ vorm:
     Alleen waar de inhoud werkelijk los staat (een project, een dienst, een werkgebied). Nooit om
     een alinea heen — een kaart die alleen tekst inpakt maakt van het raster een verzameling
     dozen en dat is precies de generieke uitkomst die dit vak al heeft.
+  raakvlak: >
+    ONTWERPBESLUIT 28-10-2026 (bouwer-20261028-2305, TAAK-20260903-VW-RAAKVLAK). Elk aanraakvlak
+    is minstens 44x44, uitgezonderd een link die middenin een lopende zin staat — die mag per
+    WCAG 2.5.8 ("inline: constrained by the line-height of non-target text") de regelhoogte
+    volgen, want 44px zou de zin uit elkaar trekken. Grammatica: .raaklink en .raaklink-strak in
+    globals.css. GROND: de enige waargenomen conversie op deze site is WhatsApp (motor_conversies,
+    26 aug 2026) en het enige andere directe kanaal is bellen; een telefoonnummer van 20px hoog is
+    op een telefoon geen knop maar een gok. Dit was tot vandaag `raakvlak_hard: false` met als
+    enige grond "overgenomen van de andere contracten" — een norm die zacht stond omdat niemand
+    hem gemeten had. GEMETEN: voor, op productie 28-10-2026 over de zeventien contractpaden bij
+    390px, 38 unieke raakvlakken onder 44px, waaronder 06-18249249 (350x20) en
+    wonderentegelwerken@gmail.com (350x20) in de voet en de zes dienstlinks (100x17 tot 219x17).
+    DE TWEE REGELS. EEN: waar boven en onder het raakvlak witruimte staat en geen tweede
+    raakvlak — de kruimelbalk op elf paginatypes — loopt de 44px in die witruimte
+    (.raaklink-strak, negatieve marge), zodat de rij niet groeit en het eerste scherm op zijn
+    plek blijft. TWEE: waar raakvlakken onder elkaar staan — de drie lijsten in de voet — mag dat
+    NIET, want twee hitvlakken van 44px op 29px afstand overlappen elkaar 15px en dan opent de
+    bezoeker juist vaker de verkeerde link. Daar is de raakhoogte de regelafstand geworden: rijen
+    van 44px zonder tussenruimte. Dat kost op 390px ongeveer 190px voethoogte en het is op these:
+    sluitende rijen van gelijke hoogte zijn het raster dat dit contract belooft, losse regeltjes
+    met lucht ertussen niet. VERWORPEN: de voetlinks als pillen of knoppen vormgeven, want dan
+    komt de 44px er "gratis" bij — dat is precies de kaart om een alinea die `vorm.kaarten` en de
+    anti-sloplijst verbieden. De 44px komt hier uitsluitend uit maat en ruimte: geen nieuw vlak,
+    geen nieuwe rand, geen nieuw token. GEEN UITZONDERINGSLIJST: designpoort.mjs kent er voor
+    raakvlakken geen, en een norm die zacht blijft staan omdat één geval niet past is precies wat
+    deze ronde opruimt. Blijft er later toch een geval over, dan is dat een ontwerpbesluit hier en
+    geen stille terugval naar false.
 
 beeld:
   bron: >
@@ -258,7 +285,8 @@ contract:
   contrast_min: 4.5
   ritme_metronoom_max: 0.5
   overloop_max_px: 0
-  raakvlak_hard: false
+  # GEMETEN 28-10-2026 en daarmee van [AANNAME] naar besluit — zie raakvlak hieronder.
+  raakvlak_hard: true
   reduced_motion: true
   min_beelden_per_pagina: 1
 ---
@@ -378,5 +406,11 @@ koper werkelijk heeft: niet "wordt het mooi", maar "gaat het scheuren".
   op te lossen. Uitgezet als werkorder voor de motor-bouwer (het meetinstrument is motorcode en
   niet van deze klant).
 
-- **[AANNAME] `raakvlak_hard: false`.** Overgenomen van de andere contracten, niet zelfstandig
-  onderbouwd voor deze klant. Zet hem op `true` zodra de raakvlakken op 390px gemeten zijn.
+- **`raakvlak_hard` staat op `true` (besloten 28-10-2026).** De [AANNAME] die hier stond hing
+  expliciet op één voorwaarde: "zet hem op `true` zodra de raakvlakken op 390px gemeten zijn".
+  Ze zijn gemeten — 38 unieke raakvlakken onder 44px over de zeventien contractpaden, met het
+  telefoonnummer en het e-mailadres in de voet erbij — en ze zijn alle 38 op maat gebracht. De
+  twee regels en hun grond staan in `vorm.raakvlak`; de grammatica is `.raaklink` en
+  `.raaklink-strak`. Wat hiervan NIET onder de norm valt is één geval: een link middenin een
+  lopende zin, omdat WCAG 2.5.8 daar zelf een uitzondering maakt en designpoort.mjs die
+  uitzondering sinds 7 sep 2026 meemeet.

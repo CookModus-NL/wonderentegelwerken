@@ -96,7 +96,34 @@
     @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent-600 px-7 py-3.5 text-base font-semibold text-white shadow-sm transition-all duration-300 hover:bg-accent-700 hover:shadow-lg active:scale-[0.98];
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-primary-600 transition-all hover:bg-primary-100;
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-primary-600 transition-all hover:bg-primary-100;
+  }
+
+  /* ── Het raakvlak ─────────────────────────────────────────────────────
+     DESIGN.md > contract.raakvlak_hard, ontwerpbesluit 28-10-2026. De enige
+     waargenomen conversie op deze site is WhatsApp en het enige andere
+     directe kanaal is bellen: een telefoonnummer van 20px hoog is op een
+     telefoon geen knop maar een gok. 44x44 is de maat die designpoort.mjs
+     toetst en die Apple en Google voorschrijven.
+
+     WANNEER .raaklink: op elke a/button die niet middenin een zin staat en
+     niet al uit zichzelf 44px haalt. NIET op een link in lopende tekst —
+     die mag per WCAG 2.5.8 ("inline: constrained by the line-height of
+     non-target text") de regelhoogte volgen, en 44px zou de zin uit elkaar
+     trekken.
+
+     WANNEER .raaklink-strak erbij: alleen waar boven en onder het raakvlak
+     witruimte staat en geen tweede raakvlak — de kruimelbalk. De 44px loopt
+     daar in die witruimte, zodat de rij niet 24px groeit en het eerste
+     scherm op elf paginatypes op zijn plek blijft. NOOIT in een lijst van
+     raakvlakken onder elkaar: daar zouden twee hitvlakken van 44px elkaar
+     overlappen en dan werkt de maat zichzelf tegen. In de voet staat daarom
+     geen -strak maar zijn de rijen zelf 44px hoog geworden. */
+  .raaklink {
+    @apply inline-flex min-h-11 min-w-11 items-center;
+  }
+  .raaklink-strak {
+    @apply -my-3 py-3;
   }
 
   /* Eyebrow label boven headings */

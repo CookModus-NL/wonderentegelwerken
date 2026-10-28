@@ -400,11 +400,11 @@ export default function WatKostBadkamerBetegelenPage() {
         <div aria-hidden className="absolute inset-0 -z-10 tile-pattern opacity-30" />
         <div className="container-tight">
           <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 pt-8 text-sm text-primary-500">
-            <Link href="/" className="hover:text-accent-600">Home</Link>
+            <Link href="/" className="raaklink raaklink-strak hover:text-accent-600">Home</Link>
             <ChevronRight className="h-3 w-3" />
-            <Link href="/diensten" className="hover:text-accent-600">Diensten</Link>
+            <Link href="/diensten" className="raaklink raaklink-strak hover:text-accent-600">Diensten</Link>
             <ChevronRight className="h-3 w-3" />
-            <Link href="/diensten/badkamer-renovatie" className="hover:text-accent-600">Badkamer renovatie</Link>
+            <Link href="/diensten/badkamer-renovatie" className="raaklink raaklink-strak hover:text-accent-600">Badkamer renovatie</Link>
             <ChevronRight className="h-3 w-3" />
             <span className="text-primary-600">Wat kost een badkamer betegelen</span>
           </nav>

@@ -36,7 +36,7 @@ export function Header() {
       )}
     >
       <div className="container-x flex h-20 flex-nowrap items-center justify-between">
-        <Link href="/" className="group flex shrink-0 items-center gap-2 xl:gap-3" aria-label={business.name}>
+        <Link href="/" className="group flex min-h-11 shrink-0 items-center gap-2 xl:gap-3" aria-label={business.name}>
           {/* Tegel-mark */}
           <div className="grid grid-cols-2 gap-[3px] transition-transform duration-500 group-hover:rotate-90">
             <span className="block h-3 w-3 rounded-[2px] bg-primary-900" />
@@ -75,9 +75,12 @@ export function Header() {
           </a>
         </div>
 
+        {/* 44x44 in plaats van 40x40, met -mr-2.5 in plaats van -mr-2: de doos
+            groeit 4px en het icoon blijft gecentreerd, dus zonder die 2px extra
+            zou het icoon naar rechts schuiven. */}
         <button
           type="button"
-          className="lg:hidden -mr-2 grid h-10 w-10 place-items-center rounded-full text-primary-900 hover:bg-primary-100"
+          className="lg:hidden -mr-2.5 grid h-11 w-11 place-items-center rounded-full text-primary-900 hover:bg-primary-100"
           aria-label={open ? 'Menu sluiten' : 'Menu openen'}
           aria-expanded={open}
           onClick={() => setOpen(!open)}

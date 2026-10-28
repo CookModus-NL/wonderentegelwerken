@@ -12,7 +12,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-12">
           {/* Brand block */}
           <div className="lg:col-span-5">
-            <Link href="/" className="inline-flex items-center gap-3">
+            <Link href="/" className="raaklink gap-3">
               <div className="grid grid-cols-2 gap-[3px]">
                 <span className="block h-3 w-3 rounded-[2px] bg-paper" />
                 <span className="block h-3 w-3 rounded-[2px] bg-accent-500" />
@@ -26,18 +26,21 @@ export function Footer() {
             <p className="mt-6 max-w-md text-base leading-relaxed text-primary-300">
               Jaap van Wonderen. Jouw vaste tegelzetter in Breda en West-Brabant. Persoonlijk vakwerk voor badkamer, vloer, wand, terras en kitwerk. Sinds 2022.
             </p>
-            <div className="mt-8 flex flex-col gap-3 text-sm">
-              <a href={`tel:${business.phoneE164}`} className="group inline-flex items-center gap-2 text-paper hover:text-accent-300 transition-colors">
+            {/* Het nummer en het mailadres zijn de twee directe kanalen van deze
+                klant; ze dragen daarom .raaklink en niet de regelhoogte van de
+                tekst eromheen (DESIGN.md > contract.raakvlak_hard). */}
+            <div className="mt-8 flex flex-col gap-1 text-sm">
+              <a href={`tel:${business.phoneE164}`} className="raaklink group gap-2 text-paper hover:text-accent-300 transition-colors">
                 <Phone className="h-4 w-4" />
                 <span className="tabular-nums font-semibold">{business.phone}</span>
                 <ArrowUpRight className="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5" />
               </a>
-              <a href={`mailto:${business.email}`} className="group inline-flex items-center gap-2 hover:text-accent-300 transition-colors">
+              <a href={`mailto:${business.email}`} className="raaklink group gap-2 hover:text-accent-300 transition-colors">
                 <Mail className="h-4 w-4" />
                 {business.email}
                 <ArrowUpRight className="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5" />
               </a>
-              <div className="inline-flex items-start gap-2 text-primary-300">
+              <div className="mt-2 inline-flex items-start gap-2 text-primary-300">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
                 <span>{business.address.street}<br/>{business.address.postalCode} {business.address.city}</span>
               </div>
@@ -47,10 +50,14 @@ export function Footer() {
           {/* Diensten */}
           <div className="lg:col-span-3">
             <h3 className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-paper">Diensten</h3>
-            <ul className="mt-6 space-y-3 text-sm">
+            {/* Geen space-y: de raakhoogte IS de regelafstand. Met 12px
+                tussenruimte en 44px hitvlakken zouden twee dienstlinks elkaar
+                15px overlappen, en dan opent de bezoeker juist vaker de
+                verkeerde dienst. Zie DESIGN.md > contract.raakvlak_hard. */}
+            <ul className="mt-3 text-sm">
               {services.map((s) => (
                 <li key={s.slug}>
-                  <Link href={`/diensten/${s.slug}`} className="text-primary-300 hover:text-paper transition-colors">
+                  <Link href={`/diensten/${s.slug}`} className="raaklink text-primary-300 hover:text-paper transition-colors">
                     {s.title}
                   </Link>
                 </li>
@@ -61,14 +68,14 @@ export function Footer() {
           {/* Informatie */}
           <div className="lg:col-span-2">
             <h3 className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-paper">Site</h3>
-            <ul className="mt-6 space-y-3 text-sm">
+            <ul className="mt-3 text-sm">
               {[
                 ['/projecten', 'Projecten'],
                 ['/tegelzetter', 'Werkgebied'],
                 ['/over-ons', 'Over mij'],
                 ['/contact', 'Contact'],
               ].map(([href, label]) => (
-                <li key={href}><Link href={href} className="text-primary-300 hover:text-paper transition-colors">{label}</Link></li>
+                <li key={href}><Link href={href} className="raaklink text-primary-300 hover:text-paper transition-colors">{label}</Link></li>
               ))}
             </ul>
           </div>
@@ -76,11 +83,11 @@ export function Footer() {
           {/* Juridisch */}
           <div className="lg:col-span-2">
             <h3 className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-paper">Juridisch</h3>
-            <ul className="mt-6 space-y-3 text-sm">
-              <li><Link href="/privacy" className="text-primary-300 hover:text-paper transition-colors">Privacy</Link></li>
-              <li><Link href="/algemene-voorwaarden" className="text-primary-300 hover:text-paper transition-colors">Algemene voorwaarden</Link></li>
+            <ul className="mt-3 text-sm">
+              <li><Link href="/privacy" className="raaklink text-primary-300 hover:text-paper transition-colors">Privacy</Link></li>
+              <li><Link href="/algemene-voorwaarden" className="raaklink text-primary-300 hover:text-paper transition-colors">Algemene voorwaarden</Link></li>
             </ul>
-            <div className="mt-6 space-y-1 text-xs text-primary-300">
+            <div className="mt-4 space-y-1 text-xs text-primary-300">
               <div>KvK {business.kvk}</div>
               <div>SBI 4333</div>
             </div>
@@ -101,7 +108,7 @@ export function Footer() {
               href="https://l3art.nl"
               target="_blank"
               rel="noopener"
-              className="normal-case transition-colors hover:text-accent-300"
+              className="raaklink normal-case transition-colors hover:text-accent-300"
             >
               Powered by l3art.nl
             </a>

@@ -55,7 +55,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       {/* HERO */}
       <section className="relative bg-paper pt-12">
         <div className="container-x">
-          <Link href="/projecten" className="inline-flex items-center gap-1 text-sm text-primary-600 hover:text-accent-600 transition-colors">
+          <Link href="/projecten" className="raaklink gap-1 text-sm text-primary-600 hover:text-accent-600 transition-colors">
             <ArrowLeft className="h-4 w-4" /> Alle projecten
           </Link>
 

@@ -15,7 +15,7 @@ export default function NotFound() {
           <Link href="/" className="btn-primary"><Home className="h-4 w-4" /> Naar de homepage</Link>
           <a href={`tel:${business.phoneE164}`} className="btn-secondary"><Phone className="h-4 w-4" /> {business.phone}</a>
         </div>
-        <Link href="/diensten" className="mt-6 inline-flex items-center gap-1 text-sm text-accent-600 hover:gap-2 transition-all">
+        <Link href="/diensten" className="raaklink mt-6 gap-1 text-sm text-accent-600 hover:gap-2 transition-all">
           <ArrowLeft className="h-4 w-4" /> Bekijk onze diensten
         </Link>
       </div>

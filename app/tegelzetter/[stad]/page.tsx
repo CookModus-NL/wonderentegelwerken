@@ -68,9 +68,15 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
         <div aria-hidden className="absolute inset-0 -z-10 tile-pattern opacity-30" />
         <div aria-hidden className="absolute top-0 right-0 -z-10 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-accent-100 to-transparent blur-3xl opacity-60" />
         <div className="container-x">
-          <nav className="text-sm text-primary-500">
-            <Link href="/" className="hover:text-accent-600">Home</Link> ·{' '}
-            <Link href="/tegelzetter" className="hover:text-accent-600">Werkgebied</Link> ·{' '}
+          {/* Zelfde kruimelgrammatica als de andere paginatypes: een flexrij met
+              gap-2 in plaats van scheidingstekens in de tekst. Nodig omdat een
+              raakvlak van 44px in lopende tekst op zijn basislijn gaat staan en
+              het middelpunt dan niet meer op de · uitkomt. */}
+          <nav className="flex flex-wrap items-center gap-2 text-sm text-primary-500">
+            <Link href="/" className="raaklink raaklink-strak hover:text-accent-600">Home</Link>
+            <span aria-hidden>·</span>
+            <Link href="/tegelzetter" className="raaklink raaklink-strak hover:text-accent-600">Werkgebied</Link>
+            <span aria-hidden>·</span>
             <span className="text-primary-600">Tegelzetter {city.name}</span>
           </nav>
 
@@ -221,7 +227,7 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
             <div className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-primary-500 mb-6">Ook tegelzetter in</div>
             <div className="flex flex-wrap gap-2">
               {cities.filter(c => c.slug !== city.slug).map(c => (
-                <Link key={c.slug} href={`/tegelzetter/${c.slug}`} className="rounded-full bg-clay px-4 py-2 text-sm text-primary-600 transition-all hover:bg-primary-900 hover:text-paper">
+                <Link key={c.slug} href={`/tegelzetter/${c.slug}`} className="raaklink rounded-full bg-clay px-4 py-2 text-sm text-primary-600 transition-all hover:bg-primary-900 hover:text-paper">
                   {c.name} <ArrowUpRight className="inline h-3 w-3" />
                 </Link>
               ))}

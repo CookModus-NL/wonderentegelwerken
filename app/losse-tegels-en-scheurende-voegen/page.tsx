@@ -254,11 +254,11 @@ export default function LosseTegelsPage() {
         <div aria-hidden className="absolute inset-0 -z-10 tile-pattern opacity-30" />
         <div className="container-tight">
           <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 pt-8 text-sm text-primary-500">
-            <Link href="/" className="hover:text-accent-600">Home</Link>
+            <Link href="/" className="raaklink raaklink-strak hover:text-accent-600">Home</Link>
             <ChevronRight className="h-3 w-3" />
-            <Link href="/diensten" className="hover:text-accent-600">Diensten</Link>
+            <Link href="/diensten" className="raaklink raaklink-strak hover:text-accent-600">Diensten</Link>
             <ChevronRight className="h-3 w-3" />
-            <Link href="/diensten/kitwerk-voegwerk" className="hover:text-accent-600">Kitwerk en voegwerk</Link>
+            <Link href="/diensten/kitwerk-voegwerk" className="raaklink raaklink-strak hover:text-accent-600">Kitwerk en voegwerk</Link>
             <ChevronRight className="h-3 w-3" />
             <span className="text-primary-600">Losse tegels en scheurende voegen</span>
           </nav>
@@ -702,7 +702,7 @@ export default function LosseTegelsPage() {
           <dl className="mt-12 divide-y divide-mist border-y border-mist">
             {faqs.map((f) => (
               <details key={f.q} className="group cursor-pointer py-6">
-                <summary className="flex list-none items-start justify-between gap-4">
+                <summary className="flex min-h-11 list-none items-start justify-between gap-4">
                   <dt className="font-display text-lg font-semibold text-primary-900 group-hover:text-accent-600">
                     {f.q}
                   </dt>

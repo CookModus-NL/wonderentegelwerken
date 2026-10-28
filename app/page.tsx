@@ -600,7 +600,7 @@ export default function HomePage() {
                   href={business.social.google}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-3 rounded-full border border-primary-700 px-5 py-2.5 text-sm text-paper transition-all hover:border-accent-400"
+                  className="raaklink mt-6 gap-3 rounded-full border border-primary-700 px-5 py-2.5 text-sm text-paper transition-all hover:border-accent-400"
                 >
                   <span className="flex items-center gap-1">
                     {Array.from({ length: 5 }).map((_, j) => (

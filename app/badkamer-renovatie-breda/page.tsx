@@ -257,11 +257,11 @@ export default function BadkamerRenovatieBredaPage() {
       <section className="bg-paper pt-12 lg:pt-20 pb-20 lg:pb-28">
         <div className="container-tight">
           <nav className="flex flex-wrap items-center gap-2 text-sm text-primary-500">
-            <Link href="/" className="hover:text-accent-600">
+            <Link href="/" className="raaklink raaklink-strak hover:text-accent-600">
               Home
             </Link>
             <ChevronRight className="h-3 w-3" />
-            <Link href="/diensten/badkamer-renovatie" className="hover:text-accent-600">
+            <Link href="/diensten/badkamer-renovatie" className="raaklink raaklink-strak hover:text-accent-600">
               Badkamer renovatie
             </Link>
             <ChevronRight className="h-3 w-3" />
@@ -753,7 +753,7 @@ export default function BadkamerRenovatieBredaPage() {
           <dl className="mt-12 divide-y divide-mist border-y border-mist">
             {faqs.map((f) => (
               <details key={f.q} className="group cursor-pointer py-6">
-                <summary className="flex list-none items-start justify-between gap-4">
+                <summary className="flex min-h-11 list-none items-start justify-between gap-4">
                   <dt className="font-display text-lg font-semibold text-primary-900 group-hover:text-accent-600">
                     {f.q}
                   </dt>

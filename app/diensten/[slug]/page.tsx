@@ -55,9 +55,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         <div className="container-x">
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-primary-500 pt-8">
-            <Link href="/" className="hover:text-accent-600">Home</Link>
+            <Link href="/" className="raaklink raaklink-strak hover:text-accent-600">Home</Link>
             <ChevronRight className="h-3 w-3" />
-            <Link href="/diensten" className="hover:text-accent-600">Diensten</Link>
+            <Link href="/diensten" className="raaklink raaklink-strak hover:text-accent-600">Diensten</Link>
             <ChevronRight className="h-3 w-3" />
             <span className="text-primary-600">{service.title}</span>
           </nav>
@@ -154,7 +154,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <dl className="mt-12 divide-y divide-mist border-y border-mist">
             {service.faqs.map((f) => (
               <details key={f.q} className="group py-6 cursor-pointer">
-                <summary className="flex items-start justify-between gap-4 list-none">
+                <summary className="flex min-h-11 items-start justify-between gap-4 list-none">
                   <dt className="font-display text-lg font-semibold text-primary-900 group-hover:text-accent-600">
                     {f.q}
                   </dt>

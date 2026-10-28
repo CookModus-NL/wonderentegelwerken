@@ -215,7 +215,7 @@ export default function HomePage() {
               <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm">
                 <div className="flex items-center gap-2">
                   <div className="flex">
-                    {[1,2,3,4,5].map((i) => <Star key={i} className="h-4 w-4 fill-accent-500 text-accent-500" />)}
+                    {[1,2,3,4,5].map((i) => <Star key={i} className="h-4 w-4 fill-accent-600 text-accent-600" />)}
                   </div>
                   <span className="font-semibold text-primary-900">Google reviews</span>
                 </div>
@@ -504,7 +504,9 @@ export default function HomePage() {
                   <div className="relative z-10 grid h-14 w-14 place-items-center rounded-full bg-primary-900 text-paper shadow-lg">
                     <span className="absolute font-display text-sm font-bold">0{i+1}</span>
                   </div>
-                  <Icon className="absolute top-2 right-2 h-5 w-5 text-accent-500/40" />
+                  {/* accent-600 (#9a4f18) is het signaaltoken uit contract.tekstkleuren;
+                      accent-500 (#B86220) staat daar niet en is er de naaste buur van. */}
+                  <Icon className="absolute top-2 right-2 h-5 w-5 text-accent-600/40" />
                   <h3 className="mt-6 font-display text-xl font-semibold">{step.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-primary-600">{step.body}</p>
                 </div>
@@ -588,12 +590,17 @@ export default function HomePage() {
                 Het werk eerst,<br />
                 <span className="italic font-light text-primary-300">de mond als laatste.</span>
               </h2>
+              {/* Geen vulling op deze pil en op de reviewkaarten hieronder: primary-800 (#1F1D1A)
+                  staat niet in contract.vlakken en meet half doorzichtig als #201e1a — op
+                  productie 14x, de zwaarste palet-afwijking van deze site. De scheiding is hier
+                  de haarlijn van 1px, precies zoals DESIGN.md > vorm.lijnen voorschrijft; de
+                  grond blijft #14130f, de dichtstbijzijnde contractwaarde. */}
               {testimonials.length > 0 && (
                 <a
                   href={business.social.google}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-3 rounded-full border border-primary-700 bg-primary-800/60 px-5 py-2.5 text-sm text-paper transition-all hover:border-accent-400 hover:bg-primary-800"
+                  className="mt-6 inline-flex items-center gap-3 rounded-full border border-primary-700 px-5 py-2.5 text-sm text-paper transition-all hover:border-accent-400"
                 >
                   <span className="flex items-center gap-1">
                     {Array.from({ length: 5 }).map((_, j) => (
@@ -628,7 +635,7 @@ export default function HomePage() {
               {testimonials.map((t, i) => (
                 <figure
                   key={t.author}
-                  className="mb-6 break-inside-avoid rounded-3xl bg-primary-800/50 backdrop-blur border border-primary-700 p-8 reveal"
+                  className="mb-6 break-inside-avoid rounded-3xl border border-primary-700 p-8 reveal"
                   style={{ animationDelay: `${i * 0.08}s` }}
                 >
                   <div className="flex gap-0.5 mb-5">
@@ -647,7 +654,7 @@ export default function HomePage() {
               ))}
             </div>
           ) : (
-            <div className="rounded-3xl border-2 border-dashed border-primary-700 bg-primary-800/30 p-12 text-center">
+            <div className="rounded-3xl border-2 border-dashed border-primary-700 p-12 text-center">
               <div className="flex justify-center gap-1 mb-6">
                 {Array.from({ length: 5 }).map((_, j) => (
                   <Star key={j} className="h-5 w-5 fill-accent-300 text-accent-300" />

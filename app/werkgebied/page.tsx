@@ -54,7 +54,7 @@ export default function WerkgebiedPage() {
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {tiers.kern.map((city) => (
                 <div key={city} className="group flex items-center gap-3 rounded-2xl border border-mist bg-paper px-5 py-4 transition-all hover:border-accent-300 hover:shadow-md hover:-translate-y-0.5">
-                  <MapPin className="h-4 w-4 text-accent-500 shrink-0" />
+                  <MapPin className="h-4 w-4 text-accent-600 shrink-0" />
                   <span className="font-display text-lg font-semibold">{city}</span>
                 </div>
               ))}

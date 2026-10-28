@@ -65,7 +65,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <div className="mt-12 grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="reveal">
               <div className="eyebrow">{service.tagline}</div>
-              <h1 className="mt-6 font-display text-[clamp(2.25rem,5vw,4rem)] font-bold leading-[1.05] tracking-tight text-primary-900">
+              {/* Vaste traptreden 36/48/60 uit contract.fontschaal, geen clamp. Een clamp loopt
+                  door alle waarden tussen zijn grenzen en alleen het bereik 60-76 mag dat
+                  (contract.fontschaal_vloeiend); clamp(2.25rem,5vw,4rem) leverde op 1024px exact
+                  51,2px en dat is geen traptrede. De vloeiende display-clamp van de homepage past
+                  hier niet: gemeten 28-10-2026 is de h1-kolom 350px op 390, 432px op 1024 en 560px
+                  op 1440, terwijl de langste titel ("Buitentegelwerk") bij 60px 477px breed is —
+                  dat loopt over de rand en contract.overloop_max_px is 0. */}
+              <h1 className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-primary-900 sm:text-5xl xl:text-6xl">
                 {service.title}
               </h1>
               <p className="mt-8 max-w-xl text-lg leading-relaxed text-primary-600">{service.long}</p>
@@ -74,7 +81,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                 <ul className="mt-10 grid gap-2 sm:grid-cols-2 max-w-xl">
                   {service.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-2.5 text-sm text-primary-600">
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-500" strokeWidth={3} />
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" strokeWidth={3} />
                       <span>{b}</span>
                     </li>
                   ))}

@@ -70,14 +70,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           {/* Project specs strip */}
           <dl className="mt-10 flex flex-wrap gap-x-12 gap-y-6 border-y border-mist py-8">
             <div className="flex items-start gap-3">
-              <MapPin className="h-5 w-5 text-accent-500 mt-0.5" />
+              <MapPin className="h-5 w-5 text-accent-600 mt-0.5" />
               <div>
                 <dt className="text-xs uppercase tracking-[0.18em] text-primary-500">Locatie</dt>
                 <dd className="mt-0.5 font-display text-lg font-semibold">{project.location}</dd>
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <Calendar className="h-5 w-5 text-accent-500 mt-0.5" />
+              <Calendar className="h-5 w-5 text-accent-600 mt-0.5" />
               <div>
                 <dt className="text-xs uppercase tracking-[0.18em] text-primary-500">Opgeleverd</dt>
                 <dd className="mt-0.5 font-display text-lg font-semibold">{project.date}</dd>
@@ -85,7 +85,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             </div>
             {project.surface && (
               <div className="flex items-start gap-3">
-                <Ruler className="h-5 w-5 text-accent-500 mt-0.5" />
+                <Ruler className="h-5 w-5 text-accent-600 mt-0.5" />
                 <div>
                   <dt className="text-xs uppercase tracking-[0.18em] text-primary-500">Oppervlakte</dt>
                   <dd className="mt-0.5 font-display text-lg font-semibold">{project.surface}</dd>
@@ -94,7 +94,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             )}
             {project.tileType && (
               <div className="flex items-start gap-3">
-                <Layers className="h-5 w-5 text-accent-500 mt-0.5" />
+                <Layers className="h-5 w-5 text-accent-600 mt-0.5" />
                 <div>
                   <dt className="text-xs uppercase tracking-[0.18em] text-primary-500">Tegelsoort</dt>
                   <dd className="mt-0.5 font-display text-lg font-semibold">{project.tileType}</dd>
@@ -135,7 +135,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       {project.quote && (
         <section className="bg-clay py-20">
           <div className="container-tight text-center">
-            <div className="font-display text-6xl text-accent-500 leading-none">&ldquo;</div>
+            <div className="font-display text-6xl text-accent-600 leading-none">&ldquo;</div>
             <blockquote className="mt-6 font-display text-3xl leading-snug text-primary-900 lg:text-4xl">
               {project.quote.text}
             </blockquote>

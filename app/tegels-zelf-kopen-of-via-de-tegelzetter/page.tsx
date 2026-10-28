@@ -452,15 +452,15 @@ export default function TegelsZelfKopenPage() {
                 <dl className="mt-4 grid gap-4 sm:grid-cols-3">
                   <div>
                     <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-accent-600">Termijn</dt>
-                    <dd className="mt-1 text-base text-primary-700">{r.termijn}</dd>
+                    <dd className="mt-1 text-base text-primary-600">{r.termijn}</dd>
                   </div>
                   <div>
                     <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-accent-600">Kosten</dt>
-                    <dd className="mt-1 text-base text-primary-700">{r.kosten}</dd>
+                    <dd className="mt-1 text-base text-primary-600">{r.kosten}</dd>
                   </div>
                   <div>
                     <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-accent-600">Hoeveel terug</dt>
-                    <dd className="mt-1 text-base text-primary-700">{r.plafond}</dd>
+                    <dd className="mt-1 text-base text-primary-600">{r.plafond}</dd>
                   </div>
                 </dl>
                 <blockquote className="mt-4 border-l-2 border-accent-400 pl-4 text-base italic leading-relaxed text-primary-600">
@@ -591,7 +591,7 @@ export default function TegelsZelfKopenPage() {
                 <blockquote className="mt-4 border-l-2 border-accent-400 pl-4 text-base italic leading-relaxed text-primary-600">
                   {b.citaat}
                 </blockquote>
-                <p className="mt-4 text-base leading-relaxed text-primary-700">
+                <p className="mt-4 text-base leading-relaxed text-primary-600">
                   <span className="font-semibold">Waar het stopt: </span>
                   {b.mist}
                 </p>

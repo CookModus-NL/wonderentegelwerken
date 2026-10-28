@@ -183,7 +183,7 @@ export default function ContactPage() {
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-primary-500">Adres</dt>
                   <dd className="mt-2 flex items-start gap-2 text-primary-900">
-                    <MapPin className="h-4 w-4 mt-1 text-accent-500" />
+                    <MapPin className="h-4 w-4 mt-1 text-accent-600" />
                     <span>{business.address.street}<br/>{business.address.postalCode} {business.address.city}</span>
                   </dd>
                 </div>

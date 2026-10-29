@@ -104,6 +104,20 @@ compositie:
   asymmetrie: >
     Alleen in de VERDELING (bijvoorbeeld 7/5 voor tekst naast beeld), nooit in de UITLIJNING.
     Twee kolommen mogen ongelijk breed zijn; hun boven- en onderlijn zijn dat nooit.
+  omslagpunt: >
+    ONTWERPBESLUIT 29-10-2026 (zelfde ronde). Een compositie schakelt om op de breedte waar hij
+    PAST, niet op de eerstvolgende breakpoint. GEMETEN op productie 29-10-2026: het mozaiek op
+    /projecten (8/4/4 met een dubbelhoge eerste kaart) begon op 1024px, en daar waren de twee
+    kleine kaarten 293x220 terwijl hun labelblok 327px nodig had. Dat blok hangt op bottom-0, dus
+    het stak 107px BOVEN de kaart uit en werd door overflow-hidden afgeknipt: plaats, datum en de
+    halve projectkop verdwenen, en de regel die net buiten de kaart viel stond op de paginagrond
+    in plaats van op de foto (designpoort meldde dat als 2,15:1 #e59e58 op #fbfaf7 — een
+    contrastmelding voor wat in werkelijkheid een layoutfout was). Het mozaiek begint daarom nu
+    op 1280px; in de band 1024-1279px staat de grote kaart over twaalf kolommen en staan de twee
+    kleine op zes. NA, in een losse render met de echte CSS: 452x339 kaart met een blok van 264px
+    — 75px ruimte over, op 1440px ongewijzigd 379x284 tegen 264px. Dat laatste is krap en het is
+    de bestaande, gemeten toestand; wordt een projectkop langer, dan is 1280px het volgende
+    omslagpunt dat verschoven moet worden.
   ritme_basis: clamp(64px, 6vw, 96px)
   ritme_moment: clamp(96px, 9vw, 128px) — alleen voor de opbouw-sectie en het projectbewijs
   dichtheid: >
@@ -128,6 +142,27 @@ vorm:
     Alleen waar de inhoud werkelijk los staat (een project, een dienst, een werkgebied). Nooit om
     een alinea heen — een kaart die alleen tekst inpakt maakt van het raster een verzameling
     dozen en dat is precies de generieke uitkomst die dit vak al heeft.
+  veeg: >
+    ONTWERPBESLUIT 29-10-2026 (bouwer-20261029-0905, TAAK-20261029-WONDEREN-DESIGNPOORT-HARD-7).
+    Een tabel die in zijn houder zijwaarts scrolt draagt een zichtbare aanwijzing. Grammatica:
+    .veeg en .veeg-breed in globals.css, met het attribuut data-veeg zodat de poort hem kan
+    vinden. GROND: op deze site staan acht tabellen in een houder met overflow-x:auto. Het
+    DOCUMENT scrolt dan niet mee, dus niets vertelt de lezer dat er rechts nog een kolom staat;
+    de derde kolom van de negen lagen is precies de kolom waar deze pagina om draait ("wat hij
+    NIET doet"). GEMETEN: voor, op productie 29-10-2026, tabel van 366px in een houder van 350px
+    op /badkamer-waterdicht-maken bij 390px, zonder enige aanwijzing; na, in een losse render van
+    diezelfde negen rijen met de echte CSS, 354px in 350px MET aanwijzing — de poorttoets
+    (designpoort.mjs, soort 'afgekapt') vuurt daar wel en de aanwijzing wordt gevonden.
+    DE BAND IS GEMETEN, NIET GEKOZEN. Een aanwijzing die er staat terwijl de tabel past is ruis;
+    een die ontbreekt terwijl hij scrolt is een kolom die de lezer nooit ziet. .veeg loopt tot
+    639px (de vijf tabellen zonder min-breedte, die pas op een telefoon niet meer passen);
+    .veeg-breed tot 1023px (de drie prijstabellen met min-w 720, 760 en 860px, die bij 768px nog
+    scrollen en pas passen als de houder 928px is). VORM: microregister (labels, maten, stempels)
+    met dezelfde haarlijn als .eyebrow en .beeldlabel, zodat alle microlabels op dezelfde x
+    beginnen. VERWORPEN: de tabel laten passen door de kolommen te versmallen — drie kolommen
+    proza in 350px is geen tabel meer; en een knop of pil om de aanwijzing heen, want dat is de
+    kaart om een alinea die `vorm.kaarten` en de anti-sloplijst verbieden. Geen nieuw vlak, geen
+    nieuwe rand, geen nieuw token.
   raakvlak: >
     ONTWERPBESLUIT 28-10-2026 (bouwer-20261028-2305, TAAK-20260903-VW-RAAKVLAK). Elk aanraakvlak
     is minstens 44x44, uitgezonderd een link die middenin een lopende zin staat — die mag per
@@ -169,6 +204,20 @@ beeld:
     Recht van voren of recht van boven, daglicht, geen kleurfilter, geen kunstmatige warmte.
     Uitsnede volgt het raster: de beeldrand valt samen met een kolomlijn.
   stock: verboden zolang er eigen werk gefotografeerd kan worden — en dat kan altijd
+  projectfiguur: >
+    ONTWERPBESLUIT 29-10-2026 (bouwer-20261029-0905). Een pagina zonder inhoudsbeeld krijgt een
+    EIGEN PROJECTFOTO met plaats en maand, nooit een sfeerbeeld. Grammatica:
+    components/project-figuur.tsx, een figure met de bestaande .beeldvoet/.beeldlabel die al op
+    /, /projecten, /projecten/[slug] en /tegelzetter staat. Plaats, datum, kop en bestandsnaam
+    komen alle vier uit content/projects.ts; een onbekende slug faalt hard, net als bij
+    KlantCitaat. Er staat dus geen woord bij de foto dat niet uit die bron komt — het beeld doet
+    geen enkele uitspraak over wat er op de pagina erboven staat. DE UITSNEDE IS GEMETEN: het
+    labelblok is op 390px 202px hoog en de leesgrond loopt er per `beeld.labelvoet` nog 4rem
+    bovenuit, samen 266px. In een 4/3-kader van 350px breed (263px hoog) ligt de voet dan over de
+    HELE foto en zie je het werk niet — precies wat deze figuur moet voorkomen. Daarom 4/5 op de
+    telefoon (437px kader, 171px onbehandelde foto boven de voet) en 16/9 vanaf 640px.
+    WAAR NIET: op een pagina waar het beeld niets te bewijzen heeft — zie contract.
+    beelden_uitzondering.
   labelvoet: >
     ONTWERPBESLUIT 28-10-2026 (bouwer-20261028-1205, TAAK-20260903-VW-CONTRAST-BEELD).
     Op een foto is de achtergrond geen kleur maar een opname: hij verschilt per project, per
@@ -289,6 +338,14 @@ contract:
   raakvlak_hard: true
   reduced_motion: true
   min_beelden_per_pagina: 1
+  # TWEE VERKLAARDE UITZONDERINGEN, 29-10-2026 (bouwer-20261029-0905). Vijf paden hadden op geen
+  # enkele viewport een inhoudsbeeld. Drie daarvan hebben er nu een eigen projectfoto bij
+  # gekregen (/diensten, /werkgebied, /badkamer-waterdicht-maken — zie beeld.projectfiguur).
+  # Deze twee krijgen er bewust geen; de grond staat hieronder in "Openstaande
+  # ontwerpbesluiten". De poort meldt ze nu als LET OP met reden, nooit stil.
+  beelden_uitzondering:
+    - /contact
+    - /privacy
 ---
 
 # DESIGN.md — Van Wonderen Tegelwerken
@@ -405,6 +462,44 @@ koper werkelijk heeft: niet "wordt het mooi", maar "gaat het scheuren".
   gerepareerd: een kleurwijziging op grond van een meetfout verslechtert het ontwerp zonder iets
   op te lossen. Uitgezet als werkorder voor de motor-bouwer (het meetinstrument is motorcode en
   niet van deze klant).
+
+- **De zevende harde categorie van 29-10-2026 kwam niet van de site maar van dit contract.**
+  De wachter mat op 29-10-2026 `hard: 7` tegen `hard: 6` op 30-09 en 19-10, en las dat als twee
+  nieuwe categorieën. Nagemeten diezelfde dag (bouwer-20261029-0905, zelfde script, zelfde
+  zeventien paden, 51 renderingen): de zeven zijn typeschaal, vlakkleur, tekstkleur, contrast,
+  raakvlak, afgekapt en beeld. De zesde van de oude meting was er dus nog allemaal; wat erbij
+  kwam is `raakvlak` — en die categorie werd hard omdat `raakvlak_hard` op 28-10-2026 van
+  `false` naar `true` ging, niet omdat er iets aan de site veranderde. De 37 gemelde raakvlakken
+  stonden er op 30-09 ook al; ze werden toen alleen als LET OP geteld. Wat de wachter als de
+  twee nieuwe categorieën las ("tekst afgekapt op meerdere elementen", "beeld of vaste balk
+  zonder dekkende eigen achtergrond") zijn de detailregels van de ZACHTE bevinding
+  `niet-toetsbaar` — 122x beeld achter de tekst, 51x vaste balk, 15x verloop. Die blokkeren
+  niet en zijn geen afwijking maar een meetgat.
+  LES: een contract dat strenger wordt laat het cijfer stijgen zonder dat de site verslechtert.
+  Een stijging in `hard` is pas een regressie als het contract tussen de twee metingen gelijk
+  bleef — anders meet je twee verschillende dingen.
+
+- **Waar de zeven zijn gebleven (29-10-2026).** Vier ervan — typeschaal (51,2px), twee
+  paletkleuren (#201e1a, #b96321) en de 37 raakvlakken — waren op 29-10 al gerepareerd in de
+  commits van 28-10 die nog niet gedeployd waren; de poort mat productie en zag die reparaties
+  dus nog niet. Van de vier contrastmeldingen waren de drie stapcijfers 01/02/03 eveneens al
+  gerepareerd; de vierde (2,15:1 op `Teteringen · 2025-03`) bleek géén kleurfout maar de
+  afgeknipte projectkaart uit `compositie.omslagpunt`. Deze ronde repareert de twee die
+  overbleven: `afgekapt` met `vorm.veeg`, en `beeld` met `beeld.projectfiguur` op drie paden
+  plus twee verklaarde uitzonderingen hieronder.
+
+- **Geen inhoudsbeeld op `/contact` en `/privacy` (besloten 29-10-2026).** Beide paden halen
+  `min_beelden_per_pagina: 1` niet en krijgen er bewust geen foto bij.
+  `/privacy` is de juridische pagina: een projectfoto bij een privacyverklaring bewijst niets,
+  verwijst naar niets in de tekst en is dus precies de decoratie die `beeld.onderwerp` uitsluit.
+  `/contact` is de formulierpagina; het enige wat daar telt is de drempel naar WhatsApp, bellen
+  en het formulier — de enige waargenomen conversie op deze site (motor_conversies, 26-08-2026)
+  loopt via WhatsApp. Een foto erbij verlengt het eerste scherm en verzet die knop naar beneden.
+  VERWORPEN: `min_beelden_per_pagina` sitebreed op 0 zetten. Dat zou de norm slopen voor de
+  twaalf paden waar beeld wél bewijs is; een uitzondering hoort per pad, gedateerd en met grond.
+  HERZIEN ALS: er komt eigen fotografie van Jaap aan het werk (de openstaande vraag hierboven).
+  Een opname van de opname — een geëgaliseerde ondervloer, een gezette dilatatie — is op
+  `/contact` wél bewijs, want dan toont de foto waar het formulier over gaat.
 
 - **`raakvlak_hard` staat op `true` (besloten 28-10-2026).** De [AANNAME] die hier stond hing
   expliciet op één voorwaarde: "zet hem op `true` zodra de raakvlakken op 390px gemeten zijn".

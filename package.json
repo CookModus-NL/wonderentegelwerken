@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "lastmod": "node scripts/lastmod.mjs",
+    "streepjes": "node gereedschap/streepjespoort.mjs",
     "prebuild": "node scripts/lastmod.mjs"
   },
   "dependencies": {

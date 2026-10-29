@@ -661,7 +661,7 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="font-display text-2xl font-semibold text-paper max-w-xl mx-auto leading-snug">
-                Nog geen reviews binnen — <span className="italic text-accent-300">wees de eerste.</span>
+                Nog geen reviews binnen, <span className="italic text-accent-300">wees de eerste.</span>
               </p>
               <p className="mt-4 text-sm text-primary-300 max-w-md mx-auto">
                 Werkte ik onlangs voor je? Ik zou het enorm waarderen als je een korte Google review achterlaat.

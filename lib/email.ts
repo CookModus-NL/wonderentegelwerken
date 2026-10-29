@@ -37,7 +37,7 @@ export async function sendContactEmail(payload: ContactPayload) {
     from: `Website <noreply@${new URL(business.url).hostname}>`,
     to: business.email,
     replyTo: payload.contact.includes('@') ? payload.contact : undefined,
-    subject: `Nieuwe aanvraag — ${payload.name}`,
+    subject: `Nieuwe aanvraag: ${payload.name}`,
     html,
   })
 }

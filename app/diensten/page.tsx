@@ -154,7 +154,7 @@ export default function DienstenPage() {
                 Mijn kerngebied is alles binnen 15 minuten rijden van Breda: Breda zelf, Teteringen,
                 Princenhage, Bavel, Ulvenhout, Effen en Dorst. Daar kom ik ook voor een kleine klus.
                 Op 15 tot 30 minuten doe ik Oosterhout, Etten-Leur, Rijen, Tilburg en Zundert. Voor
-                grotere projecten kom ik op aanvraag ook in Made, Dongen, Gilze en Roosendaal — bij
+                grotere projecten kom ik op aanvraag ook in Made, Dongen, Gilze en Roosendaal. Bij
                 een losse reparatie is de rijtijd dan groter dan de klus.
               </p>
             </div>

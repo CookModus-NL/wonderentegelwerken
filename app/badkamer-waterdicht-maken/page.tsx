@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react'
+import { ProjectFiguur } from '@/components/project-figuur'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
@@ -372,6 +373,9 @@ export default function BadkamerWaterdichtMakenPage() {
               </tbody>
             </table>
           </div>
+          {/* Zie .veeg in globals.css: op een telefoon scrolt deze tabel zijwaarts
+              zonder dat de lezer dat ziet. */}
+          <p className="veeg" data-veeg>Veeg opzij voor de hele tabel</p>
 
           <p className="mt-8 max-w-2xl text-sm leading-relaxed text-primary-500">
             De volgorde en de onderdelen komen uit de systeembeschrijvingen van Kiwitz en Easy
@@ -379,6 +383,36 @@ export default function BadkamerWaterdichtMakenPage() {
             een waterkering bestaat uit minimaal twee lagen smeerfolie met versterking in hoeken
             en doorvoeren, met droogtijd ertussen, en een dunne bouwmarktlaag is dat niet.
           </p>
+        </div>
+      </section>
+
+      {/* ─── EIGEN WERK ───────────────────────── */}
+      {/* Deze pagina had op geen enkele viewport een inhoudsbeeld (designpoort
+          29-10-2026: 0 van 1 op 1440, 1024 en 390). Bewust NIET bovenaan: het
+          contract zet de opbouw op plaats een en het opgeleverde vlak op plaats
+          drie, en de opbouwfotografie van een waterkering bestaat nog niet (die
+          vraag staat open bij Jaap — DESIGN.md > Openstaande ontwerpbesluiten).
+          Dit beeld claimt dus niets over de lagen hierboven: het zegt wat het
+          is, een eigen project met plaats en maand. */}
+      <section className="bg-paper py-24 lg:py-32">
+        <div className="container-tight">
+          <div className="eyebrow">Eigen werk</div>
+          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+            Een afgeronde badkamer in Oosterhout
+          </h2>
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
+            Van de negen lagen hierboven is op een foto van een afgeronde badkamer niets te zien.
+            Precies dat is het probleem van deze categorie, en de reden dat dit antwoord in woorden
+            en een tabel staat en niet in beeld. Wat een foto wél kan laten zien is het werk zelf,
+            met plaats en maand erbij. De andere projecten staan bij{' '}
+            <Link href="/projecten" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+              projecten
+            </Link>
+            .
+          </p>
+          <div className="mt-12">
+            <ProjectFiguur slug="badkamer-januari-2025" />
+          </div>
         </div>
       </section>
 

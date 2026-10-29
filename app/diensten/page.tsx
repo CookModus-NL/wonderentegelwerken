@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
+import { ProjectFiguur } from '@/components/project-figuur'
 import { services } from '@/content/services'
 import type { Metadata } from 'next'
 
@@ -70,6 +71,31 @@ export default function DienstenPage() {
                 </Link>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── EIGEN WERK ───────────────────────── */}
+      {/* Deze pagina had op geen enkele viewport een inhoudsbeeld (designpoort
+          29-10-2026: 0 van 1 op 1440, 1024 en 390). Zes kaarten met een icoon
+          vertellen wat ik doe en laten niets zien; het contract zegt dat eigen
+          projectfoto's met plaats en datum bewijs zijn en geen decoratie. */}
+      <section className="bg-paper pb-24 lg:pb-32">
+        <div className="container-x">
+          <div className="eyebrow">Eigen werk</div>
+          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+            Zo ziet een van de zes eruit als hij klaar is
+          </h2>
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
+            Geen foto van een tegelleverancier maar eigen werk, met plaats en maand erbij. De
+            andere projecten staan bij{' '}
+            <Link href="/projecten" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+              projecten
+            </Link>
+            .
+          </p>
+          <div className="mt-12">
+            <ProjectFiguur slug="badkamer-juli-2025" />
           </div>
         </div>
       </section>

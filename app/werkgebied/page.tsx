@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { MapPin, ArrowRight } from 'lucide-react'
+import { ProjectFiguur } from '@/components/project-figuur'
 import { business } from '@/content/business'
 import type { Metadata } from 'next'
 
@@ -90,6 +91,31 @@ export default function WerkgebiedPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── BEWIJS IN HET GEBIED ─────────────── */}
+      {/* Deze pagina had op geen enkele viewport een inhoudsbeeld (designpoort
+          29-10-2026: 0 van 1 op 1440, 1024 en 390). Een lijst plaatsnamen is een
+          belofte; een gelegde vloer in een van die plaatsen, met plaats en maand
+          erbij, is het bewijs eronder. Teteringen staat in het kerngebied. */}
+      <section className="bg-paper pb-24">
+        <div className="container-x">
+          <div className="eyebrow">Gelegd in het kerngebied</div>
+          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
+            Een vloer in Teteringen
+          </h2>
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
+            De lijst hierboven zegt waar ik kom. Dit is wat daar ligt: eigen werk, met plaats en
+            maand erbij. De andere projecten staan bij{' '}
+            <Link href="/projecten" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
+              projecten
+            </Link>
+            .
+          </p>
+          <div className="mt-12">
+            <ProjectFiguur slug="vloer-maart-2025" />
           </div>
         </div>
       </section>

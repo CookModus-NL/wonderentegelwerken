@@ -7,7 +7,6 @@
 
 import { business } from '@/content/business'
 import { services } from '@/content/services'
-import { testimonials } from '@/content/testimonials'
 
 export function localBusinessSchema() {
   return {
@@ -73,25 +72,38 @@ export function localBusinessSchema() {
         },
       })),
     },
-    // GEEN aggregateRating op dit blok. Google: "If the entity that's being reviewed
-    // controls the reviews about itself, their pages that use LocalBusiness or any other
-    // type of Organization structured data are ineligible for star review feature"
+    // GEEN aggregateRating en GEEN review op dit blok — en dat is één besluit, geen twee.
+    //
+    // De zin waar het op staat, letterlijk: "If the entity that's being reviewed controls
+    // the reviews about itself, their pages that use LocalBusiness or any other type of
+    // Organization structured data are ineligible for star review feature."
     // (developers.google.com/search/docs/appearance/structured-data/review-snippet,
-    // bijgewerkt 08-09-2026). De zeven reviews zijn echt en blijven zichtbaar op de
-    // pagina staan; alleen de markup die nooit sterren kan opleveren is weg.
-    // Verwijderd 23-09-2026, TAAK-20260920-WONDEREN-ZELFBEOORDELING.
-    ...(testimonials.length > 0 && {
-      review: testimonials.map((t) => ({
-        '@type': 'Review',
-        reviewRating: {
-          '@type': 'Rating',
-          ratingValue: t.rating.toString(),
-          bestRating: '5',
-        },
-        author: { '@type': 'Person', name: t.author },
-        reviewBody: t.text,
-      })),
-    }),
+    // bijgewerkt 08-09-2026, opnieuw gelezen 29-10-2026.) Het onderwerp van die zin is de
+    // PAGINA, niet het gemiddelde: wie zijn eigen reviews beheert komt met LocalBusiness of
+    // welk Organization-subtype dan ook niet in aanmerking voor de sterrenweergave. Van
+    // Wonderen beheert deze zeven citaten zelf op zijn eigen site, dus dit is precies het
+    // geval dat die zin uitsluit.
+    //
+    // Op 23-09-2026 is op die grond de aggregateRating hier weggehaald
+    // (TAAK-20260920-WONDEREN-ZELFBEOORDELING, commit 792578f), maar de zeven losse
+    // Review-objecten bleven staan omdat die taak er niet om vroeg. Dat was inconsistent:
+    // de ingeroepen regel sluit de hele sterrenweergave uit, en zowel aggregateRating als
+    // review voeden alleen die weergave.
+    //
+    // 29-10-2026, TAAK-20260923-WONDEREN-ZELFREVIEW-MARKUP — de vraag "levert dit blok nog
+    // enige weergave op?" is nagelopen en het antwoord is NEE:
+    //   1. Sterrenweergave (review snippet): expliciet uitgesloten door de zin hierboven.
+    //   2. Een andere Google-zoekweergave die `review` op een Organization-subtype leest,
+    //      staat niet in de documentatie — de reviewdocumentatie kent alleen de
+    //      sterrenweergave, en de overige weergaven (Product, Recipe, Event, Book, Movie,
+    //      Course, Software App) gelden voor andere typen dan dit blok.
+    //   3. De markup is niet verboden en levert geen handmatige maatregel op; ze wordt
+    //      genegeerd. Dode markup dus, geen risico — maar ook geen opbrengst.
+    // Daarom weg. De zichtbare reviewsectie op de homepage blijft ongemoeid: de citaten
+    // staan gewoon in de tekst van de pagina (components/klant-citaat.tsx), dus wat een
+    // lezer of een assistent van die reviews kan weten verandert hier niet.
+    // Komt er ooit een onafhankelijke bron (Google Business-profiel, een beoordelingssite),
+    // dan is dat een ander geval dan dit en pas dan weer een afweging.
   }
 }
 

@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "lastmod": "node scripts/lastmod.mjs",
-    "streepjes": "node gereedschap/streepjespoort.mjs",
+    "streepjes": "node gereedschap/streepjespoort.mjs --bron",
+    "streepjes:live": "node gereedschap/streepjespoort.mjs --basis https://www.wonderentegelwerken.nl",
     "prebuild": "node scripts/lastmod.mjs"
   },
   "dependencies": {

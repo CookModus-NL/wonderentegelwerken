@@ -35,11 +35,27 @@ export default function ProjectenPage() {
         <div className="container-x">
           <div className="grid gap-6 lg:grid-cols-12">
             {projects.map((p, i) => {
-              // Magazine layout: 1e groot, daarna varieren
+              // Magazine layout: 1e groot, daarna varieren.
+              //
+              // HET MOZAIEK BEGINT PAS OP xl (1280px), NIET OP lg (1024px).
+              // Gemeten op productie 29-10-2026 bij 1024px: de twee kleine kaarten waren
+              // 293x220 (col-span-4, aspect 4/3) terwijl hun labelblok 327px nodig had. Dat
+              // blok hangt op bottom-0, dus het stak 107px BOVEN de kaart uit en werd daar
+              // door overflow-hidden afgeknipt: plaats, datum en de halve projectkop vielen
+              // weg, en de regel die wel buiten de kaart viel stond op de paginagrond in
+              // plaats van op de foto (designpoort meldde hem als 2,15:1 #e59e58 op #fbfaf7).
+              // Een kaart van 293px breed kan die kop niet dragen; 452px wel.
+              // Daarom: in de band 1024-1279px staat de grote kaart over de volle twaalf
+              // kolommen en staan de twee kleine op zes — 452x339, met 339px voor 253px
+              // inhoud. Vanaf 1280px is de kaart 379px breed en past het mozaiek weer zoals
+              // het op 1440px al deed. Dit is geen nieuwe compositie maar dezelfde, met het
+              // omslagpunt op de breedte waar hij werkelijk past: boven- en onderlijn van
+              // twee kolommen horen volgens dit contract altijd gelijk te zijn, en een kop
+              // die uit zijn kaart breekt is precies wat het raster niet mag doen.
               const layouts = [
-                'lg:col-span-8 lg:row-span-2',
-                'lg:col-span-4',
-                'lg:col-span-4',
+                'lg:col-span-12 xl:col-span-8 xl:row-span-2',
+                'lg:col-span-6 xl:col-span-4',
+                'lg:col-span-6 xl:col-span-4',
               ]
               const span = layouts[i % layouts.length]
               return (
@@ -49,12 +65,12 @@ export default function ProjectenPage() {
                   className={`group relative overflow-hidden rounded-3xl img-zoom reveal ${span}`}
                   style={{ animationDelay: `${i * 0.05}s` }}
                 >
-                  <div className="relative aspect-[4/3] lg:h-full">
+                  <div className="relative aspect-[4/3] xl:h-full">
                     <Image
                       src={p.hero}
                       alt={p.title}
                       fill
-                      sizes={i === 0 ? '(max-width: 1024px) 100vw, 60vw' : '(max-width: 1024px) 100vw, 40vw'}
+                      sizes={i === 0 ? '(max-width: 1279px) 100vw, 60vw' : '(max-width: 1023px) 100vw, (max-width: 1279px) 50vw, 40vw'}
                       className="object-cover"
                     />
                   </div>

@@ -418,6 +418,9 @@ export default function WatKostVloerTegelenPage() {
               </tbody>
             </table>
           </div>
+          {/* Zie .veeg in globals.css: op een telefoon scrolt deze tabel zijwaarts
+              zonder dat de lezer dat ziet. */}
+          <p className="veeg veeg-breed" data-veeg>Veeg opzij voor de hele tabel</p>
 
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
             Nog iets om te weten voor je een van deze bedragen als richtlijn neemt: vier van de zes

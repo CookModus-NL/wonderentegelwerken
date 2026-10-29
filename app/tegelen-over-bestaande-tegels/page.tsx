@@ -332,6 +332,9 @@ export default function TegelenOverBestaandeTegelsPage() {
               </tbody>
             </table>
           </div>
+          {/* Zie .veeg in globals.css: op een telefoon scrolt deze tabel zijwaarts
+              zonder dat de lezer dat ziet. */}
+          <p className="veeg" data-veeg>Veeg opzij voor de hele tabel</p>
 
           <p className="mt-6 text-sm text-primary-500">
             Componentmaten uit de opbouwtabel van Tegels in Huis, bijgewerkt 3 april 2025. Ligt de
@@ -455,6 +458,9 @@ export default function TegelenOverBestaandeTegelsPage() {
               </tbody>
             </table>
           </div>
+          {/* Zie .veeg in globals.css: op een telefoon scrolt deze tabel zijwaarts
+              zonder dat de lezer dat ziet. */}
+          <p className="veeg" data-veeg>Veeg opzij voor de hele tabel</p>
 
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-primary-500">
             Dit is een rekensom uit gepubliceerde getallen, geen weging van jouw tegel. Het

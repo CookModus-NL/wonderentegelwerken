@@ -519,6 +519,9 @@ export default function WatKostBadkamerBetegelenPage() {
               </tbody>
             </table>
           </div>
+          {/* Zie .veeg in globals.css: op een telefoon scrolt deze tabel zijwaarts
+              zonder dat de lezer dat ziet. */}
+          <p className="veeg veeg-breed" data-veeg>Veeg opzij voor de hele tabel</p>
 
           <div className="mt-12 grid gap-12 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-7 space-y-6">
@@ -635,6 +638,9 @@ export default function WatKostBadkamerBetegelenPage() {
               </tbody>
             </table>
           </div>
+          {/* Zie .veeg in globals.css: op een telefoon scrolt deze tabel zijwaarts
+              zonder dat de lezer dat ziet. */}
+          <p className="veeg veeg-breed" data-veeg>Veeg opzij voor de hele tabel</p>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[

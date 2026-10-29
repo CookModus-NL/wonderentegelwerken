@@ -491,6 +491,9 @@ export default function BadkamerRenovatieBredaPage() {
               </tbody>
             </table>
           </div>
+          {/* Zie .veeg in globals.css: op een telefoon scrolt deze tabel zijwaarts
+              zonder dat de lezer dat ziet. */}
+          <p className="veeg" data-veeg>Veeg opzij voor de hele tabel</p>
 
           <p className="mt-8 max-w-2xl text-sm leading-relaxed text-primary-500">
             Hoe dit gemeten is, zodat je het kunt narekenen. De ranglijst komt uit Google

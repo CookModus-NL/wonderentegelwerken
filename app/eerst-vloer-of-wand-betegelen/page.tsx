@@ -615,6 +615,9 @@ export default function EerstVloerOfWandPage() {
               </tbody>
             </table>
           </div>
+          {/* Zie .veeg in globals.css: op een telefoon scrolt deze tabel zijwaarts
+              zonder dat de lezer dat ziet. */}
+          <p className="veeg" data-veeg>Veeg opzij voor de hele tabel</p>
 
           <p className="mt-8 max-w-2xl text-sm leading-relaxed text-primary-500">
             Bron: URL 35-101 d.d. 13-04-2018, uitvoeringsrichtlijn voor het aanbrengen van wand- en

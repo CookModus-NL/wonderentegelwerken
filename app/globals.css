@@ -135,6 +135,50 @@
     @apply h-px w-8 bg-accent-500;
   }
 
+  /* ── Veeg-aanwijzing onder een tabel die zijwaarts scrolt ─────────────
+     ONTWERPBESLUIT 29-10-2026 (DESIGN.md > vorm.veeg). Een tabel met drie
+     kolommen proza past op een telefoon niet in de leeskolom: hij staat in
+     een houder met overflow-x:auto, het document scrolt niet mee, en dus
+     valt de laatste kolom stil buiten beeld. Gemeten op productie
+     29-10-2026: tabel 366px in een houder van 350px op
+     /badkamer-waterdicht-maken bij 390px.
+     De aanwijzing hoort bij het MICROREGISTER van dit contract (labels,
+     maten, stempels) en draagt dezelfde haarlijn als .eyebrow en
+     .beeldlabel, zodat alle microlabels op deze site op dezelfde x
+     beginnen. Geen nieuw vlak, geen nieuwe rand, geen nieuw token — dat
+     is dezelfde grond als bij .raaklink: de 44px en de 350px komen hier
+     uit maat en ruimte, niet uit een extra doos.
+     DE BAND IS GEMETEN, NIET GEKOZEN. Een aanwijzing die er staat terwijl
+     de tabel past is ruis; een aanwijzing die ontbreekt terwijl hij scrolt
+     is een kolom die de lezer nooit ziet. Daarom twee banden:
+       .veeg        — tot 639px. Voor de tabellen zonder min-breedte, die
+                      hun breedte uit de inhoud halen en pas op een telefoon
+                      niet meer passen (gemeten in een losse render van de
+                      negen lagen: 354px in een houder van 350px bij 390px,
+                      en passend vanaf 599px houder).
+       .veeg-breed  — tot 1023px. Voor de drie prijstabellen met
+                      min-w-[720px], [760px] en [860px]: die scrollen ook
+                      nog bij 768px (houder 704px) en passen pas als de
+                      houder 928px is, dus vanaf 1024px. */
+  .veeg {
+    @apply mt-4 items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-primary-500;
+    display: none;
+  }
+  .veeg::before {
+    content: '';
+    @apply h-px w-8 shrink-0 bg-mist;
+  }
+  @media (max-width: 639px) {
+    .veeg {
+      display: inline-flex;
+    }
+  }
+  @media (max-width: 1023px) {
+    .veeg-breed {
+      display: inline-flex;
+    }
+  }
+
   /* ── Label op een foto ────────────────────────────────────────────────
      Op een foto is de achtergrond geen kleur maar een opname: hij verschilt
      per project, per uitsnede en per daglicht. Leesbaarheid mag daarom geen

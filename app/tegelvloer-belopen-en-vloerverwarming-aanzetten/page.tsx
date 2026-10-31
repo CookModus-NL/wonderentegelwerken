@@ -59,7 +59,7 @@ const url = `${business.url}/tegelvloer-belopen-en-vloerverwarming-aanzetten`
 export const metadata: Metadata = {
   title: 'Wanneer mag je op een nieuwe tegelvloer lopen en de vloerverwarming aan?',
   description:
-    'Hoe lang moet je wachten? Voorzichtig lopen kan meestal na 12 tot 24 uur, normaal belasten na 48 uur. De vloerverwarming hangt aan de dekvloer, niet aan de lijm.',
+    'Hoe lang wachten? Voorzichtig lopen kan meestal na 12 tot 24 uur, normaal belasten na 48 uur. De vloerverwarming hangt aan de dekvloer, niet aan de lijm.',
   alternates: { canonical: '/tegelvloer-belopen-en-vloerverwarming-aanzetten' },
   openGraph: {
     title:

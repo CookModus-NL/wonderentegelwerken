@@ -7,7 +7,12 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   alternates: { canonical: '/tegelzetter' },
   title: 'Tegelzetter per plaats · Breda, Oosterhout, Tilburg en meer',
-  description: 'Tegelzetter Van Wonderen werkt in Breda, Teteringen, Oosterhout, Etten-Leur, Tilburg en heel West-Brabant. Klik op je plaats voor lokale info en projecten.',
+  // Etten-Leur is hier 19 okt 2026 uit de description gehaald (contract f4d87796, samenvoegen).
+  // Grond: deze hub kreeg op "tegelzetter etten leur" 6 vertoningen op gemiddelde positie 60,2
+  // terwijl /tegelzetter/etten-leur op 14,0 stond (motor_gsc 22-08 t/m 16-10-2026). Een
+  // plaatsenlijst die zelf op de plaatsvraag meedingt houdt de pagina met het antwoord omlaag.
+  // De overige plaatsnamen blijven staan: daar is geen tweede pagina met een eigen antwoord.
+  description: 'Tegelzetter Van Wonderen werkt in Breda, Teteringen, Oosterhout, Tilburg en heel West-Brabant. Klik op je plaats voor lokale info en projecten.',
 }
 
 export default function TegelzetterIndexPage() {

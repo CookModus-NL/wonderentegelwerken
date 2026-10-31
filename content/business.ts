@@ -53,7 +53,18 @@ export const business = {
   social: {
     facebook: '',
     instagram: '',
-    google: 'https://maps.google.com/?cid=ChIJfcatV_uhxkcRTfbk2q7Iaas',
+    // De `cid`-parameter van maps.google.com verwacht een DECIMAAL getal (de numerieke
+    // Google-klant-id), geen Place ID. Hier stond `?cid=ChIJfcatV_uh…` — een Place ID in een
+    // decimaal veld — en dat is dus geen werkende kaartlink: niet voor een bezoeker die op
+    // "5,0 uit N Google reviews" klikt, en niet als entiteitsbewijs in `sameAs`.
+    // (Gemeten op de live homepage 31-10-2026, SAMEAS_ONGELDIG.)
+    // De vorm hieronder is de place_id-URL die Google zelf voorschrijft; `components/
+    // klant-citaat.tsx` gebruikte hem al, dus dit maakt de site intern consistent in plaats
+    // van dat het een tweede vorm introduceert. Dit is één waarde en vier plekken erven hem:
+    // `sameAs` + `hasMap` in de JSON-LD (lib/schema.ts), de reviewlink op de homepage
+    // (app/page.tsx) en de profielregel in llms.txt — daarom zit de reparatie hier en niet
+    // in de bedrijfsknoop zelf. Het Place ID blijft `googlePlaceId` hieronder.
+    google: 'https://www.google.com/maps/place/?q=place_id:ChIJfcatV_uhxkcRTfbk2q7Iaas',
   },
 
   // Google Business Profile

@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
-import { ProjectFiguur } from '@/components/project-figuur'
 import { services } from '@/content/services'
 import type { Metadata } from 'next'
 
@@ -75,30 +74,20 @@ export default function DienstenPage() {
         </div>
       </section>
 
-      {/* ─── EIGEN WERK ───────────────────────── */}
-      {/* Deze pagina had op geen enkele viewport een inhoudsbeeld (designpoort
-          29-10-2026: 0 van 1 op 1440, 1024 en 390). Zes kaarten met een icoon
-          vertellen wat ik doe en laten niets zien; het contract zegt dat eigen
-          projectfoto's met plaats en datum bewijs zijn en geen decoratie. */}
-      <section className="bg-paper pb-24 lg:pb-32">
-        <div className="container-x">
-          <div className="eyebrow">Eigen werk</div>
-          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
-            Zo ziet een van de zes eruit als hij klaar is
-          </h2>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
-            Geen foto van een tegelleverancier maar eigen werk, met plaats en maand erbij. De
-            andere projecten staan bij{' '}
-            <Link href="/projecten" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
-              projecten
-            </Link>
-            .
-          </p>
-          <div className="mt-12">
-            <ProjectFiguur slug="badkamer-juli-2025" />
-          </div>
-        </div>
-      </section>
+      {/* GEEN INHOUDSBEELD OP DIT PAD, EN DAT IS GEMETEN (01-11-2026, bouwer-20261101-0905).
+          Hier stond sinds 29-10 een projectfiguur met de kop "Zo ziet een van de zes eruit als
+          hij klaar is" boven portfolio-2025-07-laag-1.webp. Die foto is op 01-11 opnieuw zelf
+          bekeken: een lichte grootformaat VLOER in een ruimte in ruwbouw, kale wanden, een
+          deurkozijn met purschuim en een emmer. Geen badkamer, geen inloopdouche, geen 60x120
+          antraciet — en zeker niets dat "klaar" is. De case eromheen belooft dat wel.
+          Dat is dezelfde bevinding als TAAK-20260902-WONDEREN-FOTOFEIT (drie van de drie cases)
+          en TAAK-20260920-WONDEREN-VLOER-MAART-2025-BEELDWAARHEID, beide nog open en beide
+          geblokkeerd op Jaap. Zolang die vraag openstaat is dit bewijsmateriaal geen bewijs, en
+          een kop die de foto als uitkomst presenteert is een claim die de bron niet draagt
+          (wet art. 1.1 en 3.6). Het blijft dus weg tot bekend is welke klus dit werkelijk was.
+          `min_beelden_per_pagina: 1` haalt dit pad daarmee opnieuw niet. Dat is bewust en staat
+          zo in DESIGN.md > beeld.projectfiguur; het is GEEN verklaarde uitzondering, want een
+          eigen foto hoort hier wel degelijk — alleen een ware. */}
 
       {/* ─── DRIE VRAGEN VOOR JE KIEST ────────── */}
       <section className="bg-clay py-24 lg:py-32">

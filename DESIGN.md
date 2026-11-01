@@ -218,6 +218,24 @@ beeld:
     telefoon (437px kader, 171px onbehandelde foto boven de voet) en 16/9 vanaf 640px.
     WAAR NIET: op een pagina waar het beeld niets te bewijzen heeft — zie contract.
     beelden_uitzondering.
+    TOEPASSING OPGESCHORT 01-11-2026 (bouwer-20261101-0905), VÓÓR publicatie en dus nooit live
+    geweest. Het besluit hierboven blijft staan; de grammatica deugt. Wat niet deugt is de BRON.
+    De zin "er staat geen woord bij de foto dat niet uit content/projects.ts komt" is waar en
+    beschermt tegen niets, want die bron is zelf aantoonbaar onjuist: alle drie de projectcases
+    tonen iets anders dan hun titel, plaats en maat beloven (TAAK-20260902-WONDEREN-FOTOFEIT,
+    drie van de drie, alle tien bestanden bekeken; TAAK-20260920-WONDEREN-VLOER-MAART-2025-
+    BEELDWAARHEID). De drie heroes zijn op 01-11-2026 opnieuw zelf bekeken en de bevinding houdt:
+    2025-07 is een vloer in ruwbouw (geen badkamer, niet klaar), 2025-03 een toiletnis met een
+    houten vloer erachter (geen woonkamervloer), 2025-01 een donkere geribbelde toiletnis nog in
+    uitvoering (geen witte 10x30, geen hexagon). Een figuur die plaats, datum en kop uit die bron
+    overneemt erft de onwaarheid, en de drie koppen eromheen ("Zo ziet een van de zes eruit als
+    hij klaar is", "Dit is wat daar ligt", "Een afgeronde badkamer in Oosterhout") maakten er een
+    expliciete uitspraak van (wet art. 1.1 en 3.6). Daarom is components/project-figuur.tsx
+    verwijderd en staan /diensten, /werkgebied en /badkamer-waterdicht-maken weer zonder
+    inhoudsbeeld. GEVOLG, en het blijft zichtbaar: die drie paden halen `min_beelden_per_pagina`
+    niet. Ze zijn BEWUST NIET aan `beelden_uitzondering` toegevoegd — een eigen foto hoort daar
+    wél, alleen een ware. ONTGRENDELT WANNEER: Jaap zegt welke klus bij welke fotoset hoort; dan
+    kan deze figuur terug, op cases die kloppen.
   labelvoet: >
     ONTWERPBESLUIT 28-10-2026 (bouwer-20261028-1205, TAAK-20260903-VW-CONTRAST-BEELD).
     Op een foto is de achtergrond geen kleur maar een opname: hij verschilt per project, per
@@ -345,10 +363,14 @@ contract:
   reduced_motion: true
   min_beelden_per_pagina: 1
   # TWEE VERKLAARDE UITZONDERINGEN, 29-10-2026 (bouwer-20261029-0905). Vijf paden hadden op geen
-  # enkele viewport een inhoudsbeeld. Drie daarvan hebben er nu een eigen projectfoto bij
-  # gekregen (/diensten, /werkgebied, /badkamer-waterdicht-maken — zie beeld.projectfiguur).
-  # Deze twee krijgen er bewust geen; de grond staat hieronder in "Openstaande
-  # ontwerpbesluiten". De poort meldt ze nu als LET OP met reden, nooit stil.
+  # enkele viewport een inhoudsbeeld. Deze twee krijgen er bewust geen; de grond staat hieronder
+  # in "Openstaande ontwerpbesluiten". De poort meldt ze nu als LET OP met reden, nooit stil.
+  # BIJGEWERKT 01-11-2026 (bouwer-20261101-0905): hier stond dat de andere drie — /diensten,
+  # /werkgebied en /badkamer-waterdicht-maken — er een eigen projectfoto bij hadden gekregen.
+  # Dat werk is vóór publicatie teruggenomen omdat de projectfoto's iets anders tonen dan hun
+  # bijschrift belooft (zie beeld.projectfiguur, TOEPASSING OPGESCHORT). Die drie paden halen
+  # `min_beelden_per_pagina` dus opnieuw niet, en ze horen NIET in de lijst hieronder: daar
+  # hoort een eigen foto, alleen een ware. De poort mag dat blijven melden.
   beelden_uitzondering:
     - /contact
     - /privacy
@@ -493,6 +515,11 @@ koper werkelijk heeft: niet "wordt het mooi", maar "gaat het scheuren".
   afgeknipte projectkaart uit `compositie.omslagpunt`. Deze ronde repareert de twee die
   overbleven: `afgekapt` met `vorm.veeg`, en `beeld` met `beeld.projectfiguur` op drie paden
   plus twee verklaarde uitzonderingen hieronder.
+  NASCHRIFT 01-11-2026 (bouwer-20261101-0905): van die twee reparaties is er één overeind
+  gebleven. `vorm.veeg` staat. `beeld.projectfiguur` is vóór publicatie teruggenomen — de drie
+  projectfoto's tonen iets anders dan hun bijschrift belooft, en dan repareert een beeldnorm
+  zichzelf ten koste van een waarheidsnorm. `beeld` blijft dus hard op die drie paden, en dat is
+  de eerlijke stand: de poort meet een gat dat er werkelijk is. Zie `beeld.projectfiguur`.
 
 - **Geen inhoudsbeeld op `/contact` en `/privacy` (besloten 29-10-2026).** Beide paden halen
   `min_beelden_per_pagina: 1` niet en krijgen er bewust geen foto bij.

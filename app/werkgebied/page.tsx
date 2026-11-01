@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { MapPin, ArrowRight } from 'lucide-react'
-import { ProjectFiguur } from '@/components/project-figuur'
 import { business } from '@/content/business'
 import type { Metadata } from 'next'
 
@@ -110,30 +109,17 @@ export default function WerkgebiedPage() {
         </div>
       </section>
 
-      {/* ─── BEWIJS IN HET GEBIED ─────────────── */}
-      {/* Deze pagina had op geen enkele viewport een inhoudsbeeld (designpoort
-          29-10-2026: 0 van 1 op 1440, 1024 en 390). Een lijst plaatsnamen is een
-          belofte; een gelegde vloer in een van die plaatsen, met plaats en maand
-          erbij, is het bewijs eronder. Teteringen staat in het kerngebied. */}
-      <section className="bg-paper pb-24">
-        <div className="container-x">
-          <div className="eyebrow">Gelegd in het kerngebied</div>
-          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
-            Een vloer in Teteringen
-          </h2>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
-            De lijst hierboven zegt waar ik kom. Dit is wat daar ligt: eigen werk, met plaats en
-            maand erbij. De andere projecten staan bij{' '}
-            <Link href="/projecten" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
-              projecten
-            </Link>
-            .
-          </p>
-          <div className="mt-12">
-            <ProjectFiguur slug="vloer-maart-2025" />
-          </div>
-        </div>
-      </section>
+      {/* GEEN INHOUDSBEELD OP DIT PAD, EN DAT IS GEMETEN (01-11-2026, bouwer-20261101-0905).
+          Hier stond sinds 29-10 een projectfiguur met de kop "Een vloer in Teteringen" en de
+          regel "Dit is wat daar ligt", boven portfolio-2025-03-wa0006.webp. Die foto is op 01-11
+          opnieuw zelf bekeken: een smalle betegelde toiletnis, betonlook wandtegels, een
+          inbouwreservoir met de bedrading van de spoelplaat nog open, een afvoerstomp met gele
+          dop — en achter de deur een lichte HOUTEN vloer. Geen woonkamer, geen 42 m2, geen 80x80
+          betonlook. Er ligt op deze foto dus niet wat de regel eronder zegt dat er ligt.
+          Dezelfde bevinding als TAAK-20260920-WONDEREN-VLOER-MAART-2025-BEELDWAARHEID en
+          TAAK-20260902-WONDEREN-FOTOFEIT, beide open en beide geblokkeerd op Jaap. Een
+          werkgebiedpagina die zijn plaatsnamen met een foto staaft doet een claim; die claim
+          moet waar zijn (wet art. 1.1 en 3.6). Weg tot bekend is welke klus dit werkelijk was. */}
 
       <section className="bg-clay py-20">
         <div className="container-tight text-center">

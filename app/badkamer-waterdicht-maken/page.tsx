@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react'
-import { ProjectFiguur } from '@/components/project-figuur'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
@@ -386,35 +385,17 @@ export default function BadkamerWaterdichtMakenPage() {
         </div>
       </section>
 
-      {/* ─── EIGEN WERK ───────────────────────── */}
-      {/* Deze pagina had op geen enkele viewport een inhoudsbeeld (designpoort
-          29-10-2026: 0 van 1 op 1440, 1024 en 390). Bewust NIET bovenaan: het
-          contract zet de opbouw op plaats een en het opgeleverde vlak op plaats
-          drie, en de opbouwfotografie van een waterkering bestaat nog niet (die
-          vraag staat open bij Jaap — DESIGN.md > Openstaande ontwerpbesluiten).
-          Dit beeld claimt dus niets over de lagen hierboven: het zegt wat het
-          is, een eigen project met plaats en maand. */}
-      <section className="bg-paper py-24 lg:py-32">
-        <div className="container-tight">
-          <div className="eyebrow">Eigen werk</div>
-          <h2 className="mt-4 font-display text-3xl font-bold text-primary-900 sm:text-4xl">
-            Een afgeronde badkamer in Oosterhout
-          </h2>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-600">
-            Van de negen lagen hierboven is op een foto van een afgeronde badkamer niets te zien.
-            Precies dat is het probleem van deze categorie, en de reden dat dit antwoord in woorden
-            en een tabel staat en niet in beeld. Wat een foto wél kan laten zien is het werk zelf,
-            met plaats en maand erbij. De andere projecten staan bij{' '}
-            <Link href="/projecten" className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600">
-              projecten
-            </Link>
-            .
-          </p>
-          <div className="mt-12">
-            <ProjectFiguur slug="badkamer-januari-2025" />
-          </div>
-        </div>
-      </section>
+      {/* GEEN INHOUDSBEELD OP DIT PAD, EN DAT IS GEMETEN (01-11-2026, bouwer-20261101-0905).
+          Hier stond sinds 29-10 een projectfiguur met de kop "Een afgeronde badkamer in
+          Oosterhout" boven portfolio-2025-01-wa0076.webp. Die foto is op 01-11 opnieuw zelf
+          bekeken: een donkerbruine, geribbelde toiletnis met een verlichte nis en een
+          Geberit-bedieningsplaat waar de beschermfolie nog op zit, en een gele dop op de afvoer.
+          Geen witte 10x30 wandtegels, geen hexagon-mozaiek, en bovendien niet afgerond maar nog
+          in uitvoering. De kop beloofde allebei. Dezelfde bevinding als
+          TAAK-20260902-WONDEREN-FOTOFEIT (drie van de drie cases), open en geblokkeerd op Jaap.
+          Juist op een antwoordpagina over waterdichting weegt dit zwaar: het beeld stond er om
+          het antwoord te staven en kan dat niet (wet art. 1.1 en 3.6). Weg tot bekend is welke
+          klus dit werkelijk was. */}
 
       {/* ─── WAT DE REGELS EISEN ──────────────── */}
       <section className="bg-paper py-24 lg:py-32">

@@ -60,10 +60,38 @@ import type { Metadata } from 'next'
 
 const url = `${business.url}/tegelen-over-bestaande-tegels`
 
+/**
+ * SNIPPET-INGREEP. Contract aa2d384c-66bc-48f6-8cef-4597e5bb716f (titel-en-omschrijving),
+ * run schrijver-20261103-1535. Alleen de description; de title blijft staan.
+ *
+ * WAT ER MIS WAS, GEMETEN. De oude description was 225 tekens lang. Google toont er ongeveer
+ * 155, dus de twee delen die deze pagina onderscheiden stonden achter de afkapgrens en zijn in
+ * de zoekresultaten nooit gelezen: het oordeel ("wanneer het wel en niet verstandig is") en de
+ * herkomst ("uitgelegd door een tegelzetter uit Breda"). Wat een zoeker wél zag, eindigde
+ * halverwege het woord "Wanneer".
+ *
+ * WAAROM DE TITLE BLIJFT STAAN. De zes kerntermen uit de zichtbare zoekvragen van deze pagina
+ * (motor_gsc dimensies=query,page, 2026-09-19..2026-10-31) zijn getegeld, badkamer, betegelen,
+ * oude, tegels en 040badkamers; de huidige title draagt er twee van, waaronder "getegeld" - de
+ * zoekvraag met de meeste zichtbare vertoningen (6) en de beste positie (10,6). Vijf alternatieve
+ * titles zijn op stamdekking tegen de zeventien koperszoekvragen gelegd: de huidige dekt 12
+ * vertoningen volledig, de beste vervanger 6. Een nieuwe title zou dus term-dekking kosten, en
+ * zou de klikmeting een tweede variabele geven (zelfde keuze als contract 9bee4aac, 15-10-2026).
+ *
+ * WAT DE NIEUWE TEKST WEL DOET, EN WAT HIJ NIET KAN. Hij zet het oordeel per vlak vooraan en
+ * houdt de herkomstzin binnen de afkapgrens (145 tekens, de zin begint op teken 103). De drie
+ * best vindbare antwoorden op deze vraag (gemeten 03-11-2026, DataForSEO/Google, NL) noemen alle
+ * drie de vier voorwaarden of het voordeel, en geen van de drie noemt een vlak waar het antwoord
+ * nee is of een maat in millimeters. Wat deze ingreep NIET oplost: op beide gemeten
+ * zoekopdrachten staat een AI Overview op absolute plek 1 en staat deze site niet in de top 20.
+ * Voor de zoekvragen in band 6-8, waar 101 van de 115 vertoningen van oktober vandaan komen, is
+ * de SERP-vorm ongemeten (Search Console anonimiseert die vragen). Dat is het sterkste
+ * tegenbewijs tegen de hypothese en het staat in het contract.
+ */
 export const metadata: Metadata = {
   title: 'Kan er over bestaande tegels heen getegeld worden?',
   description:
-    'Ja, het kan, maar een nieuwe laag tegels plus lijm bouwt 10 tot 14 mm op. Op een badkamervloer is dat bijna het hele afschot naar de douchegoot. Wanneer het wel en niet verstandig is, uitgelegd door een tegelzetter uit Breda.',
+    'Ja, maar niet overal. Op de wand meestal wel, op de douchevloer meestal niet: er komt 10 tot 14 mm bij. Uitgelegd door een tegelzetter uit Breda.',
   alternates: { canonical: '/tegelen-over-bestaande-tegels' },
   openGraph: {
     title: 'Kan er over bestaande tegels heen getegeld worden? | Van Wonderen Tegelwerken',

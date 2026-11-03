@@ -78,20 +78,26 @@ const url = `${business.url}/tegelen-over-bestaande-tegels`
  * vertoningen volledig, de beste vervanger 6. Een nieuwe title zou dus term-dekking kosten, en
  * zou de klikmeting een tweede variabele geven (zelfde keuze als contract 9bee4aac, 15-10-2026).
  *
- * WAT DE NIEUWE TEKST WEL DOET, EN WAT HIJ NIET KAN. Hij zet het oordeel per vlak vooraan en
- * houdt de herkomstzin binnen de afkapgrens (145 tekens, de zin begint op teken 103). De drie
- * best vindbare antwoorden op deze vraag (gemeten 03-11-2026, DataForSEO/Google, NL) noemen alle
- * drie de vier voorwaarden of het voordeel, en geen van de drie noemt een vlak waar het antwoord
- * nee is of een maat in millimeters. Wat deze ingreep NIET oplost: op beide gemeten
- * zoekopdrachten staat een AI Overview op absolute plek 1 en staat deze site niet in de top 20.
- * Voor de zoekvragen in band 6-8, waar 101 van de 115 vertoningen van oktober vandaan komen, is
- * de SERP-vorm ongemeten (Search Console anonimiseert die vragen). Dat is het sterkste
- * tegenbewijs tegen de hypothese en het staat in het contract.
+ * WAT DE NIEUWE TEKST WEL DOET. Hij opent met de woorden die zoekers zelf typen ("tegels over
+ * tegels" is de meest voorkomende vorm in de zichtbare zoekvragen), zet daarna het oordeel per
+ * vlak, dan de maat, en houdt de herkomstzin binnen de afkapgrens: 145 tekens totaal, de zin
+ * begint op teken 104. Beide oordelen staan woordelijk zo in de tabel "Zes situaties, zes
+ * antwoorden" hieronder, inclusief "badkamerwand ... meestal wel". De drie best vindbare
+ * antwoorden op deze vraag (gemeten 03-11-2026, DataForSEO/Google, NL) noemen alle drie de vier
+ * voorwaarden of het tijdvoordeel; geen van de drie, en ook de AI Overview niet, noemt een vlak
+ * waar het antwoord nee is of een maat in millimeters.
+ *
+ * WAT DEZE INGREEP NIET OPLOST. Op beide gemeten zoekopdrachten staat een AI Overview op
+ * absolute plek 1 en staat deze site niet in de top 20. Voor de zoekvragen in band 6-8, waar 101
+ * van de 115 vertoningen van oktober vandaan komen, is de SERP-vorm ongemeten: Search Console
+ * anonimiseert die vragen, dus ze zijn niet in te typen. Blijft de CTR na deze ingreep onder 1%,
+ * dan is dat de eerste verklaring die onderzocht moet worden, niet de tekst. Dat is het sterkste
+ * tegenbewijs tegen de hypothese en het staat zo in het contract.
  */
 export const metadata: Metadata = {
   title: 'Kan er over bestaande tegels heen getegeld worden?',
   description:
-    'Ja, maar niet overal. Op de wand meestal wel, op de douchevloer meestal niet: er komt 10 tot 14 mm bij. Uitgelegd door een tegelzetter uit Breda.',
+    'Tegels over tegels: op de badkamerwand meestal wel, op de douchevloer meestal niet. 10 tot 14 mm erbij. Uitgelegd door een tegelzetter uit Breda.',
   alternates: { canonical: '/tegelen-over-bestaande-tegels' },
   openGraph: {
     title: 'Kan er over bestaande tegels heen getegeld worden? | Van Wonderen Tegelwerken',

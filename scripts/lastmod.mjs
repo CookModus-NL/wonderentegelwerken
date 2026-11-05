@@ -74,11 +74,14 @@ const F = {
   projects: 'content/projects.ts',
   cities: 'content/cities.ts',
   testimonials: 'content/testimonials.ts',
+  // De tegelwinkelsectie staat op / en op /tegels-zelf-kopen-...; een wijziging daar is een
+  // inhoudelijke wijziging van die twee pagina's (05-11-2026).
+  tegelwinkels: 'content/partners.ts',
 }
 const d = Object.fromEntries(Object.entries(F).map(([k, v]) => [k, fileDate(v)]))
 
 const map = {
-  '/': newest(fileDate('app/page.tsx'), d.business, d.testimonials, d.services),
+  '/': newest(fileDate('app/page.tsx'), d.business, d.testimonials, d.services, d.tegelwinkels),
   '/diensten': newest(fileDate('app/diensten/page.tsx'), d.services),
   '/projecten': newest(fileDate('app/projecten/page.tsx'), d.projects),
   '/tegelzetter': newest(fileDate('app/tegelzetter/page.tsx'), d.cities),
@@ -95,7 +98,9 @@ const map = {
   '/eerst-vloer-of-wand-betegelen': fileDate('app/eerst-vloer-of-wand-betegelen/page.tsx'),
   '/wat-kost-vloer-tegelen-per-m2': fileDate('app/wat-kost-vloer-tegelen-per-m2/page.tsx'),
   '/wat-kost-een-badkamer-betegelen': fileDate('app/wat-kost-een-badkamer-betegelen/page.tsx'),
-  '/tegels-zelf-kopen-of-via-de-tegelzetter': fileDate('app/tegels-zelf-kopen-of-via-de-tegelzetter/page.tsx'),
+  '/tegels-zelf-kopen-of-via-de-tegelzetter': newest(fileDate('app/tegels-zelf-kopen-of-via-de-tegelzetter/page.tsx'), d.tegelwinkels),
+  // Ontbrak tot 05-11-2026: de enige sitemap-URL zonder lastmod (GEO-audit).
+  '/badkamer-renovatie-breda': fileDate('app/badkamer-renovatie-breda/page.tsx'),
 }
 
 const groups = [

@@ -785,7 +785,9 @@ export default function BadkamerRenovatieBredaPage() {
               'Een doorlooptijd in dagen voor jouw badkamer. Die hangt aan de sloopfase en aan de droogtijden, en beide ken ik pas als ik de ruimte heb gezien.',
               'De tiende pagina uit de Google-uitslag. Dat is een aanvraagplatform en het weigerde de pagina met een foutmelding, dus het staat in geen enkele telling op deze pagina mee. Negen van tien is wat ik gelezen heb.',
               'Advies over vergunningen of over constructief werk, zoals een wand weghalen. Dat is het terrein van een aannemer of een constructeur en ik doe er geen uitspraken over.',
-              'Welk sanitair of welke tegel je moet kiezen. Ik heb geen showroom en geen voorkeursleverancier; je koopt waar je wilt en ik verwerk het.',
+              // 05-11-2026: "geen voorkeursleverancier" sprak de dienstenpagina tegen ("vaste leveranciers");
+              // Bart bevestigde dat dat Gigategelstore en Designtegels in Breda zijn.
+              'Welk sanitair of welke tegel je moet kiezen. Ik heb geen eigen showroom. Ik werk vast met twee tegelwinkels in Breda, Gigategelstore en Designtegels, maar je koopt waar je wilt en ik verwerk het.',
               'Een oordeel over de bedrijven die in Breda op deze vraag gevonden worden. De telling gaat over wat er wel en niet op hun pagina’s staat, en dat is iets anders dan de kwaliteit van hun werk.',
             ].map((t) => (
               <li key={t} className="py-6 text-base leading-relaxed text-primary-600">

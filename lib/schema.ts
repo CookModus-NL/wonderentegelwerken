@@ -15,7 +15,16 @@ export function localBusinessSchema() {
     '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
     '@id': `${business.url}/#business`,
     name: business.name,
-    alternateName: 'Jaap van Wonderen',
+    // Tot 05-11-2026 stond hier alternateName 'Jaap van Wonderen': een persoonsnaam als alias
+    // van het bedrijf. Jaap is nu zijn eigen knoop (founder), zoals de GEO-audit van die dag vroeg.
+    founder: {
+      '@type': 'Person',
+      '@id': `${business.url}/#jaap`,
+      name: `${business.ownerFirstName} van Wonderen`,
+      jobTitle: 'Tegelzetter',
+      worksFor: { '@id': `${business.url}/#business` },
+      url: `${business.url}/over-ons`,
+    },
     description: business.description,
     slogan: business.tagline,
     url: business.url,
@@ -163,15 +172,20 @@ export function tegelwinkelsSchema(paginaUrl: string) {
         '@type': 'WebPage',
         '@id': `${paginaUrl}#webpage`,
         url: paginaUrl,
+        isPartOf: { '@id': `${business.url}/#website` },
         about: { '@id': `${business.url}/#business` },
         mentions: tegelwinkels.map((w) => ({ '@id': winkelId(w.slug) })),
       },
       ...tegelwinkels.map((w) => ({
         '@type': 'HomeGoodsStore',
         '@id': winkelId(w.slug),
-        name: w.officieel ?? w.naam,
+        name: w.officieel ?? (w.filiaal ? `${w.naam} ${w.plaats}` : w.naam),
         url: w.url,
-        ...(w.sameAs ? { sameAs: w.sameAs } : {}),
+        // Een filiaal hangt aan de organisatie; de socials zijn van die organisatie, niet van
+        // het filiaal. Zonder filiaal is de winkel zelf de organisatie.
+        ...(w.hoofdUrl
+          ? { branchOf: { '@type': 'Organization', name: w.naam, url: w.hoofdUrl, ...(w.sameAs ? { sameAs: w.sameAs } : {}) } }
+          : w.sameAs ? { sameAs: w.sameAs } : {}),
         address: {
           '@type': 'PostalAddress',
           streetAddress: w.straat,
@@ -190,5 +204,18 @@ export function tegelwinkelsSchema(paginaUrl: string) {
           mentions: { '@id': `${business.url}/#business` },
         })),
     ],
+  }
+}
+
+/** De site als geheel; elke WebPage-knoop hangt hier met isPartOf aan. */
+export function websiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${business.url}/#website`,
+    url: business.url,
+    name: business.name,
+    inLanguage: 'nl-NL',
+    publisher: { '@id': `${business.url}/#business` },
   }
 }

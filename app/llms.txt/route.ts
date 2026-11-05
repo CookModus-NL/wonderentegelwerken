@@ -272,6 +272,7 @@ ${werk}
 ## Pagina's
 - ${base}/ : wat Van Wonderen doet en voor wie
 - ${base}/tegelzetter : het vak zelf, hoe tegelwerk bij Van Wonderen loopt
+- ${base}/badkamer-renovatie-breda : badkamerrenovatie in Breda, wat erin zit en wat niet
 - ${base}/over-ons : wie het werk uitvoert
 - ${base}/contact : offerte of bezichtiging aanvragen
 - ${base}/privacy en ${base}/algemene-voorwaarden : juridisch

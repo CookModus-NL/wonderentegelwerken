@@ -45,7 +45,9 @@ import type { Metadata } from 'next'
  * 5 dagen), `wonderen-principe-prijs`, `wonderen-garantie` (5 jaar tegel- en voegwerk,
  * 1 jaar kitwerk), `wonderen-persoon-jaap`, `wonderen-werkgebied-kern`. Daarnaast twee
  * zinnen die al gepubliceerd staan op de eigen site: de FAQ op /diensten/badkamer-renovatie
- * ("Ja. Ik adviseer graag bij vaste leveranciers, maar je bent vrij om elders te kopen.")
+ * (sinds 05-11-2026: "Ja. Ik werk vast met twee tegelwinkels in Breda, Gigategelstore en
+ * Designtegels, maar je bent vrij om elders te kopen." De "vaste leveranciers" van eerder zijn
+ * precies deze twee, zo bevestigd door Bart op 05-11-2026.)
  * en het prijsblok op /diensten/vloertegels ("Tegels en plinten apart."). Artikel 10 van
  * de eigen algemene voorwaarden wordt letterlijk geciteerd met een link naar
  * /algemene-voorwaarden, waar dezelfde tekst al gepubliceerd staat; het is ook vastgelegd
@@ -207,7 +209,7 @@ const offerteregels = [
 const faqs = [
   {
     q: 'Mag ik mijn tegels zelf kopen?',
-    a: 'Ja. Dat staat ook al op mijn eigen dienstenpagina: ik adviseer graag bij vaste leveranciers, maar je bent vrij om elders te kopen, en ik verwerk alles vakkundig. Er zit bij mij geen toeslag op en geen voorwaarde aan. Wat ik wel vraag is dat je de tegel die je op het oog hebt vooraf even noemt, zodat ik kan zeggen of hij geschikt is voor die ruimte en die ondergrond. Dat is geen formaliteit: artikel 7:754 lid 1 BW legt mij de plicht op je te waarschuwen voor ongeschiktheid van materiaal dat van jou komt, en die plicht kan ik alleen nakomen als ik de tegel ken vóór hij op de vloer ligt.',
+    a: 'Ja. Dat staat ook al op mijn eigen dienstenpagina: ik werk vast met twee tegelwinkels in Breda, Gigategelstore en Designtegels, maar je bent vrij om elders te kopen, en ik verwerk alles vakkundig. Er zit bij mij geen toeslag op en geen voorwaarde aan. Wat ik wel vraag is dat je de tegel die je op het oog hebt vooraf even noemt, zodat ik kan zeggen of hij geschikt is voor die ruimte en die ondergrond. Dat is geen formaliteit: artikel 7:754 lid 1 BW legt mij de plicht op je te waarschuwen voor ongeschiktheid van materiaal dat van jou komt, en die plicht kan ik alleen nakomen als ik de tegel ken vóór hij op de vloer ligt.',
   },
   {
     q: 'Hoeveel tegels moet ik extra bestellen?',

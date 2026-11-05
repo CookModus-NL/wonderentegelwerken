@@ -34,7 +34,7 @@ export function Tegelwinkels({
       />
       <div className="container-x">
         <div className="max-w-3xl">
-          <div className="eyebrow">Tegelwinkels in Breda</div>
+          <div className="eyebrow">Vaste tegelwinkels in Breda</div>
           <h2
             id={`${id}-kop`}
             className="mt-4 font-display text-4xl font-bold tracking-tight text-primary-900 sm:text-5xl"
@@ -44,7 +44,7 @@ export function Tegelwinkels({
             <span className="italic font-light text-primary-600">Ik ken de regels van de winkel.</span>
           </h2>
           <p className="mt-6 text-base leading-relaxed text-primary-600">
-            Je koopt je tegels waar je wilt, ik leg ze. Twee winkels in Breda noem ik bij naam: bij
+            Je koopt je tegels waar je wilt, ik leg ze. Met twee winkels in Breda werk ik vast: bij
             Gigategelstore kopen mijn klanten bijna elke maand, en Designtegels noemt mij zelf als
             tegelzetter. Per winkel staat hieronder wat je vóór het bestellen moet weten, uit hun
             eigen voorwaarden.
@@ -81,6 +81,7 @@ export function Tegelwinkels({
 
                 <h3 className="mt-8 text-xl font-semibold text-primary-900">{w.naam}</h3>
                 <p className="mt-1 text-sm text-primary-500">
+                  {w.filiaal && <>{w.filiaal} · </>}
                   {w.straat}, {w.postcode} {w.plaats}
                 </p>
                 {/* Drie regels vast op md+: de voeglijn boven "Waar je op let" ligt dan in beide kaarten op dezelfde hoogte. */}

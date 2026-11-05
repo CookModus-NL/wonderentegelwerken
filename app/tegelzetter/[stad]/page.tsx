@@ -6,7 +6,7 @@ import { cities, citiesBySlug } from '@/content/cities'
 import { services } from '@/content/services'
 import { projects } from '@/content/projects'
 import { business } from '@/content/business'
-import { localBusinessSchema, breadcrumbSchema, faqSchema } from '@/lib/schema'
+import { breadcrumbSchema, faqSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
 export const dynamicParams = false
@@ -56,9 +56,17 @@ export default async function CityPage({ params }: { params: Promise<{ stad: str
 
   return (
     <>
-      {/* JSON-LD: LocalBusiness + Breadcrumb voor lokale SEO */}
+      {/* JSON-LD: de dienst in deze plaats, met het bedrijf als provider. Tot 05-11-2026 stond
+          hier een tweede #business-knoop met areaServed = alleen deze stad, naast de volledige
+          uit layout.tsx: twee knopen met dezelfde @id die elkaar tegenspraken (GEO-audit). */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        ...localBusinessSchema(),
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': `${business.url}/tegelzetter/${city.slug}#dienst`,
+        name: `Tegelzetter ${city.name}`,
+        serviceType: 'Tegelwerk',
+        url: `${business.url}/tegelzetter/${city.slug}`,
+        provider: { '@id': `${business.url}/#business` },
         areaServed: { '@type': 'City', name: city.name },
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([

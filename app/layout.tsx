@@ -4,7 +4,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { WhatsAppFloating } from '@/components/whatsapp-floating'
-import { localBusinessSchema } from '@/lib/schema'
+import { localBusinessSchema, websiteSchema } from '@/lib/schema'
 import { business } from '@/content/business'
 import '@fontsource-variable/inter'
 import '@fontsource-variable/fraunces'
@@ -70,6 +70,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema()) }}
         />
         <Analytics />
         <SpeedInsights />

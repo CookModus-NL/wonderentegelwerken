@@ -2,10 +2,11 @@
  * Tegelwinkels die op de site bij naam en logo staan. Eén bron voor de zichtbare kaarten
  * (components/tegelwinkels.tsx), het schema (lib/schema.ts: tegelwinkelsSchema) en llms.txt.
  *
- * Huisregel: elke zin hieronder heeft een bron in dit commentaar. Geen "partner" of
- * "voorkeursleverancier": de klant koopt waar hij wil (badkamer-renovatie-breda), en er is geen
- * afspraak of vergoeding vastgelegd. Jaap bevestigt dat er geen vergoeding tegenover staat
- * vóór die zin ooit op de site komt; tot dan zegt de site daar niets over.
+ * Huisregel: elke zin hieronder heeft een bron in dit commentaar. "Vaste tegelwinkels" mag:
+ * Bart bevestigde op 05-11-2026 dat de "vaste leveranciers" van de dienstenpagina precies deze
+ * twee zijn (motor_feiten wonderen-leveranciers-vast-20261105). "Partner" niet: er is geen
+ * afspraak vastgelegd. De klant blijft vrij om elders te kopen, en dat staat er ook.
+ * Komt er ooit een vergoeding tegenover een vermelding, dan rel="sponsored" op die link.
  *
  * GIGATEGELSTORE (Hukon B.V.)
  *   relatie  Jaap in de app, 12-10-2026: bijna elke maand legt hij tegels die een klant daar kocht.
@@ -20,7 +21,8 @@
  *            tegelzetters die eerder met hun producten hebben gewerkt. Hun link naar deze site
  *            loopt sinds 27-09-2025 (linkgat-rapport 13-10-2026).
  *   adres    designtegels.nl/pages/showroom-breda, gelezen 05-11-2026: Spinveld 66 A5;
- *            postcode 4815 HT van hun homepage.
+ *            postcode 4815 HT van hun homepage. Het gaat om hun filiaal Breda (ze hebben ook
+ *            Utrecht en Berlijn); Bart 05-11-2026: "idd filiaal breda".
  *   let op   designtegels.nl/pages/retourneren-en-garantie, gelezen 05-11-2026: handgemaakte
  *            tegels komen in kleurbatches, later bijbestellen kan van kleur verschillen;
  *            ongeopende dozen uit de standaardcollectie gaan terug tegen een tegoedbon, "in geen
@@ -32,6 +34,10 @@ export type Tegelwinkel = {
   naam: string
   /** juridische of volledige naam voor schema, als die afwijkt */
   officieel?: string
+  /** het filiaal waar het om gaat, als de winkel er meer heeft */
+  filiaal?: string
+  /** de organisatie achter het filiaal (schema: branchOf) */
+  hoofdUrl?: string
   straat: string
   postcode: string
   plaats: string
@@ -80,10 +86,12 @@ export const tegelwinkels: Tegelwinkel[] = [
   {
     slug: 'designtegels',
     naam: 'Designtegels',
+    filiaal: 'Showroom Breda',
+    hoofdUrl: 'https://designtegels.nl/',
     straat: 'Spinveld 66 A5',
     postcode: '4815 HT',
     plaats: 'Breda',
-    url: 'https://designtegels.nl/',
+    url: 'https://www.designtegels.nl/pages/showroom-breda',
     href: 'https://www.designtegels.nl/pages/tegelzetters?utm_source=wonderentegelwerken.nl&utm_medium=referral',
     linkTekst: 'Hun lijst met tegelzetters',
     /** hun pagina waarop Van Wonderen staat; in schema als WebPage die #business noemt */

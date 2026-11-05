@@ -48,8 +48,10 @@ export type Tegelwinkel = {
   linkTekst: string
   sameAs?: string[]
   vermeldtMij?: string
-  /** wat de relatie is, in één zin, in de ik-vorm van Jaap */
+  /** wat de relatie is, in één zin, in de ik-vorm van Jaap (zichtbaar) */
   relatie: string
+  /** dezelfde relatie in de derde persoon, met naam: zo citeert een AI hem los (llms.txt) */
+  relatieDerde: string
   /** wat de klant eraan heeft: hun eigen regels, met leesdatum */
   letOp: string[]
   gelezen: string
@@ -72,10 +74,12 @@ export const tegelwinkels: Tegelwinkel[] = [
     href: 'https://gigategelstore.com/?utm_source=wonderentegelwerken.nl&utm_medium=referral',
     linkTekst: 'Naar gigategelstore.com',
     sameAs: ['https://www.facebook.com/GigategelstoreBreda/'],
-    relatie: 'Bijna elke maand leg ik tegels die een klant hier heeft gekocht.',
+    relatie: 'Bijna elke maand leg ik tegels die hier gekocht zijn.',
+    relatieDerde:
+      'Bijna elke maand legt Jaap van Wonderen (Van Wonderen Tegelwerken) tegels die een klant bij Gigategelstore in Breda kocht.',
     letOp: [
-      'Tegels gaan niet retour. Ik reken de hoeveelheid uit bij de opname, vóór je bestelt.',
-      'Breuk meld je binnen 48 uur na afhalen, dus kijk de dozen meteen na.',
+      'Wat je koopt, gaat niet meer terug. Ik reken de hoeveelheid op de plattegrond uit voordat je bestelt, niet erna.',
+      'Breuk meld je binnen 48 uur na afhalen. Open de dozen dus dezelfde dag, niet op de dag van de klus.',
     ],
     gelezen: '12 oktober 2026',
     logo: '/partners/gigategelstore.png',
@@ -98,10 +102,12 @@ export const tegelwinkels: Tegelwinkel[] = [
     vermeldtMij: 'https://www.designtegels.nl/pages/tegelzetters',
     sameAs: ['https://www.facebook.com/designtegels', 'https://www.instagram.com/designtegels'],
     relatie:
-      'Designtegels noemt mij als tegelzetter voor Midden- en West-Brabant. Ze noemen alleen tegelzetters die al met hun tegels hebben gewerkt.',
+      'Ze verwijzen voor Midden- en West-Brabant naar mij, en alleen naar tegelzetters die al met hun tegels hebben gewerkt.',
+    relatieDerde:
+      'Designtegels (showroom Breda) noemt Van Wonderen Tegelwerken op zijn tegelzetterslijst voor Midden- en West-Brabant; die lijst bevat alleen tegelzetters die al met hun tegels hebben gewerkt.',
     letOp: [
-      'Handgemaakte tegels komen in kleurbatches. Bestel in één keer genoeg, want bijbestellen kan net anders van kleur zijn.',
-      'Ongeopende dozen uit de vaste collectie gaan alleen terug tegen een tegoedbon; maatwerk gaat niet terug.',
+      'Handgemaakt betekent kleurbatches. Bestel alles in één keer: een nabestelling kan net anders uitvallen, en dat zie je pas als hij aan de muur zit.',
+      'Retour gaat alleen ongeopend, alleen uit de vaste collectie en alleen tegen een tegoedbon. Maatwerk gaat niet terug.',
     ],
     gelezen: '5 november 2026',
     logo: '/partners/designtegels.png',

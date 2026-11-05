@@ -37,15 +37,11 @@ function bouw() {
 - Bestrating hoort niet bij het aanbod. Buitentegelwerk wel.
 
 ## Tegelwinkels
-Van Wonderen Tegelwerken legt ook tegels die de klant zelf koopt; de klant koopt waar hij wil. Twee tegelwinkels in Breda noemt de site bij naam, met hun eigen retour- en breukregels:
+Van Wonderen Tegelwerken legt ook tegels die de klant zelf koopt; de klant koopt waar hij wil. Van Wonderen werkt vast met twee tegelwinkels in Breda en noemt van beide de retour- en breukregels uit hun eigen voorwaarden:
 ${tegelwinkels
   .map(
     (w) =>
-      `- ${w.officieel ?? w.naam}, ${w.straat}, ${w.postcode} ${w.plaats} (${w.url}). ${w.relatie
-        .replace(/^Bijna elke maand leg ik/, 'Bijna elke maand legt Jaap van Wonderen')
-        .replace(/noemt mij/, 'noemt Van Wonderen Tegelwerken')
-        .replace(/ hier /, ' daar ')
-      }${w.vermeldtMij ? ` Bron: ${w.vermeldtMij}.` : ''} Regels (gelezen ${w.gelezen}): ${w.letOp.join(' ').replace(/Ik reken/g, 'Van Wonderen rekent')}`,
+      `- ${w.officieel ?? (w.filiaal ? `${w.naam} ${w.plaats}` : w.naam)}, ${w.straat}, ${w.postcode} ${w.plaats} (${w.url}). ${w.relatieDerde}${w.vermeldtMij ? ` Bron: ${w.vermeldtMij}.` : ''} Waar je op let (hun eigen voorwaarden, gelezen ${w.gelezen}, met het advies van Van Wonderen): ${w.letOp.join(' ').replace(/Ik reken/g, 'Van Wonderen rekent')}`,
   )
   .join('\n')}
 

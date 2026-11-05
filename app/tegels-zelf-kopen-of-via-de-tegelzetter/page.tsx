@@ -668,7 +668,7 @@ export default function TegelsZelfKopenPage() {
         </div>
       </section>
 
-      <Tegelwinkels gidsLink={false} />
+      <Tegelwinkels paginaUrl={`${business.url}/tegels-zelf-kopen-of-via-de-tegelzetter`} gidsLink={false} />
 
       {/* ─── FAQ ──────────────────────────────── */}
       <section className="bg-paper py-24 lg:py-32">

@@ -6,6 +6,7 @@ import { business } from '@/content/business'
 import { services } from '@/content/services'
 import { cities } from '@/content/cities'
 import { projects } from '@/content/projects'
+import { tegelwinkels } from '@/content/partners'
 
 export const dynamic = 'force-static'
 
@@ -34,6 +35,19 @@ function bouw() {
 - Vestigingsadres: ${a.street}, ${a.postalCode} ${a.city}. Werk gebeurt op locatie bij de klant.
 - De eigenaar is eindverantwoordelijk voor elk werk en het aanspreekpunt van de klant; geen tussenpersonen. Hij mag (een deel van) het werk laten uitvoeren door een andere vakman (algemene voorwaarden art. 6 lid 2).
 - Bestrating hoort niet bij het aanbod. Buitentegelwerk wel.
+
+## Tegelwinkels
+Van Wonderen Tegelwerken legt ook tegels die de klant zelf koopt; de klant koopt waar hij wil. Twee tegelwinkels in Breda noemt de site bij naam, met hun eigen retour- en breukregels:
+${tegelwinkels
+  .map(
+    (w) =>
+      `- ${w.officieel ?? w.naam}, ${w.straat}, ${w.postcode} ${w.plaats} (${w.url}). ${w.relatie
+        .replace(/^Bijna elke maand leg ik/, 'Bijna elke maand legt Jaap van Wonderen')
+        .replace(/noemt mij/, 'noemt Van Wonderen Tegelwerken')
+        .replace(/ hier /, ' daar ')
+      }${w.vermeldtMij ? ` Bron: ${w.vermeldtMij}.` : ''} Regels (gelezen ${w.gelezen}): ${w.letOp.join(' ').replace(/Ik reken/g, 'Van Wonderen rekent')}`,
+  )
+  .join('\n')}
 
 ## Diensten
 ${diensten}
@@ -210,8 +224,6 @@ ${werk}
   retour ("U kunt GEEN tegels retour brengen"), ook lijm en voegsel niet; breuk melden binnen 48 uur
   na afhalen (voorwaarden art. 10.1; hun FAQ noemt 7 dagen); zelf adviseren ze de tegels een week
   voor de klus op te halen. Wie daar koopt, laat de hoeveelheid dus vooraf uitrekenen.
-  DESIGNTEGELS.NL (showroom Breda): zet Van Wonderen in hun lijst van tegelzetters (regio Midden /
-  West-Brabant), alleen voor tegelzetters die eerder met hun producten werkten; gelezen 05-11-2026.
   EIGEN METING RETOURBELEID (17-09-2026, twaalf tegelleveranciers bevraagd op negen vaste paden,
   VIJF leverden een leesbare pagina, ZEVEN staan als ongemeten en niet als "geen retour").
   Maxaro: 365 dagen bedenktijd, retourkosten 9,95 euro pakketdienst of 19,95 euro groottransport,

@@ -589,7 +589,7 @@ export default function HomePage() {
       </section>
 
       {/* ╔═══════════════════════════════════════════════ TEGELWINKELS ╗ */}
-      <Tegelwinkels />
+      <Tegelwinkels paginaUrl={`${business.url}/`} />
 
       {/* ╔═══════════════════════════════════════════════ REVIEWS ╗ */}
       {/* id sinds 07-10-2026: blok 3 van de antwoordeenheid wijst hierheen. "tegelzetter breda

@@ -7,6 +7,7 @@
 
 import { business } from '@/content/business'
 import { services } from '@/content/services'
+import { tegelwinkels } from '@/content/partners'
 
 export function localBusinessSchema() {
   return {
@@ -143,5 +144,51 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
       name: item.name,
       item: item.url,
     })),
+  }
+}
+
+/**
+ * De tegelwinkels die de pagina bij naam noemt (components/tegelwinkels.tsx). Bewust
+ * `mentions` op de WebPage en niets op #business: schema.org kent geen "partner", en
+ * memberOf, brand, affiliation of seller zouden een relatie claimen die er niet is.
+ * Designtegels' tegelzetterslijst staat als hún WebPage die #business noemt; geen sameAs,
+ * want die pagina is niet van Van Wonderen en noemt ook andere tegelzetters.
+ */
+export function tegelwinkelsSchema(paginaUrl: string) {
+  const winkelId = (slug: string) => `${business.url}/#winkel-${slug}`
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': `${paginaUrl}#webpage`,
+        url: paginaUrl,
+        about: { '@id': `${business.url}/#business` },
+        mentions: tegelwinkels.map((w) => ({ '@id': winkelId(w.slug) })),
+      },
+      ...tegelwinkels.map((w) => ({
+        '@type': 'HomeGoodsStore',
+        '@id': winkelId(w.slug),
+        name: w.officieel ?? w.naam,
+        url: w.url,
+        ...(w.sameAs ? { sameAs: w.sameAs } : {}),
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: w.straat,
+          postalCode: w.postcode,
+          addressLocality: w.plaats,
+          addressCountry: 'NL',
+        },
+      })),
+      ...tegelwinkels
+        .filter((w) => w.vermeldtMij)
+        .map((w) => ({
+          '@type': 'WebPage',
+          '@id': w.vermeldtMij,
+          url: w.vermeldtMij,
+          publisher: { '@id': winkelId(w.slug) },
+          mentions: { '@id': `${business.url}/#business` },
+        })),
+    ],
   }
 }

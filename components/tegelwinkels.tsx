@@ -49,7 +49,7 @@ export function Tegelwinkels({
           <div className="eyebrow">Tegels kopen in Breda</div>
           <h2
             id={`${id}-kop`}
-            className="mt-4 font-display text-4xl font-bold tracking-tight text-primary-900 sm:text-5xl"
+            className="mt-4 font-display text-4xl font-bold tracking-tight text-balance text-primary-900 sm:text-5xl"
           >
             Je tegels koop je zelf.
             <br />
@@ -91,7 +91,7 @@ export function Tegelwinkels({
                       height={w.hoogte}
                       loading="lazy"
                       decoding="async"
-                      className="h-12 w-12 rounded-[12px] opacity-80 grayscale"
+                      className="h-12 w-12 rounded-[12px] opacity-60 grayscale brightness-110"
                     />
                   )}
                 </div>

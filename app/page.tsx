@@ -9,6 +9,7 @@ import { projects } from '@/content/projects'
 import { business } from '@/content/business'
 import { testimonials } from '@/content/testimonials'
 import { faqSchema } from '@/lib/schema'
+import { Tegelwinkels } from '@/components/tegelwinkels'
 import type { Metadata } from 'next'
 
 // Eigen canonical: de layout zet er bewust geen, anders erft elke pagina zonder eigen metadata '/'.
@@ -586,6 +587,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ╔═══════════════════════════════════════════════ TEGELWINKELS ╗ */}
+      <Tegelwinkels />
 
       {/* ╔═══════════════════════════════════════════════ REVIEWS ╗ */}
       {/* id sinds 07-10-2026: blok 3 van de antwoordeenheid wijst hierheen. "tegelzetter breda

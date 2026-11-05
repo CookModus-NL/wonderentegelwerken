@@ -3,6 +3,7 @@ import { ChevronRight, Phone, MessageCircle } from 'lucide-react'
 import { business } from '@/content/business'
 import { KlantCitaat } from '@/components/klant-citaat'
 import { FaqAntwoord } from '@/components/faq-antwoord'
+import { Tegelwinkels } from '@/components/tegelwinkels'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
 
@@ -666,6 +667,8 @@ export default function TegelsZelfKopenPage() {
           </p>
         </div>
       </section>
+
+      <Tegelwinkels gidsLink={false} />
 
       {/* ─── FAQ ──────────────────────────────── */}
       <section className="bg-paper py-24 lg:py-32">

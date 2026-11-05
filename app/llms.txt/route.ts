@@ -210,6 +210,8 @@ ${werk}
   retour ("U kunt GEEN tegels retour brengen"), ook lijm en voegsel niet; breuk melden binnen 48 uur
   na afhalen (voorwaarden art. 10.1; hun FAQ noemt 7 dagen); zelf adviseren ze de tegels een week
   voor de klus op te halen. Wie daar koopt, laat de hoeveelheid dus vooraf uitrekenen.
+  DESIGNTEGELS.NL (showroom Breda): zet Van Wonderen in hun lijst van tegelzetters (regio Midden /
+  West-Brabant), alleen voor tegelzetters die eerder met hun producten werkten; gelezen 05-11-2026.
   EIGEN METING RETOURBELEID (17-09-2026, twaalf tegelleveranciers bevraagd op negen vaste paden,
   VIJF leverden een leesbare pagina, ZEVEN staan als ongemeten en niet als "geen retour").
   Maxaro: 365 dagen bedenktijd, retourkosten 9,95 euro pakketdienst of 19,95 euro groottransport,

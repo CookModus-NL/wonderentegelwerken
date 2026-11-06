@@ -4,6 +4,7 @@ import { ChevronRight, Phone, MessageCircle, ArrowUpRight } from 'lucide-react'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Hoe lang moet ik wachten voor ik op de vloer mag lopen en
@@ -57,7 +58,7 @@ import type { Metadata } from 'next'
 const url = `${business.url}/tegelvloer-belopen-en-vloerverwarming-aanzetten`
 
 export const metadata: Metadata = {
-  title: 'Wanneer mag je op een nieuwe tegelvloer lopen en de vloerverwarming aan?',
+  title: paginaTitel('Wanneer mag je op een nieuwe tegelvloer lopen en de vloerverwarming aan?'),
   description:
     'Hoe lang wachten? Voorzichtig lopen kan meestal na 12 tot 24 uur, normaal belasten na 48 uur. De vloerverwarming hangt aan de dekvloer, niet aan de lijm.',
   alternates: { canonical: '/tegelvloer-belopen-en-vloerverwarming-aanzetten' },

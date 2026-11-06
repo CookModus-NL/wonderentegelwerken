@@ -4,6 +4,7 @@ import { business } from '@/content/business'
 import { KlantCitaat } from '@/components/klant-citaat'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Eerst de vloer of eerst de wand betegelen?"
@@ -170,7 +171,7 @@ import type { Metadata } from 'next'
 const url = `${business.url}/eerst-vloer-of-wand-betegelen`
 
 export const metadata: Metadata = {
-  title: 'Eerst de vloer of eerst de wand betegelen?',
+  title: paginaTitel('Eerst de vloer of eerst de wand betegelen?'),
   description:
     'De wand eerst, de vloer daarna. Maar het zijn drie beurten en geen twee: wand vanaf de tweede rij, dan de vloer, en als laatste de onderste rij wandtegels op maat. Met wat de uitvoeringsrichtlijn voor tegelwerk er wél en niet over zegt.',
   alternates: { canonical: '/eerst-vloer-of-wand-betegelen' },

@@ -2,10 +2,11 @@ import Image from 'next/image'
 import { MessageCircle, Phone, Mail, MapPin, Clock, Camera, Zap, Shield } from 'lucide-react'
 import { business } from '@/content/business'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/contact' },
-  title: 'Contact · vrijblijvende offerte via WhatsApp',
+  title: paginaTitel('Contact · offerte via WhatsApp'),
   description: 'Stuur Jaap van Van Wonderen Tegelwerken een WhatsApp met je vraag of foto’s van je ruimte. Binnen 1 werkdag een eerste prijsindicatie. Of bel direct 06-18249249.',
 }
 

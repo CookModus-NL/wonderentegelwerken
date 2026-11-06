@@ -12,6 +12,13 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL(business.url),
+  // HET TITELSJABLOON STAAT IN lib/titel.ts, NIET HIER. Sinds 06-11-2026 zet elke pagina zijn
+  // title via `paginaTitel()`, dat het merkachtervoegsel alleen meegeeft als de title daarmee
+  // onder de 60 tekens blijft (TAAK-20261103-WONDEREN-TITELLENGTE-SJABLOON; de grond, de meting
+  // en de verworpen varianten staan in dat bestand). `template` hieronder is daardoor alleen nog
+  // de terugval voor een pagina die geen eigen title zet — zet je er een, gebruik `paginaTitel`.
+  // De default is 43 tekens en past; hij is bewust niet door de functie gehaald, want het is de
+  // enige title waarin "Tegelzetter Breda" en het merk samen één uitspraak vormen.
   title: {
     default: 'Tegelzetter Breda | Van Wonderen Tegelwerken',
     template: '%s | Van Wonderen Tegelwerken',

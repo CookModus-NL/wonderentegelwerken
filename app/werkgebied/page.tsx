@@ -2,10 +2,11 @@ import Link from 'next/link'
 import { MapPin, ArrowRight } from 'lucide-react'
 import { business } from '@/content/business'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/werkgebied' },
-  title: 'Werkgebied',
+  title: paginaTitel('Werkgebied'),
   description: 'Van Wonderen Tegelwerken werkt in Breda, Teteringen, Oosterhout, Tilburg, Etten-Leur en heel West-Brabant.',
 }
 

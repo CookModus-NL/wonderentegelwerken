@@ -4,6 +4,7 @@ import { ChevronRight, MessageCircle, Phone } from 'lucide-react'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID + LOKALE DIENSTVRAAG.
@@ -71,7 +72,7 @@ import type { Metadata } from 'next'
 const url = `${business.url}/badkamer-renovatie-breda`
 
 export const metadata: Metadata = {
-  title: 'Badkamerrenovatie Breda: wie doet wat?',
+  title: paginaTitel('Badkamerrenovatie Breda: wie doet wat?'),
   description:
     'Een badkamerrenovatie is vijf klussen achter elkaar. In Breda kun je er vijf soorten bedrijven voor bellen. Wat elke route betekent voor planning, prijs en garantie, en wat negen gelezen Bredase pagina’s er niet over zeggen.',
   alternates: { canonical: '/badkamer-renovatie-breda' },

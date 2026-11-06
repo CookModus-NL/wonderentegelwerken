@@ -3,10 +3,11 @@ import Link from 'next/link'
 import { ArrowRight, Quote } from 'lucide-react'
 import { business } from '@/content/business'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/over-ons' },
-  title: 'Over ons',
+  title: paginaTitel('Over ons'),
   description: 'Van Wonderen Tegelwerken: tegelzettersbedrijf uit Breda, opgericht in 2022. Persoonlijk vakwerk zonder tussenpersonen.',
 }
 

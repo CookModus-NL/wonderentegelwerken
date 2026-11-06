@@ -4,6 +4,7 @@ import { business } from '@/content/business'
 import { KlantCitaat } from '@/components/klant-citaat'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Wat kost een complete badkamer betegelen (wand + vloer)?"
@@ -168,7 +169,7 @@ import type { Metadata } from 'next'
 const url = `${business.url}/wat-kost-een-badkamer-betegelen`
 
 export const metadata: Metadata = {
-  title: 'Wat kost een badkamer betegelen (wand + vloer)?',
+  title: paginaTitel('Wat kost een badkamer betegelen (wand + vloer)?'),
   description:
     'Je betaalt per m² tegelwerk, en dat is wand plus vloer. In een badkamer van 2,20 bij 2,60 m die tot het plafond wordt betegeld is dat 29 m² op 5,7 m² vloer. Met de rekenregel, zeven gelezen prijspagina’s en de posten die alleen in een badkamer zitten.',
   alternates: { canonical: '/wat-kost-een-badkamer-betegelen' },

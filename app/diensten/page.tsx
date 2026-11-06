@@ -2,10 +2,11 @@ import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { services } from '@/content/services'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/diensten' },
-  title: 'Diensten · Badkamer, vloer, wand, terras, kitwerk',
+  title: paginaTitel('Diensten · Badkamer, vloer, wand, terras, kitwerk'),
   description: 'Badkamerrenovatie, vloer- en wandtegels, buitentegelwerk, kitwerk en maatwerk in Breda en omstreken. Eén vakman voor alles.',
 }
 

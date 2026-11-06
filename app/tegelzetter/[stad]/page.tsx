@@ -8,6 +8,7 @@ import { projects } from '@/content/projects'
 import { business } from '@/content/business'
 import { breadcrumbSchema, faqSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const dynamicParams = false
 
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ stad: str
   const city = citiesBySlug[stad]
   if (!city) return {}
   return {
-    title: `Tegelzetter ${city.name}`,
+    title: paginaTitel(`Tegelzetter ${city.name}`),
     // Draagt deze plaats een antwoordeenheid, dan draagt de description het antwoord en niet de
     // dienstenopsomming: het woord waarop de pagina rankt hoort in de snippet te staan.
     description:

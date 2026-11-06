@@ -1,8 +1,9 @@
 import { business } from '@/content/business'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const metadata: Metadata = {
-  title: 'Algemene voorwaarden',
+  title: paginaTitel('Algemene voorwaarden'),
   description: 'Algemene voorwaarden van Van Wonderen Tegelwerken, KvK 86555499, gevestigd te Breda.',
 }
 

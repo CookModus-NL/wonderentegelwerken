@@ -4,6 +4,7 @@ import { ChevronRight, Phone, MessageCircle, ArrowUpRight } from 'lucide-react'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Kan er over bestaande tegels heen getegeld worden?"
@@ -95,7 +96,7 @@ const url = `${business.url}/tegelen-over-bestaande-tegels`
  * tegenbewijs tegen de hypothese en het staat zo in het contract.
  */
 export const metadata: Metadata = {
-  title: 'Kan er over bestaande tegels heen getegeld worden?',
+  title: paginaTitel('Kan er over bestaande tegels heen getegeld worden?'),
   description:
     'Tegels over tegels: op de badkamerwand meestal wel, op de douchevloer meestal niet. 10 tot 14 mm erbij. Uitgelegd door een tegelzetter uit Breda.',
   alternates: { canonical: '/tegelen-over-bestaande-tegels' },

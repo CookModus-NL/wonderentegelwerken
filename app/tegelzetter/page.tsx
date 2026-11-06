@@ -3,10 +3,11 @@ import Image from 'next/image'
 import { ArrowUpRight, MapPin } from 'lucide-react'
 import { cities } from '@/content/cities'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/tegelzetter' },
-  title: 'Tegelzetter per plaats · Breda, Oosterhout, Tilburg en meer',
+  title: paginaTitel('Tegelzetter per plaats · Breda, Oosterhout, Tilburg en meer'),
   // Etten-Leur is hier 19 okt 2026 uit de description gehaald (contract f4d87796, samenvoegen).
   // Grond: deze hub kreeg op "tegelzetter etten leur" 6 vertoningen op gemiddelde positie 60,2
   // terwijl /tegelzetter/etten-leur op 14,0 stond (motor_gsc 22-08 t/m 16-10-2026). Een

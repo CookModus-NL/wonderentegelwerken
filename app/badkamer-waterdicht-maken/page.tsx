@@ -3,6 +3,7 @@ import { ChevronRight, Phone, MessageCircle } from 'lucide-react'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Hoe wordt mijn badkamer waterdicht gemaakt?"
@@ -66,7 +67,7 @@ import type { Metadata } from 'next'
 const url = `${business.url}/badkamer-waterdicht-maken`
 
 export const metadata: Metadata = {
-  title: 'Hoe wordt mijn badkamer waterdicht gemaakt?',
+  title: paginaTitel('Hoe wordt mijn badkamer waterdicht gemaakt?'),
   description:
     'Niet door de tegels. De waterkering is een laag eronder: voorstrijk, kimband in elke binnenhoek, manchetten om de doorvoeren en twee lagen afdichtingspasta. Wat de bouwregels echt eisen, waar de laag hoort, en hoe je controleert dat hij er ligt.',
   alternates: { canonical: '/badkamer-waterdicht-maken' },

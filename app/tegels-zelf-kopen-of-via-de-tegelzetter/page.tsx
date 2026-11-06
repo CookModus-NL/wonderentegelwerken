@@ -6,6 +6,7 @@ import { FaqAntwoord } from '@/components/faq-antwoord'
 import { Tegelwinkels } from '@/components/tegelwinkels'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Koop ik de tegels zelf of levert Jaap ze?"
@@ -72,7 +73,7 @@ import type { Metadata } from 'next'
 const url = `${business.url}/tegels-zelf-kopen-of-via-de-tegelzetter`
 
 export const metadata: Metadata = {
-  title: 'Tegels zelf kopen of via de tegelzetter? Wat het echt kost',
+  title: paginaTitel('Tegels zelf kopen of via de tegelzetter? Wat het echt kost'),
   description:
     'Beide mag bij mij. Maar de 10% extra die overal wordt geadviseerd is niet gratis: vijf tegelleveranciers vergeleken op retourtermijn, retourkosten en retourplafond, plus bij wie een materiaalprobleem landt.',
   alternates: { canonical: '/tegels-zelf-kopen-of-via-de-tegelzetter' },

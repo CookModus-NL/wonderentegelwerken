@@ -3,10 +3,11 @@ import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { projects } from '@/content/projects'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/projecten' },
-  title: 'Projecten · recent tegelwerk',
+  title: paginaTitel('Projecten · recent tegelwerk'),
   description: 'Recente badkamerrenovaties, vloeren en terras-projecten in Breda en omstreken. Bekijk wat ik recent heb opgeleverd.',
 }
 

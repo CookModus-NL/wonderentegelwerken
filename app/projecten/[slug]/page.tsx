@@ -5,6 +5,7 @@ import { ArrowLeft, MapPin, Calendar, Ruler, Layers, ArrowUpRight } from 'lucide
 import { projects } from '@/content/projects'
 import type { Project } from '@/content/projects'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const dynamicParams = false
 
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = projects.find((p) => p.slug === slug)
   if (!project) return {}
   return {
-    title: project.title,
+    title: paginaTitel(project.title),
     description: project.description,
     alternates: { canonical: `/projecten/${slug}` },
     openGraph: { images: [project.hero] },

@@ -1,9 +1,10 @@
 import { business } from '@/content/business'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/privacy' },
-  title: 'Privacyverklaring',
+  title: paginaTitel('Privacyverklaring'),
   description: 'Hoe Van Wonderen Tegelwerken omgaat met jouw persoonsgegevens.',
 }
 

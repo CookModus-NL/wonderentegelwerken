@@ -4,6 +4,7 @@ import { ChevronRight, Phone, MessageCircle, ArrowUpRight } from 'lucide-react'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Moet de badkamer tot het plafond betegeld worden?"
@@ -26,7 +27,7 @@ import type { Metadata } from 'next'
 const url = `${business.url}/badkamer-betegelen-tot-plafond`
 
 export const metadata: Metadata = {
-  title: 'Moet de badkamer tot het plafond betegeld worden?',
+  title: paginaTitel('Moet de badkamer tot het plafond betegeld worden?'),
   description:
     'Nee, badkamer tot het plafond betegelen hoeft niet. Bbl 4.120: 1,2 m, bij douche of bad 2,1 m over minstens 3 m. Uitgelegd door een tegelzetter uit Breda.',
   alternates: { canonical: '/badkamer-betegelen-tot-plafond' },

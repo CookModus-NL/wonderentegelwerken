@@ -7,6 +7,7 @@ import { business } from '@/content/business'
 import { serviceSchema, faqSchema, breadcrumbSchema } from '@/lib/schema'
 import { FaqAntwoord } from '@/components/faq-antwoord'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 export const dynamicParams = false
 
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const service = servicesBySlug[slug]
   if (!service) return {}
   return {
-    title: `${service.title} in Breda`,
+    title: paginaTitel(`${service.title} in Breda`),
     description: service.short,
     alternates: { canonical: `/diensten/${slug}` },
     openGraph: {

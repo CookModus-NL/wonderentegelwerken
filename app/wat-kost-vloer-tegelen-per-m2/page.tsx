@@ -4,6 +4,7 @@ import { business } from '@/content/business'
 import { KlantCitaat } from '@/components/klant-citaat'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Wat kost vloer tegelen per m2?"
@@ -131,7 +132,7 @@ import type { Metadata } from 'next'
 const url = `${business.url}/wat-kost-vloer-tegelen-per-m2`
 
 export const metadata: Metadata = {
-  title: 'Wat kost vloer tegelen per m²?',
+  title: paginaTitel('Wat kost vloer tegelen per m²?'),
   description:
     'Zes Nederlandse prijspagina’s naast elkaar gelegd: één van de zes zegt wat er in dat bedrag per m² zit, geen van de zes noemt een btw-tarief, en alle zes verkopen je aanvraag door. Wat er bij mij wél en niet in de prijs zit, en waarom hier geen vast bedrag staat.',
   alternates: { canonical: '/wat-kost-vloer-tegelen-per-m2' },

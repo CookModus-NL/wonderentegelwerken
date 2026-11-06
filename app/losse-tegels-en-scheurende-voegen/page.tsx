@@ -4,6 +4,7 @@ import { ChevronRight, Phone, MessageCircle, ArrowUpRight } from 'lucide-react'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
+import { paginaTitel } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Wat gebeurt er als er later tegels loskomen of een voeg scheurt?"
@@ -47,7 +48,7 @@ import type { Metadata } from 'next'
 const url = `${business.url}/losse-tegels-en-scheurende-voegen`
 
 export const metadata: Metadata = {
-  title: 'Tegels komen los of een voeg scheurt: wat gebeurt er dan?',
+  title: paginaTitel('Tegels komen los of een voeg scheurt: wat gebeurt er dan?'),
   description:
     'Wie herstelt het en wie betaalt? De wet geeft je het recht op herstel en de tegelzetter het recht het zelf te doen. Uitgelegd met de wetsartikelen erbij, door een tegelzetter uit Breda.',
   alternates: { canonical: '/losse-tegels-en-scheurende-voegen' },

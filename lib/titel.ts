@@ -47,6 +47,16 @@
  * staan: zijn paginatitel is alleen korter te maken door "wanneer", "mag" of "vloerverwarming"
  * te laten vallen, en alle drie dragen zichtbare vertoningen op die URL. Eén title boven 60 die
  * geen zoekterm kost is beter dan een title van 55 die er wel een kost.
+ *
+ * DRIE PAGINA'S WACHTEN, MET EEN DATUM. Op /badkamer-betegelen-tot-plafond,
+ * /tegelvloer-belopen-en-vloerverwarming-aanzetten en /tegelen-over-bestaande-tegels loopt een
+ * CTR-meting waarin de meta-description de ENIGE variabele is. Daar de title tegelijk wijzigen
+ * geeft die meting een tweede oorzaak en maakt het effect van geen van beide toerekenbaar — dus
+ * houden die drie hun oude, te lange title tot hun meetmoment. Dat is geen pagina die van het
+ * sjabloon afwijkt maar een pagina die er nog niet in mag: de regel is al geschreven, het
+ * invoermoment staat vast, en `titelVastVoorMeting()` dwingt een datum en een contractnummer af.
+ * Zie TITELS_VAST_VOOR_METING hieronder; na die datum haalt een volgende run de aanroep weg en
+ * staan er nog 1 van de 34 boven de 60.
  */
 
 /** Het merkachtervoegsel, inclusief scheidingsteken. 27 tekens. */
@@ -67,4 +77,31 @@ export const TITEL_MAX = 60
 export function paginaTitel(titel: string): { absolute: string } {
   const metMerk = titel + MERK_ACHTERVOEGSEL
   return { absolute: metMerk.length <= TITEL_MAX ? metMerk : titel }
+}
+
+/**
+ * De drie pagina's die hun OUDE title houden tot hun klikmeting is beoordeeld. Overgenomen uit
+ * de state van TAAK-20261103-WONDEREN-TITELLENGTE-SJABLOON; de data komen uit de contracten
+ * zelf (9bee4aac: meetmoment_28 = 2026-11-13; aa2d384c: t+28 = 2026-11-30).
+ *
+ * DIT IS EEN WACHTLIJST, GEEN UITZONDERINGENLIJST. Elke regel heeft een datum en een
+ * contractnummer; is die datum verstreken en het oordeel geveld, dan vervalt de regel en gaat de
+ * pagina gewoon door `paginaTitel()`. Een regel zonder datum hoort hier niet te staan.
+ */
+export const TITELS_VAST_VOOR_METING = [
+  { pad: '/badkamer-betegelen-tot-plafond', tot: '2026-11-13', contract: '9bee4aac' },
+  { pad: '/tegelvloer-belopen-en-vloerverwarming-aanzetten', tot: '2026-11-13', contract: '9bee4aac' },
+  { pad: '/tegelen-over-bestaande-tegels', tot: '2026-11-30', contract: 'aa2d384c' },
+] as const
+
+/**
+ * Houdt de title letterlijk zoals hij was: paginatitel + het volle merkachtervoegsel, ook als hij
+ * daarmee over de 60 gaat. Alleen voor de paden in TITELS_VAST_VOOR_METING, en de aanroep draagt
+ * de reden mee zodat niemand hem zonder grond kan kopiëren.
+ */
+export function titelVastVoorMeting(
+  titel: string,
+  _reden: `contract ${string}, tot ${string}`
+): { absolute: string } {
+  return { absolute: titel + MERK_ACHTERVOEGSEL }
 }

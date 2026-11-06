@@ -4,7 +4,7 @@ import { ChevronRight, Phone, MessageCircle, ArrowUpRight } from 'lucide-react'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
-import { paginaTitel } from '@/lib/titel'
+import { titelVastVoorMeting } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Hoe lang moet ik wachten voor ik op de vloer mag lopen en
@@ -58,7 +58,14 @@ import { paginaTitel } from '@/lib/titel'
 const url = `${business.url}/tegelvloer-belopen-en-vloerverwarming-aanzetten`
 
 export const metadata: Metadata = {
-  title: paginaTitel('Wanneer mag je op een nieuwe tegelvloer lopen en de vloerverwarming aan?'),
+  // VAST TOT 2026-11-13, zelfde grond als /badkamer-betegelen-tot-plafond: contract 9bee4aac
+  // meet hier de description als enige variabele. Nu 99 tekens. Let op bij het vrijgeven: ook
+  // zonder achtervoegsel blijft deze title 72 tekens, want "wanneer", "mag" en
+  // "vloerverwarming" dragen alle drie zichtbare vertoningen op deze URL (zie lib/titel.ts).
+  title: titelVastVoorMeting(
+    'Wanneer mag je op een nieuwe tegelvloer lopen en de vloerverwarming aan?',
+    'contract 9bee4aac, tot 2026-11-13'
+  ),
   description:
     'Hoe lang wachten? Voorzichtig lopen kan meestal na 12 tot 24 uur, normaal belasten na 48 uur. De vloerverwarming hangt aan de dekvloer, niet aan de lijm.',
   alternates: { canonical: '/tegelvloer-belopen-en-vloerverwarming-aanzetten' },

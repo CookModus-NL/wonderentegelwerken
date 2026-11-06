@@ -77,14 +77,26 @@ const dienstTitels = contentVeld('content/services.ts', 'title')
 const projectTitels = contentVeld('content/projects.ts', 'title')
 const plaatsNamen = contentVeld('content/cities.ts', 'name')
 
-/** Het argument van de eerste paginaTitel(...) in een paginabestand. */
+/** De paden die hun oude title houden tot hun klikmeting beoordeeld is. */
+const VAST = new Map(
+  [...lees('lib/titel.ts').matchAll(/\{ pad: '([^']+)', tot: '([^']+)', contract: '([^']+)' \}/g)]
+    .map((m) => [m[1], { tot: m[2], contract: m[3] }])
+)
+
+/**
+ * Het argument van de eerste paginaTitel(...) of titelVastVoorMeting(...) in een paginabestand.
+ * `vast: true` betekent: achtervoegsel altijd, ongeacht de lengte (zie lib/titel.ts).
+ */
 function paginaTitelArgument(bestand) {
   const src = lees(bestand)
-  const m = src.match(/paginaTitel\(\s*(?:'((?:[^'\\]|\\.)*)'|`([^`]*)`|([A-Za-z][\w.]*))\s*\)/)
+  const m = src.match(
+    /(paginaTitel|titelVastVoorMeting)\(\s*(?:'((?:[^'\\]|\\.)*)'|`([^`]*)`|([A-Za-z][\w.]*))\s*(?:,|\))/
+  )
   if (!m) return null
-  if (m[1] !== undefined) return { soort: 'letterlijk', waarde: m[1].replace(/\\'/g, "'") }
-  if (m[2] !== undefined) return { soort: 'sjabloon', waarde: m[2] }
-  return { soort: 'uitdrukking', waarde: m[3] }
+  const vast = m[1] === 'titelVastVoorMeting'
+  if (m[2] !== undefined) return { soort: 'letterlijk', waarde: m[2].replace(/\\'/g, "'"), vast }
+  if (m[3] !== undefined) return { soort: 'sjabloon', waarde: m[3], vast }
+  return { soort: 'uitdrukking', waarde: m[4], vast }
 }
 
 /** Pad -> paginabestand; dynamische routes vallen op hun [param]-map terug. */
@@ -139,7 +151,13 @@ function paginaTitelVan(pad) {
     }
     if (titel.includes('${')) return { fout: `${bestand}: title niet volledig opgelost (${titel})` }
   }
-  return { bestand, gerenderd: sjabloon(titel), viaSjabloon: true }
+  if (arg.vast) {
+    const v = VAST.get(pad)
+    if (!v) return { fout: `${pad} staat op titelVastVoorMeting maar niet in TITELS_VAST_VOOR_METING` }
+    return { bestand, gerenderd: titel + MERK_ACHTERVOEGSEL, vast: v }
+  }
+  if (VAST.has(pad)) return { fout: `${pad} staat in TITELS_VAST_VOOR_METING maar gebruikt paginaTitel()` }
+  return { bestand, gerenderd: sjabloon(titel) }
 }
 
 const paden = sitemapPaden()
@@ -148,13 +166,14 @@ const fouten = []
 for (const pad of paden) {
   const r = paginaTitelVan(pad)
   if (r.fout) { fouten.push(r.fout); continue }
-  rijen.push({ pad, titel: r.gerenderd, lengte: r.gerenderd.length })
+  rijen.push({ pad, titel: r.gerenderd, lengte: r.gerenderd.length, vast: r.vast })
 }
 
 rijen.sort((a, b) => b.lengte - a.lengte)
 for (const r of rijen) {
   const vlag = r.lengte > GRENS ? 'BOVEN' : '     '
-  console.log(`${String(r.lengte).padStart(3)} ${vlag}  ${r.pad}\n          ${r.titel}`)
+  const wacht = r.vast ? `  [VAST t/m ${r.vast.tot}, contract ${r.vast.contract}]` : ''
+  console.log(`${String(r.lengte).padStart(3)} ${vlag}  ${r.pad}${wacht}\n          ${r.titel}`)
 }
 
 const lengtes = rijen.map((r) => r.lengte).sort((a, b) => a - b)
@@ -164,6 +183,14 @@ const mediaan = lengtes.length % 2
 const boven = rijen.filter((r) => r.lengte > GRENS)
 console.log(`\nURL's uit de sitemap: ${paden.length}, gemeten: ${rijen.length}`)
 console.log(`boven ${GRENS} tekens: ${boven.length}  ·  boven 70: ${rijen.filter((r) => r.lengte > 70).length}  ·  mediaan: ${mediaan}  ·  langste: ${lengtes.at(-1)}`)
+const vastBoven = boven.filter((r) => r.vast)
+if (vastBoven.length) {
+  console.log(
+    `waarvan VAST voor een lopende klikmeting: ${vastBoven.length} ` +
+      `(${vastBoven.map((r) => `${r.pad} t/m ${r.vast.tot}`).join(', ')})`
+  )
+  console.log(`boven ${GRENS} na het vrijgeven van die ${vastBoven.length}: ${boven.length - vastBoven.length + vastBoven.filter((r) => r.titel.length - MERK_ACHTERVOEGSEL.length > GRENS).length}`)
+}
 
 if (fouten.length) {
   console.log('\nONBESLIST — deze titles zijn niet vastgesteld:')

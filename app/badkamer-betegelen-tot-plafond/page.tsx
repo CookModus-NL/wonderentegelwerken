@@ -4,7 +4,7 @@ import { ChevronRight, Phone, MessageCircle, ArrowUpRight } from 'lucide-react'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
-import { paginaTitel } from '@/lib/titel'
+import { titelVastVoorMeting } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Moet de badkamer tot het plafond betegeld worden?"
@@ -27,7 +27,10 @@ import { paginaTitel } from '@/lib/titel'
 const url = `${business.url}/badkamer-betegelen-tot-plafond`
 
 export const metadata: Metadata = {
-  title: paginaTitel('Moet de badkamer tot het plafond betegeld worden?'),
+  // VAST TOT 2026-11-13. De description van deze pagina is de enige variabele in de
+  // CTR-meting van contract 9bee4aac (meetmoment t+28 = 2026-11-13); de title wijzigt pas
+  // daarna mee met het sjabloon in lib/titel.ts. Nu 76 tekens en dus afgekapt - bewust.
+  title: titelVastVoorMeting('Moet de badkamer tot het plafond betegeld worden?', 'contract 9bee4aac, tot 2026-11-13'),
   description:
     'Nee, badkamer tot het plafond betegelen hoeft niet. Bbl 4.120: 1,2 m, bij douche of bad 2,1 m over minstens 3 m. Uitgelegd door een tegelzetter uit Breda.',
   alternates: { canonical: '/badkamer-betegelen-tot-plafond' },

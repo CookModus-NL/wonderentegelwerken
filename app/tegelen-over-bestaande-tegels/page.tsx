@@ -4,7 +4,7 @@ import { ChevronRight, Phone, MessageCircle, ArrowUpRight } from 'lucide-react'
 import { business } from '@/content/business'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import type { Metadata } from 'next'
-import { paginaTitel } from '@/lib/titel'
+import { titelVastVoorMeting } from '@/lib/titel'
 
 /**
  * ANTWOORDEENHEID. Vraag: "Kan er over bestaande tegels heen getegeld worden?"
@@ -96,7 +96,9 @@ const url = `${business.url}/tegelen-over-bestaande-tegels`
  * tegenbewijs tegen de hypothese en het staat zo in het contract.
  */
 export const metadata: Metadata = {
-  title: paginaTitel('Kan er over bestaande tegels heen getegeld worden?'),
+  // VAST TOT 2026-11-30. Contract aa2d384c meet hier de nieuwe description als enige
+  // variabele (t+28 = 2026-11-30); de grond staat in het blok hierboven. Nu 77 tekens.
+  title: titelVastVoorMeting('Kan er over bestaande tegels heen getegeld worden?', 'contract aa2d384c, tot 2026-11-30'),
   description:
     'Tegels over tegels: op de badkamerwand meestal wel, op de douchevloer meestal niet. 10 tot 14 mm erbij. Uitgelegd door een tegelzetter uit Breda.',
   alternates: { canonical: '/tegelen-over-bestaande-tegels' },

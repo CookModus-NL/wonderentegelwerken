@@ -75,10 +75,12 @@ export default function WerkgebiedPage() {
                 </div>
               ))}
             </div>
-            {/* Uitgaande link naar de plaats die zijn eigen antwoord draagt (contract f4d87796,
-                19 okt 2026, samenvoegen). Deze pagina kreeg zelf vertoningen op "tegelzetter
-                etten leur"; in plaats van mee te dingen wijst hij nu naar de pagina die de vraag
-                beantwoordt. Eén plaats, omdat er één zo'n pagina is — niet als voorkeur. */}
+            {/* Uitgaande links naar de plaatsen die hun eigen antwoord dragen (contract f4d87796,
+                19 okt 2026, samenvoegen; Oosterhout erbij door contract c3c167a0, 12 nov 2026).
+                Deze pagina kreeg zelf vertoningen op "tegelzetter etten leur"; in plaats van mee
+                te dingen wijst hij naar de pagina die de vraag beantwoordt. Twee plaatsen, omdat
+                er twee zulke pagina's zijn — niet als voorkeur. Komt er een derde, dan hoort hij
+                hier ook. */}
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-primary-600">
               Voor Etten-Leur staat de aanpak apart uitgeschreven:{' '}
               <Link
@@ -87,6 +89,14 @@ export default function WerkgebiedPage() {
               >
                 tegelzetter in Etten-Leur, met reistijd, wat er in het tegelwerk zit en waar de
                 garantie stopt
+              </Link>
+              . Voor Oosterhout staat de vloer apart uitgeschreven:{' '}
+              <Link
+                href="/tegelzetter/oosterhout#tegelzetter-oosterhout"
+                className="text-primary-900 underline decoration-primary-300 underline-offset-4 hover:text-accent-600"
+              >
+                een tegelvloer in Oosterhout, met de droogtijden en de twee tegelwinkels waar ik
+                werk
               </Link>
               .
             </p>

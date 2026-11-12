@@ -96,6 +96,94 @@ export const cities: City[] = [
       'Oosterhout heeft een mix van oude lintbebouwing en nieuwbouwwijken. In de oudbouw houd ik rekening met onregelmatige ondervloeren en historisch metselwerk. In de nieuwbouw werk ik vaak met grootformaat keramiek voor een moderne uitstraling.',
     featuredProjectSlug: 'badkamer-januari-2025',
     heroImage: '/images/projects/portfolio-2025-01-wa0076.webp',
+    /*
+     * ANTWOORDEENHEID OOSTERHOUT — contract c3c167a0, 12 nov 2026, klasse antwoordeenheid-verdiepen.
+     *
+     * WAAROM OP DEZE URL EN NERGENS ANDERS. Over 27 meetdagen (13-10 t/m 09-11-2026, motor_gsc
+     * dimensies=query,page, sc-domain:wonderentegelwerken.nl) kwamen alle vertoningen op
+     * "tegelvloer oosterhout" (40 vertoningen, gewogen positie 34,1, 0 kliks) binnen op precies
+     * deze pagina. Er is geen tweede eigen URL die op die zoekvraag meedingt, dus is dit een
+     * plaatsingskeuze en geen kannibalisatievraag (leringen 497fdaee en 5afc4a7c).
+     *
+     * WAT DE PAGINA MOEST BEANTWOORDEN. De zoekvraag staat niet alleen: dezelfde pagina kreeg in
+     * datzelfde venster 216 vertoningen op dertien zoekvragen, waaronder "tegels oosterhout" (83),
+     * "wandtegel oosterhout" (23), "natuursteen oosterhout" (18), "tegelhandel oosterhout" (16) en
+     * "tegels kopen oosterhout" (7) — alle dertien met 0 kliks. Die cluster is half KOPEN en half
+     * LATEN LEGGEN. De SERP bevestigt dat: van de negen organische resultaten op 09-11-2026
+     * verkochten de meeste tegels (bedoeling GEMENGD: 29% dienst, 14% winkel, 14% uitleg).
+     * Jaap verkoopt geen tegels. De eerlijke zet is dus niet doen alsof, maar de koopvraag
+     * beantwoorden met wat hij wél weet — bij welke twee winkels hij werkt — en de rest van de
+     * pagina op de dienst- en uitleghoek zetten (lering 4fa41b0e: deel de uitslag in op ROL en
+     * vraag of de klant die rol kan vervullen).
+     *
+     * WAT ER NIET IN STAAT. Geen prijs per m2: er is geen getekend prijsfeit, en
+     * principe.prijsopgaaf zegt juist dat de posten los op de offerte staan. Geen tarief van de
+     * twee winkels. Geen maat of termijn die niet letterlijk in het bronfeit staat (lering
+     * db31c963): 12 tot 24 uur, 48 uur, 7 dagen, 60x120, 5 dagen, 1 werkdag, 5 jaar en 1 jaar
+     * komen woordelijk uit motor_feiten.
+     */
+    antwoord: {
+      description:
+        // 152 tekens: past onder de afkapgrens die ook lib/titel.ts hanteert, en de zoekwoorden
+        // "tegelvloer" en "Oosterhout" staan vooraan (lering: het woord waarop je rankt hoort in
+        // de snippet). De vorige opzet van 166 tekens kapte "uit Breda" eraf.
+        'Tegelvloer in Oosterhout, door een tegelzetter uit Breda: wat er in het leggen zit, na hoeveel uur je erop mag lopen en waar je in Brabant tegels koopt.',
+      eyebrow: 'Tegelvloer in Oosterhout',
+      kop: ['Een tegelvloer in Oosterhout?', 'Wie wat doet, en wanneer je erop kunt lopen.'],
+      antwoordEerst:
+        'Ik ben Jaap van Wonderen, tegelzetter uit Breda en sinds 2022 een eenmanszaak (KvK 86555499). Oosterhout ligt 12 km verderop, in mijn ring van 15 tot 30 minuten rijden. Een tegelvloer leg ik met lijm en voorlijm. De ondervloer egaliseer ik waar dat nodig is. De dilataties komen op de juiste plek en het voegwerk zit erbij. Plinten staan apart op de offerte, inclusief het afkitten. Over de vloer loop je meestal na 12 tot 24 uur voorzichtig, en na 48 uur normaal. Je hebt binnen 1 werkdag antwoord op WhatsApp en binnen 5 dagen een gespecificeerde offerte zonder kleine lettertjes. De tegels koop je zelf, en je blijft vrij om die te kopen waar je wilt.',
+      marktalinea:
+        'Wie op een tegelvloer in Oosterhout zoekt, komt vooral bij winkels uit. Van de negen organische Google-resultaten op 9 november 2026 kon ik er vier helemaal lezen. Drie daarvan verkopen tegels of natuursteen. De vierde is de plaatspagina van een andere tegelzetter. Eén van die vier zet vragen en antwoorden op de pagina, de andere drie niet. Geen van de vier legt uit in welke stappen een vloer gelegd wordt. Twee noemen een bedrag. Daarboven stond nog een AI-samenvatting, een kaartblok en een rij vragen die andere zoekers stellen. De eerste van die vragen staat hieronder, met de vier die ik in de praktijk het meest krijg.',
+      herkomstregel:
+        'Gemeten 9 november 2026 · negen organische resultaten plus het kaartblok en de AI-samenvatting in de Nederlandse Google-resultaten, opgehaald via een SERP-API · de termijnen over mijn eigen werk komen uit mijn algemene voorwaarden, de droogtijden uit de opgave van de lijmfabrikant en een vakforum van tegelzetters',
+      vragen: [
+        {
+          id: 'tegels-kopen-brabant',
+          vraag: 'Waar kan ik tegels kopen in Brabant?',
+          delen: [
+            'Ik werk vast met twee tegelwinkels, en beide staan in Breda in Noord-Brabant, 12 km van Oosterhout. Dat zijn Gigategelstore aan de Ettensebaan 19 en de showroom van Designtegels aan het Spinveld 66 A5. Bijna elke maand leg ik tegels die een klant bij Gigategelstore heeft gekocht. Het is geen afspraak en geen verplichting: je bent vrij om elders te kopen, en ik verwerk wat je meebrengt. Wat je vóór het bestellen regelt, staat bij ',
+            { tekst: 'tegels zelf kopen of via de tegelzetter', href: '/tegels-zelf-kopen-of-via-de-tegelzetter' },
+            '.',
+          ],
+        },
+        {
+          id: 'wat-heb-ik-nodig-voor-een-tegelvloer',
+          vraag: 'Wat heb ik nodig om een tegelvloer te leggen?',
+          delen: [
+            'Onder de tegel zit meer werk dan erop. Je hebt een vlakke, droge ondervloer nodig, de juiste lijm, dilataties en voegmateriaal. Is de ondervloer niet vlak, dan egaliseer ik hem eerst, en dat reken ik los. In de oudbouw aan de Oosterhoutse linten zijn ondervloeren vaak onregelmatig. In de nieuwbouwwijken ligt er meestal een dekvloer met vloerverwarming. Bij grootformaat van 60x120 of groter werk ik met vloerverwarmingsvriendelijke lijm en kruisende lasers. Wat er precies ',
+            { tekst: 'onder een tegelvloer gebeurt', href: '/diensten/vloertegels' },
+            ' staat uitgebreid op de dienstpagina.',
+          ],
+        },
+        {
+          id: 'wanneer-over-een-nieuwe-tegelvloer-lopen',
+          vraag: 'Wanneer kan ik over een nieuwe tegelvloer lopen?',
+          delen: [
+            'Met gewone cementgebonden tegellijm is de vloer meestal na 12 tot 24 uur voorzichtig beloopbaar. Bij een zuigende ondergrond én een zuigende tegel is dat na 12 uur. Neemt tegel of ondergrond geen vocht op, dan 24 uur. Na 48 uur is de vloer normaal belastbaar: er mag normaal over gelopen worden en zware dingen mogen erop. Voor puntlasten geldt 7 dagen, dus een wasmachine op vier voetjes, een bad vol water of een kast met een boekenwand wachten nog even. Dit zijn richtlijnen bij normale binnentemperatuur. Temperatuur, luchtvochtigheid, de zuigkracht van de ondergrond, het tegeltype, het lijmtype en de laagdikte schuiven de termijn op. De vloerverwarming hangt niet aan de lijm maar aan de opstookprocedure van de dekvloer, en gaat altijd gefaseerd aan. Bij de oplevering zeg ik wanneer wat mag. Alle termijnen staan bij ',
+            { tekst: 'wanneer je over een tegelvloer mag lopen en de vloerverwarming aan mag', href: '/tegelvloer-belopen-en-vloerverwarming-aanzetten' },
+            '.',
+          ],
+        },
+        {
+          id: 'wat-kost-een-tegelvloer-per-m2',
+          vraag: 'Wat kost een tegelvloer per m2?',
+          delen: [
+            'Je vindt hier geen tarief per vierkante meter, en daar is een reden voor. Het leggen is maar één post. Egaliseren, plinten met afkitten en bij een badkamer het afschot naar de put staan er los naast, en juist die posten verschillen per vloer. Een bedrag per m2 dat klopt voor een rechte woonkamervloer, klopt daar niet. Daarom staan de posten los op de offerte: je weet vooraf wat het kost, er komt achteraf geen verrassing bij en er is geen verborgen meerwerk. Welke bedragen de vergelijkingssites noemen en wat daar niet in zit, heb ik uitgezocht bij ',
+            { tekst: 'wat vloer tegelen per m2 kost', href: '/wat-kost-vloer-tegelen-per-m2' },
+            '.',
+          ],
+        },
+        {
+          id: 'kom-je-voor-een-tegelvloer-in-oosterhout',
+          vraag: 'Kom je voor een tegelvloer naar Oosterhout?',
+          delen: [
+            'Ja. Oosterhout zit in mijn ring van 15 tot 30 minuten rijden, samen met Etten-Leur, Rijen, Tilburg en Zundert. Mijn kerngebied is Breda met Teteringen, Princenhage, Bavel, Ulvenhout, Effen en Dorst, alles binnen 15 minuten. Stuur foto’s en de maten via WhatsApp, dan heb je binnen 1 werkdag antwoord. Daarna kom ik vrijblijvend opmeten en ligt er binnen 5 dagen een gespecificeerde offerte. Op tegel- en voegwerk geldt 5 jaar garantie, op kitwerk 1 jaar. Het hele ',
+            { tekst: 'werkgebied met de reistijd per plaats', href: '/werkgebied' },
+            ' staat apart.',
+          ],
+        },
+      ],
+    },
   },
   {
     slug: 'etten-leur',

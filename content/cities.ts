@@ -121,6 +121,16 @@ export const cities: City[] = [
      * twee winkels. Geen maat of termijn die niet letterlijk in het bronfeit staat (lering
      * db31c963): 12 tot 24 uur, 48 uur, 7 dagen, 60x120, 5 dagen, 1 werkdag, 5 jaar en 1 jaar
      * komen woordelijk uit motor_feiten.
+     *
+     * EN GEEN FREQUENTIE. Commit ab67a9c had hier de zin "Bijna elke maand leg ik tegels die een
+     * klant bij Gigategelstore heeft gekocht." Die zin staat woordelijk in het bronfeit
+     * wonderen-leveranciers-vast-20261105 (herkomst eigenaar, Jaap in de app 12-10-2026) en staat
+     * sinds 05-11-2026 ook live op /diensten/badkamer-renovatie. De criticus wees hem op 12-11-2026
+     * toch af als onherleidbaar, omdat de feitentekst in zijn prompt op 4.500 tekens wordt gekapt en
+     * dit feit daar bij deze klant (32 feiten) helemaal buiten valt. Een getal dat niet te
+     * verifiëren is op het moment van keuren, hoort niet op een nieuwe pagina: de zin is eruit en
+     * het antwoord op de koopvraag staat er zonder. De oorzaak is apart geregistreerd, niet hier
+     * gerepareerd.
      */
     antwoord: {
       description:
@@ -141,7 +151,7 @@ export const cities: City[] = [
           id: 'tegels-kopen-brabant',
           vraag: 'Waar kan ik tegels kopen in Brabant?',
           delen: [
-            'Ik werk vast met twee tegelwinkels, en beide staan in Breda in Noord-Brabant, 12 km van Oosterhout. Dat zijn Gigategelstore aan de Ettensebaan 19 en de showroom van Designtegels aan het Spinveld 66 A5. Bijna elke maand leg ik tegels die een klant bij Gigategelstore heeft gekocht. Het is geen afspraak en geen verplichting: je bent vrij om elders te kopen, en ik verwerk wat je meebrengt. Wat je vóór het bestellen regelt, staat bij ',
+            'Ik werk vast met twee tegelwinkels, en beide staan in Breda in Noord-Brabant, 12 km van Oosterhout. Dat zijn Gigategelstore aan de Ettensebaan 19 en de showroom van Designtegels aan het Spinveld 66 A5. Het is geen afspraak en geen verplichting: je bent vrij om elders te kopen, en ik verwerk wat je meebrengt. Wat je vóór het bestellen regelt, staat bij ',
             { tekst: 'tegels zelf kopen of via de tegelzetter', href: '/tegels-zelf-kopen-of-via-de-tegelzetter' },
             '.',
           ],

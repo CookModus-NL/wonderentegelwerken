@@ -150,7 +150,7 @@ export const cities: City[] = [
           id: 'wat-heb-ik-nodig-voor-een-tegelvloer',
           vraag: 'Wat heb ik nodig om een tegelvloer te leggen?',
           delen: [
-            'Onder de tegel zit meer werk dan erop. Je hebt een vlakke, droge ondervloer nodig, de juiste lijm, dilataties en voegmateriaal. Is de ondervloer niet vlak, dan egaliseer ik hem eerst, en dat reken ik los. In de oudbouw aan de Oosterhoutse linten zijn ondervloeren vaak onregelmatig. In de nieuwbouwwijken ligt er meestal een dekvloer met vloerverwarming. Bij grootformaat van 60x120 of groter werk ik met vloerverwarmingsvriendelijke lijm en kruisende lasers. Wat er precies ',
+            'Onder de tegel zit meer werk dan erop. Je hebt een vlakke, droge ondervloer nodig, de juiste lijm, dilataties en voegmateriaal. Is de ondervloer niet vlak, dan egaliseer ik hem eerst, en dat reken ik los. In de oudbouw aan de Oosterhoutse linten zijn ondervloeren vaak onregelmatig; in de nieuwbouwwijken leg ik er vaker grootformaat keramiek. Ligt er vloerverwarming, dan gebruik ik vloerverwarmingsvriendelijke lijm en wacht ik de droogtijd af voordat de verwarming gefaseerd aangaat. Bij grootformaat van 60x120 of groter werk ik bovendien met kruisende lasers. Wat er precies ',
             { tekst: 'onder een tegelvloer gebeurt', href: '/diensten/vloertegels' },
             ' staat uitgebreid op de dienstpagina.',
           ],

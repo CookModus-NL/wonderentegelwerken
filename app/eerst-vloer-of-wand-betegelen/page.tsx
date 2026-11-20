@@ -172,8 +172,34 @@ const url = `${business.url}/eerst-vloer-of-wand-betegelen`
 
 export const metadata: Metadata = {
   title: paginaTitel('Eerst de vloer of eerst de wand betegelen?'),
+  // SNIPPET-INGREEP 20-11-2026, contract 833e9caf, run schrijver-20261120-1612. Klasse
+  // titel-en-omschrijving; gemeten CTR-gat op deze URL: 351 vertoningen / 4 kliks = 1,14% bij
+  // gewogen positie 7,65 (motor_gsc dimensies=page, 21-10 t/m 17-11-2026, 27 van 28 dagen).
+  //
+  // ALLEEN DE DESCRIPTION WIJZIGT. De title blijft byte-identiek, om dezelfde reden die
+  // lib/titel.ts voor drie andere URL's vastlegt: in een klikmeting is de meta-description de
+  // ENIGE variabele, want een tweede gelijktijdige oorzaak maakt het effect van geen van beide
+  // toerekenbaar. Er is hier bovendien geen zichtbare zoekvraag die een stamwissel in de title
+  // kan verantwoorden: 344 van de 351 vertoningen zijn geanonimiseerd (dimensies=query,page geeft
+  // 7 vertoningen, waarvan 6 op een geplakte concurrent-URL).
+  //
+  // WAT ER MIS WAS, GEMETEN. De oude description was 236 tekens. Google toont er ongeveer 155,
+  // dus de slotzin ("Met wat de uitvoeringsrichtlijn ... zegt") viel er in zijn geheel af en de
+  // zichtbare tekst eindigde middenin "de onderste rij wandtegel". Het argument om te klikken
+  // stond achter de afkapgrens. Zelfde faalvorm als contract aa2d384c op
+  // /tegelen-over-bestaande-tegels (daar 225 tekens, afgekapt op teken 158).
+  //
+  // DE NIEUWE TEKST is 143 tekens; de herkomstzin begint op teken 103 (gemeten aan de gerenderde
+  // HTML van de lokale productiebuild) en valt dus volledig binnen de grens. Dezelfde vorm als de drie andere antwoordpagina's van deze site: direct antwoord,
+  // het onderscheidende gegeven, dan "Uitgelegd door een tegelzetter uit Breda" (les 8bcc03d1:
+  // een herkomstverwijzing mag bij een snippet-herschrijving niet verdwijnen; hier komt hij er
+  // juist bij). "wand tegelen" draagt de stam uit de zwaarste zoekvorm: "eerst wand of vloer
+  // tegelen", 140 zoekopdrachten per maand tegen 10 voor "eerst vloer of wand betegelen"
+  // (DataForSEO google_ads/search_volume, NL/nl, gemeten 20-11-2026). "Drie beurten, niet twee"
+  // en "de onderste rij gaat er ná de vloer op" staan letterlijk in de lead van deze pagina;
+  // geen nieuw getal, geen nieuwe claim.
   description:
-    'De wand eerst, de vloer daarna. Maar het zijn drie beurten en geen twee: wand vanaf de tweede rij, dan de vloer, en als laatste de onderste rij wandtegels op maat. Met wat de uitvoeringsrichtlijn voor tegelwerk er wél en niet over zegt.',
+    'Eerst de wand tegelen, dan de vloer. Drie beurten, niet twee: de onderste rij gaat er ná de vloer op. Uitgelegd door een tegelzetter uit Breda.',
   alternates: { canonical: '/eerst-vloer-of-wand-betegelen' },
   openGraph: {
     title: 'Eerst de vloer of eerst de wand betegelen? | Van Wonderen Tegelwerken',
